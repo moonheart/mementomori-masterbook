@@ -3,8 +3,6 @@ name: Download MasterBook
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '0 0/8 * * *'
 
 jobs:
   build:
