@@ -11,10 +11,12 @@ public static class Helpers
     static Helpers()
     {
         UnityHttpClient = new HttpClient();
+        UnityHttpClient.Timeout = TimeSpan.FromSeconds(10);
         UnityHttpClient.DefaultRequestHeaders.Add("User-Agent", "UnityPlayer/2021.3.10f1 (UnityWebRequest/1.0, libcurl/7.80.0-DEV)");
         UnityHttpClient.DefaultRequestHeaders.Add("X-Unity-Version", "2021.3.10f1");
 
         OrtegaHttpClient = new HttpClient();
+        OrtegaHttpClient.Timeout = TimeSpan.FromSeconds(10);
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaaccesstoken", "");
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaappversion", "1.3.7"); // this must be set manually, maybe get from google play store?
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegadevicetype", "2");
