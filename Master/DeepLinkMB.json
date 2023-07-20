@@ -1,0 +1,145 @@
+[
+  {
+    "Id": 1,
+    "IsIgnore": null,
+    "Memo": null,
+    "TransferDetailInfo": {
+      "NumberInfo1": 10,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 2,
+    "IsIgnore": null,
+    "Memo": "AA登場記念",
+    "TransferDetailInfo": {
+      "NumberInfo1": 20,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 3,
+    "IsIgnore": null,
+    "Memo": "オフィーリア登場記念",
+    "TransferDetailInfo": {
+      "NumberInfo1": 30,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 4,
+    "IsIgnore": null,
+    "Memo": "ウィーラ新ガチャ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 40,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 5,
+    "IsIgnore": null,
+    "Memo": "レア新ガチャ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 50,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 6,
+    "IsIgnore": null,
+    "Memo": "シフォン新ガチャ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 70,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 7,
+    "IsIgnore": null,
+    "Memo": "ルサールカ新ガチャ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 80,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 8,
+    "IsIgnore": null,
+    "Memo": "ハーフアニバーサリー",
+    "TransferDetailInfo": {
+      "NumberInfo1": 60,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 9,
+    "IsIgnore": null,
+    "Memo": "シヴィ新ガチャ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 90,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 10,
+    "IsIgnore": null,
+    "Memo": "アーティ新ガチャ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 100,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 11,
+    "IsIgnore": null,
+    "Memo": "リシェス新ガチャ ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 110,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 12,
+    "IsIgnore": null,
+    "Memo": "水着サブリナ新ガチャ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 120,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  },
+  {
+    "Id": 13,
+    "IsIgnore": null,
+    "Memo": "水着モーザ新ガチャ",
+    "TransferDetailInfo": {
+      "NumberInfo1": 130,
+      "NumberInfo2": 0,
+      "StringInfo": null,
+      "TransferSpotType": 70
+    }
+  }
+]
