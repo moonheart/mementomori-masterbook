@@ -39,20 +39,34 @@ public static class Helpers
         Log($"Downloading master catalog from {url}...");
         var bytes = await UnityHttpClient.GetByteArrayAsync(url);
         Log($"Download master catalog success.");
-        
+
         var masterBookCatalog = MessagePackSerializer.Deserialize<MasterBookCatalog>(bytes);
         Directory.CreateDirectory("./Master");
-        foreach (var (name, _) in masterBookCatalog.MasterBookInfoMap)
+        foreach (var (name, info) in masterBookCatalog.MasterBookInfoMap)
         {
             var localPath = $"./Master/{name}.json";
+            var localMd5 = $"./Master/{name}.md5";
+
+            Log($"Verifying master book {name}...");
+            if (File.Exists(localMd5) && await File.ReadAllTextAsync(localMd5) == info.Hash)
+            {
+                Log($"Skipping master book {name} because it is already downloaded.");
+                continue;
+            }
+
             var mbUrl = $"https://cdn-mememori.akamaized.net/master/prd1/version/{masterVersion}/{name}";
             Log($"Downloading master book {name} from {mbUrl}...");
             var fileBytes = await UnityHttpClient.GetByteArrayAsync(mbUrl);
             Log($"Download master book {name} success.");
+
             var dictionary = MessagePackSerializer.Deserialize<object>(fileBytes);
             await File.WriteAllTextAsync(localPath, JsonConvert.SerializeObject(dictionary, Formatting.Indented));
             Log($"Saved master book {name} to {localPath}.");
+
+            await File.WriteAllTextAsync(localMd5, info.Hash);
+            Log($"Saved master book {name} md5 to {localMd5}.");
         }
+
         Log("Done.");
     }
 
@@ -86,6 +100,16 @@ public static class Helpers
     [MessagePackObject(true)]
     public class MasterBookCatalog
     {
-        public Dictionary<string, object> MasterBookInfoMap { get; set; }
+        public Dictionary<string, MasterBookInfo> MasterBookInfoMap { get; set; }
+    }
+
+    [MessagePackObject(true)]
+    public class MasterBookInfo
+    {
+        public string Hash { get; set; }
+
+        public string Name { get; set; }
+
+        public int Size { get; set; }
     }
 }
