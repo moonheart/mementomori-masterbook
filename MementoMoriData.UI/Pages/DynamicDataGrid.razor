@@ -1,0 +1,164 @@
+﻿@using System.Text.Json
+@using System.Text.Json.Nodes
+@inject DialogService DialogService;
+
+<RadzenDataGrid Data="Data"
+                @ref="_dataGrid"
+                IsLoading="_isTableLoading"
+                AllowPaging="AllowPaging"
+                PageSize="50"
+                Page="ShowLoading"
+                PagerHorizontalAlign="HorizontalAlign.Left"
+                ShowPagingSummary="true"
+                AllowFiltering="true"
+                FilterMode="FilterMode.Advanced"
+                AllowColumnPicking="AllowColumnPicking"
+                AllowSorting="true"
+                AllowColumnResize="true"
+                Style="height: 100%"
+                VirtualizationOverscanCount="10"
+                AllowVirtualization="true">
+    <Columns>
+        @foreach (var column in _columns)
+        {
+            if (column.Key == "IsIgnore")
+            {
+                continue;
+            }
+            var columnWidth = column.Key switch{
+                "Id" => "100px",
+                "Memo" => "200px",
+                _ => ""
+                };
+            columnWidth = column.Value == _typeLong || column.Value == _typeBool ? "100px" : columnWidth;
+            var enableFilter = column.Key switch{
+                "Id" => false,
+                _ => true
+                };
+            var showZoomIn = column.Value != _typeBool && column.Value != _typeLong;
+            <RadzenDataGridColumn
+                TItem="Dictionary<string, object?>"
+                Width="@columnWidth"
+                Title="@column.Key"
+                Type="@_typeString"
+                Filterable="enableFilter"
+                Resizable="true"
+                Property="@GetColumnPropertyExpression(column.Key, column.Value)">
+                <Template>
+                    @{
+                        var content = column.Value == _typeString ? Format?.Invoke(context[column.Key]?.ToString()) : context[column.Key];
+                        if (showZoomIn)
+                        {
+                            <RadzenButton Icon="zoom_in" Size="ButtonSize.ExtraSmall" Click="() => OpenDetail(content)"/>
+                        }
+                        <span>@content</span>
+                    }
+                </Template>
+            </RadzenDataGridColumn>
+        }
+
+    </Columns>
+</RadzenDataGrid>
+
+@code {
+
+    [Parameter]
+    public Dictionary<string, object?>[]? Data { get; set; }
+
+    [Parameter]
+    public Func<string?, string?>? Format { get; set; }
+
+    [Parameter]
+    public bool AllowPaging { get; set; } = true;
+
+    [Parameter]
+    public bool AllowColumnPicking { get; set; } = true;
+
+    private bool _isTableLoading;
+
+    private RadzenDataGrid<Dictionary<string, object?>>? _dataGrid;
+    private readonly Dictionary<string, Type> _columns = new();
+
+    private readonly Type _typeObject = typeof(object);
+    private readonly Type _typeString = typeof(string);
+    private readonly Type _typeLong = typeof(long);
+    private readonly Type _typeBool = typeof(bool);
+    private readonly Type _typeArray = typeof(object[]);
+
+    protected override void OnParametersSet()
+    {
+        if (Data == null || Data.Length == 0)
+        {
+            return;
+        }
+        _columns.Clear();
+        foreach (var (key, value) in Data.First())
+        {
+            var type = value switch{
+                JsonElement{ValueKind: JsonValueKind.Undefined} => _typeString,
+                JsonElement{ValueKind: JsonValueKind.Object} => _typeObject,
+                JsonElement{ValueKind: JsonValueKind.Array} => _typeArray,
+                JsonElement{ValueKind: JsonValueKind.String} => _typeString,
+                JsonElement{ValueKind: JsonValueKind.Number} => _typeLong,
+                JsonElement{ValueKind: JsonValueKind.False} => _typeBool,
+                JsonElement{ValueKind: JsonValueKind.True} => _typeBool,
+                JsonElement{ValueKind: JsonValueKind.Null} => _typeString,
+                _=>typeof(object)
+                };
+            _columns.Add(key, type);
+        }
+    }
+
+    async Task ShowLoading()
+    {
+        _isTableLoading = true;
+        await Task.Yield();
+        _isTableLoading = false;
+    }
+
+    private string GetColumnPropertyExpression(string name, Type type)
+    {
+        var expression = $@"it[""{name}""].ToString()";
+
+        if (type == typeof(int))
+        {
+            return $"int.Parse({expression})";
+        }
+        if (type == typeof(DateTime))
+        {
+            return $"DateTime.Parse({expression})";
+        }
+
+        return expression;
+    }
+
+    private void OpenDetail(object? detail)
+    {
+        if (detail is JsonElement{ValueKind: JsonValueKind.Array} array && array.GetArrayLength() > 0 && array[0].ValueKind == JsonValueKind.Object)
+        {
+            var dicts = new List<Dictionary<string, object?>>(array.GetArrayLength());
+            foreach (var jsonElement in array.EnumerateArray())
+            {
+                var dict = new Dictionary<string, object?>();
+                foreach (var jsonProperty in jsonElement.EnumerateObject())
+                {
+                    dict[jsonProperty.Name] = jsonProperty.Value;
+                }
+                dicts.Add(dict);
+            }
+
+            DialogService.OpenAsync("Detail", _ =>
+                @<DynamicDataGrid AllowColumnPicking="@false" AllowPaging="@false" Data="@dicts.ToArray()" Format="@Format"></DynamicDataGrid>,
+                new DialogOptions() {Width = "unset"});
+        }
+        else
+        {
+            DialogService.OpenAsync("Detail", _ =>
+                @<RadzenCard>
+                    @((MarkupString) (detail?.ToString() ?? ""))
+                </RadzenCard>,
+                new DialogOptions() {Width = "unset"});
+        }
+    }
+
+}

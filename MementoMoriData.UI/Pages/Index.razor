@@ -3,11 +3,21 @@
 @using System.Diagnostics
 
 @inject HttpClient Http;
-@inject DialogService DialogService;
 @inject NavigationManager NavManager
 
 <PageTitle>MementoMori Data</PageTitle>
 
+@if (_isLoading)
+{
+    <RadzenPanel 
+        Style="position: fixed; z-index: 999; width: 100%; height: 100%; top: 0; left: 0; background-color: #8d8e90; opacity: 0.5; align-items: center; justify-content: center;"
+    >
+        <RadzenProgressBarCircular Value="100" ShowValue="true" Mode="ProgressBarMode.Indeterminate" Size="ProgressBarCircularSize.Large">
+            <Template>Loading</Template>
+        </RadzenProgressBarCircular>
+    </RadzenPanel>
+
+}
 <RadzenLayout>
     <RadzenHeader>
         <RadzenRow>
@@ -28,10 +38,6 @@
     </RadzenHeader>
     <RadzenSidebar Expanded="_isSideBarExpanded">
         <RadzenPanelMenu>
-            @if (_isLanguageLoading)
-            {
-                <RadzenPanelMenuItem Text="Loading..."></RadzenPanelMenuItem>
-            }
             @foreach (var mb in _masterBooks)
             {
                 <RadzenPanelMenuItem Text="@mb" Click="() => MbChanged(mb)" Selected="@(mb == SelectedMasterBook)"/>
@@ -39,64 +45,7 @@
         </RadzenPanelMenu>
     </RadzenSidebar>
     <RadzenBody Style="overflow: hidden">
-        <RadzenDataGrid Data="_data"
-                        @ref="_dataGrid"
-                        IsLoading="_isTableLoading"
-                        AllowPaging="true"
-                        PageSize="50"
-                        Page="ShowLoading"
-                        PagerHorizontalAlign="HorizontalAlign.Left"
-                        ShowPagingSummary="true"
-                        AllowFiltering="true"
-                        FilterMode="FilterMode.Advanced"
-                        AllowColumnPicking="true"
-                        AllowSorting="true"
-                        AllowColumnResize="true"
-                        Style="height: 100%"
-                        VirtualizationOverscanCount="10"
-                        AllowVirtualization="true">
-            <Columns>
-                @foreach (var column in _columns)
-                {
-                    if (column.Key == "IsIgnore")
-                    {
-                        continue;
-                    }
-                    var columnWidth = column.Key switch{
-                        "Id" => "100px",
-                        "Memo" => "200px",
-                        _ => ""
-                        };
-                    columnWidth = column.Value == _typeLong || column.Value == _typeBool ? "100px" : columnWidth;
-                    var enableFilter = column.Key switch{
-                        "Id" => false,
-                        _ => true
-                        };
-                    var showZoomIn = column.Value != _typeBool && column.Value != _typeLong;
-                    <RadzenDataGridColumn
-                        TItem="Dictionary<string, object?>"
-                        Width="@columnWidth"
-                        Title="@column.Key"
-                        Type="@_typeString"
-                        Filterable="enableFilter"
-                        Resizable="true"
-                        Property="@GetColumnPropertyExpression(column.Key, column.Value)">
-                        <Template>
-                            @{
-                                var content = column.Value == _typeString ? Format(context[column.Key]?.ToString()) : context[column.Key];
-                                if (showZoomIn)
-                                {
-                                    <RadzenButton Icon="zoom_in" Size="ButtonSize.ExtraSmall" Click="() => OpenDetail(content)"/>
-                                }
-                                <span>@content</span>
-                            }
-                        </Template>
-                    </RadzenDataGridColumn>
-                }
-
-            </Columns>
-        </RadzenDataGrid>
-
+        <DynamicDataGrid Format="Format" Data="_data" ></DynamicDataGrid>
     </RadzenBody>
 </RadzenLayout>
 
@@ -111,18 +60,8 @@
     public string SelectedLang { get; set; } = "ZhTw";
 
     private Dictionary<string, object?>[]? _data;
-    private readonly Dictionary<string, Type> _columns = new();
     private bool _isSideBarExpanded;
-    private bool _isTableLoading;
-    private bool _isLanguageLoading = true;
-
-    private RadzenDataGrid<Dictionary<string, object?>>? _dataGrid;
-
-    private readonly Type _typeObject = typeof(object);
-    private readonly Type _typeString = typeof(string);
-    private readonly Type _typeLong = typeof(long);
-    private readonly Type _typeBool = typeof(bool);
-    private readonly Type _typeArray = typeof(object[]);
+    private bool _isLoading = true;
 
     private List<string> _masterBooks = new();
     private readonly Dictionary<string, Dictionary<string, object?>[]> _masterBookDataCache = new();
@@ -135,16 +74,17 @@
 
     protected override async Task OnInitializedAsync()
     {
+        _isLoading = true;
         await InitMasterCatalog();
         await Task.Yield();
         await LoadTextResources();
         await MbChanged();
+        _isLoading = false;
     }
-
+    
     private async Task LoadTextResources()
     {
         var stopwatch = Stopwatch.StartNew();
-        _isLanguageLoading = true;
         // await Task.Yield();
         if (!_languages.Contains(SelectedLang))
         {
@@ -160,34 +100,23 @@
         }
 
         _languageMasterBook = masterBook.ToDictionary(d => d["StringKey"]?.ToString() ?? "", d => d["Text"]?.ToString());
-        _isLanguageLoading = false;
         Console.WriteLine($"Executed {nameof(LoadTextResources)} in {stopwatch.ElapsedMilliseconds} ms");
     }
 
-    async Task ShowLoading()
-    {
-        _isTableLoading = true;
-        await Task.Yield();
-        _isTableLoading = false;
-    }
     private string? Format(string s)
     {
         if (string.IsNullOrEmpty(s))
         {
             return s;
         }
-        if (_languageMasterBook.TryGetValue(s, out var text))
-        {
-            return text;
-        }
-        return s;
+        return _languageMasterBook.TryGetValue(s, out var text) ? text : s;
     }
 
     private async Task MbChanged(string? selectedMb = null)
     {
         var stopwatch = Stopwatch.StartNew();
-        // _isTableLoading = true;
-        // await Task.Yield();
+        _isLoading = true;
+        await Task.Yield();
 
         if (string.IsNullOrEmpty(selectedMb))
         {
@@ -199,32 +128,13 @@
             SelectedMasterBook = "ActiveSkillMB";
             selectedMb = SelectedMasterBook;
         }
-        // await Task.Yield();
         NavManager.NavigateTo(NavManager.GetUriWithQueryParameter("mb", selectedMb));
 
-        // await Task.Yield();
         var contentData = await GetMasterBook(selectedMb);
         if (contentData == null || contentData.Length == 0) return;
 
-        _columns.Clear();
-        foreach (var (key, value) in contentData.First())
-        {
-            var type = value switch{
-                JsonElement{ValueKind: JsonValueKind.Undefined} => _typeString,
-                JsonElement{ValueKind: JsonValueKind.Object} => _typeObject,
-                JsonElement{ValueKind: JsonValueKind.Array} => _typeArray,
-                JsonElement{ValueKind: JsonValueKind.String} => _typeString,
-                JsonElement{ValueKind: JsonValueKind.Number} => _typeLong,
-                JsonElement{ValueKind: JsonValueKind.False} => _typeBool,
-                JsonElement{ValueKind: JsonValueKind.True} => _typeBool,
-                JsonElement{ValueKind: JsonValueKind.Null} => _typeString,
-                _=>typeof(object)
-                };
-            _columns.Add(key, type);
-        }
-
         _data = contentData;
-        // _isTableLoading = false;
+        _isLoading = false;
         Console.WriteLine($"Executed {nameof(MbChanged)} in {stopwatch.ElapsedMilliseconds} ms");
     }
 
@@ -256,39 +166,14 @@
         Console.WriteLine($"Executed {nameof(InitMasterCatalog)} in {stopwatch.ElapsedMilliseconds} ms");
     }
 
-    private string GetColumnPropertyExpression(string name, Type type)
-    {
-        var expression = $@"it[""{name}""].ToString()";
-
-        if (type == typeof(int))
-        {
-            return $"int.Parse({expression})";
-        }
-        if (type == typeof(DateTime))
-        {
-            return $"DateTime.Parse({expression})";
-        }
-
-        return expression;
-    }
-
-    private void OpenDetail(object? detail)
-    {
-        DialogService.OpenAsync("Detail", _ =>
-            @<RadzenCard>
-                @((MarkupString) (detail?.ToString() ?? ""))
-            </RadzenCard>
-            );
-    }
-
     private async Task LanguageChanged(string lang)
     {
+        _isLoading = true;
         SelectedLang = lang;
         NavManager.NavigateTo(NavManager.GetUriWithQueryParameter("lang", lang));
-        // _isTableLoading = true;
         await LoadTextResources();
         await MbChanged();
-        if (_dataGrid != null) await _dataGrid.Reload();
+        _isLoading = false;
     }
 
 }
