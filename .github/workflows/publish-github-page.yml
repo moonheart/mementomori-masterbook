@@ -16,7 +16,7 @@ jobs:
         with:
           dotnet-version: 7.0.x
       - name: Restore dependencies
-        run: dotnet restore && dotnet workload restore
+        run: dotnet workload install wasm-tools && dotnet restore 
       - name: Build
         run: dotnet build --no-restore
       - name: Publish
