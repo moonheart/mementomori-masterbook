@@ -113,7 +113,7 @@
     private Dictionary<string, object?>[]? _data;
     private readonly Dictionary<string, Type> _columns = new();
     private bool _isSideBarExpanded;
-    private bool _isTableLoading = false;
+    private bool _isTableLoading;
     private bool _isLanguageLoading = true;
 
     private RadzenDataGrid<Dictionary<string, object?>>? _dataGrid;
@@ -232,7 +232,7 @@
     {
         if (!_masterBookDataCache.TryGetValue(mb, out var contentData))
         {
-            var url = $"/masterbook/{mb}.json";
+            var url = $"masterbook/{mb}.json";
             var content = await Http.GetStringAsync(url);
             contentData = JsonSerializer.Deserialize<Dictionary<string, object?>[]>(content);
             if (contentData != null) _masterBookDataCache.Add(mb, contentData);
@@ -244,7 +244,7 @@
     private async Task InitMasterCatalog()
     {
         var stopwatch = Stopwatch.StartNew();
-        var url = "/masterbook/master-catalog.json";
+        var url = "masterbook/master-catalog.json";
         var content = await Http.GetStringAsync(url);
         var contentData = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, object>>>(content);
         if (contentData == null)
