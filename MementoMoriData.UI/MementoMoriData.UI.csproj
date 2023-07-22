@@ -21,7 +21,7 @@
 
 	<Target Name="PreBuild" BeforeTargets="PreBuildEvent">
 	  <Exec Command="xcopy &quot;$(ProjectDir)..\Master\*.json&quot; &quot;$(ProjectDir)wwwroot\masterbook\&quot; /s /y" Condition="$([MSBuild]::IsOSPlatform('Windows'))" />
-	  <Exec Command="mkdir -p $(ProjectDir)wwwroot/masterbook/ &amp;&amp; copy -r &quot;$(ProjectDir)../Master/*.json&quot; &quot;$(ProjectDir)wwwroot/masterbook/&quot; /s /y" Condition="$([MSBuild]::IsOSPlatform('Linux'))" />
+	  <Exec Command="mkdir -p $(ProjectDir)wwwroot/masterbook/ &amp;&amp; cp -r &quot;$(ProjectDir)../Master/*.json&quot; &quot;$(ProjectDir)wwwroot/masterbook/&quot; /s /y" Condition="$([MSBuild]::IsOSPlatform('Linux'))" />
 	</Target>
 
 </Project>
