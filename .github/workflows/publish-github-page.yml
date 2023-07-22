@@ -16,7 +16,7 @@ jobs:
         with:
           dotnet-version: 7.0.x
       - name: Restore dependencies
-        run: dotnet workload install wasm-tools && dotnet restore 
+        run: dotnet workload install wasm-tools && dotnet restore ./MementoMoriData.UI/MementoMoriData.UI.csproj
       - name: Build
         run: dotnet build --no-restore
       - name: Publish
