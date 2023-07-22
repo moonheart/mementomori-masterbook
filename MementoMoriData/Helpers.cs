@@ -40,8 +40,12 @@ public static class Helpers
         var bytes = await UnityHttpClient.GetByteArrayAsync(url);
         Log($"Download master catalog success.");
 
-        var masterBookCatalog = MessagePackSerializer.Deserialize<MasterBookCatalog>(bytes);
         Directory.CreateDirectory("./Master");
+
+        var masterBookCatalog = MessagePackSerializer.Deserialize<MasterBookCatalog>(bytes);
+        await File.WriteAllTextAsync("./Master/master-catalog.json", JsonConvert.SerializeObject(masterBookCatalog, Formatting.Indented));
+        Log($"Saved master catalog to ./Master/master-catalog.json.");
+
         foreach (var (name, info) in masterBookCatalog.MasterBookInfoMap)
         {
             var localPath = $"./Master/{name}.json";
