@@ -16,9 +16,9 @@ jobs:
         with:
           dotnet-version: 6.0.x
       - name: Restore dependencies
-        run: dotnet restore ./MementoMoriData.UI/MementoMoriData.csproj
+        run: dotnet restore ./MementoMoriData/MementoMoriData.csproj
       - name: Build
-        run: dotnet build ./MementoMoriData.UI/MementoMoriData.csproj --no-restore
+        run: dotnet build ./MementoMoriData/MementoMoriData.csproj --no-restore
       - name: Download MasterBook
         run: dotnet run --project ./MementoMoriData/MementoMoriData.csproj
       - name: Add & Commit
