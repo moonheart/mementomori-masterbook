@@ -27,7 +27,6 @@
             }
             var columnWidth = column.Key switch{
                 "Id" => "100px",
-                "Memo" => "200px",
                 _ => ""
                 };
             columnWidth = column.Value == _typeLong || column.Value == _typeBool ? "100px" : columnWidth;
@@ -151,12 +150,29 @@
                 @<DynamicDataGrid AllowColumnPicking="@false" AllowPaging="@false" Data="@dicts.ToArray()" Format="@Format"></DynamicDataGrid>,
                 new DialogOptions() {Width = "unset"});
         }
+        else if (detail is JsonElement{ValueKind: JsonValueKind.Object} obj)
+        {
+            DialogService.OpenAsync("Detail", _ =>
+                @<RadzenStack>
+                    @foreach (var prop in obj.EnumerateObject())
+                    {
+                        <RadzenRow>
+                            <RadzenColumn >
+                                <RadzenLabel Text="@prop.Name"/>
+                            </RadzenColumn>
+                            <RadzenColumn>
+                                <RadzenLabel Text="@prop.Value.ToString()"/>
+                            </RadzenColumn>
+                        </RadzenRow>
+                    }
+                </RadzenStack>);
+        }
         else
         {
             DialogService.OpenAsync("Detail", _ =>
-                @<RadzenCard>
+                @<div>
                     @((MarkupString) (detail?.ToString() ?? ""))
-                </RadzenCard>,
+                </div>,
                 new DialogOptions() {Width = "unset"});
         }
     }
