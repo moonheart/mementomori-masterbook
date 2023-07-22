@@ -6,7 +6,7 @@
 @inject DialogService DialogService;
 @inject NavigationManager NavManager
 
-<PageTitle>MemetoMori Data</PageTitle>
+<PageTitle>MementoMori Data</PageTitle>
 
 <RadzenLayout>
     <RadzenHeader>
@@ -25,26 +25,28 @@
                 </RadzenStack>
             </RadzenColumn>
         </RadzenRow>
-
     </RadzenHeader>
     <RadzenSidebar Expanded="_isSideBarExpanded">
-       
-        
         <RadzenPanelMenu>
-             @if (_isLanguageLoading)
-                    {
-                        <RadzenPanelMenuItem Text="Loading..."></RadzenPanelMenuItem>            
-                    }
+            @if (_isLanguageLoading)
+            {
+                <RadzenPanelMenuItem Text="Loading..."></RadzenPanelMenuItem>
+            }
             @foreach (var mb in _masterBooks)
             {
-                <RadzenPanelMenuItem Text="@mb" Click="() => MbChanged(mb)"/>
+                <RadzenPanelMenuItem Text="@mb" Click="() => MbChanged(mb)" Selected="@(mb == SelectedMasterBook)"/>
             }
         </RadzenPanelMenu>
     </RadzenSidebar>
     <RadzenBody Style="overflow: hidden">
         <RadzenDataGrid Data="_data"
-                        @ref="dataGrid"
+                        @ref="_dataGrid"
                         IsLoading="_isTableLoading"
+                        AllowPaging="true"
+                        PageSize="50"
+                        Page="ShowLoading"
+                        PagerHorizontalAlign="HorizontalAlign.Left"
+                        ShowPagingSummary="true"
                         AllowFiltering="true"
                         FilterMode="FilterMode.Advanced"
                         AllowColumnPicking="true"
@@ -72,7 +74,7 @@
                         };
                     var showZoomIn = column.Value != _typeBool && column.Value != _typeLong;
                     <RadzenDataGridColumn
-                        TItem="Dictionary<string, object>"
+                        TItem="Dictionary<string, object?>"
                         Width="@columnWidth"
                         Title="@column.Key"
                         Type="@_typeString"
@@ -97,6 +99,7 @@
 
     </RadzenBody>
 </RadzenLayout>
+
 @code{
 
     [Parameter]
@@ -107,13 +110,13 @@
     [SupplyParameterFromQuery(Name = "lang")]
     public string SelectedLang { get; set; } = "ZhTw";
 
-    private Dictionary<string, object>[] _data;
-    private Dictionary<string, Type> _columns = new();
+    private Dictionary<string, object?>[]? _data;
+    private readonly Dictionary<string, Type> _columns = new();
     private bool _isSideBarExpanded;
-    private bool _isTableLoading = true;
+    private bool _isTableLoading = false;
     private bool _isLanguageLoading = true;
 
-    private RadzenDataGrid<Dictionary<string, object>> dataGrid;
+    private RadzenDataGrid<Dictionary<string, object?>>? _dataGrid;
 
     private readonly Type _typeObject = typeof(object);
     private readonly Type _typeString = typeof(string);
@@ -122,10 +125,10 @@
     private readonly Type _typeArray = typeof(object[]);
 
     private List<string> _masterBooks = new();
-    private readonly Dictionary<string, Dictionary<string, object>[]> _masterBookDataCache = new();
-    private Dictionary<string, string> _languageMasterBook = new();
+    private readonly Dictionary<string, Dictionary<string, object?>[]> _masterBookDataCache = new();
+    private Dictionary<string, string?> _languageMasterBook = new();
 
-    private List<string> _languages = new()
+    private readonly List<string> _languages = new()
     {
         "EnUs", "JaJp", "KoKr", "ZhTw"
     };
@@ -133,6 +136,7 @@
     protected override async Task OnInitializedAsync()
     {
         await InitMasterCatalog();
+        await Task.Yield();
         await LoadTextResources();
         await MbChanged();
     }
@@ -141,12 +145,12 @@
     {
         var stopwatch = Stopwatch.StartNew();
         _isLanguageLoading = true;
-        await Task.Yield();
+        // await Task.Yield();
         if (!_languages.Contains(SelectedLang))
         {
             SelectedLang = "ZhTw";
             NavManager.NavigateTo(NavManager.GetUriWithQueryParameter("lang", SelectedLang));
-            await Task.Yield();
+            // await Task.Yield();
         }
         var mb = $"TextResource{SelectedLang}MB";
         var masterBook = await GetMasterBook(mb);
@@ -155,12 +159,18 @@
             return;
         }
 
-        _languageMasterBook = masterBook.ToDictionary(d => d["StringKey"].ToString(), d => d["Text"].ToString());
+        _languageMasterBook = masterBook.ToDictionary(d => d["StringKey"]?.ToString() ?? "", d => d["Text"]?.ToString());
         _isLanguageLoading = false;
         Console.WriteLine($"Executed {nameof(LoadTextResources)} in {stopwatch.ElapsedMilliseconds} ms");
     }
 
-    private string Format(string s)
+    async Task ShowLoading()
+    {
+        _isTableLoading = true;
+        await Task.Yield();
+        _isTableLoading = false;
+    }
+    private string? Format(string s)
     {
         if (string.IsNullOrEmpty(s))
         {
@@ -176,8 +186,8 @@
     private async Task MbChanged(string? selectedMb = null)
     {
         var stopwatch = Stopwatch.StartNew();
-        _isTableLoading = true;
-        await Task.Yield();
+        // _isTableLoading = true;
+        // await Task.Yield();
 
         if (string.IsNullOrEmpty(selectedMb))
         {
@@ -189,10 +199,10 @@
             SelectedMasterBook = "ActiveSkillMB";
             selectedMb = SelectedMasterBook;
         }
-        await Task.Yield();
+        // await Task.Yield();
         NavManager.NavigateTo(NavManager.GetUriWithQueryParameter("mb", selectedMb));
 
-        await Task.Yield();
+        // await Task.Yield();
         var contentData = await GetMasterBook(selectedMb);
         if (contentData == null || contentData.Length == 0) return;
 
@@ -214,18 +224,18 @@
         }
 
         _data = contentData;
-        _isTableLoading = false;
+        // _isTableLoading = false;
         Console.WriteLine($"Executed {nameof(MbChanged)} in {stopwatch.ElapsedMilliseconds} ms");
     }
 
-    private async Task<Dictionary<string, object>[]?> GetMasterBook(string mb)
+    private async Task<Dictionary<string, object?>[]?> GetMasterBook(string mb)
     {
         if (!_masterBookDataCache.TryGetValue(mb, out var contentData))
         {
             var url = $"/masterbook/{mb}.json";
             var content = await Http.GetStringAsync(url);
-            contentData = JsonSerializer.Deserialize<Dictionary<string, object>[]>(content);
-            _masterBookDataCache.Add(mb, contentData);
+            contentData = JsonSerializer.Deserialize<Dictionary<string, object?>[]>(content);
+            if (contentData != null) _masterBookDataCache.Add(mb, contentData);
         }
 
         return contentData;
@@ -233,6 +243,7 @@
 
     private async Task InitMasterCatalog()
     {
+        var stopwatch = Stopwatch.StartNew();
         var url = "/masterbook/master-catalog.json";
         var content = await Http.GetStringAsync(url);
         var contentData = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, object>>>(content);
@@ -242,9 +253,10 @@
         }
 
         _masterBooks = contentData["MasterBookInfoMap"].Keys.ToList();
+        Console.WriteLine($"Executed {nameof(InitMasterCatalog)} in {stopwatch.ElapsedMilliseconds} ms");
     }
 
-    public string GetColumnPropertyExpression(string name, Type type)
+    private string GetColumnPropertyExpression(string name, Type type)
     {
         var expression = $@"it[""{name}""].ToString()";
 
@@ -260,22 +272,23 @@
         return expression;
     }
 
-    private void OpenDetail(object detail)
+    private void OpenDetail(object? detail)
     {
-        DialogService.OpenAsync("Detail", ds =>
+        DialogService.OpenAsync("Detail", _ =>
             @<RadzenCard>
-                @((MarkupString) detail.ToString())
+                @((MarkupString) (detail?.ToString() ?? ""))
             </RadzenCard>
             );
     }
+
     private async Task LanguageChanged(string lang)
     {
         SelectedLang = lang;
         NavManager.NavigateTo(NavManager.GetUriWithQueryParameter("lang", lang));
-        _isTableLoading = true;
+        // _isTableLoading = true;
         await LoadTextResources();
         await MbChanged();
-        await dataGrid.Reload();
+        if (_dataGrid != null) await _dataGrid.Reload();
     }
 
 }
