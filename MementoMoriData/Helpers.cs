@@ -1,4 +1,5 @@
-﻿using MessagePack;
+﻿using System.Text;
+using MessagePack;
 using Newtonsoft.Json;
 
 namespace MementoMoriData;
@@ -46,11 +47,20 @@ public static class Helpers
         await File.WriteAllTextAsync("./Master/master-catalog.json", JsonConvert.SerializeObject(masterBookCatalog, Formatting.Indented));
         Log($"Saved master catalog to ./Master/master-catalog.json.");
 
+        var sb = new StringBuilder();
+        sb.AppendLine($"# Data List");
+        sb.AppendLine($"Updated at {DateTimeOffset.Now}\n");
+        sb.AppendLine("|Name|Size|Hash|Parsed Json|");
+        sb.AppendLine("|-|-|-|-|");
+        
         foreach (var (name, info) in masterBookCatalog.MasterBookInfoMap)
         {
             var localPath = $"./Master/{name}.json";
             var localMd5 = $"./Master/{name}.md5";
+            var mbUrl = $"https://cdn-mememori.akamaized.net/master/prd1/version/{masterVersion}/{name}";
 
+            sb.AppendLine($"|[{name}]({mbUrl}) | {info.Size} | {info.Hash} | [{name}.json]({name}.json)|");
+            
             Log($"Verifying master book {name}...");
             if (File.Exists(localMd5) && await File.ReadAllTextAsync(localMd5) == info.Hash)
             {
@@ -58,7 +68,6 @@ public static class Helpers
                 continue;
             }
 
-            var mbUrl = $"https://cdn-mememori.akamaized.net/master/prd1/version/{masterVersion}/{name}";
             Log($"Downloading master book {name} from {mbUrl}...");
             var fileBytes = await UnityHttpClient.GetByteArrayAsync(mbUrl);
             Log($"Download master book {name} success.");
@@ -71,6 +80,8 @@ public static class Helpers
             Log($"Saved master book {name} md5 to {localMd5}.");
         }
 
+        await File.WriteAllTextAsync("./Master/readme.md", sb.ToString());
+        
         Log("Done.");
     }
 
@@ -108,7 +119,7 @@ public static class Helpers
     }
 
     [MessagePackObject(true)]
-    public class MasterBookInfo
+     public class MasterBookInfo
     {
         public string Hash { get; set; }
 
