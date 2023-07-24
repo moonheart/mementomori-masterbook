@@ -1,5 +1,6 @@
 ﻿@using System.Text.Json
 @using System.Text.Json.Nodes
+@using MementoMoriData.UI.Common
 @inject DialogService DialogService;
 
 <RadzenDataGrid Data="Data"
@@ -16,6 +17,7 @@
                 AllowSorting="true"
                 AllowColumnResize="true"
                 Style="height: 100%"
+                ColumnWidth="100px"
                 VirtualizationOverscanCount="10"
                 AllowVirtualization="true">
     <Columns>
@@ -25,16 +27,15 @@
             {
                 continue;
             }
-            var columnWidth = column.Key switch{
-                "Id" => "100px",
-                _ => ""
-                };
-            columnWidth = column.Value == _typeLong || column.Value == _typeBool ? "100px" : columnWidth;
+            var columnWidth = "200px";
+            if (column.Key == "Id") columnWidth = "100px";
+            if (column.Value == _typeLong || column.Value == _typeBool) columnWidth = $"{column.Key.Length / 2 + 3}rem";
             var enableFilter = column.Key switch{
                 "Id" => false,
                 _ => true
                 };
             var showZoomIn = column.Value != _typeBool && column.Value != _typeLong;
+            var itemsCount = 0;
             <RadzenDataGridColumn
                 TItem="Dictionary<string, object?>"
                 Width="@columnWidth"
@@ -45,12 +46,26 @@
                 Property="@GetColumnPropertyExpression(column.Key, column.Value)">
                 <Template>
                     @{
-                        var content = column.Value == _typeString ? Format?.Invoke(context[column.Key]?.ToString()) : context[column.Key];
-                        if (showZoomIn)
+                        object? content = "";
+                        if (column.Value == _typeString)
+                        {
+                            content = Format?.Invoke(context[column.Key]?.ToString());
+                        }
+                        else if (column.Value == _typeLong && context[column.Key] is JsonElement{ValueKind: JsonValueKind.Number} number && number.TryGetInt64(out var n))
+                        {
+                            content = Util.GetEnumValue(column.Key, n);
+                        }
+                        else
+                        {
+                            content = context[column.Key];
+                        }
+
+                        var wrap = WrapText ? "rz-text-wrap" : "";
+                        if (showZoomIn && !WrapText)
                         {
                             <RadzenButton Icon="zoom_in" Size="ButtonSize.ExtraSmall" Click="() => OpenDetail(content)"/>
                         }
-                        <span>@content</span>
+                        <span title="@content" class="@wrap">@content</span>
                     }
                 </Template>
             </RadzenDataGridColumn>
@@ -72,6 +87,9 @@
 
     [Parameter]
     public bool AllowColumnPicking { get; set; } = true;
+
+    [Parameter]
+    public bool WrapText { get; set; }
 
     private bool _isTableLoading;
 
@@ -147,7 +165,7 @@
             }
 
             DialogService.OpenAsync("Detail", _ =>
-                @<DynamicDataGrid AllowColumnPicking="@false" AllowPaging="@false" Data="@dicts.ToArray()" Format="@Format"></DynamicDataGrid>,
+                @<DynamicDataGrid AllowColumnPicking="@false" WrapText="@true" AllowPaging="@false" Data="@dicts.ToArray()" Format="@Format"></DynamicDataGrid>,
                 new DialogOptions() {Width = "unset"});
         }
         else if (detail is JsonElement{ValueKind: JsonValueKind.Object} obj)
