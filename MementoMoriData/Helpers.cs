@@ -49,7 +49,7 @@ public static class Helpers
 
         var sb = new StringBuilder();
         sb.AppendLine($"# Data List");
-        sb.AppendLine($"Updated at {DateTimeOffset.Now}\n");
+        sb.AppendLine($"Master Version {masterVersion}({DateTimeOffset.FromUnixTimeMilliseconds(long.Parse(masterVersion))})\n");
         sb.AppendLine("|Name|Size|Hash|Parsed Json|");
         sb.AppendLine("|-|-|-|-|");
         
