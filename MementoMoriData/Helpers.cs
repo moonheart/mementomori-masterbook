@@ -19,7 +19,7 @@ public static class Helpers
         OrtegaHttpClient = new HttpClient();
         OrtegaHttpClient.Timeout = TimeSpan.FromSeconds(10);
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaaccesstoken", "");
-        OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaappversion", "1.3.8"); // this must be set manually, maybe get from google play store?
+        OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaappversion", "1.4.0"); // this must be set manually, maybe get from google play store?
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegadevicetype", "2");
         OrtegaHttpClient.DefaultRequestHeaders.Add("accept-encoding", "gzip");
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegauuid", "f6b22199a6964bd3813ef4032969e0c2"); // random guid
