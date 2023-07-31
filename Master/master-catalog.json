@@ -131,9 +131,9 @@
       "Size": 4663
     },
     "DeepLinkMB": {
-      "Hash": "a1b6b6e9fb58bca79e2d93e390066063",
+      "Hash": "5c59a7301b5dcf25f5d472253826a3b7",
       "Name": "DeepLinkMB",
-      "Size": 1679
+      "Size": 1690
     },
     "DungeonBattleGridMB": {
       "Hash": "d1d0bb870c358c7985224e134155c50d",
@@ -241,7 +241,7 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "477fa1bcc9468bb36aec638e2bcd8137",
+      "Hash": "4cb4a722a75af771a5a3b99e64996add",
       "Name": "GachaCaseMB",
       "Size": 18699
     },
@@ -256,7 +256,7 @@
       "Size": 2085
     },
     "GachaSelectListMB": {
-      "Hash": "43ada512bd06b65ad373b2611c354160",
+      "Hash": "8129eb35987f320e81279dc9bae762f5",
       "Name": "GachaSelectListMB",
       "Size": 5106
     },
@@ -546,9 +546,9 @@
       "Size": 2234456
     },
     "TextResourceZhTwMB": {
-      "Hash": "96ed5f721e6fa2bc889bee243e9b53f2",
+      "Hash": "79c2fb9cd64aca56d94c42701f2228b1",
       "Name": "TextResourceZhTwMB",
-      "Size": 2228141
+      "Size": 2228144
     },
     "TimeServerMB": {
       "Hash": "b89f011a66251615978289ef3efb9d4a",

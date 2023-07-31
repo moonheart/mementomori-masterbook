@@ -838,7 +838,7 @@
       40
     ],
     "OrderNumber": 20,
-    "StartTimeFixJST": "2023-07-31 15:00:00",
+    "StartTimeFixJST": "2023-07-31 17:30:00",
     "EndTimeFixJST": "2023-08-07 14:29:59"
   },
   {
@@ -875,7 +875,7 @@
       60
     ],
     "OrderNumber": 2,
-    "StartTimeFixJST": "2023-07-31 15:00:00",
+    "StartTimeFixJST": "2023-07-31 17:30:00",
     "EndTimeFixJST": "2023-09-04 14:29:59"
   },
   {
