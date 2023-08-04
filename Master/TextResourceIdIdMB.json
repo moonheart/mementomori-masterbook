@@ -107569,6 +107569,13 @@
     "Text": "・Kamu bisa menggunakan Tickets of Souls untuk melakukan Invoke.<br>・Hanya Karakter yang akan muncul.<br>・Kamu dijamin akan mendapatkan hadiah bonus berdasarkan total pull count dari Prayer of The Cursed, Prayer of The Fleeting, dan Prayer of Souls.<br>*Hadiah bonus akan dikirim langsung ke Kotak Item milikmu.<br>*Jika Kotak Item milikmu penuh, hadiah bonus akan dikirim ke Kotak Hadiah.<br>・Pull rate karakter SR yang diset dalam Wish List-mu akan lebih besar. Pull rate karakter SR keseluruhan tidak akan berubah. Silakan periksa Bantuan di layar Wish List untuk detail lebih lanjut.<br>・Prayer of Souls akan berubah setiap hari pada pukul 04.00 (Waktu Server).<br>・Souls akan berubah dengan urutan—Azure, Crimson, Emerald, Amber, Azure, dan seterusnya.<br>・Diamond dapat digunakan untuk mengubah Prayer of Souls secara manual.<br>*Jika Prayer of Souls diubah, total pull count-mu tidak akan direset."
   },
   {
+    "Id": 15823,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail7]",
+    "Text": "・Kamu bisa menggunakan Diamond atau Tickets of Chance untuk melakukan Invoke.<br>・Karakter dan item akan muncul.<br>・・Hanya Karakter yang sudah kamu set yang akan muncul.<br>・・Jika karakter yang diset tidak muncul setelah 56 pull berturut-turut, pull rate karakter yang diset akan meningkat dari 2% ke 9% pada pull yang ke 57. Jika karakter yang diset tidak muncul pada pull ke 57, pull rate karakter yang diset akan menjadi 16% pada pull yang ke 58, lalu meningkat 7% setiap kali pull hingga karakter yang diset muncul, yang mana akan menjadi 100% pada pull yang ke 70.<br>・Kamu bisa mendapatkan 1 Chest of Chance sebagai hadiah bonus di setiap pull.<br>*Hadiah bonus akan dikirim langsung ke Kotak Item milikmu.<br>*Jika Kotak Item milikmu penuh, hadiah bonus akan dikirim ke Kotak Hadiah."
+  },
+  {
     "Id": 15824,
     "IsIgnore": false,
     "Memo": "",

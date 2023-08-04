@@ -107569,6 +107569,13 @@
     "Text": "・Du kannst für die Beschwörung Tickets der Seelen verwenden.<br>・Es werden nur Figuren erscheinen.<br>・Je nach Gesamtzahl der Züge im Gebet der Verfluchten, Gebet der Vergänglichkeit und Gebet der Seelen erhältst du eine garantierte Bonusbelohnung.<br>  *Die Bonusbelohnung wird direkt an deine Inventarbox geschickt.<br>  *Wenn die Inventarbox voll ist, wird die Belohnung an deine Geschenkebox geschickt.<br>・Ziehraten von SR-Figuren in deiner Wunschliste werden höher ausfallen. Die Ziehraten aller SR-Figuren ändern sich nicht. Details findest du in der Hilfe im Wunschlistenbildschirm.<br>・Das Gebet der Seelen ändert sich jeden Tag um 4:00 Uhr (Serverzeit).<br>・Seelen wechseln sich in dieser Reihenfolge ab: Azur, Karmin, Smaragd, Bernstein, Azur, etc.<br>・Das Gebet der Seelen lässt sich mit Diamanten manuell ändern.<br>  *Wird das Gebet der Seelen geändert, wird die Gesamtzahl deiner Züge nicht zurückgesetzt."
   },
   {
+    "Id": 15823,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail7]",
+    "Text": "・Du kannst für die Beschwörung Diamanten oder Tickets des Schicksals verwenden.<br>・Es werden Figuren und Gegenstände erscheinen.<br>・Nur deine gewählte schicksalhafte Begegnung wird als Figur erscheinen.<br>・Wenn die gewählte Figur nach 56 aufeinanderfolgenden Zügen nicht erscheint, erhöht sich die Ziehrate beim 57. Zug von 2 % auf 9 %. Erscheint sie beim 57. Zug nicht, erhöht sich die Rate beim 58. Zug auf 16 % und steigt dann mit jedem weiteren Zug um 7 %, bis sie beim 70. Zug 100 % erreicht.<br>・Bei jedem Zug kannst du eine Schicksalstruhe als Bonusbelohnung erhalten.<br>  *Die Bonusbelohnung wird direkt an deine Inventarbox geschickt.<br>  *Wenn die Inventarbox voll ist, wird die Belohnung an deine Geschenkebox geschickt."
+  },
+  {
     "Id": 15824,
     "IsIgnore": false,
     "Memo": "",

@@ -107569,6 +107569,13 @@
     "Text": "・Cette prière peut être réalisée en échange de tickets spéciaux.<br>・Permet d'obtenir des personnages uniquement.<br>・Vous pouvez obtenir des objets en récompense selon le nombre total de Prières de platine, d'éphémérité et de type que vous avez réalisées.<br>* Les objets obtenus sont directement ajoutés à votre stock.<br>* Lorsque vous avez atteint la limite d'objets en votre possession, les objets à obtenir sont envoyés dans votre boîte à cadeaux.<br>・Les personnages SR listés dans la sélection bénéficient d'un taux d'obtention augmenté. Le taux d'obtention des autres personnages SR reste le même. Consultez la rubrique Aide sur la sélection pour plus d'informations.<br>・La Prière de type change tous les jours à 4 h.<br>・Les Prières de type changent dans l'ordre suivant : azur, écarlate, émeraude, ambre...<br>・Vous pouvez modifier la Prière de type en cours en échange de diamants.<br>* Les changements de Prière de type ne réinitialisent pas le nombre total de prières."
   },
   {
+    "Id": 15823,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail7]",
+    "Text": "・Cette prière peut être réalisée en échange de diamants ou de tickets spéciaux.<br>・Permet d'obtenir des personnages et des objets.<br>・Seuls des personnages précis peuvent être obtenus grâce à la Prière du destin.<br>・Si vous n'obtenez aucun personnage après 56 Prières du destin consécutives, le taux d'obtention passe de 2 % à 9 % pour la 57e. Si vous n'en avez toujours pas obtenu après cela, le taux passe à 16 % pour la 58e, puis augmente de 7 % pour chaque tentative suivante jusqu'à atteindre les 100 % pour la 70e prière.<br>・Vous pouvez obtenir un coffre du destin en bonus pour chaque Prière du destin réalisée.<br>* Les objets obtenus sont directement ajoutés à votre stock.<br>* Lorsque vous avez atteint la limite d'objets en votre possession, les objets à obtenir sont envoyés dans votre boîte à cadeaux."
+  },
+  {
     "Id": 15824,
     "IsIgnore": false,
     "Memo": "",

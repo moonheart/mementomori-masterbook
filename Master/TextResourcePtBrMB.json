@@ -107569,6 +107569,13 @@
     "Text": "・ Prece que pode ser feita usando um rosário exclusivo.<br>・ Com ela aparecem apenas personagens.<br>・ Dependendo do número total de Preces de Platina, Preces das Eleitas e Preces de Afinidade realizadas, é possível obter itens garantidos como prêmios por devoção.<br>* Os itens obtidos são adicionados diretamente aos que você possui.<br>*Caso tenha atingido o limite máximo de algum item, ele será enviado para a caixa de presentes.<br>・ A chance de se obter uma personagem SR designada na lista de eleitas aumenta. A chance de obter personagens SR em geral, no entanto, não é alterada. Confira a ajuda da lista de eleitas para mais detalhes.<br>・ A Prece de Afinidade é alterada todos os dias às 04h00.<br>・ As afinidades vão sendo modificadas na seguinte ordem: Anil, Carmim, Jade e Âmbar, voltando então para o Anil.<br>・ Também é possível usar diamantes para alterar a Prece de Afinidade,<br>* Mesmo que a Prece de Afinidade seja alterada, o número total de preces feitas não será reiniciado."
   },
   {
+    "Id": 15823,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail7]",
+    "Text": "・ Prece que pode ser feita usando diamantes ou um rosário exclusivo.<br>・ Com ela podem aparecer personagens ou itens.<br>・ As personagens que aparecem com a Prece do Destino são apenas as designadas.<br>・ Na Prece do Destino, caso não apareça nenhuma personagem após 56 vezes consecutivas, a chance de aparecer uma personagem na 57ª vez sobe de 2% para 9%. Caso não apareça uma personagem sequer na 57ª vez, a chance passa para 16% na 58ª vez. Se mesmo assim não aparecer uma personagem, a chance continuará subindo 7% por tentativa até chegar a 100% na 70ª vez.<br>・ A cada Prece do Destino, você poderá obter uma Caixa do Destino adicional como bônus.<br>* Os itens obtidos são adicionados diretamente ao seu inventário.<br>* Caso tenha atingido o limite máximo de algum item, ele será enviado para a caixa de presentes."
+  },
+  {
     "Id": 15824,
     "IsIgnore": false,
     "Memo": "",

@@ -107569,6 +107569,13 @@
     "Text": "・Bạn có thể sử dụng Tấm Vé Thuộc Tính để Triệu Hồi.<br>・Chỉ có các nhân vật xuất hiện.<br>・Bạn chắc chắn sẽ nhận được phần thưởng thêm dựa trên tổng số lần triệu hồi trong Cầu Nguyện Kẻ Bị Nguyền, Cầu Nguyện Thoáng Qua và Cầu Nguyện Thuộc Tính.<br>*Phần thưởng thêm sẽ được gửi trực tiếp đến Hộp Vật Phẩm.<br>*Nếu Hộp Vật Phẩm đầy, phần thưởng thêm sẽ được gửi đến Hộp Quà.<br>・Tỷ lệ triệu hồi ra các nhân vật SR trong Danh Sách Mong Muốn sẽ cao hơn. Tỷ lệ triệu hồi ra tất cả nhân vật SR sẽ không thay đổi. Xem Trợ Giúp trên màn hình Danh Sách Mong Muốn để biết thêm chi tiết.<br>・Mục Cầu Nguyện Thuộc Tính sẽ được thay đổi hằng ngày vào lúc 4:00 (Giờ Máy Chủ).<br>・Thuộc Tính sẽ thay đổi theo thứ tự—Lưu Ly, Hồng Ngọc, Lục Bảo, Hổ Phách, Lưu Ly, v.v...<br>・Bạn có thể dùng Kim Cương để tự thay đổi Cầu Nguyện Thuộc Tính.<br>*Khi phần Cầu Nguyện Thuộc Tính thay đổi, tổng số lần triệu hồi đã thực hiện sẽ không bị tính lại."
   },
   {
+    "Id": 15823,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail7]",
+    "Text": "・Bạn có thể sử dụng Kim Cương hoặc Tấm Vé Cơ Hội để Triệu Hồi.<br>・Các nhân vật và vật phẩm sẽ xuất hiện.<br>・Chỉ có nhân vật mà bạn chọn sẽ xuất hiện.<br>・Nếu nhân vật mà bạn chọn không xuất hiện sau 56 lần triệu hồi liên tiếp, tỷ lệ triệu hồi ra nhân vật đó ở lần thứ 57 sẽ tăng từ 2% lên 9%. Nếu nhân vật đó không xuất hiện ở lần thứ 57, tỷ lệ triệu hồi ra ở lần thứ 58 sẽ là 16%, và tăng 7% sau mỗi lần triệu hồi cho đến khi xuất hiện, tỷ lệ ở lần thứ 70 là 100%.<br>・Bạn có thể nhận 1 Rương Cơ Hội làm phần thưởng thêm sau mỗi lần triệu hồi.<br>*Phần thưởng thêm sẽ được gửi trực tiếp đến Hộp Vật Phẩm.<br>*Nếu Hộp Vật Phẩm đầy, phần thưởng thêm sẽ được gửi đến Hộp Quà."
+  },
+  {
     "Id": 15824,
     "IsIgnore": false,
     "Memo": "",

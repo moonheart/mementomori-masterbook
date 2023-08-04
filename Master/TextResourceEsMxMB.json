@@ -107569,6 +107569,13 @@
     "Text": "・Puedes usar boletos de almas para invocar.<br>・Solo aparecerán personajes.<br>・Se garantiza que obtendrás un bono basado en tu conteo total de extracciones de Plegaria de los malditos, Plegaria de lo efímero y Plegaria de almas.<br>*El bono de recompensa se enviará directamente a tu caja de artículos.<br>*Si tu caja de artículos está llena, el bono se enviará a tu caja de regalos.<br>・Las tasas de extracción de personajes SR en tu lista de deseos serán más altas. Las tasas de extracción de todos los personajes SR no cambiarán. Consulta Ayuda en la pantalla de lista de deseos para más información.<br>・Las almas cambiarán todos los días a las 4:00 (hora del servidor).<br>・Las almas cambiarán en el siguiente orden: azur, carmesí, esmeralda, ámbar, azur, etc.<br>・Puedes usar diamantes para cambiar de manera manual la Plegaria de almas.<br>*Si cambias la Plegaria de almas, tu conteo total de extracciones no se restablecerá."
   },
   {
+    "Id": 15823,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail7]",
+    "Text": "・Puedes usar diamantes o boletos de oportunidad para invocar.<br>・Los personajes y los objetos aparecerán.<br>・Solo el personaje que establezcas será el personaje que aparecerá.<br>・Si el personaje establecido no aparece después de 56 extracciones consecutivas, su tasa de extracción en la extracción número 57 aumentará de 2% a 9%. Si no aparece en la extracción 57, su tasa de extracción en la 58 será del 16%, y luego aumentará un 7% después de cada extracción hasta que aparezca, con la 70 siendo del 100%.<br>・Puedes obtener 1 cofre de oportunidad como bono con cada extracción.<br>*El bono de recompensa se enviará directamente a tu caja de artículos.<br>*Si tu caja de artículos está llena, el bono se enviará a tu caja de regalos."
+  },
+  {
     "Id": 15824,
     "IsIgnore": false,
     "Memo": "",
