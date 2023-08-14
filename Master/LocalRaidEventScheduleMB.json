@@ -54,7 +54,6 @@
       48,
       49
     ],
-    "LocalRaidEventType": 1,
     "LocalRaidStartEndTimes": null,
     "RewardBonusRate": 0,
     "StartTime": "2022-11-30 17:30:00",
@@ -817,7 +816,6 @@
       798,
       799
     ],
-    "LocalRaidEventType": 2,
     "LocalRaidStartEndTimes": [
       {
         "StartTime": 123000,
