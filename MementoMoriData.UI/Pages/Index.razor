@@ -72,6 +72,8 @@
         "EnUs", "JaJp", "KoKr", "ZhTw"
     };
 
+    private const string path = "https://ghproxy.com/https://raw.githubusercontent.com/moonheart/mementomori-masterbook/master/Master";
+
     protected override async Task OnInitializedAsync()
     {
         _isLoading = true;
@@ -142,7 +144,7 @@
     {
         if (!_masterBookDataCache.TryGetValue(mb, out var contentData))
         {
-            var url = $"masterbook/{mb}.json";
+            var url = $"{path}/{mb}.json";
             var content = await Http.GetStringAsync(url);
             contentData = JsonSerializer.Deserialize<Dictionary<string, object?>[]>(content);
             if (contentData != null) _masterBookDataCache.Add(mb, contentData);
@@ -154,7 +156,7 @@
     private async Task InitMasterCatalog()
     {
         var stopwatch = Stopwatch.StartNew();
-        var url = "masterbook/master-catalog.json";
+        var url = $"{path}/master-catalog.json";
         var content = await Http.GetStringAsync(url);
         var contentData = JsonSerializer.Deserialize<Dictionary<string, Dictionary<string, object>>>(content);
         if (contentData == null)
