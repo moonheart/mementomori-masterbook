@@ -281,7 +281,7 @@
       "Size": 35845
     },
     "GvGServerLvMB": {
-      "Hash": "814014e1e63d1039068886e5abe1438a",
+      "Hash": "884ecdbeb1dd5d2b8db4cc75ea2455c9",
       "Name": "GvGServerLvMB",
       "Size": 5048
     },
@@ -586,9 +586,9 @@
       "Size": 1083
     },
     "TradeShopTabMB": {
-      "Hash": "c0d3e13819c034513d2ff0483f020a03",
+      "Hash": "3601e773f51ac12bced9d4e8000e5520",
       "Name": "TradeShopTabMB",
-      "Size": 59476
+      "Size": 59438
     },
     "TreasureChestCeilingMB": {
       "Hash": "9261f7876b178ce3055e3e0672156e64",
@@ -621,7 +621,7 @@
       "Size": 16293
     },
     "WorldGroupMB": {
-      "Hash": "8d736462dfc7a072cc814a6ffedeceb8",
+      "Hash": "acb25c0f66547638d3c9a6638be758da",
       "Name": "WorldGroupMB",
       "Size": 8025
     }
