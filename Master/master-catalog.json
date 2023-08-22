@@ -496,9 +496,9 @@
       "Size": 2480403
     },
     "TextResourceEnUsMB": {
-      "Hash": "61b8cca3f6cb5db060d5b77344645e38",
+      "Hash": "dc5eac3e2ef106c4ea1e0bd9b7b3933a",
       "Name": "TextResourceEnUsMB",
-      "Size": 2447961
+      "Size": 2448319
     },
     "TextResourceEsMxMB": {
       "Hash": "28948ce43e03675b73b2bbc50367d02f",
@@ -516,14 +516,14 @@
       "Size": 2430620
     },
     "TextResourceJaJpMB": {
-      "Hash": "8fd2cca67fc3cdd22ce073cecc1d05a2",
+      "Hash": "4a7bf199ec0a07de649a6620bf97f3b4",
       "Name": "TextResourceJaJpMB",
-      "Size": 2581640
+      "Size": 2582242
     },
     "TextResourceKoKrMB": {
-      "Hash": "0c27f01af229f247eda49b25b2d5dda7",
+      "Hash": "0f0aee5ad089efbc38673cf78cc247d5",
       "Name": "TextResourceKoKrMB",
-      "Size": 2507210
+      "Size": 2507185
     },
     "TextResourcePtBrMB": {
       "Hash": "16733652f7fb91d7b76a847acffadbd8",
@@ -551,9 +551,9 @@
       "Size": 2237191
     },
     "TextResourceZhTwMB": {
-      "Hash": "f424942fdb56863de2f3e937580acf66",
+      "Hash": "b3d8ddc6ad130129c9bac55116d8c6be",
       "Name": "TextResourceZhTwMB",
-      "Size": 2259866
+      "Size": 2260273
     },
     "TimeServerMB": {
       "Hash": "b89f011a66251615978289ef3efb9d4a",
