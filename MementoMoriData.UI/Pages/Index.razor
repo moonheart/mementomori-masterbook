@@ -111,6 +111,10 @@
         {
             return s;
         }
+        if (SelectedMasterBook.StartsWith("TextResource"))
+        {
+            return s;
+        }
         return _languageMasterBook.TryGetValue(s, out var text) ? text : s;
     }
 
