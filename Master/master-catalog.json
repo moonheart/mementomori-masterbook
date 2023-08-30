@@ -46,9 +46,9 @@
       "Size": 4431
     },
     "ChangeItemMB": {
-      "Hash": "e26e389131f38b013e326669b657a8be",
+      "Hash": "685c05f24c687fd18887ce2dc23ae268",
       "Name": "ChangeItemMB",
-      "Size": 27873
+      "Size": 28167
     },
     "ChapterMB": {
       "Hash": "540ede97372c499d95b9ac161718c708",
@@ -280,11 +280,6 @@
       "Name": "GuildRaidRewardMB",
       "Size": 35845
     },
-    "GvGServerLvMB": {
-      "Hash": "884ecdbeb1dd5d2b8db4cc75ea2455c9",
-      "Name": "GvGServerLvMB",
-      "Size": 5048
-    },
     "HelpMB": {
       "Hash": "5fbe621a8d9e41bd5ce21be56e9ffb39",
       "Name": "HelpMB",
@@ -296,9 +291,9 @@
       "Size": 1697
     },
     "ItemMB": {
-      "Hash": "cb1dd7f5a9f900dd228443ee94901012",
+      "Hash": "4a38f692654b6c81f971e16c46dc5255",
       "Name": "ItemMB",
-      "Size": 24571
+      "Size": 25227
     },
     "LeadReviewMB": {
       "Hash": "83e028f348df8347e115f132b3e4d34f",
@@ -566,7 +561,7 @@
       "Size": 867
     },
     "TotalActivityMedalRewardMB": {
-      "Hash": "ed4c8372a4b829e0aaca20e3f7126a3f",
+      "Hash": "6496d9bd15d18240b782e0a40680fe3d",
       "Name": "TotalActivityMedalRewardMB",
       "Size": 3085
     },
