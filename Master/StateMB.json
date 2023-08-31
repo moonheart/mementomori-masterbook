@@ -113,8 +113,8 @@
     "TextKey": "[StateDescription9]",
     "AppearQliphaKey": "[StateAppearQlipha9]",
     "AppearQliphaId": 50,
-    "BgmStartTimeJP": -1.0,
-    "BgmStartTimeUS": -1.0
+    "BgmStartTimeJP": 165.79,
+    "BgmStartTimeUS": 165.79
   },
   {
     "Id": 10,
