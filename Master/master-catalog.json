@@ -1,12 +1,12 @@
 {
   "MasterBookInfoMap": {
     "ActiveSkillMB": {
-      "Hash": "d28c9bab6812a6d1ce532c5c97317993",
+      "Hash": "de946dad219fa285b3173c69975066ae",
       "Name": "ActiveSkillMB",
       "Size": 369524
     },
     "AppVersionMB": {
-      "Hash": "ba0560826d15cc75d3be7870638f610e",
+      "Hash": "7e9d2922cf511e09c8aba6733f77bcfb",
       "Name": "AppVersionMB",
       "Size": 201
     },
@@ -61,14 +61,14 @@
       "Size": 2809
     },
     "CharacterCollectionLevelMB": {
-      "Hash": "eaf1a26f4615839ced9d7231350e4eb0",
+      "Hash": "3e30887463bb3b8014470a11b2686ec8",
       "Name": "CharacterCollectionLevelMB",
-      "Size": 53598
+      "Size": 55844
     },
     "CharacterCollectionMB": {
-      "Hash": "7d6388282102b793a20ae5b261096715",
+      "Hash": "44148c62e096fc0946caeb8673f1b11b",
       "Name": "CharacterCollectionMB",
-      "Size": 5126
+      "Size": 5338
     },
     "CharacterCollectionRewardMB": {
       "Hash": "c1bd7643102199ae6749c9ac1f7e779a",
@@ -76,7 +76,7 @@
       "Size": 3572
     },
     "CharacterDetailVoiceMB": {
-      "Hash": "e346f990fa2ed627b15104e07ec4c439",
+      "Hash": "e25519ddd1cf81b988ea6fac11786a5e",
       "Name": "CharacterDetailVoiceMB",
       "Size": 422800
     },
@@ -91,7 +91,7 @@
       "Size": 1999
     },
     "CharacterMB": {
-      "Hash": "c0ae9e9dd8f3214738d6b7d2bc41ea92",
+      "Hash": "864b20c0b3278a406b14e9718e2ce9f1",
       "Name": "CharacterMB",
       "Size": 42710
     },
@@ -106,9 +106,9 @@
       "Size": 259051
     },
     "CharacterProfileMB": {
-      "Hash": "da5d52b0f6c42579c975f931f99516d7",
+      "Hash": "be109587ea9abe234c6c0f18f31bfe38",
       "Name": "CharacterProfileMB",
-      "Size": 56889
+      "Size": 57091
     },
     "CharacterRankUpMaterialMB": {
       "Hash": "db1d8694126ff0c3784dde297a61bed2",
@@ -131,9 +131,9 @@
       "Size": 4663
     },
     "DeepLinkMB": {
-      "Hash": "8e197fb181b3deedff0cb6928e2f1cf7",
+      "Hash": "cd3a14cec12cddbbc95f1cdb1e58618d",
       "Name": "DeepLinkMB",
-      "Size": 1818
+      "Size": 1955
     },
     "DungeonBattleGridMB": {
       "Hash": "d1d0bb870c358c7985224e134155c50d",
@@ -141,9 +141,9 @@
       "Size": 1508
     },
     "DungeonBattleGuestMB": {
-      "Hash": "0506358b7165f0638e2b9e4342cf8336",
+      "Hash": "9eb0ebc9b55ca06b115a7628cae87ee5",
       "Name": "DungeonBattleGuestMB",
-      "Size": 6995
+      "Size": 7133
     },
     "DungeonBattleRelicMB": {
       "Hash": "9197d3d5205bcf4f157636b68e5924e2",
@@ -171,7 +171,7 @@
       "Size": 410646
     },
     "EquipmentExclusiveEffectMB": {
-      "Hash": "f296fb0938b7f97693fe9452edccb02e",
+      "Hash": "bf3150fe4c16cfe8b72cc9ae9e70890f",
       "Name": "EquipmentExclusiveEffectMB",
       "Size": 69355
     },
@@ -241,24 +241,24 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "9f8731bab02112aa455f2c2bcf720c5e",
+      "Hash": "0880da4d41d7a8ee082305bc1f218f4c",
       "Name": "GachaCaseMB",
-      "Size": 20421
+      "Size": 20784
     },
     "GachaCaseUiMB": {
-      "Hash": "0a3852c8f687a7cf2fa2328b7795ffb5",
+      "Hash": "29f88ee9cc9db2c2a28c32f93d9f9b50",
       "Name": "GachaCaseUiMB",
-      "Size": 176869
+      "Size": 182991
     },
     "GachaDestinyAddCharacterMB": {
-      "Hash": "84e5789895390643f0bcfffa7ce8956f",
+      "Hash": "78e5a3a97b1e67defd197305e6f7c8f5",
       "Name": "GachaDestinyAddCharacterMB",
-      "Size": 2460
+      "Size": 2593
     },
     "GachaSelectListMB": {
-      "Hash": "7719b14a206ae847a2dcc4d13ce0e651",
+      "Hash": "4bf60023aade066fd1171c1a1920b077",
       "Name": "GachaSelectListMB",
-      "Size": 6354
+      "Size": 6635
     },
     "GlobalGvgCastleMB": {
       "Hash": "f3658568a1d613e3c56998853a67930d",
@@ -421,9 +421,9 @@
       "Size": 15610
     },
     "PassiveSkillMB": {
-      "Hash": "b8a3e6ef3dc6306b457a50f55b2f778f",
+      "Hash": "1593935e54bf8335a46cfb2b56af17c7",
       "Name": "PassiveSkillMB",
-      "Size": 320319
+      "Size": 320539
     },
     "PlayerRankMB": {
       "Hash": "3ba11810f19ef719d0345db39a5f0aa7",
