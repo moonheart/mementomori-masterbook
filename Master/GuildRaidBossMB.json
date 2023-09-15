@@ -260,7 +260,10 @@
     "CharacterImageScale": 0.8,
     "BannerText": "",
     "GuildRaidButtonU": 0.34,
-    "GuildRaidButtonV": 0.51
+    "GuildRaidButtonV": 0.51,
+    "WorldDamageBarRewardCharacterImageX": 0.0,
+    "WorldDamageBarRewardCharacterImageY": 0.0,
+    "WorldDamageBarRewardCharacterImageSize": 0.0
   },
   {
     "Id": 2,
@@ -524,7 +527,10 @@
     "CharacterImageScale": 1.14,
     "BannerText": "",
     "GuildRaidButtonU": 0.0,
-    "GuildRaidButtonV": 0.0
+    "GuildRaidButtonV": 0.0,
+    "WorldDamageBarRewardCharacterImageX": 0.0,
+    "WorldDamageBarRewardCharacterImageY": 0.0,
+    "WorldDamageBarRewardCharacterImageSize": 0.0
   },
   {
     "Id": 3,
@@ -852,7 +858,10 @@
     "CharacterImageScale": 0.59,
     "BannerText": "[GuildRaidEventRemainingTimeFormat]",
     "GuildRaidButtonU": 0.0,
-    "GuildRaidButtonV": 0.0
+    "GuildRaidButtonV": 0.0,
+    "WorldDamageBarRewardCharacterImageX": 0.0,
+    "WorldDamageBarRewardCharacterImageY": 0.0,
+    "WorldDamageBarRewardCharacterImageSize": 0.0
   },
   {
     "Id": 4,
@@ -1180,6 +1189,9 @@
     "CharacterImageScale": 0.43,
     "BannerText": "[GuildRaidEventRemainingTimeFormat]",
     "GuildRaidButtonU": 0.2,
-    "GuildRaidButtonV": 0.51
+    "GuildRaidButtonV": 0.51,
+    "WorldDamageBarRewardCharacterImageX": 0.0,
+    "WorldDamageBarRewardCharacterImageY": 0.0,
+    "WorldDamageBarRewardCharacterImageSize": 0.0
   }
 ]
