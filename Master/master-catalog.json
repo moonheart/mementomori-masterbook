@@ -151,9 +151,9 @@
       "Size": 36595
     },
     "EffectGroupMB": {
-      "Hash": "d897c3820b4fd62a0d6ade6fc9986323",
+      "Hash": "ecb3937d915440a11eabf1b46b2f641d",
       "Name": "EffectGroupMB",
-      "Size": 450718
+      "Size": 450772
     },
     "ElementBonusMB": {
       "Hash": "e9bf6e553b877c54fcaf45f6909340e5",
@@ -421,7 +421,7 @@
       "Size": 15589
     },
     "PassiveSkillMB": {
-      "Hash": "4b03f63ada374d22bb1f6a1396da3861",
+      "Hash": "dcb982d2f3e11413dfa9dc0a5be8ff9d",
       "Name": "PassiveSkillMB",
       "Size": 328141
     },
@@ -481,74 +481,74 @@
       "Size": 1416
     },
     "TextResourceArEgMB": {
-      "Hash": "62a9f13f55962995781b80bdace7254a",
+      "Hash": "11427a2494330a1964190f0521e7c1f8",
       "Name": "TextResourceArEgMB",
-      "Size": 2830934
+      "Size": 2831070
     },
     "TextResourceDeDeMB": {
-      "Hash": "ce179489a22f20b64bce7fa74bd56aed",
+      "Hash": "05372aef538ab93a07def7c0de1bbe62",
       "Name": "TextResourceDeDeMB",
-      "Size": 2504193
+      "Size": 2504329
     },
     "TextResourceEnUsMB": {
-      "Hash": "e6516248b8012deb6165f63a76e69f7f",
+      "Hash": "63e73cc19ce6ddb4ee6bc2a689fff9f1",
       "Name": "TextResourceEnUsMB",
-      "Size": 2504193
+      "Size": 2504342
     },
     "TextResourceEsMxMB": {
-      "Hash": "cda1bccaee4735a5871869ac8d0b1670",
+      "Hash": "8a6b27787d3fdf23b7ba70b7d23e1a04",
       "Name": "TextResourceEsMxMB",
-      "Size": 2445789
+      "Size": 2445925
     },
     "TextResourceFrFrMB": {
-      "Hash": "419b9823fdbfdaaef046304f1d288633",
+      "Hash": "e7716b3b88d0aea60adbb2b24416c353",
       "Name": "TextResourceFrFrMB",
-      "Size": 2448648
+      "Size": 2448784
     },
     "TextResourceIdIdMB": {
-      "Hash": "b0a9ceadc3824aad7061696fda0fdb69",
+      "Hash": "7b47bc2f9b70191d690b4cf3b95c959f",
       "Name": "TextResourceIdIdMB",
-      "Size": 2454689
+      "Size": 2454825
     },
     "TextResourceJaJpMB": {
-      "Hash": "27a87971a2690c337236576c64236683",
+      "Hash": "c52520fc19b865a9bb3c938ae4de7bd2",
       "Name": "TextResourceJaJpMB",
-      "Size": 2636624
+      "Size": 2636796
     },
     "TextResourceKoKrMB": {
-      "Hash": "f457a5212b09d911190b8da0815065bd",
+      "Hash": "eeb0912d4dc3d77a949f3a528cf64a3e",
       "Name": "TextResourceKoKrMB",
-      "Size": 2560557
+      "Size": 2560709
     },
     "TextResourcePtBrMB": {
-      "Hash": "8bb26e2ad85be6b41ec278953ce0e064",
+      "Hash": "855c53580e7415bfbad030e11b94b56d",
       "Name": "TextResourcePtBrMB",
-      "Size": 2437896
+      "Size": 2438032
     },
     "TextResourceRuRuMB": {
-      "Hash": "1ca929cf0963b211233cf82413e65d71",
+      "Hash": "022c1f1ec3141a26aee0124904f00889",
       "Name": "TextResourceRuRuMB",
-      "Size": 3025933
+      "Size": 3026069
     },
     "TextResourceThThMB": {
-      "Hash": "5b29f7a59eb2a607f3dae6ab6ae7f97a",
+      "Hash": "408171c31fa2fb441a98323eeb9983b7",
       "Name": "TextResourceThThMB",
-      "Size": 3687977
+      "Size": 3688113
     },
     "TextResourceViVnMB": {
-      "Hash": "3dfaa1a7111fb98d0710ea9d0fe4b17a",
+      "Hash": "4c71d0f1e0179826f1346f4606b7a0bd",
       "Name": "TextResourceViVnMB",
-      "Size": 2740243
+      "Size": 2740379
     },
     "TextResourceZhCnMB": {
-      "Hash": "80436a16fb360ea3513827b22d5a115d",
+      "Hash": "c6cd41f337a5cb8a6a3dcb1e27952df3",
       "Name": "TextResourceZhCnMB",
-      "Size": 2257940
+      "Size": 2258076
     },
     "TextResourceZhTwMB": {
-      "Hash": "3ddb2d4a6ad895ec87bdec5f9248f180",
+      "Hash": "629b151e468d2d0303d90a753365059f",
       "Name": "TextResourceZhTwMB",
-      "Size": 2308100
+      "Size": 2308248
     },
     "TimeServerMB": {
       "Hash": "b89f011a66251615978289ef3efb9d4a",
@@ -556,9 +556,9 @@
       "Size": 1398
     },
     "TipMB": {
-      "Hash": "53784f966d1fa560a1e75db0b670395b",
+      "Hash": "4c4156df0a89b705800d6da8628630fe",
       "Name": "TipMB",
-      "Size": 867
+      "Size": 868
     },
     "TotalActivityMedalRewardMB": {
       "Hash": "6496d9bd15d18240b782e0a40680fe3d",
