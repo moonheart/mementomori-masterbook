@@ -28,6 +28,18 @@ public static class Helpers
 
     public static async Task DownloadMasterCatalog()
     {
+        Directory.CreateDirectory("./Master");
+
+        var lastVersion = string.Empty;
+        try
+        {
+            lastVersion = await File.ReadAllTextAsync("./Master/version");
+        }
+        catch
+        {
+            // ignored
+        }
+            
         var masterVersion = await GetMasterVersion();
         Log($"Got master version: {masterVersion}.");
         if (string.IsNullOrEmpty(masterVersion))
@@ -36,12 +48,15 @@ public static class Helpers
             return;
         }
 
+        if (!string.IsNullOrEmpty(lastVersion) && lastVersion == masterVersion)
+        {
+            Log("Master version is the same as last time, exit.");
+        }
+
         var url = $"https://cdn-mememori.akamaized.net/master/prd1/version/{masterVersion}/master-catalog";
         Log($"Downloading master catalog from {url}...");
         var bytes = await UnityHttpClient.GetByteArrayAsync(url);
         Log($"Download master catalog success.");
-
-        Directory.CreateDirectory("./Master");
 
         var masterBookCatalog = MessagePackSerializer.Deserialize<MasterBookCatalog>(bytes);
         await File.WriteAllTextAsync("./Master/master-catalog.json", JsonConvert.SerializeObject(masterBookCatalog, Formatting.Indented));
@@ -81,6 +96,7 @@ public static class Helpers
         }
 
         await File.WriteAllTextAsync("./Master/readme.md", sb.ToString());
+        await File.WriteAllTextAsync("./Master/version", masterVersion);
         
         Log("Done.");
     }
