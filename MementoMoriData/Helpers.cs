@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using MessagePack;
 using Newtonsoft.Json;
+// using QQChannelFramework.Api;
 using Telegram.Bot;
 
 namespace MementoMoriData;
@@ -52,6 +53,7 @@ public static class Helpers
         if (!string.IsNullOrEmpty(lastVersion) && lastVersion == masterVersion)
         {
             Log("Master version is the same as last time, exit.");
+            return;
         }
 
         var url = $"https://cdn-mememori.akamaized.net/master/prd1/version/{masterVersion}/master-catalog";
@@ -98,7 +100,7 @@ public static class Helpers
 
         await File.WriteAllTextAsync("./Master/readme.md", sb.ToString());
         await File.WriteAllTextAsync("./Master/version", masterVersion);
-        
+
         var message = $"主数据有更新, 更新时间 {DateTimeOffset.FromUnixTimeMilliseconds(long.Parse(masterVersion))}, 在这里查看 https://github.com/moonheart/mementomori-masterbook/blob/master/Master/readme.md";
         await SendNotification(message);
 
@@ -128,6 +130,28 @@ public static class Helpers
     {
         TelegramBotClient botClient = new(Environment.GetEnvironmentVariable("TELEGRAM_BOT_TOKEN"));
         await botClient.SendTextMessageAsync(Environment.GetEnvironmentVariable("TELEGRAM_CHAT_ID"), message);
+
+        // // 声明鉴权信息
+        // OpenApiAccessInfo openApiAccessInfo;
+        // openApiAccessInfo.BotAppId = Environment.GetEnvironmentVariable("QQCHANNEL_BOT_APPID");
+        // openApiAccessInfo.BotToken = Environment.GetEnvironmentVariable("QQCHANNEL_BOT_TOKEN");
+        // openApiAccessInfo.BotSecret = Environment.GetEnvironmentVariable("QQCHANNEL_BOT_SECRET");
+        //
+        // // 使用QQChannelApi获取相应的Api接口
+        // // 鉴权信息在实例化时传入
+        // QQChannelApi qChannelApi = new(openApiAccessInfo);
+        // var allJoinedChannels = await qChannelApi.GetUserApi().GetAllJoinedChannelsAsync();
+        // qChannelApi.UseBotIdentity();
+        // qChannelApi.UseSandBoxMode();
+        // foreach (var guild in allJoinedChannels)
+        // {
+        //     var channels = await qChannelApi.GetChannelApi().GetChannelsAsync(guild.Id);
+        //     foreach (var channel in channels)
+        //     {
+        //         await qChannelApi.GetMessageApi().SendMessageAsync(channel.Id, message);
+        //     }
+        //
+        // }
     }
 
     [MessagePackObject(true)]

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Git_Github\MementoMoriData\MementoMoriData.UI\bin\Release\net7.0\browser-wasm\publish\</_PublishTargetUrl>
+    <History>True|2023-07-22T10:56:11.2147815Z;True|2023-07-22T18:51:43.1599849+08:00;False|2023-07-22T17:38:26.3114853+08:00;True|2023-07-22T13:23:48.3433088+08:00;True|2023-07-21T23:39:00.9469405+08:00;True|2023-07-21T23:30:02.3888824+08:00;True|2023-07-21T15:05:49.0094124+08:00;True|2023-07-21T15:04:23.1143901+08:00;False|2023-07-21T14:56:44.8698302+08:00;False|2023-07-21T14:56:21.1273700+08:00;False|2023-07-21T14:52:50.5692099+08:00;False|2023-07-21T14:51:48.7319427+08:00;False|2023-07-21T14:51:42.2355111+08:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

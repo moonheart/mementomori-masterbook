@@ -141,9 +141,17 @@
         {
             return $"int.Parse({expression})";
         }
+        if (type == typeof(long))
+        {
+            return $"long.Parse({expression})";
+        }
         if (type == typeof(DateTime))
         {
             return $"DateTime.Parse({expression})";
+        }
+        if (type == typeof(string))
+        {
+            return $"Format({expression})";
         }
 
         return expression;
