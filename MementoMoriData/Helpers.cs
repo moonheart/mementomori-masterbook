@@ -1,6 +1,7 @@
 ﻿using System.Text;
 using MessagePack;
 using Newtonsoft.Json;
+using Telegram.Bot;
 
 namespace MementoMoriData;
 
@@ -98,6 +99,9 @@ public static class Helpers
         await File.WriteAllTextAsync("./Master/readme.md", sb.ToString());
         await File.WriteAllTextAsync("./Master/version", masterVersion);
         
+        var message = $"主数据有更新, 更新时间 {DateTimeOffset.FromUnixTimeMilliseconds(long.Parse(masterVersion))}, 在这里查看 https://github.com/moonheart/mementomori-masterbook/blob/master/Master/readme.md";
+        await SendNotification(message);
+
         Log("Done.");
     }
 
@@ -118,6 +122,12 @@ public static class Helpers
         var response = await OrtegaHttpClient.SendAsync(request);
         response.EnsureSuccessStatusCode();
         return response.Headers.TryGetValues("ortegamasterversion", out var values) ? values.FirstOrDefault() ?? "" : "";
+    }
+
+    private static async Task SendNotification(string message)
+    {
+        TelegramBotClient botClient = new(Environment.GetEnvironmentVariable("TELEGRAM_BOT_TOKEN"));
+        await botClient.SendTextMessageAsync(Environment.GetEnvironmentVariable("TELEGRAM_CHAT_ID"), message);
     }
 
     [MessagePackObject(true)]
