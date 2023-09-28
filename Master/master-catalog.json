@@ -46,9 +46,9 @@
       "Size": 4874
     },
     "ChangeItemMB": {
-      "Hash": "685c05f24c687fd18887ce2dc23ae268",
+      "Hash": "3f9075afb40b8f0b0e4f9e10802c8b8c",
       "Name": "ChangeItemMB",
-      "Size": 28167
+      "Size": 28288
     },
     "ChapterMB": {
       "Hash": "540ede97372c499d95b9ac161718c708",
@@ -291,9 +291,9 @@
       "Size": 1697
     },
     "ItemMB": {
-      "Hash": "4a38f692654b6c81f971e16c46dc5255",
+      "Hash": "e9f95ee61681f813ca90463ee3250e24",
       "Name": "ItemMB",
-      "Size": 25227
+      "Size": 25528
     },
     "LeadReviewMB": {
       "Hash": "83e028f348df8347e115f132b3e4d34f",
@@ -481,74 +481,74 @@
       "Size": 1416
     },
     "TextResourceArEgMB": {
-      "Hash": "363b03dccbbb340852478b3f15f6801c",
+      "Hash": "8fd36641c53e88c79433c050c08af436",
       "Name": "TextResourceArEgMB",
-      "Size": 2834831
+      "Size": 2835001
     },
     "TextResourceDeDeMB": {
-      "Hash": "81de3a9957261c3d0fe5941dd6c253ff",
+      "Hash": "134aa4ed8b869f98dfa162f0a39d27b2",
       "Name": "TextResourceDeDeMB",
-      "Size": 2504590
+      "Size": 2504760
     },
     "TextResourceEnUsMB": {
-      "Hash": "b7f1e58204fcd5b136f9be392db3323f",
+      "Hash": "6d91d5d44119374578e9bcb06264310e",
       "Name": "TextResourceEnUsMB",
-      "Size": 2507013
+      "Size": 2507495
     },
     "TextResourceEsMxMB": {
-      "Hash": "45e5b6ff814d494e9e66856ecc2cb480",
+      "Hash": "3cf27ec74a1e35af7a718455bc999317",
       "Name": "TextResourceEsMxMB",
-      "Size": 2446186
+      "Size": 2446356
     },
     "TextResourceFrFrMB": {
-      "Hash": "1f458afe7c495093d3a523e2f3fb49e9",
+      "Hash": "9cebd34fc7217cf5d38a7a365aeb08d0",
       "Name": "TextResourceFrFrMB",
-      "Size": 2449045
+      "Size": 2449215
     },
     "TextResourceIdIdMB": {
-      "Hash": "f706564b170f5e2233585f379d8e77d5",
+      "Hash": "8e994dc4a560b45ddd0abebb934dd21b",
       "Name": "TextResourceIdIdMB",
-      "Size": 2455086
+      "Size": 2455256
     },
     "TextResourceJaJpMB": {
-      "Hash": "b2d01838f3a4de2af97ee91cf3dca182",
+      "Hash": "a0878c93a9ce64fc63dad198ab2bda9d",
       "Name": "TextResourceJaJpMB",
-      "Size": 2639888
+      "Size": 2640430
     },
     "TextResourceKoKrMB": {
-      "Hash": "6cff6759a563093a7e330de95b978a39",
+      "Hash": "44f8221f5fa6e0f6be5165a96a89fd50",
       "Name": "TextResourceKoKrMB",
-      "Size": 2563632
+      "Size": 2564135
     },
     "TextResourcePtBrMB": {
-      "Hash": "7b3d6947fc2471490fcb165b8902316b",
+      "Hash": "78c4530aec0bc9fe42a2d2b4bb8935a5",
       "Name": "TextResourcePtBrMB",
-      "Size": 2438293
+      "Size": 2438463
     },
     "TextResourceRuRuMB": {
-      "Hash": "17c8eb8f7baac4657ee7e0c6d35b1e99",
+      "Hash": "f04ba917e8d6af3f362ca944e6ca4285",
       "Name": "TextResourceRuRuMB",
-      "Size": 3026330
+      "Size": 3026500
     },
     "TextResourceThThMB": {
-      "Hash": "85588822d925c195927e3116c3a3310a",
+      "Hash": "0e9e684fcca1d8f8765feacce6da8b5c",
       "Name": "TextResourceThThMB",
-      "Size": 3688374
+      "Size": 3688544
     },
     "TextResourceViVnMB": {
-      "Hash": "60299eea68fd9a20a07fe7574de00471",
+      "Hash": "185f77c7e8bfdea1f2d728baf058bac1",
       "Name": "TextResourceViVnMB",
-      "Size": 2740640
+      "Size": 2740810
     },
     "TextResourceZhCnMB": {
-      "Hash": "d6a8c20b57fae2ad63c2b9b457239969",
+      "Hash": "5f0abd6d07da17c74b289e45138dcc9c",
       "Name": "TextResourceZhCnMB",
-      "Size": 2258337
+      "Size": 2258507
     },
     "TextResourceZhTwMB": {
-      "Hash": "96d2d71cb8f907d310f98f35a975e020",
+      "Hash": "76cf899f66b70305f7b9806ad03cc036",
       "Name": "TextResourceZhTwMB",
-      "Size": 2310344
+      "Size": 2310791
     },
     "TimeServerMB": {
       "Hash": "b89f011a66251615978289ef3efb9d4a",
@@ -561,7 +561,7 @@
       "Size": 867
     },
     "TotalActivityMedalRewardMB": {
-      "Hash": "6496d9bd15d18240b782e0a40680fe3d",
+      "Hash": "9f944b70b1d44b512a86f80566e69fdb",
       "Name": "TotalActivityMedalRewardMB",
       "Size": 3085
     },
