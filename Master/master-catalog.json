@@ -1,9 +1,9 @@
 {
   "MasterBookInfoMap": {
     "ActiveSkillMB": {
-      "Hash": "9cf6d906cded7596b0b8ae5a87d1a8e5",
+      "Hash": "bb98cc431d9ed1b49a97ead2d35b37b9",
       "Name": "ActiveSkillMB",
-      "Size": 381902
+      "Size": 382164
     },
     "AppVersionMB": {
       "Hash": "3d5ba7a0d3fe09adb18961692eb12931",
@@ -125,6 +125,11 @@
       "Name": "CharacterStoryMB",
       "Size": 81235
     },
+    "ChatEffectKeywordMB": {
+      "Hash": "985562752eafdd7ae9681b88f2c05ad0",
+      "Name": "ChatEffectKeywordMB",
+      "Size": 120
+    },
     "CommunityMB": {
       "Hash": "06757a398fb4bb8eab27e895fb5ea3d4",
       "Name": "CommunityMB",
@@ -134,6 +139,11 @@
       "Hash": "56dafdc29fb5b0d53a1e639512f54a7b",
       "Name": "DeepLinkMB",
       "Size": 2196
+    },
+    "DownloadRawDataMB": {
+      "Hash": "2539ae627306f140e3e77c8cc42fe507",
+      "Name": "DownloadRawDataMB",
+      "Size": 87
     },
     "DungeonBattleGridMB": {
       "Hash": "d1d0bb870c358c7985224e134155c50d",
@@ -151,9 +161,9 @@
       "Size": 36595
     },
     "EffectGroupMB": {
-      "Hash": "59057b213427daa571f99c4fed6e9081",
+      "Hash": "a328566b619db9dc8f998b20e3ee96e1",
       "Name": "EffectGroupMB",
-      "Size": 462187
+      "Size": 463295
     },
     "ElementBonusMB": {
       "Hash": "e9bf6e553b877c54fcaf45f6909340e5",
@@ -410,6 +420,11 @@
       "Name": "MonthlyLoginBonusRewardListMB",
       "Size": 7909
     },
+    "MusicMB": {
+      "Hash": "61c2da5133efcde98e1f3c926b9c7ae0",
+      "Name": "MusicMB",
+      "Size": 195
+    },
     "NewCharacterMissionMB": {
       "Hash": "4914b73cb50320f42452abc9dfafe10b",
       "Name": "NewCharacterMissionMB",
@@ -420,8 +435,18 @@
       "Name": "OpenContentMB",
       "Size": 15589
     },
+    "PanelMB": {
+      "Hash": "a69b3289a1c19dd619606fa2c46d146a",
+      "Name": "PanelMB",
+      "Size": 280
+    },
+    "PanelMissionMB": {
+      "Hash": "da5644749ff279bc2835de4ef5d2199a",
+      "Name": "PanelMissionMB",
+      "Size": 330
+    },
     "PassiveSkillMB": {
-      "Hash": "555f24cba790f1506233597568024059",
+      "Hash": "c500e3193c4669195c48bab6aada858b",
       "Name": "PassiveSkillMB",
       "Size": 335081
     },
@@ -444,6 +469,11 @@
       "Hash": "b5106849ebfcefe6501bdf40ad91a2f6",
       "Name": "QuestMB",
       "Size": 135319
+    },
+    "RecitationMB": {
+      "Hash": "767f2511dd456d97212f26f6eac9bbe2",
+      "Name": "RecitationMB",
+      "Size": 298
     },
     "RequiredCurrencyMB": {
       "Hash": "7a33242ce3863ecdafd0d4240921b3ff",
