@@ -1,9 +1,9 @@
 {
   "MasterBookInfoMap": {
     "ActiveSkillMB": {
-      "Hash": "063ab37c79f1b2603587b06a530858ed",
+      "Hash": "9cf6d906cded7596b0b8ae5a87d1a8e5",
       "Name": "ActiveSkillMB",
-      "Size": 374706
+      "Size": 381902
     },
     "AppVersionMB": {
       "Hash": "3d5ba7a0d3fe09adb18961692eb12931",
@@ -151,9 +151,9 @@
       "Size": 36595
     },
     "EffectGroupMB": {
-      "Hash": "ecb3937d915440a11eabf1b46b2f641d",
+      "Hash": "59057b213427daa571f99c4fed6e9081",
       "Name": "EffectGroupMB",
-      "Size": 450772
+      "Size": 462187
     },
     "ElementBonusMB": {
       "Hash": "e9bf6e553b877c54fcaf45f6909340e5",
@@ -241,24 +241,24 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "be3b831aae7723ece22d17096a240624",
+      "Hash": "defa3250922b122041f02fe15f7cbe61",
       "Name": "GachaCaseMB",
-      "Size": 21817
+      "Size": 22168
     },
     "GachaCaseUiMB": {
-      "Hash": "025daa0b8f3ce6ede5917bb95a880f41",
+      "Hash": "d61bbe68ad067efe4667319d62bc1cc5",
       "Name": "GachaCaseUiMB",
-      "Size": 192220
+      "Size": 195272
     },
     "GachaDestinyAddCharacterMB": {
-      "Hash": "4d79267e6b3e64b92a0cd24963405fc4",
+      "Hash": "51406e3dfdd8d86e46d1d892a20730d0",
       "Name": "GachaDestinyAddCharacterMB",
-      "Size": 2953
+      "Size": 3074
     },
     "GachaSelectListMB": {
-      "Hash": "fa816df78fc7157b49e1742289721512",
+      "Hash": "19982f0870efde0fe343f1b6e60357ab",
       "Name": "GachaSelectListMB",
-      "Size": 7372
+      "Size": 7606
     },
     "GlobalGvgCastleMB": {
       "Hash": "f3658568a1d613e3c56998853a67930d",
@@ -271,19 +271,19 @@
       "Size": 2102
     },
     "GuildRaidBossMB": {
-      "Hash": "603a66a0cebd25ba7638671fe7be22fb",
+      "Hash": "9a03be83cc3f3dce96b56482905780f6",
       "Name": "GuildRaidBossMB",
-      "Size": 13689
+      "Size": 17469
     },
     "GuildRaidRewardMB": {
-      "Hash": "18d616aad517617f0b859b2e4cd63d83",
+      "Hash": "0fca040052c86b512a1626060a1921cd",
       "Name": "GuildRaidRewardMB",
-      "Size": 35832
+      "Size": 46207
     },
     "HelpMB": {
-      "Hash": "5fbe621a8d9e41bd5ce21be56e9ffb39",
+      "Hash": "966e5781b16a9df33a743610bf4cfeae",
       "Name": "HelpMB",
-      "Size": 17907
+      "Size": 17997
     },
     "InquiryButtonMB": {
       "Hash": "d45f806f345c43b5c0f355ccf58fe3a4",
@@ -421,9 +421,9 @@
       "Size": 15589
     },
     "PassiveSkillMB": {
-      "Hash": "dcb982d2f3e11413dfa9dc0a5be8ff9d",
+      "Hash": "555f24cba790f1506233597568024059",
       "Name": "PassiveSkillMB",
-      "Size": 328141
+      "Size": 335081
     },
     "PlayerRankMB": {
       "Hash": "3ba11810f19ef719d0345db39a5f0aa7",
@@ -581,9 +581,9 @@
       "Size": 1083
     },
     "TradeShopTabMB": {
-      "Hash": "5f439ef1042148c2c1eaf54c87e31170",
+      "Hash": "495483696449fdd5aecb9eafa75ed77f",
       "Name": "TradeShopTabMB",
-      "Size": 62306
+      "Size": 65162
     },
     "TreasureChestCeilingMB": {
       "Hash": "9261f7876b178ce3055e3e0672156e64",
@@ -601,9 +601,9 @@
       "Size": 33235
     },
     "TutorialDescriptionMB": {
-      "Hash": "5bf0716ff4d0d59f42737faf27748add",
+      "Hash": "fb440b481b3a930e0d820fd1dd8458c9",
       "Name": "TutorialDescriptionMB",
-      "Size": 7208
+      "Size": 7461
     },
     "TutorialTextBoxMB": {
       "Hash": "139b5d728eb4fae3b55b571e88a3db9a",
