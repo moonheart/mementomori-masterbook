@@ -6,7 +6,7 @@
       "Size": 382164
     },
     "AppVersionMB": {
-      "Hash": "3d5ba7a0d3fe09adb18961692eb12931",
+      "Hash": "a1a1fa50b48eb973832a5d5ba0909a57",
       "Name": "AppVersionMB",
       "Size": 201
     },
@@ -26,7 +26,7 @@
       "Size": 3459
     },
     "BattleSkillNameSettingMB": {
-      "Hash": "9af82c858af1c829f1aacfe20b3027e9",
+      "Hash": "4414f348b80f2790a2a762f07aa2d61a",
       "Name": "BattleSkillNameSettingMB",
       "Size": 33863
     },
@@ -61,14 +61,14 @@
       "Size": 2809
     },
     "CharacterCollectionLevelMB": {
-      "Hash": "ad8b2f41c574b3b20733dafc47057e81",
+      "Hash": "7a3433cce46a35b387fcb3b3356dea5a",
       "Name": "CharacterCollectionLevelMB",
-      "Size": 62638
+      "Size": 64989
     },
     "CharacterCollectionMB": {
-      "Hash": "e74b51cf04950a72bdcdb1f7bb2c9fd9",
+      "Hash": "36b11a44e8e2d76d73d9708fea133452",
       "Name": "CharacterCollectionMB",
-      "Size": 5979
+      "Size": 6205
     },
     "CharacterCollectionRewardMB": {
       "Hash": "c1bd7643102199ae6749c9ac1f7e779a",
@@ -76,9 +76,9 @@
       "Size": 3572
     },
     "CharacterDetailVoiceMB": {
-      "Hash": "6de5dcacb64317560374c9454397cd96",
+      "Hash": "c303dc5f73a00605ad9d7ec492967d62",
       "Name": "CharacterDetailVoiceMB",
-      "Size": 436978
+      "Size": 439309
     },
     "CharacterLevelMB": {
       "Hash": "3afbab3ee63653e2b37187d446c937c5",
@@ -91,9 +91,9 @@
       "Size": 2167
     },
     "CharacterMB": {
-      "Hash": "885295d169d468d253444aec84ef5ad9",
+      "Hash": "3174d214a525172138613b5eb6f3c40b",
       "Name": "CharacterMB",
-      "Size": 44094
+      "Size": 44100
     },
     "CharacterPotentialCoefficientMB": {
       "Hash": "b78a44bf51bdfd6064bf6b472b3bfe1d",
@@ -106,9 +106,9 @@
       "Size": 259051
     },
     "CharacterProfileMB": {
-      "Hash": "f4f33256aa3747ad28a232a57e22db0b",
+      "Hash": "162caaaf60676ab3254bacd67b8facfe",
       "Name": "CharacterProfileMB",
-      "Size": 60028
+      "Size": 60812
     },
     "CharacterRankUpMaterialMB": {
       "Hash": "db1d8694126ff0c3784dde297a61bed2",
@@ -136,9 +136,9 @@
       "Size": 4663
     },
     "DeepLinkMB": {
-      "Hash": "56dafdc29fb5b0d53a1e639512f54a7b",
+      "Hash": "3a0fcd3446fad4aeb2d2d44d109689cf",
       "Name": "DeepLinkMB",
-      "Size": 2196
+      "Size": 2453
     },
     "DownloadRawDataMB": {
       "Hash": "2539ae627306f140e3e77c8cc42fe507",
@@ -181,9 +181,9 @@
       "Size": 420479
     },
     "EquipmentExclusiveEffectMB": {
-      "Hash": "2efc1c7bf7e1d65cb4a5c8343753c49b",
+      "Hash": "125ace0b27f0d30b2b8ca44522dd3d06",
       "Name": "EquipmentExclusiveEffectMB",
-      "Size": 72421
+      "Size": 72429
     },
     "EquipmentExclusiveSkillDescriptionMB": {
       "Hash": "01f51a37de7ca0866c9d58909a9609a6",
