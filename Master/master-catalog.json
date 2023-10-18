@@ -1,9 +1,9 @@
 {
   "MasterBookInfoMap": {
     "ActiveSkillMB": {
-      "Hash": "3d1ec2f44b2f06f5757db950f75bdc6a",
+      "Hash": "de5bcd3d196dbc51434d1c348c465057",
       "Name": "ActiveSkillMB",
-      "Size": 385360
+      "Size": 326969
     },
     "AppVersionMB": {
       "Hash": "a1a1fa50b48eb973832a5d5ba0909a57",
@@ -141,9 +141,9 @@
       "Size": 2453
     },
     "DownloadRawDataMB": {
-      "Hash": "2539ae627306f140e3e77c8cc42fe507",
+      "Hash": "3f1de0a5d02d4e2912c1fa7727502236",
       "Name": "DownloadRawDataMB",
-      "Size": 87
+      "Size": 27384
     },
     "DungeonBattleGridMB": {
       "Hash": "d1d0bb870c358c7985224e134155c50d",
@@ -161,9 +161,9 @@
       "Size": 36595
     },
     "EffectGroupMB": {
-      "Hash": "5588f4c5e093be9a7d5d00f71c7f924a",
+      "Hash": "7882cc539711b3e68635e5104a099470",
       "Name": "EffectGroupMB",
-      "Size": 470285
+      "Size": 511106
     },
     "ElementBonusMB": {
       "Hash": "e9bf6e553b877c54fcaf45f6909340e5",
@@ -446,9 +446,9 @@
       "Size": 1341
     },
     "PassiveSkillMB": {
-      "Hash": "c2d645384665374b5391d4e2f14e96ba",
+      "Hash": "26ce4266761bc02429c1805ad00e204f",
       "Name": "PassiveSkillMB",
-      "Size": 341619
+      "Size": 304206
     },
     "PlayerRankMB": {
       "Hash": "5887b1977fd8adb7ac89f8579e62560c",
@@ -636,9 +636,9 @@
       "Size": 7647
     },
     "TutorialTextBoxMB": {
-      "Hash": "139b5d728eb4fae3b55b571e88a3db9a",
+      "Hash": "63cefb548f9dcc3501826abe0fb662a3",
       "Name": "TutorialTextBoxMB",
-      "Size": 31746
+      "Size": 33657
     },
     "VipMB": {
       "Hash": "be0114a5a24b5350459cdba6eea6bbcf",
