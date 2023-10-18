@@ -24,6 +24,7 @@ public static class Util
         AddEnumCache<SkillDisplayType>();
         AddEnumCache<SubSetType>();
         AddEnumCache<TargetGroupType>();
+        AddEnumCache<TargetSelectOptionType>();
         AddEnumCache<TargetSelectType>();
 
         AddEnumCache<StoryMapCommandEffectType>();
@@ -49,6 +50,7 @@ public static class Util
         AddEnumCache<BattleParameterType>();
         AddEnumCache<BattleScheduleType>();
         AddEnumCache<BattleType>();
+        AddEnumCache<BingoType>();
         AddEnumCache<BlinkAnimationType>();
         AddEnumCache<BountyQuestAppearanceType>();
         AddEnumCache<BountyQuestConditionType>();
@@ -126,6 +128,7 @@ public static class Util
         AddEnumCache<ItemType>();
         AddEnumCache<JobFlags>();
         AddEnumCache<LanguageType>();
+        AddEnumCache<LeadLockEquipmentDialogType>();
         AddEnumCache<LegendLeagueClassType>();
         AddEnumCache<LimitedEventType>();
         AddEnumCache<LocalNotificationSendType>();
@@ -157,6 +160,7 @@ public static class Util
         AddEnumCache<NotificationType>();
         AddEnumCache<OpenCommandType>();
         AddEnumCache<OpenContentType>();
+        AddEnumCache<PanelTabType>();
         AddEnumCache<PlayerGuildPositionType>();
         AddEnumCache<PlayerOrderType>();
         AddEnumCache<PlayerSettingsType>();
@@ -169,6 +173,8 @@ public static class Util
         AddEnumCache<QuestQuickTicketRewardFlags>();
         AddEnumCache<QuestQuickTicketType>();
         AddEnumCache<RankUpType>();
+        AddEnumCache<RawDataDownloadType>();
+        AddEnumCache<RecitationTextType>();
         AddEnumCache<RemoteNotificationType>();
         AddEnumCache<RewardMostElementType>();
         AddEnumCache<RewardRarityPointGroupType>();

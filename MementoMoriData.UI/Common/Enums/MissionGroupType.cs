@@ -19,6 +19,8 @@ namespace Ortega.Share.Enums
 		[Description("新キャラ")]
 		NewCharacter,
 		[Description("イベント")]
-		Limited
+		Limited,
+		[Description("パネル")]
+		Panel = 9
 	}
 }

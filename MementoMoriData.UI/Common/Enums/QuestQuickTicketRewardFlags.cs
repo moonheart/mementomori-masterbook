@@ -3,8 +3,8 @@ using System.ComponentModel;
 
 namespace Ortega.Share.Enums
 {
-	[Flags]
 	[Description("高速周回チケット報酬")]
+	[Flags]
 	public enum QuestQuickTicketRewardFlags
 	{
 		[Description("不明")]

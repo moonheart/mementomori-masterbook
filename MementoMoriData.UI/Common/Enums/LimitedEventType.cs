@@ -13,6 +13,10 @@ namespace Ortega.Share.Enums
 		[Description("シリアルコード入力")]
 		SerialCode,
 		[Description("古い課金システムの使用")]
-		ApplyOldPurchaseSystem = 100
+		ApplyOldPurchaseSystem = 100,
+		[Description("ギルドレイドoffset設定")]
+		GuildRaidCharacterPositionByMB,
+		[Description("GvGでキャラクターのキャッシュが存在しない場合に例外を投げる")]
+		ThrowExceptionInGvgWhenCharacterCacheNotExists
 	}
 }

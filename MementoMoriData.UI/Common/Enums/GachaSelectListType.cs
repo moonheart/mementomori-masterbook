@@ -11,6 +11,8 @@ namespace Ortega.Share.Enums
 		[Description("プライズ共通")]
 		Default,
 		[Description("運命")]
-		Destiny
+		Destiny,
+		[Description("星の導き")]
+		StarsGuidance
 	}
 }

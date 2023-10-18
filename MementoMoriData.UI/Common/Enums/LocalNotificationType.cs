@@ -12,8 +12,6 @@ namespace Ortega.Share.Enums
 		[Description("幻影の神殿開始")]
 		LocalRaid,
 		[Description("バトルリーグ報酬受け取り")]
-		BattleLeagueReward,
-		[Description("幻影の神殿イベント報酬増加")]
-		LocalRaidRewardIncrease
+		BattleLeagueReward
 	}
 }

@@ -3,8 +3,8 @@ using System.ComponentModel;
 
 namespace Ortega.Share.Enums
 {
-	[Flags]
 	[Description("祈りの泉クエストレアリティ")]
+	[Flags]
 	public enum BountyQuestRarityFlags
 	{
 		[Description("None")]

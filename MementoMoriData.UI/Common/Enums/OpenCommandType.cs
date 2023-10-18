@@ -120,6 +120,10 @@ namespace Ortega.Share.Enums
 		LimitedLoginBonus,
 		[Description("第二大陸")]
 		SecondContinent = 140,
+		[Description("星の導きガチャ")]
+		GachaStarsGuidance = 160,
+		[Description("楽曲再生")]
+		MusicPlayer = 180,
 		[Description("フレンドコード")]
 		FriendCode = 200,
 		[Description("武具固定")]

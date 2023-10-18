@@ -11,6 +11,8 @@ namespace Ortega.Share.Enums
 		[Description("時空の洞窟イベント")]
 		DungeonBattleEvent,
 		[Description("神殿イベント")]
-		LocalRaidEvent
+		LocalRaidEvent,
+		[Description("ギルドレイドイベント")]
+		GuildRaidEvent
 	}
 }

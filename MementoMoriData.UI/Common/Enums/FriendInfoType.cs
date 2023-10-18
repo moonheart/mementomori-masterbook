@@ -15,6 +15,8 @@ namespace Ortega.Share.Enums
 		[Description("申請中")]
 		Applying,
 		[Description("ブロック")]
-		Block
+		Block,
+		[Description("おすすめ検索")]
+		Recommend
 	}
 }

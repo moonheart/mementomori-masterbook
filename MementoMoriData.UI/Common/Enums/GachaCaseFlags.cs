@@ -3,8 +3,8 @@ using System.ComponentModel;
 
 namespace Ortega.Share.Enums
 {
-	[Flags]
 	[Description("ガチャ表示用フラグ")]
+	[Flags]
 	public enum GachaCaseFlags
 	{
 		[Description("なし")]

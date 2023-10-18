@@ -25,6 +25,7 @@ namespace Ortega.Share.Enums
 		Face_Unique2 = 33554432,
 		Face_Unique3 = 67108864,
 		QliphaOpenEyes = 134217728,
+		Face_Unloop1 = 268435456,
 		LoopFlags = 117440576
 	}
 }
