@@ -4447,7 +4447,7 @@
   {
     "Id": 45003,
     "IsIgnore": null,
-    "Memo": "【聖槍の魔女】\\nエルフリンデSR:",
+    "Memo": "エルフリンデSR:Lv1 たとえこの手で壊したのだとしても。人々を護り、世界を護る。それが代々の教皇に課された使命であることに変わりはないから──。バトル開始時自身に防御力、物理防御力、魔法防御力が5%増加するバフを2回付与する（最大10回まで）（解除不可）。自身がアクティブスキルによってバフを受けた場合、このスキルで付与したバフのスタック数が2増加する。自身が最大HP×10%を超えるダメージの攻撃を受けた場合、ダメージを40%遮断する。遮断する効果は1ターンに1回発動する。/ Lv2 バトル開始時の付与回数が4回になり、自身がバフを受けた場合に増加するスタック数が4になる。/ Lv3 防御力、物理防御力、魔法防御力の増加量が10%になる。/ Ex2 教皇の祝福を強化する。自身が最大HP×10%以上のダメージの攻撃を受けた場合、ダメージを90%遮断する。",
     "NameKey": "[PassiveSkillName45003]",
     "PassiveSkillInfos": [
       {
@@ -4460,9 +4460,113 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003001
+          },
+          {
+            "PassiveTrigger": 24,
+            "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 105001
+            "SubSetSkillId": 45003002
+          },
+          {
+            "PassiveTrigger": 42,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003003
+          }
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": "[PassiveSkillDescription450032]",
+        "CharacterLevel": 121,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003201
+          },
+          {
+            "PassiveTrigger": 24,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003202
+          },
+          {
+            "PassiveTrigger": 42,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003003
+          }
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": "[PassiveSkillDescription450033]",
+        "CharacterLevel": 201,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003301
+          },
+          {
+            "PassiveTrigger": 24,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003302
+          },
+          {
+            "PassiveTrigger": 42,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003303
+          }
+        ]
+      },
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": "[PassiveSkillDescription450034]",
+        "CharacterLevel": 181,
+        "EquipmentRarityFlags": 256,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003301
+          },
+          {
+            "PassiveTrigger": 24,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003302
+          },
+          {
+            "PassiveTrigger": 42,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45003403
           }
         ]
       }
@@ -4471,7 +4575,7 @@
   {
     "Id": 45004,
     "IsIgnore": null,
-    "Memo": "【聖槍の魔女】\\nエルフリンデSR: ",
+    "Memo": "エルフリンデSR:Lv1 祈りに潜む魔の影が、新たな力を言霊に宿す。ターン開始時2ターンの間自身以外の味方全体の弱体効果命中率を15%増加させる。このスキルは4ターンに1回発動する。/ Lv2 『弱体効果命中率増加』のターン数が4ターンになる。/ Lv3 弱体効果命中率の増加量が30%になる。",
     "NameKey": "[PassiveSkillName45004]",
     "PassiveSkillInfos": [
       {
@@ -4484,9 +4588,41 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 4,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 105001
+            "SubSetSkillId": 45004001
+          }
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": "[PassiveSkillDescription450042]",
+        "CharacterLevel": 141,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 4,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45004201
+          }
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": "[PassiveSkillDescription450043]",
+        "CharacterLevel": 221,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 4,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 45004301
           }
         ]
       }
@@ -10916,7 +11052,7 @@
   {
     "Id": 550402003,
     "IsIgnore": null,
-    "Memo": "敵用イリアR:どんな逆境でも諦めない心で自身の攻撃力が20％増加する。／攻撃力の増加量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName2003]",
     "PassiveSkillInfos": [
       {
@@ -10929,7 +11065,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550402003001
           }
@@ -10945,7 +11081,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550402003201
           }
@@ -10956,7 +11092,7 @@
   {
     "Id": 550403003,
     "IsIgnore": null,
-    "Memo": "敵用アイリスR:胸に秘めた領主への想いが魔力へと変わり、バトル開始時攻撃力が最も高い味方に1層の『多重バリア』を付与する。最大HP×10％を超えるダメージを受けると、バリアを1層消費してそのダメージを無効化する。／さらに『多重バリア』が存在している間『デバフ無効』を付与する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName3003]",
     "PassiveSkillInfos": [
       {
@@ -10969,7 +11105,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550403003001
           }
@@ -10985,7 +11121,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550403003201
           }
@@ -10996,7 +11132,7 @@
   {
     "Id": 550404003,
     "IsIgnore": null,
-    "Memo": "敵用ロキR:自分の運命は自分で決める。自らの意思で戦車のカードを引き、自身のスピードが10％増加する。／さらに自身のクリティカルが10％増加する。 ※パッシブトリガー28（バトル開始時）用",
+    "Memo": null,
     "NameKey": "[PassiveSkillName4003]",
     "PassiveSkillInfos": [
       {
@@ -11009,14 +11145,14 @@
           {
             "PassiveTrigger": 28,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550404003001
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550404003001
           }
@@ -11032,14 +11168,14 @@
           {
             "PassiveTrigger": 28,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550404003201
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550404003201
           }
@@ -11050,7 +11186,7 @@
   {
     "Id": 550405003,
     "IsIgnore": null,
-    "Memo": "敵用ソルティーナSR:どんなに辛くても、このぬいぐるみを抱きしめれば──お姉ちゃんが助けてくれる。自身にデバフを付与されたとき、付帯するデバフが2つ以上であれば全て解除する。このスキルは4ターンに1回発動可能。／さらに自身に攻撃力×200％の『シールド』を付与する。／『シールド』の大きさが攻撃力×300％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName5003]",
     "PassiveSkillInfos": [
       {
@@ -11106,7 +11242,7 @@
   {
     "Id": 550405004,
     "IsIgnore": null,
-    "Memo": "敵用ソルティーナSR:お姉ちゃんは、わたしが絶対に助けるんだ！　それまでは絶対に倒れない！　戦闘開始時、自身に1層の『多重バリア』を付与する。最大HPの10％を超えるダメージを受けると、バリアを1層消費してそのダメージを無効化する。／『多重バリア』が2層になる。／さらに自身に『多重バリア』が付与されている間自身のクリティカル率が50％増加する。->4ターンに1回、ターン開始時。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName5004]",
     "PassiveSkillInfos": [
       {
@@ -11162,7 +11298,7 @@
   {
     "Id": 550406003,
     "IsIgnore": null,
-    "Memo": "敵用アムレートSR:王なればこそ、逆境の中の光とならん。たとえ死の淵であろうとも――自身のHPが少なくなるほど自身の攻撃力が上昇する。（最大40％まで）／攻撃力の増加量が最大60％までになる。／攻撃力の増加量が最大120％までになる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName6003]",
     "PassiveSkillInfos": [
       {
@@ -11174,6 +11310,20 @@
         "PassiveSubSetSkillInfos": [
           {
             "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550406003001
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550406003001
+          },
+          {
+            "PassiveTrigger": 30,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -11194,6 +11344,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550406003201
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550406003201
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550406003201
           }
         ]
       },
@@ -11210,6 +11374,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550406003301
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550406003301
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550406003301
           }
         ]
       }
@@ -11218,7 +11396,7 @@
   {
     "Id": 550406004,
     "IsIgnore": null,
-    "Memo": "敵用アムレートSR:その横顔に浮かぶのは、いかなる困難をも乗り越えて誓いを果たすという決意。自身が致命的なダメージを受けたとき、HP1で耐える。この効果は1回の戦闘で1回のみ発動する。／さらに1ターンの間自身に『不死身』を付与する。／『不死身』のターン数が2ターンになる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName6004]",
     "PassiveSkillInfos": [
       {
@@ -11274,7 +11452,7 @@
   {
     "Id": 550407003,
     "IsIgnore": null,
-    "Memo": "敵用フェンリルSR:癒しの光が雪のように降り注ぎ、味方が攻撃を受けたときにその味方の残りHP割合が50％以下の場合、その味方の最大HPを20％回復する。このスキルは3ターンに1回発動する。／HP回復量が30％になる。／HP回復量が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName7003]",
     "PassiveSkillInfos": [
       {
@@ -11287,14 +11465,14 @@
           {
             "PassiveTrigger": 10,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 2,
+            "SkillMaxCoolTime": 1,
             "PassiveGroupId": 1,
             "SubSetSkillId": 550407003001
           },
           {
-            "PassiveTrigger": 8,
+            "PassiveTrigger": 29,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 2,
+            "SkillMaxCoolTime": 1,
             "PassiveGroupId": 1,
             "SubSetSkillId": 550407003001
           }
@@ -11310,14 +11488,14 @@
           {
             "PassiveTrigger": 10,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 2,
+            "SkillMaxCoolTime": 1,
             "PassiveGroupId": 1,
             "SubSetSkillId": 550407003201
           },
           {
-            "PassiveTrigger": 8,
+            "PassiveTrigger": 29,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 2,
+            "SkillMaxCoolTime": 1,
             "PassiveGroupId": 1,
             "SubSetSkillId": 550407003201
           }
@@ -11333,14 +11511,14 @@
           {
             "PassiveTrigger": 10,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 2,
+            "SkillMaxCoolTime": 1,
             "PassiveGroupId": 1,
             "SubSetSkillId": 550407003301
           },
           {
-            "PassiveTrigger": 8,
+            "PassiveTrigger": 29,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 2,
+            "SkillMaxCoolTime": 1,
             "PassiveGroupId": 1,
             "SubSetSkillId": 550407003301
           }
@@ -11351,7 +11529,7 @@
   {
     "Id": 550407004,
     "IsIgnore": null,
-    "Memo": "敵用フェンリルSR:大丈夫――それは魔法の言葉。戦闘開始時に自身の防御力中を30％増加させる。／60％になる。/増加量が80％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName7004]",
     "PassiveSkillInfos": [
       {
@@ -11364,7 +11542,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550407004001
           }
@@ -11380,7 +11558,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550407004201
           }
@@ -11396,7 +11574,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550407004301
           }
@@ -11407,7 +11585,7 @@
   {
     "Id": 550408003,
     "IsIgnore": null,
-    "Memo": "敵用フローレンスSR:必ず護る――かつての誓いの言葉によって、毎ターン開始時、自身のクリティカル確率が2％増加する。／クリティカル確率の増加量が4％になる。／クリティカル確率の増加量が6％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName8003]",
     "PassiveSkillInfos": [
       {
@@ -11463,7 +11641,7 @@
   {
     "Id": 550408004,
     "IsIgnore": null,
-    "Memo": "敵用フローレンスSR:誓いも仲間も護ってみせる。自身の攻撃力が20％増加する。／さらに自身の与ダメージが20％増加する。／攻撃力と与ダメージの増加量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName8004]",
     "PassiveSkillInfos": [
       {
@@ -11476,7 +11654,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550408004001
           }
@@ -11492,7 +11670,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550408004201
           }
@@ -11508,7 +11686,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550408004301
           }
@@ -11519,7 +11697,7 @@
   {
     "Id": 550409003,
     "IsIgnore": null,
-    "Memo": "敵用ソーニャSR: /Lv1　大きな声で乾杯を叫び、元気が出るドリンクを飲み干す。自身の最大HPと命中率が20％増加する（解除不可）。　/Lv2 さらに自身の攻撃力が20％増加する。　/Lv3 最大HPと攻撃力の増加量がそれぞれ30％になる。命中率の増加量が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName9003]",
     "PassiveSkillInfos": [
       {
@@ -11532,7 +11710,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550409003001
           }
@@ -11548,7 +11726,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550409003201
           }
@@ -11564,7 +11742,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550409003301
           }
@@ -11575,7 +11753,7 @@
   {
     "Id": 550409004,
     "IsIgnore": null,
-    "Memo": "敵用ソーニャSR: /Lv1　ヴァイキングの勝鬨を上げて、バトル開始時味方全体の攻撃力を2％増加させる。自身以外の味方の生存数1体につき増加量が2％大きくなる。　/Lv2 さらに味方全体の最大HPを2％増加させる。自身以外の味方の生存数1体につき増加量が2％大きくなる。　/Lv3 攻撃力の増加量が3％、最大HPの増加量が3％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName9004]",
     "PassiveSkillInfos": [
       {
@@ -11590,14 +11768,14 @@
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550409004001
+            "SubSetSkillId": 550409004002
           },
           {
-            "PassiveTrigger": 6,
+            "PassiveTrigger": 1,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550409004002
+            "SubSetSkillId": 550409004001
           }
         ]
       },
@@ -11609,18 +11787,18 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
-            "PassiveTrigger": 1,
+            "PassiveTrigger": 28,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550409004002
+          },
+          {
+            "PassiveTrigger": 28,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550409004201
-          },
-          {
-            "PassiveTrigger": 6,
-            "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
-            "PassiveGroupId": 0,
-            "SubSetSkillId": 550409004202
           }
         ]
       },
@@ -11632,18 +11810,18 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
-            "PassiveTrigger": 1,
+            "PassiveTrigger": 28,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550409004002
+          },
+          {
+            "PassiveTrigger": 28,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550409004301
-          },
-          {
-            "PassiveTrigger": 6,
-            "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
-            "PassiveGroupId": 0,
-            "SubSetSkillId": 550409004302
           }
         ]
       }
@@ -11652,7 +11830,7 @@
   {
     "Id": 550410003,
     "IsIgnore": null,
-    "Memo": "敵用モーザSR:救われた霊魂たちが墓守の祈りに応える。攻撃を受けた際に自身のHPが初めて70％、40％を下回った場合、自身に2ターンの間『再生』を付与する。毎ターン行動開始時自身のHPを自身の攻撃力×10％回復する。／さらに2ターンの間自身に『カウンタ変更』を付与する。カウンタのダメージが、自身の攻撃力×280％になり、HP割合の最も低い敵にダメージを与えるようになる。／『再生』と『カウンタ変更』のターン数が3ターンになる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName10003]",
     "PassiveSkillInfos": [
       {
@@ -11665,14 +11843,14 @@
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410003001
           },
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410003002
           }
@@ -11688,14 +11866,14 @@
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410003201
           },
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410003202
           }
@@ -11711,14 +11889,14 @@
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410003301
           },
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410003302
           }
@@ -11729,7 +11907,7 @@
   {
     "Id": 550410004,
     "IsIgnore": null,
-    "Memo": "敵用モーザSR:厳かな鐘の音が魂たちを呼び寄せ、自身の攻撃力が20％増加する。／攻撃力の増加量が40％になる／さらにクリティカルが40％増加する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName10004]",
     "PassiveSkillInfos": [
       {
@@ -11742,7 +11920,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410004001
           }
@@ -11758,7 +11936,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410004201
           }
@@ -11774,7 +11952,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550410004301
           }
@@ -11785,7 +11963,7 @@
   {
     "Id": 550412003,
     "IsIgnore": null,
-    "Memo": "敵用アリアンロッドR:騎士を志した始まりの気持ちが力となり、自身の弱体効果命中が20％増加する。／弱体効果命中の増加量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName12003]",
     "PassiveSkillInfos": [
       {
@@ -11798,7 +11976,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550412003001
           }
@@ -11814,7 +11992,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550412003201
           }
@@ -11825,7 +12003,7 @@
   {
     "Id": 550413003,
     "IsIgnore": null,
-    "Memo": "敵用テオドラR:宿屋名物の弁当で、自身の最大HPが20％増加する。／さらに自身の弱体効果命中が20％増加する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName13003]",
     "PassiveSkillInfos": [
       {
@@ -11838,7 +12016,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550413003001
           }
@@ -11854,7 +12032,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550413003201
           }
@@ -11865,7 +12043,7 @@
   {
     "Id": 550414003,
     "IsIgnore": null,
-    "Memo": "敵用ペトラR:魔女になって得た力を受け入れることで、自身の通常攻撃を強化する。ランダムな敵1体に攻撃力×150％の物理攻撃を行う。／自身の通常攻撃を強化する。ランダムな敵に2回攻撃力×150％の物理攻撃を行う。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName14003]",
     "PassiveSkillInfos": [
       {
@@ -11878,7 +12056,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550414003001
           }
@@ -11894,7 +12072,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550414003201
           }
@@ -11905,7 +12083,7 @@
   {
     "Id": 550415003,
     "IsIgnore": null,
-    "Memo": "敵用サブリナSR:「勇を示せ」自分自身に喝をいれ、ターン開始時、自身の付帯しているデバフを1つ解除する。4ターンに1回発動する。／自身の付帯しているデバフを全て解除するようになる。／さらに自身に2ターンの間『デバフ無効』を付与する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName15003]",
     "PassiveSkillInfos": [
       {
@@ -11917,7 +12095,7 @@
         "PassiveSubSetSkillInfos": [
           {
             "PassiveTrigger": 1,
-            "SkillCoolTime": 1,
+            "SkillCoolTime": 0,
             "SkillMaxCoolTime": 4,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550415003001
@@ -11933,7 +12111,7 @@
         "PassiveSubSetSkillInfos": [
           {
             "PassiveTrigger": 1,
-            "SkillCoolTime": 1,
+            "SkillCoolTime": 0,
             "SkillMaxCoolTime": 4,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550415003201
@@ -11949,7 +12127,7 @@
         "PassiveSubSetSkillInfos": [
           {
             "PassiveTrigger": 1,
-            "SkillCoolTime": 1,
+            "SkillCoolTime": 0,
             "SkillMaxCoolTime": 4,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550415003301
@@ -11961,7 +12139,7 @@
   {
     "Id": 550415004,
     "IsIgnore": null,
-    "Memo": "敵用サブリナSR:母の愛と、幼き頃の夢が、生きる力となる。ターン経過ごとに自身の最大HPが4％増加する。（最大20回まで）／最大HPの増加量が5％になる。／最大HPの増加量が6％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName15004]",
     "PassiveSkillInfos": [
       {
@@ -12017,7 +12195,7 @@
   {
     "Id": 550416003,
     "IsIgnore": null,
-    "Memo": "敵用フレイシアSR:もう誰にも傷ついてほしくないから――生きる力を宿した風が、仲間を包み込む。自身が生存している間、味方全体の被ダメージが30％減少し、回避率が30％増加する。／被ダメージの減少量と回避率の増加量が40％になる。／被ダメージの減少量と回避率の増加量が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName16003]",
     "PassiveSkillInfos": [
       {
@@ -12033,6 +12211,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550416003001
+          },
+          {
+            "PassiveTrigger": 6,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550416003002
+          },
+          {
+            "PassiveTrigger": 62,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550416003002
           }
         ]
       },
@@ -12049,6 +12241,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550416003201
+          },
+          {
+            "PassiveTrigger": 6,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550416003202
+          },
+          {
+            "PassiveTrigger": 62,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550416003202
           }
         ]
       },
@@ -12065,6 +12271,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550416003301
+          },
+          {
+            "PassiveTrigger": 6,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550416003302
+          },
+          {
+            "PassiveTrigger": 62,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550416003302
           }
         ]
       }
@@ -12073,7 +12293,7 @@
   {
     "Id": 550416004,
     "IsIgnore": null,
-    "Memo": "敵用フレイシアSR:あの人がくれた心の種が花開く時。通常攻撃を強化する。通常攻撃時、自身のHPを攻撃力×100％回復する。／HP回復の対象が自身と最もHP割合の低い味方になる。／HPの回復量が攻撃力×150％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName16004]",
     "PassiveSkillInfos": [
       {
@@ -12086,7 +12306,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550416004001
           }
@@ -12102,7 +12322,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550416004201
           }
@@ -12118,7 +12338,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550416004301
           }
@@ -12129,7 +12349,7 @@
   {
     "Id": 550417003,
     "IsIgnore": null,
-    "Memo": "敵用アモールSR:ハッピーエンドまで、物語は終わらせない。自身が戦闘不能になったとき、自身の最大HP×5％のHPを回復して復活する。物語を汚したものは許さない――さらに前方の敵１体に過去10ターンの合計ダメージ×10％の直接攻撃を行う。デバフ効果によって戦闘不能になった場合、敵に直接攻撃を行うことはできない。このスキルはバトル中1回のみ発動する。／直接攻撃のダメージが過去10ターンの合計ダメージ×15％／直接攻撃が前方の敵２体にダメージを与える。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName17003]",
     "PassiveSkillInfos": [
       {
@@ -12147,10 +12367,17 @@
             "SubSetSkillId": 550417003001
           },
           {
-            "PassiveTrigger": 19,
+            "PassiveTrigger": 62,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 9999,
             "PassiveGroupId": 1,
+            "SubSetSkillId": 550417003001
+          },
+          {
+            "PassiveTrigger": 19,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 9999,
+            "PassiveGroupId": 0,
             "SubSetSkillId": 550417003002
           }
         ]
@@ -12170,10 +12397,17 @@
             "SubSetSkillId": 550417003001
           },
           {
-            "PassiveTrigger": 19,
+            "PassiveTrigger": 62,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 9999,
             "PassiveGroupId": 1,
+            "SubSetSkillId": 550417003001
+          },
+          {
+            "PassiveTrigger": 19,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 9999,
+            "PassiveGroupId": 0,
             "SubSetSkillId": 550417003202
           }
         ]
@@ -12193,18 +12427,18 @@
             "SubSetSkillId": 550417003001
           },
           {
-            "PassiveTrigger": 19,
+            "PassiveTrigger": 62,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 9999,
             "PassiveGroupId": 1,
-            "SubSetSkillId": 550417003302
+            "SubSetSkillId": 550417003001
           },
           {
             "PassiveTrigger": 19,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 9999,
-            "PassiveGroupId": 1,
-            "SubSetSkillId": 550417003303
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550417003302
           }
         ]
       }
@@ -12213,7 +12447,7 @@
   {
     "Id": 550417004,
     "IsIgnore": null,
-    "Memo": "敵用アモールSR:今日は素敵なことが起きるような気がする――自身の最大HPが20％増加する。／最大HPの増加量が30％になる。／最大HPの増加量が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName17004]",
     "PassiveSkillInfos": [
       {
@@ -12226,16 +12460,16 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550417004001
           },
           {
             "PassiveTrigger": 19,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550417004001
+            "SubSetSkillId": 550417004002
           }
         ]
       },
@@ -12249,16 +12483,16 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550417004201
           },
           {
             "PassiveTrigger": 19,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550417004201
+            "SubSetSkillId": 550417004202
           }
         ]
       },
@@ -12272,16 +12506,16 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550417004301
           },
           {
             "PassiveTrigger": 19,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550417004301
+            "SubSetSkillId": 550417004302
           }
         ]
       }
@@ -12290,7 +12524,7 @@
   {
     "Id": 550418003,
     "IsIgnore": null,
-    "Memo": "敵用リーンSR:大切な人との誓いを思い出し、1ターン目のターン開始時、自身に2ターンの間、攻撃力×400％の『シールド』を付与する。／『シールド』のターン数が3ターンになる。／『シールド』の大きさが攻撃力×700％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName18003]",
     "PassiveSkillInfos": [
       {
@@ -12303,7 +12537,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550418003001
           }
@@ -12319,7 +12553,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550418003201
           }
@@ -12335,7 +12569,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550418003301
           }
@@ -12346,7 +12580,7 @@
   {
     "Id": 550418004,
     "IsIgnore": null,
-    "Memo": "敵用リーンSR:いかなる困難も乗り越えてみせるという決意により、自身のHP割合が50％未満の場合、自身のクリティカル確率が30％増加する。／クリティカル確率の増加量が50％になる。／クリティカル確率の増加量が70％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName18004]",
     "PassiveSkillInfos": [
       {
@@ -12357,6 +12591,20 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004001
+          },
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004002
+          },
+          {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
@@ -12365,6 +12613,20 @@
           },
           {
             "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004002
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004001
+          },
+          {
+            "PassiveTrigger": 30,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -12380,6 +12642,20 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004201
+          },
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004202
+          },
+          {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
@@ -12388,6 +12664,20 @@
           },
           {
             "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004202
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004201
+          },
+          {
+            "PassiveTrigger": 30,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -12403,6 +12693,20 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004301
+          },
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004302
+          },
+          {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
@@ -12415,6 +12719,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550418004302
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004301
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550418004302
           }
         ]
       }
@@ -12423,7 +12741,7 @@
   {
     "Id": 550419003,
     "IsIgnore": null,
-    "Memo": "敵用ベルSR:今度はオレが護る。その決意が、自身の通常攻撃を強化する。クリティカルが発生した場合、自身の攻撃力を10％増加させる（最大3回まで）／攻撃力の増加量が15％になる。／攻撃力の増加が最大5回までになる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName19003]",
     "PassiveSkillInfos": [
       {
@@ -12436,7 +12754,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550419003001
           }
@@ -12452,7 +12770,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550419003201
           }
@@ -12468,7 +12786,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550419003301
           }
@@ -12479,7 +12797,7 @@
   {
     "Id": 550419004,
     "IsIgnore": null,
-    "Memo": "敵用ベルSR:死の気配がした時、報復の炎はより強く燃え上がる。その熱は痛みすら焼き消す。\\n自身が攻撃を受けたとき、自身のHP割合が50％未満の場合、ダメージが自身の最大HPの10％を超えない。／さらに自身の受けたダメージ×2-（最大HP×10％）のシールドを付与する。／ダメージの上限が最大HPの5％になり、シールドの大きさが自身の受けたダメージ×2-（最大HP×5％）になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName19004]",
     "PassiveSkillInfos": [
       {
@@ -12549,7 +12867,7 @@
   {
     "Id": 550420003,
     "IsIgnore": null,
-    "Memo": "敵用ディアンSR:心を込めた献身的なサポートで、戦闘開始時に3ターンの間自身と攻撃力が最も高い味方の回避率を30％増加させる。／回避率の増加ターン数が5ターンになる。／回避率の増加量が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName20003]",
     "PassiveSkillInfos": [
       {
@@ -12562,14 +12880,14 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420003001
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420003002
           }
@@ -12585,14 +12903,14 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420003201
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420003202
           }
@@ -12608,14 +12926,14 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420003301
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420003302
           }
@@ -12626,7 +12944,7 @@
   {
     "Id": 550420004,
     "IsIgnore": null,
-    "Memo": "敵用ディアンSR:一人でも多くの仲間を救うため、従者は最後まで戦場に残り続ける。自身の被ダメージ時、HPが30％未満かつ味方人数が一人以上の場合、自身に透明を付与する。この効果は1回の戦闘で1回のみ発動する。自分以外の味方がいなくなると透明を解除する。／さらに自身の通常攻撃を強化する。敵2体に攻撃力×200％の物理攻撃を行い、30％の確率でバフ解除するようになる。この効果は味方人数が0人になった次のターンからは発動しない。／バフ解除の確率が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName20004]",
     "PassiveSkillInfos": [
       {
@@ -12639,12 +12957,19 @@
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420004001
           },
           {
             "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550420004002
+          },
+          {
+            "PassiveTrigger": 7,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -12662,12 +12987,19 @@
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420004201
           },
           {
             "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550420004202
+          },
+          {
+            "PassiveTrigger": 7,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -12685,12 +13017,19 @@
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550420004301
           },
           {
             "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550420004302
+          },
+          {
+            "PassiveTrigger": 7,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -12703,7 +13042,7 @@
   {
     "Id": 550422003,
     "IsIgnore": null,
-    "Memo": "敵用ザラR:自身のHP割合が30％未満になるたび自身に『固有バフ名称』を付与する。『固有バフ名称』は自身の被ダメージを20％減少させる。毎ターン開始時自身のHP割合が30％以上の場合『固有バフ名称』は解除される。／被ダメージの減少量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName22003]",
     "PassiveSkillInfos": [
       {
@@ -12713,6 +13052,13 @@
         "EquipmentRarityFlags": 0,
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550422003001
+          },
           {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
@@ -12737,6 +13083,13 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550422003201
+          },
+          {
             "PassiveTrigger": 8,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 1,
@@ -12757,7 +13110,7 @@
   {
     "Id": 550423003,
     "IsIgnore": null,
-    "Memo": "敵用ロザリーR:亡き主より受け継いだ命によってバトル開始時自身に『再生』を付与する。毎ターン行動開始時に自身のHPが最大HP×5％回復する。／『再生』での回復量が最大HP×10％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName23003]",
     "PassiveSkillInfos": [
       {
@@ -12770,7 +13123,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550423003001
           }
@@ -12786,7 +13139,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550423003201
           }
@@ -12797,7 +13150,7 @@
   {
     "Id": 550424003,
     "IsIgnore": null,
-    "Memo": "敵用リブラR:恋する乙女は一途に想い続ける。恋する相手以外には捕まらない。自身の回避率を20％増加させる。／回避率の増加量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName24003]",
     "PassiveSkillInfos": [
       {
@@ -12810,7 +13163,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550424003001
           }
@@ -12826,7 +13179,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550424003201
           }
@@ -12837,7 +13190,7 @@
   {
     "Id": 550425003,
     "IsIgnore": null,
-    "Memo": "敵用アイビーSR:お気に入りのお人形さんの赤を見た瞬間、彼女の中にある『赤の執着』が目を覚ます。味方が戦闘不能になった場合、3ターンの間自身の攻撃力が20％増加する。（最大4回までスタック可能）／攻撃力の増加量が30％になる。／攻撃力の増加量が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName25003]",
     "PassiveSkillInfos": [
       {
@@ -12893,7 +13246,7 @@
   {
     "Id": 550425004,
     "IsIgnore": null,
-    "Memo": "敵用アイビーSR:「あなたの赤色、どんな色？」通常攻撃を強化する。ランダムな敵1体に攻撃力×120％の物理攻撃を行う。「みーつけたぁ」新しいお人形を見つけ、元気よく飛びかかる。対象より自分のスピードが速い場合、30％の確率で1ターンの間『気絶』を付与する。／通常攻撃を強化する。攻撃の対象がランダムな敵2体になる。／『気絶』を付与する確率が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName25004]",
     "PassiveSkillInfos": [
       {
@@ -12906,7 +13259,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550425004001
           }
@@ -12922,7 +13275,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550425004201
           }
@@ -12938,7 +13291,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550425004301
           }
@@ -12949,7 +13302,7 @@
   {
     "Id": 550426003,
     "IsIgnore": null,
-    "Memo": "敵用マーリンSR:「わ、わたしのお弟子さんに……なってみませんか？」ターン開始時に味方が3体以上生存している場合、自身と自身の両端に位置する味方1体の防御力が20％増加する。生存している味方が2体以下の場合、自身と自身の両端に位置する味方それぞれ1体のクリティカル率が10％増加する。／防御力とクリティカルの増加量が20％になる。／このスキルの対象が自身と自身の両端に位置する味方2体になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName26003]",
     "PassiveSkillInfos": [
       {
@@ -12964,14 +13317,14 @@
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550426003001
+            "SubSetSkillId": 550426003000
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550426003002
+            "SubSetSkillId": 550426003001
           }
         ]
       },
@@ -12987,14 +13340,14 @@
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550426003201
+            "SubSetSkillId": 550426003000
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550426003202
+            "SubSetSkillId": 550426003201
           }
         ]
       },
@@ -13019,7 +13372,7 @@
   {
     "Id": 550426004,
     "IsIgnore": null,
-    "Memo": "敵用マーリンSR:師とは弟子を導き、そして守る者。自身のHP割合が50％未満の場合、自身と自身の両端に位置する味方1体に『再生』を付与する。毎ターン行動開始時自身のHPを5％回復する。／『再生』での回復量が7％になる。／このスキルの対象が自身と自身の両端に位置する味方2体になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName26004]",
     "PassiveSkillInfos": [
       {
@@ -13034,10 +13387,24 @@
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 1,
-            "SubSetSkillId": 550426004001
+            "SubSetSkillId": 550426004000
           },
           {
             "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 1,
+            "SubSetSkillId": 550426004001
+          },
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 1,
+            "SubSetSkillId": 550426004000
+          },
+          {
+            "PassiveTrigger": 1,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 1,
@@ -13057,10 +13424,24 @@
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 1,
-            "SubSetSkillId": 550426004201
+            "SubSetSkillId": 550426004000
           },
           {
             "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 1,
+            "SubSetSkillId": 550426004201
+          },
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 1,
+            "SubSetSkillId": 550426004000
+          },
+          {
+            "PassiveTrigger": 1,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 1,
@@ -13081,6 +13462,13 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 1,
             "SubSetSkillId": 550426004301
+          },
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 1,
+            "SubSetSkillId": 550426004301
           }
         ]
       }
@@ -13089,7 +13477,7 @@
   {
     "Id": 550427003,
     "IsIgnore": null,
-    "Memo": "敵用コルディSR:観客の視線を釘付けにするほど、その感覚も研ぎ澄まされていく。自身の攻撃力が30％増加する。／さらに自身の防御貫通が30％増加する。／攻撃力、防御貫通の増加量が40％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName27003]",
     "PassiveSkillInfos": [
       {
@@ -13102,7 +13490,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550427003001
           }
@@ -13118,7 +13506,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550427003201
           }
@@ -13134,7 +13522,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550427003301
           }
@@ -13145,7 +13533,7 @@
   {
     "Id": 550427004,
     "IsIgnore": null,
-    "Memo": "敵用コルディSR:その振る舞いは常に相手を翻弄する――火薬の匂いとともに。ターン開始時、１ターンの間自身に『行動阻害無効』を付与する。このスキルは3ターンに１回発動。／『行動阻害無効』のターン数が２ターンになる。／『行動阻害無効』から『デバフ無効』に変化する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName27004]",
     "PassiveSkillInfos": [
       {
@@ -13201,7 +13589,7 @@
   {
     "Id": 550428003,
     "IsIgnore": null,
-    "Memo": "敵用ニーナSR:おうちに辿り着くまで、歩みは止まらない。自身のスピードが20％増加する。／さらに自身の被ダメージが20％減少する。／スピードの増加量と被ダメージの減少量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName28003]",
     "PassiveSkillInfos": [
       {
@@ -13214,7 +13602,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550428003001
           }
@@ -13230,7 +13618,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550428003201
           }
@@ -13246,7 +13634,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550428003301
           }
@@ -13257,7 +13645,7 @@
   {
     "Id": 550428004,
     "IsIgnore": null,
-    "Memo": "敵用ニーナSR:零した涙の数だけ、影はより濃くなる。自身が現在HPの10％を超えるダメージの攻撃を受けた場合、10%を超えた分のダメージが35％減少する。／10%を超えた分のダメージが45％減少する。／10%を超えた分のダメージが65％減少する。(受けるダメージがHP10%+(元ダメージ-HP10%)*35%になる。)",
+    "Memo": null,
     "NameKey": "[PassiveSkillName28004]",
     "PassiveSkillInfos": [
       {
@@ -13313,7 +13701,7 @@
   {
     "Id": 550429003,
     "IsIgnore": null,
-    "Memo": "敵用メルティーユSR:その体は愛する子を守るために造られた。自身のHPが30％未満の場合、3ターンの間自身に『再生』を付与する。毎ターン行動開始時自身のHPを5％回復する。／『再生』での回復量が10％になる。／さらに3ターンの間自身に『潜伏』を付与する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName29003]",
     "PassiveSkillInfos": [
       {
@@ -13326,7 +13714,21 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 3,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550429003001
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550429003001
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550429003001
           }
@@ -13342,7 +13744,21 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 3,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550429003201
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550429003201
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550429003201
           }
@@ -13358,7 +13774,21 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 3,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550429003301
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550429003301
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550429003301
           }
@@ -13369,7 +13799,7 @@
   {
     "Id": 550429004,
     "IsIgnore": null,
-    "Memo": "敵用メルティーユSR:長年にわたるホムンクルスの研究成果は、自分の体にも適用されている。自身の状態異常耐性が30％増加する。／状態異常耐性の増加量が50％になる。／状態異常耐性の増加量が100％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName29004]",
     "PassiveSkillInfos": [
       {
@@ -13382,7 +13812,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550429004001
           }
@@ -13398,7 +13828,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550429004201
           }
@@ -13414,7 +13844,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550429004301
           }
@@ -13425,7 +13855,7 @@
   {
     "Id": 550430003,
     "IsIgnore": null,
-    "Memo": "敵用ルークSR:「死」に愛されたその運命は──魂すら蝕んでいく。自身が攻撃して、クリティカルヒットした場合、攻撃を受けた敵の被ダメージを5%増加させる（最大5回まで）。/被ダメージの増加量が10%になる。/被ダメージの増加量が15%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName30003]",
     "PassiveSkillInfos": [
       {
@@ -13481,7 +13911,7 @@
   {
     "Id": 550430004,
     "IsIgnore": null,
-    "Memo": "敵用ルークSR:死の運命に抗う――それが我が力となる。バトル開始時3ターンの間自身のクリティカル耐性が30％増加する。/クリティカル耐性の増加量が60％になる。/このスキルの対象が自身と自身に隣接する味方1体になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName30004]",
     "PassiveSkillInfos": [
       {
@@ -13528,13 +13958,6 @@
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 550430004201
-          },
-          {
-            "PassiveTrigger": 1,
-            "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
-            "PassiveGroupId": 0,
             "SubSetSkillId": 550430004301
           }
         ]
@@ -13544,7 +13967,7 @@
   {
     "Id": 550430005,
     "IsIgnore": null,
-    "Memo": "敵用ルークSR:毎ターン行動開始時自身のHPを攻撃力×5％回復する。／HPの回復量が自身の攻撃力×20％になる。／HPの回復量が自身の攻撃力×25％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName30005]",
     "PassiveSkillInfos": [
       {
@@ -13600,7 +14023,7 @@
   {
     "Id": 550432003,
     "IsIgnore": null,
-    "Memo": "敵用スクルドR:改良に改良を重ねて生み出した、疲労回復・スタミナ向上の特性薬湯で、自身の最大HPを20％増加させる。ただし味は保証しない。／最大HPの増加量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName32003]",
     "PassiveSkillInfos": [
       {
@@ -13613,7 +14036,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550432003001
           }
@@ -13629,7 +14052,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550432003201
           }
@@ -13640,7 +14063,7 @@
   {
     "Id": 550433003,
     "IsIgnore": null,
-    "Memo": "敵用チェルナR:魔力を込めたキャンバスにモノクロの肖像画を描くことで、少しずつ相手の色と生命力を奪っていく。自身のHPドレインを20％増加させる。／HPドレインの増加量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName33003]",
     "PassiveSkillInfos": [
       {
@@ -13653,7 +14076,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550433003001
           }
@@ -13669,7 +14092,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550433003201
           }
@@ -13680,7 +14103,7 @@
   {
     "Id": 550434003,
     "IsIgnore": null,
-    "Memo": "敵用ソテイラR:寝ぼけた頭の上の鳥が相手をくちばしでつつく。自身がダメージを受けたとき30％の確率で、攻撃してきた敵に1ターンの間『出血』を付与する。毎ターン行動開始時に自身の攻撃力×20％のダメージを与える。／『出血』を付与する確率が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName34003]",
     "PassiveSkillInfos": [
       {
@@ -13720,7 +14143,7 @@
   {
     "Id": 550435003,
     "IsIgnore": null,
-    "Memo": "敵用ミミSR:大好きなダンスを披露。元気に踊って、気分上々。3ターン目以降のターン開始時に２ターン以内にダメージを受けていなければ、自身の攻撃力が40％増加する。／攻撃力の増加量が60％になる。／攻撃力の増加量が80％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName35003]",
     "PassiveSkillInfos": [
       {
@@ -13776,7 +14199,7 @@
   {
     "Id": 550435004,
     "IsIgnore": null,
-    "Memo": "敵用ミミSR:ダンスは人と人を繋ぐ。ダンスに見惚れた者はつられて踊り出し、共犯者となる。\\n戦闘開始時に防御力の最も高い敵と最も低い敵の2体に『共鳴』を付与する。互いに受けたダメージ×60％のダメージを受けるようになる。この効果はミミまたは対象が死亡すると解除される。／『共鳴』で受けるダメージが互いに受けたダメージ×80％になる。／『共鳴』で受けるダメージが互いに受けたダメージ×120％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName35004]",
     "PassiveSkillInfos": [
       {
@@ -13799,13 +14222,6 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550435004002
-          },
-          {
-            "PassiveTrigger": 1,
-            "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
-            "PassiveGroupId": 0,
-            "SubSetSkillId": 550435004003
           }
         ]
       },
@@ -13829,13 +14245,6 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550435004202
-          },
-          {
-            "PassiveTrigger": 1,
-            "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
-            "PassiveGroupId": 0,
-            "SubSetSkillId": 550435004203
           }
         ]
       },
@@ -13859,13 +14268,6 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550435004302
-          },
-          {
-            "PassiveTrigger": 1,
-            "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
-            "PassiveGroupId": 0,
-            "SubSetSkillId": 550435004303
           }
         ]
       }
@@ -13874,7 +14276,7 @@
   {
     "Id": 550436003,
     "IsIgnore": null,
-    "Memo": "敵用トロポンSR:哀しい現実を包み込む優しい嘘で、自身の最大HPが20％増加する。／最大HPの増加量が40％になる。／さらに自身のスピードが20％増加する。※パッシブトリガー28（バトル開始時）用",
+    "Memo": null,
     "NameKey": "[PassiveSkillName36003]",
     "PassiveSkillInfos": [
       {
@@ -13951,7 +14353,7 @@
   {
     "Id": 550436004,
     "IsIgnore": null,
-    "Memo": "敵用トロポンSR:詐欺師は盗んだ瞬間すら気取らせない。その手際はまるで魔法のよう――。自身がクリティカルヒットの攻撃を受けた場合、75％の確率で敵に付帯するバフを1つ奪い自身に付与する。／さらに、受けた攻撃がクリティカルヒットではない場合、75％の確率で自身に付帯するデバフを1つ敵に付与する。／敵に付帯するバフを奪う確率と自身に付帯するデバフを付与する確率が100％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName36004]",
     "PassiveSkillInfos": [
       {
@@ -14007,7 +14409,7 @@
   {
     "Id": 550437003,
     "IsIgnore": null,
-    "Memo": "敵用ハトホルSR:踏み出した足は、もう戻せない――その舞は、時に自分自身をも鼓舞する。\\n3ターン目以降のターン開始時、2ターン以内に自身がダメージを受けていなければ、自身の攻撃力が20％増加する。／攻撃力の増加量が50％になる。／攻撃力の増加量が80％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName37003]",
     "PassiveSkillInfos": [
       {
@@ -14063,7 +14465,7 @@
   {
     "Id": 550437004,
     "IsIgnore": null,
-    "Memo": "敵用ハトホルSR:いつか辿り着いてみせる、西の果てにある、父の祖国へ。通常攻撃を強化する。通常攻撃がクリティカルヒットした場合、1ターンの間自身の弱体効果命中率が10％増加する。／弱体効果命中率の増加量が30％になる。／弱体効果命中率の増加量が50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName37004]",
     "PassiveSkillInfos": [
       {
@@ -14076,7 +14478,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550437004001
           }
@@ -14092,7 +14494,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550437004201
           }
@@ -14108,7 +14510,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550437004301
           }
@@ -14119,7 +14521,7 @@
   {
     "Id": 550438003,
     "IsIgnore": null,
-    "Memo": "敵用オリヴィエSR:地道に積んだ善行は必ず返ってくる。自身の最大HPが10％増加する。／さらに自身の防御力が30％増加する。／最大HPの増加量が20％、防御力の増加量が40％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName38003]",
     "PassiveSkillInfos": [
       {
@@ -14132,7 +14534,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550438003001
           }
@@ -14148,7 +14550,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550438003201
           }
@@ -14164,7 +14566,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550438003301
           }
@@ -14175,7 +14577,7 @@
   {
     "Id": 550438004,
     "IsIgnore": null,
-    "Memo": "敵用オリヴィエSR:寵愛を受ける者を傷つければ、神に見放される。自身がクリティカルヒットの攻撃を受けた場合、2ターンの間敵の攻撃力を10％減少させる。／攻撃力の減少量が20％になる。／攻撃力の減少量が40％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName38004]",
     "PassiveSkillInfos": [
       {
@@ -14231,7 +14633,7 @@
   {
     "Id": 550439003,
     "IsIgnore": null,
-    "Memo": "敵用プリマヴェーラSR:歌は心、祈るように歌えば届く。味方全体の攻撃力を生存している味方の数×5％増加させる。／さらに味方全体のスピードを生存している味方の数×5％増加させる。／攻撃力とスピードの増加量が7％になる。※パッシブトリガー28（バトル開始時）用",
+    "Memo": null,
     "NameKey": "[PassiveSkillName39003]",
     "PassiveSkillInfos": [
       {
@@ -14241,6 +14643,13 @@
         "EquipmentRarityFlags": 0,
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 28,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550439003002
+          },
           {
             "PassiveTrigger": 28,
             "SkillCoolTime": 0,
@@ -14269,6 +14678,13 @@
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
+            "SubSetSkillId": 550439003002
+          },
+          {
+            "PassiveTrigger": 28,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
             "SubSetSkillId": 550439003201
           },
           {
@@ -14292,6 +14708,13 @@
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
+            "SubSetSkillId": 550439003002
+          },
+          {
+            "PassiveTrigger": 28,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
             "SubSetSkillId": 550439003301
           },
           {
@@ -14308,7 +14731,7 @@
   {
     "Id": 550439004,
     "IsIgnore": null,
-    "Memo": "敵用プリマヴェーラSR:その名に恥じぬ歌姫になってみせる。自身の攻撃力が20％増加する。／自身の攻撃力が50％増加する。／さらに自身の状態異常耐性が100％増加する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName39004]",
     "PassiveSkillInfos": [
       {
@@ -14321,7 +14744,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550439004001
           }
@@ -14337,7 +14760,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550439004201
           }
@@ -14353,7 +14776,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550439004301
           }
@@ -14364,7 +14787,7 @@
   {
     "Id": 550440003,
     "IsIgnore": null,
-    "Memo": "敵用カロルSR: /Lv1　やがて忘れてしまうからこそ、今の仲間を傷つける敵は許さない――その思いが運命に抗う力となる。味方が攻撃を受けたとき、自身のHPを自身の失ったHP×3％回復する。　/Lv2 HPの回復量が自身の失ったHP×5％になる。　/Lv3 HPの回復量が自身の失ったHP×7％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName40003]",
     "PassiveSkillInfos": [
       {
@@ -14441,7 +14864,7 @@
   {
     "Id": 550440004,
     "IsIgnore": null,
-    "Memo": "敵用カロルSR: /Lv1　忘れてしまえば、痛みはない。バトル開始時味方５名の防御力を15％増加させる。/ Lv2 防御力の増加量が25％になる。/ Lv2 さらに自身の防御力を95%増加させる（永続、解除可能）",
+    "Memo": null,
     "NameKey": "[PassiveSkillName40004]",
     "PassiveSkillInfos": [
       {
@@ -14454,7 +14877,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550440004001
           }
@@ -14470,7 +14893,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550440004201
           }
@@ -14486,14 +14909,14 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550440004301
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550440004302
           }
@@ -14504,7 +14927,7 @@
   {
     "Id": 550441003,
     "IsIgnore": null,
-    "Memo": "敵用【弔花の魔女】\\nナターシャSR:たとえもう会えなくても、二人の愛は、ずっと胸の中に──。自身が攻撃を受けたとき、自身のHP割合が50％未満の場合、自身の被ダメージが20％減少する。／被ダメージの減少量が30％になる。／被ダメージの減少量が40％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName41003]",
     "PassiveSkillInfos": [
       {
@@ -14560,7 +14983,7 @@
   {
     "Id": 550441004,
     "IsIgnore": null,
-    "Memo": "敵用【弔花の魔女】\\nナターシャSR:その花は絶望を養分に咲き誇る。自身の攻撃力が30％増加する。／さらに自身のクリティカルダメージが30％増加する。／攻撃力とクリティカルダメージの増加量が40％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName41004]",
     "PassiveSkillInfos": [
       {
@@ -14616,7 +15039,7 @@
   {
     "Id": 550442003,
     "IsIgnore": null,
-    "Memo": "敵用【聖剣の魔女】\\nフォルティナSR:主よ、我らに力を――。神への祈りが力となり、ターン開始時に、自身に2ターンの間『行動阻害無効』を付与する。この効果は5ターンに1回発動する。／この効果が4ターンに1回発動するようになる。／このスキルの対象が自身と最も攻撃力の高い味方になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName42003]",
     "PassiveSkillInfos": [
       {
@@ -14679,7 +15102,7 @@
   {
     "Id": 550442004,
     "IsIgnore": null,
-    "Memo": "敵用【聖剣の魔女】\\nフォルティナSR:主よ、どうか加護を――。困難すら神からの試練と受け止める敬虔な祈りが力となる。\\n自身の防御力が20％増加する。／さらに自身のカウンタが20％増加する。／防御力とカウンタの増加量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName42004]",
     "PassiveSkillInfos": [
       {
@@ -14692,7 +15115,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550442004001
           }
@@ -14708,7 +15131,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550442004201
           }
@@ -14724,7 +15147,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550442004301
           }
@@ -14735,7 +15158,7 @@
   {
     "Id": 550443003,
     "IsIgnore": null,
-    "Memo": "敵用【雷啼の魔女】\\nケルベロスSR",
+    "Memo": null,
     "NameKey": "[PassiveSkillName43003]",
     "PassiveSkillInfos": [
       {
@@ -14748,7 +15171,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 3,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550443003001
           }
@@ -14764,7 +15187,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 3,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550443003201
           }
@@ -14780,7 +15203,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 3,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550443003301
           }
@@ -14791,7 +15214,7 @@
   {
     "Id": 550443004,
     "IsIgnore": null,
-    "Memo": "敵用【雷啼の魔女】\\nケルベロスSR",
+    "Memo": null,
     "NameKey": "[PassiveSkillName43004]",
     "PassiveSkillInfos": [
       {
@@ -14804,7 +15227,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550443004001
           }
@@ -14820,7 +15243,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550443004201
           }
@@ -14836,7 +15259,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550443004301
           }
@@ -14847,7 +15270,7 @@
   {
     "Id": 550444003,
     "IsIgnore": null,
-    "Memo": "敵用ルサールカSR:　Lv1　捨てられ、裏切られ、絶望しても──少女は信じ続けた。きっとあの人が来てくれるはず……。その儚い願いが、少女にもう一度だけ光を与える──。自身が戦闘不能になったとき、自身の最大HP×10％のHPを回復して復活する。弱体効果によって戦闘不能になった場合、このスキルは発動しない。このスキルはバトル中1回のみ発動する。/ Lv2 \\nさらに自身に1層の『多重バリア』を付与する。ダメージを受けると、バリアを1層消費してそのダメージを無効化する。 / Lv3\\n『多重バリア』が5層になる。さらに1ターンの間自身の攻撃力が70％、スピードが30％増加する。さらに自身以外の味方全体に1層の『多重バリア』を付与する。ダメージを受けると、バリアを1層消費してそのダメージを無効化する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName44003]",
     "PassiveSkillInfos": [
       {
@@ -14865,10 +15288,17 @@
             "SubSetSkillId": 550444003001
           },
           {
-            "PassiveTrigger": 19,
+            "PassiveTrigger": 62,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 9999,
             "PassiveGroupId": 1,
+            "SubSetSkillId": 550444003001
+          },
+          {
+            "PassiveTrigger": 19,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 9999,
+            "PassiveGroupId": 0,
             "SubSetSkillId": 550444003002
           }
         ]
@@ -14888,10 +15318,17 @@
             "SubSetSkillId": 550444003001
           },
           {
-            "PassiveTrigger": 19,
+            "PassiveTrigger": 62,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 9999,
             "PassiveGroupId": 1,
+            "SubSetSkillId": 550444003001
+          },
+          {
+            "PassiveTrigger": 19,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 9999,
+            "PassiveGroupId": 0,
             "SubSetSkillId": 550444003202
           }
         ]
@@ -14911,17 +15348,24 @@
             "SubSetSkillId": 550444003001
           },
           {
-            "PassiveTrigger": 19,
+            "PassiveTrigger": 62,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 9999,
             "PassiveGroupId": 1,
+            "SubSetSkillId": 550444003001
+          },
+          {
+            "PassiveTrigger": 19,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 9999,
+            "PassiveGroupId": 0,
             "SubSetSkillId": 550444003302
           },
           {
             "PassiveTrigger": 19,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 9999,
-            "PassiveGroupId": 1,
+            "PassiveGroupId": 0,
             "SubSetSkillId": 550444003303
           }
         ]
@@ -14931,7 +15375,7 @@
   {
     "Id": 550444004,
     "IsIgnore": null,
-    "Memo": "敵用ルサールカSR:　Lv1 少女の流した絶望の涙が、100年やむことのない悲しみの雨となった。バトル開始時、もしくは自身が攻撃を受けたとき、自身のHP割合が50％未満の場合、2ターンの間自身の物魔防御貫通が30％増加する。次に自身が攻撃を受けたときこのバフは解除され、再度HP割合の判定を行う。 / Lv2 \\nバトル開始時、もしくは自身が攻撃を受けたとき、さらに自身のHP割合が50％以上の場合、2ターンの間自身のクリティカル耐性が30%増加する。次に自身が攻撃を受けたときこのバフは解除され、再度HP割合の判定を行う。 / Lv3 \\n物魔防御貫通とクリティカル耐性の増加量がそれぞれ50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName44004]",
     "PassiveSkillInfos": [
       {
@@ -15029,7 +15473,7 @@
   {
     "Id": 550444005,
     "IsIgnore": null,
-    "Memo": "敵用専用3、1ターン目のターン開始時、スピードが1ターンの間30%上昇（解除可能）",
+    "Memo": null,
     "NameKey": "[PassiveSkillName44005]",
     "PassiveSkillInfos": [
       {
@@ -15053,7 +15497,7 @@
   {
     "Id": 550445003,
     "IsIgnore": null,
-    "Memo": "敵用【聖槍の魔女】\\nエルフリンデSR",
+    "Memo": null,
     "NameKey": "[PassiveSkillName45003]",
     "PassiveSkillInfos": [
       {
@@ -15066,9 +15510,113 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003001
+          },
+          {
+            "PassiveTrigger": 24,
+            "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 45003
+            "SubSetSkillId": 550445003002
+          },
+          {
+            "PassiveTrigger": 42,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003003
+          }
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": null,
+        "CharacterLevel": 121,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003201
+          },
+          {
+            "PassiveTrigger": 24,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003202
+          },
+          {
+            "PassiveTrigger": 42,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003003
+          }
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": null,
+        "CharacterLevel": 201,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003301
+          },
+          {
+            "PassiveTrigger": 24,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003302
+          },
+          {
+            "PassiveTrigger": 42,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003303
+          }
+        ]
+      },
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": null,
+        "CharacterLevel": 181,
+        "EquipmentRarityFlags": 256,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003301
+          },
+          {
+            "PassiveTrigger": 24,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003302
+          },
+          {
+            "PassiveTrigger": 42,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 1,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445003403
           }
         ]
       }
@@ -15077,7 +15625,7 @@
   {
     "Id": 550445004,
     "IsIgnore": null,
-    "Memo": "敵用【聖槍の魔女】\\nエルフリンデSR",
+    "Memo": null,
     "NameKey": "[PassiveSkillName45004]",
     "PassiveSkillInfos": [
       {
@@ -15090,9 +15638,41 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 0,
+            "SkillMaxCoolTime": 4,
             "PassiveGroupId": 0,
-            "SubSetSkillId": 45004
+            "SubSetSkillId": 550445004001
+          }
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": null,
+        "CharacterLevel": 141,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 4,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445004201
+          }
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": null,
+        "CharacterLevel": 221,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 4,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550445004301
           }
         ]
       }
@@ -15101,7 +15681,7 @@
   {
     "Id": 550446003,
     "IsIgnore": null,
-    "Memo": "敵用【雪幻の魔女】\\nルナリンドSR:大切な妹のためなら、どんな困難からでも守ってみせる。自身が生存している間、味方全体の物理防御力を10％増加させる。／物理防御力の増加量が20％になる。／物理防御力の増加量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName46003]",
     "PassiveSkillInfos": [
       {
@@ -15117,6 +15697,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550446003001
+          },
+          {
+            "PassiveTrigger": 6,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550446003002
+          },
+          {
+            "PassiveTrigger": 62,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550446003002
           }
         ]
       },
@@ -15133,6 +15727,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550446003201
+          },
+          {
+            "PassiveTrigger": 6,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550446003202
+          },
+          {
+            "PassiveTrigger": 62,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550446003202
           }
         ]
       },
@@ -15149,6 +15757,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550446003301
+          },
+          {
+            "PassiveTrigger": 6,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550446003302
+          },
+          {
+            "PassiveTrigger": 62,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550446003302
           }
         ]
       }
@@ -15157,7 +15779,7 @@
   {
     "Id": 550446004,
     "IsIgnore": null,
-    "Memo": "敵用【雪幻の魔女】\\nルナリンドSR:痛みも、絶望も、何もかも。氷の中なら感じない。自身の被ダメージが20％減少する。／さらに自身のHPドレインが20％増加する。／被ダメージの減少量が40％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName46004]",
     "PassiveSkillInfos": [
       {
@@ -15170,7 +15792,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550446004001
           }
@@ -15186,7 +15808,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550446004201
           }
@@ -15202,7 +15824,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550446004301
           }
@@ -15213,7 +15835,7 @@
   {
     "Id": 550447003,
     "IsIgnore": null,
-    "Memo": "敵用【劫火の魔女】\\nヴァルリーデSR:悲劇を繰り返したくないと願う心が力を与える。自身の残りHP割合が高いほど自身の攻撃力が増加する。（最大50％）／攻撃力の増加が最大60％までになる。／攻撃力の増加が最大70％までになる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName47003]",
     "PassiveSkillInfos": [
       {
@@ -15225,6 +15847,20 @@
         "PassiveSubSetSkillInfos": [
           {
             "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550447003001
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550447003001
+          },
+          {
+            "PassiveTrigger": 30,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -15245,6 +15881,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550447003201
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550447003201
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550447003201
           }
         ]
       },
@@ -15261,6 +15911,20 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550447003301
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550447003301
+          },
+          {
+            "PassiveTrigger": 30,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550447003301
           }
         ]
       }
@@ -15269,7 +15933,7 @@
   {
     "Id": 550447004,
     "IsIgnore": null,
-    "Memo": "敵用【劫火の魔女】\\nヴァルリーデSR:思い出すのは、炎の中の記憶。自身を魔女に変えた黒い炎が、引く事を許さない。\\n自身が攻撃を受けたとき残りHPが40％以下になると自身に『劫火の魔女』を付与する。『劫火の魔女』は自身の受けるダメージを20％減少、毎ターン行動開始時10％HP回復する。さらにバフ解除の効果で解除できず、3ターン経過または自身の残りHP割合が90％以上に達すると解除される。／『劫火の魔女』の毎ターン行動開始時のHP回復量が15％になる。／『劫火の魔女』の受けるダメージの減少量が30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName47004]",
     "PassiveSkillInfos": [
       {
@@ -15346,7 +16010,7 @@
   {
     "Id": 550448003,
     "IsIgnore": null,
-    "Memo": "敵用【錆鉄の魔女】\\nＡ．Ａ．SR: /Lv1　数えきれないほどの屍を積み上げて、その「最高傑作」は造られた。自身の通常攻撃を強化する。通常攻撃時ランダムな敵1体に自身の魔力×150％の直接攻撃を行う。　/Lv2 　直接攻撃のダメージが自身の魔力×180％になる。/Lv3　直接攻撃のダメージが自身の魔力×220％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName48003]",
     "PassiveSkillInfos": [
       {
@@ -15402,7 +16066,7 @@
   {
     "Id": 550448004,
     "IsIgnore": null,
-    "Memo": "敵用【錆鉄の魔女】\\nＡ．Ａ．SR: /Lv1　内に眠る守護天使が宿主を守る。自身が攻撃を受けたとき、ダメージを25％遮断する。このスキルは1ターン目のターン終了時まで発動する。（ 遮断された後のダメージ量に対して、他のダメージ軽減（『被ダメージ減少』等）が計算される）　/Lv2 　このスキルが2ターン目のターン終了時まで発動するようになる。/Lv3 ダメージを55％遮断する。/専用1 愛の天使を強化する。ダメージを85％遮断する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName48004]",
     "PassiveSkillInfos": [
       {
@@ -15474,7 +16138,7 @@
   {
     "Id": 550448005,
     "IsIgnore": null,
-    "Memo": "敵用【錆鉄の魔女】\\nＡ．Ａ専属2 自身の命中率が40％増加する（解除不可）。",
+    "Memo": null,
     "NameKey": "*",
     "PassiveSkillInfos": [
       {
@@ -15498,7 +16162,7 @@
   {
     "Id": 550449003,
     "IsIgnore": null,
-    "Memo": "敵用【骸晶の魔女】\\nオフィーリアSR: その目に宿るのは、今度こそ愛する人を守るという固い決意。ターン開始時自身のHP割合が60％以上の場合、自身に2ターンの間『挑発』を付与し、自身の回避率を50％減少させる。対象がランダムである敵の攻撃を引き付ける。このスキルは4ターンに1回発動する。\\nさらにこのスキルが自身の被ダメージを30％減少させる。\\nさらにこのスキルが自身のカウンタを50％増加させる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName49003]",
     "PassiveSkillInfos": [
       {
@@ -15554,7 +16218,7 @@
   {
     "Id": 550449004,
     "IsIgnore": null,
-    "Memo": "敵用【骸晶の魔女】\\nオフィーリアSR: 近衛騎士としての栄誉は、王の盾となることにあり。自身の最大HPとクリティカル耐性がそれぞれ20％増加する（解除不可）。\\n最大HPの増加量が40％、クリティカル耐性の増加量が40％になる。\\nさらに自身が致命的なダメージを受けたとき、HP1で耐え、1ターンの間味方全体の物理防御力を40％増加させる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName49004]",
     "PassiveSkillInfos": [
       {
@@ -15565,7 +16229,7 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
-            "PassiveTrigger": 1,
+            "PassiveTrigger": 28,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
@@ -15581,7 +16245,7 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
-            "PassiveTrigger": 1,
+            "PassiveTrigger": 28,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
@@ -15617,7 +16281,7 @@
   {
     "Id": 550449005,
     "IsIgnore": null,
-    "Memo": "敵用【骸晶の魔女】\\nオフィーリアSR: 自身が物理攻撃を受けたとき、自身のHPを受けたダメージ×35％回復する（この攻撃で自身が戦闘不能になった場合、このスキルは発動しない）。",
+    "Memo": null,
     "NameKey": "*",
     "PassiveSkillInfos": [
       {
@@ -15641,7 +16305,7 @@
   {
     "Id": 550450003,
     "IsIgnore": null,
-    "Memo": "敵用アームストロングSR:",
+    "Memo": null,
     "NameKey": "[PassiveSkillName50003]",
     "PassiveSkillInfos": [
       {
@@ -15677,16 +16341,23 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 10,
+            "SkillMaxCoolTime": 4,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550450003202
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 10,
-            "PassiveGroupId": 0,
+            "SkillMaxCoolTime": 4,
+            "PassiveGroupId": 1,
             "SubSetSkillId": 550450003203
+          },
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 4,
+            "PassiveGroupId": 1,
+            "SubSetSkillId": 550450003204
           }
         ]
       },
@@ -15707,16 +16378,23 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 10,
+            "SkillMaxCoolTime": 4,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550450003302
           },
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 10,
-            "PassiveGroupId": 0,
+            "SkillMaxCoolTime": 4,
+            "PassiveGroupId": 1,
             "SubSetSkillId": 550450003303
+          },
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 4,
+            "PassiveGroupId": 1,
+            "SubSetSkillId": 550450003304
           }
         ]
       }
@@ -15725,7 +16403,7 @@
   {
     "Id": 550450004,
     "IsIgnore": null,
-    "Memo": "敵用アームストロングSR",
+    "Memo": null,
     "NameKey": "[PassiveSkillName50004]",
     "PassiveSkillInfos": [
       {
@@ -15818,7 +16496,7 @@
   {
     "Id": 550451003,
     "IsIgnore": null,
-    "Memo": "敵用ソフィアSR:/Lv1 教え子にみっともない背中は見せられない――。自身が弱体効果を受けた時、自身のすべての弱体効果のターン数を2ターン減少させる。この効果は4ターンに1回発動する。/Lv2 自身が弱体効果を受けた時、さらに1ターンの間弱体効果を付与してきた敵の弱体効果命中率を20％減少させるようになる。/Lv3 弱体効果命中率の減少量が50％になる。/ex2 教導の精神を強化する。自身が弱体効果を受けた時、さらに1ターンの間対象の攻撃力を40％減少させるようになる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName51003]",
     "PassiveSkillInfos": [
       {
@@ -15911,7 +16589,7 @@
   {
     "Id": 550451004,
     "IsIgnore": null,
-    "Memo": "敵用ソフィアSR:/Lv1 教え、導く事が教師の務め。家庭教師としての信念が秘めた力を開花させる。自身の最大HPが15％増加する（解除不可）。/Lv2 さらに自身のクリティカル耐性が15％増加する。/Lv3 最大HPとクリティカル耐性の増加量がそれぞれ30％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName51004]",
     "PassiveSkillInfos": [
       {
@@ -15924,7 +16602,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550451004001
           }
@@ -15940,7 +16618,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550451004201
           }
@@ -15956,7 +16634,7 @@
           {
             "PassiveTrigger": 1,
             "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 9999,
+            "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550451004301
           }
@@ -15967,7 +16645,7 @@
   {
     "Id": 550451005,
     "IsIgnore": null,
-    "Memo": "敵用ソフィアSR:/専用Lv1　ターン開始時2ターンの間自身のカウンタを55％増加させる。このスキルは4ターンに1回発動する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName51005]",
     "PassiveSkillInfos": [
       {
@@ -15991,7 +16669,7 @@
   {
     "Id": 550452003,
     "IsIgnore": null,
-    "Memo": "敵用シヴィSR:Lv1 戦うのは苦手だし面倒だから、みんなに頑張ってもらいたいっす。という主の願いを受けて剣が仲間にも力を付与し、自身と自身に隣接する味方1体の防御力と物理防御力がそれぞれ25%増加する（解除不可）。/ Lv2 \\nこのスキルの対象が自身と自身に隣接する味方2体になる。/ Lv3 \\n自身のみ防御力と物理防御力の増加量がそれぞれ100%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName52003]",
     "PassiveSkillInfos": [
       {
@@ -16007,13 +16685,6 @@
             "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550452003001
-          },
-          {
-            "PassiveTrigger": 1,
-            "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 10,
-            "PassiveGroupId": 0,
-            "SubSetSkillId": 550452003002
           }
         ]
       },
@@ -16046,13 +16717,6 @@
             "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550452003301
-          },
-          {
-            "PassiveTrigger": 1,
-            "SkillCoolTime": 0,
-            "SkillMaxCoolTime": 10,
-            "PassiveGroupId": 0,
-            "SubSetSkillId": 550452003302
           }
         ]
       }
@@ -16061,7 +16725,7 @@
   {
     "Id": 550452004,
     "IsIgnore": null,
-    "Memo": "敵用シヴィSR:Lv1 剣は主を守護し続ける。その使命を全うするまで。自身がアクティブスキルで弱体効果を受けて、自身が付帯している弱体効果の個数が2以上の場合、自身の弱体効果を全て解除する。このスキルは4ターンに1回発動する。/ Lv2 \\nさらに2ターンの間自身の被ダメージが15%減少する。/ Lv3\\n被ダメージの減少量が30%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName52004]",
     "PassiveSkillInfos": [
       {
@@ -16117,7 +16781,7 @@
   {
     "Id": 550453003,
     "IsIgnore": null,
-    "Memo": "敵用ウィーラSR: Lv1 雨が教えてくれるの。だからウィー、どこにいるかわかるよ。自身の命中率が20％増加する（解除不可）。/ Lv2\\nさらに自身の弱体効果命中率が20％増加する（解除不可）。/ Lv3 \\n命中率と弱体効果命中率の増加量がそれぞれ40％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName53003]",
     "PassiveSkillInfos": [
       {
@@ -16173,7 +16837,7 @@
   {
     "Id": 550453004,
     "IsIgnore": null,
-    "Memo": "敵用ウィーラSR: Lv1 「だって、ルゥちゃんは、ウィーの大切なお友達だから……！」自身が攻撃を受けて、HP割合が40％未満になった場合、自身の弱体効果を全て解除する。このスキルは4ターンに1回発動する。/ Lv2 \\nさらに1->2ターンの間自身に自身の攻撃力×300％の『シールド』を付与する。/ Lv3\\n『シールド』のターン数が2->3ターンになる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName53004]",
     "PassiveSkillInfos": [
       {
@@ -16229,7 +16893,7 @@
   {
     "Id": 550454003,
     "IsIgnore": null,
-    "Memo": "敵用シフォン3",
+    "Memo": null,
     "NameKey": "[PassiveSkillName54003]",
     "PassiveSkillInfos": [
       {
@@ -16322,7 +16986,7 @@
   {
     "Id": 550454004,
     "IsIgnore": null,
-    "Memo": "敵用シフォン4",
+    "Memo": null,
     "NameKey": "[PassiveSkillName54004]",
     "PassiveSkillInfos": [
       {
@@ -16378,7 +17042,7 @@
   {
     "Id": 550455003,
     "IsIgnore": null,
-    "Memo": "敵用レアSR:Lv1 「や、や、やらなきゃ……！　こ、殺される前に……殺さなきゃ！」過剰な思い込みによって攻撃性が増し、自身の攻撃力が15％増加する（解除不可）。/ Lv2 \\nさらに自身のクリティカルダメージが15％増加する（解除不可）。/ Lv3 \\n攻撃力とクリティカルダメージの増加量がそれぞれ35％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName55003]",
     "PassiveSkillInfos": [
       {
@@ -16434,7 +17098,7 @@
   {
     "Id": 550455004,
     "IsIgnore": null,
-    "Memo": "敵用レアSR:Lv1 「あの人笑ってる……き、きっと、私を笑ってるんだ……」周りの人には聞こえない笑い声に囚われ、人目を避けて生きてきた。バトル開始時自身に1ターンの間『ステルス』を付与する。/ Lv2 \\n『ステルス』のターン数が2ターンになる。/ Lv3\\nさらに自身が最大HPの25％を超えるダメージの攻撃を受けた場合、2ターンの間自身の被ダメージを15％減少させる。このスキルは4ターンに1回発動する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName55004]",
     "PassiveSkillInfos": [
       {
@@ -16497,7 +17161,7 @@
   {
     "Id": 550457003,
     "IsIgnore": null,
-    "Memo": "敵用ステラSR:Lv1 長年練習し続けた自作の呪文が、本物の魔法となる――。バトル開始時自身に3ターンの間自身の攻撃力×400%の『シールド』を付与する（解除不可）。/ Lv2 『シールド』のターン数が6ターンになる。/ Lv3 『シールド』の大きさが自身の攻撃力×800%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName57003]",
     "PassiveSkillInfos": [
       {
@@ -16553,7 +17217,7 @@
   {
     "Id": 550457004,
     "IsIgnore": null,
-    "Memo": "敵用ステラSR:Lv1 「ボスの光は、いつだって私を守ってくれる――」バトル開始時10ターンの間自身の防御力が25%増加する。自身が攻撃を受けたとき、自身が付与した『防御力増加』のターン数が1減少する。自身で付与した『防御力増加』を付帯していない状態で自身が攻撃を受けたとき、40%の確率でランダムな敵5体に1ターンの間『沈黙』を付与し、10ターンの間自身の防御力が25%増加する。この攻撃で自身が戦闘不能になった場合、このスキルは発動しない。/ Lv2 防御力の増加量が50%になる。/ Lv3 『沈黙』のターン数が2ターンになる。/ Ex2 星を統べる者を強化する。『沈黙』を付与する確率が80%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName57004]",
     "PassiveSkillInfos": [
       {
@@ -16681,7 +17345,7 @@
   {
     "Id": 550457005,
     "IsIgnore": null,
-    "Memo": "敵用ステラSR:Ex3 バトル開始時1ターンの間自身のスピードが25%増加する（解除不可）。",
+    "Memo": null,
     "NameKey": null,
     "PassiveSkillInfos": [
       {
@@ -16705,7 +17369,7 @@
   {
     "Id": 550458003,
     "IsIgnore": null,
-    "Memo": "敵用アーティSR:Lv1 「二人なら、乗り越えられる」寄り添う影が挫けそうな心を何度も奮い立たせる。自身の最大HPが15％増加する（解除不可）。/ Lv2 \\nさらに自身の被ダメージが15％減少する（解除不可）。/ Lv3 \\n最大HPの増加量が30%、被ダメージの減少量が30%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName58003]",
     "PassiveSkillInfos": [
       {
@@ -16761,7 +17425,7 @@
   {
     "Id": 550458004,
     "IsIgnore": null,
-    "Memo": "敵用アーティSR:Lv1 秘めた魔力はかつて魔剣を生み出すほど強大なものーーバトル開始時自身にクリティカル耐性を10％増加させるバフを3回付与する（最大10回まで）（解除不可）。自身が最大HPの5％を超えるダメージの攻撃を受けた場合、自身が付与した『クリティカル耐性増加』のスタック数を1消費して、10%を超えた分のダメージを50％遮断する。（遮断された後のダメージ量に対して、他のダメージ軽減（『被ダメージ減少』等）が計算される）/ Lv2 \\n5%を超えた分のダメージを70%遮断する。/ Lv3\\n『クリティカル耐性増加』の付与回数が5回になる。/ ExLv2\\n魔剣の創造主を強化する。5%を超えた分のダメージを90%遮断する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName58004]",
     "PassiveSkillInfos": [
       {
@@ -16787,6 +17451,13 @@
           },
           {
             "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550458004003
+          },
+          {
+            "PassiveTrigger": 31,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -16821,6 +17492,13 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550458004003
+          },
+          {
+            "PassiveTrigger": 31,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550458004003
           }
         ]
       },
@@ -16847,6 +17525,13 @@
           },
           {
             "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550458004003
+          },
+          {
+            "PassiveTrigger": 31,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
@@ -16881,6 +17566,13 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550458004003
+          },
+          {
+            "PassiveTrigger": 31,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550458004003
           }
         ]
       }
@@ -16889,7 +17581,7 @@
   {
     "Id": 550460003,
     "IsIgnore": null,
-    "Memo": "敵用フィアーSR:Lv1過剰なまでの生命力は自分だけでなく、仲間の命までも巻き込んでいく。バトル開始時自身に隣接する味方1体の最大HPを自身の最大HP×20％増加させる（解除不可）。その後自身の最大HPが40%増加する（解除不可）。/ Lv2 自身の最大HPの増加量が100%になる。/ Lv3 最大HPを増加させる味方の対象が自身に隣接する味方2体になる。/ Ex2 不死の力を強化する。自身に隣接する味方2体の最大HPの増加量が自身の最大HP×50％になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName60003]",
     "PassiveSkillInfos": [
       {
@@ -16900,7 +17592,7 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
-            "PassiveTrigger": 1,
+            "PassiveTrigger": 28,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
@@ -16916,7 +17608,7 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
-            "PassiveTrigger": 1,
+            "PassiveTrigger": 28,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
@@ -16932,7 +17624,7 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
-            "PassiveTrigger": 1,
+            "PassiveTrigger": 28,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
@@ -16948,7 +17640,7 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
-            "PassiveTrigger": 1,
+            "PassiveTrigger": 28,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 10,
             "PassiveGroupId": 0,
@@ -16961,7 +17653,7 @@
   {
     "Id": 550460004,
     "IsIgnore": null,
-    "Memo": "敵用フィアーSR:Lv1 世界をも滅ぼしうる力は、最後はたった一人の少女を救うために使われた。ターン開始時、1ターンの間スピードが最も低い味方のカウンタを5%増加させる。対象が自身の場合増加量が20％になる。このスキルは4ターンに1回発動する。/ Lv2 さらに自身が攻撃を受けたとき、自身のHPを被ダメージ×20%回復する（最大で自身の最大HP×10%まで）。この攻撃で自身が戦闘不能になった場合、このスキルは発動しない。/ Lv3 『カウンタ増加』のターン数が2ターンになり、増加量が10%、対象が自身の場合30%になる。/ Ex3 遺された力を強化する。HPの回復量が被ダメージ×30%になる（最大で自身の最大HP×15%まで）。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName60004]",
     "PassiveSkillInfos": [
       {
@@ -17082,7 +17774,7 @@
   {
     "Id": 550462003,
     "IsIgnore": null,
-    "Memo": "敵用プリシラSR:Lv1 きっと助けにきてくれるって信じてた――自身の最大HPが25%、魔法防御力が50％増加する（解除不可）。/ Lv2 さらに自身のクリティカル率が20%増加する（解除不可）。/ Lv3 最大HPの増加量が50%、魔法防御力の増加量が100%、クリティカル率の増加量が40%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName62003]",
     "PassiveSkillInfos": [
       {
@@ -17138,7 +17830,7 @@
   {
     "Id": 550462004,
     "IsIgnore": null,
-    "Memo": "敵用プリシラSR:Lv1 孤独に耐え続けた心が自身を守る力となる――バトル開始時3ターンの間自身の防御力が50%増加する（解除不可）。自身がアクティブスキルで弱体効果を受けたとき、自身が付与した『防御力増加』のターン数を1ターン消費し、自身の全ての弱体効果のターン数が2ターン減少する。/ Lv2 自身がアクティブスキルで弱体効果を受けて、『防御力増加』のターン数を消費したとき、さらにHP割合が最も低い味方のHPを自身の攻撃力×50％回復するようになる。/ Lv3 『防御力増加』のターン数が5ターンになる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName62004]",
     "PassiveSkillInfos": [
       {
@@ -17243,7 +17935,7 @@
   {
     "Id": 550467003,
     "IsIgnore": null,
-    "Memo": "敵用リシェスSR:Lv1 「罪も痛みも、二人で乗り越えよう」寄り添う影が折れそうな心を支え、立ち向かう勇気を生む。自身の防御力が25%増加する（解除不可）。/ Lv2 \\nこのスキルの対象が自身と自身以外のスピードが最も低い味方になる。/ Lv3 \\n防御力の増加量が50%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName67003]",
     "PassiveSkillInfos": [
       {
@@ -17313,7 +18005,7 @@
   {
     "Id": 550467004,
     "IsIgnore": null,
-    "Memo": "敵用リシェスSR:Lv1 戦場に商人がいれば、助かる命がたくさんある――味方が攻撃を受けて、HP割合が50%以下になった場合、その味方に1ターンの間自身の攻撃力×300%の『シールド』を付与する。このスキルは5ターンに1回発動する。/ Lv2 \\nこのスキルが4ターンに1回発動するようになる。/ Lv3\\n『シールド』の大きさが自身の攻撃力×500%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName67004]",
     "PassiveSkillInfos": [
       {
@@ -17390,7 +18082,7 @@
   {
     "Id": 550470003,
     "IsIgnore": null,
-    "Memo": "敵用水着サブリナSR:Lv1 仲間を護りたい――その想いは倒れても決して消えない。自身が戦闘不能になったとき、50%の確率で攻撃してきた敵に1ターンの間『気絶』を付与する。/ Lv2 \\nさらにバトル開始時、自身の命中率が40%増加する（解除不可）。/ Lv3 \\n『気絶』を付与する確率が100%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName70003]",
     "PassiveSkillInfos": [
       {
@@ -17460,7 +18152,7 @@
   {
     "Id": 550470004,
     "IsIgnore": null,
-    "Memo": "敵用水着サブリナSR:Lv1 この傷と共に生きていくと決めた――過去を背負って進む決意が、生きる力を育む。自身の最大HPが20％増加する（解除不可）。/ Lv2 \\nさらに自身の防御力が40%増加する（解除不可）。/ Lv3\\n最大HPの増加量が40%、防御力の増加量が100%になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName70004]",
     "PassiveSkillInfos": [
       {
@@ -17516,7 +18208,7 @@
   {
     "Id": 550471003,
     "IsIgnore": null,
-    "Memo": "敵用水着モーザSR:Lv1 お墓の下でも、お墓の上でも、みーんなまとめて笑顔にしてあげる。その決意が新たな力となる。自身が攻撃を受けたとき、ダメージを20%遮断する。（遮断された後のダメージ量に対して、他のダメージ軽減（『被ダメージ減少』等）が計算される）/ Lv2 \\nさらに攻撃してきた敵が『毒』を付帯している場合、ダメージを50%遮断する。/ Lv3 \\nダメージを50%遮断する。攻撃してきた敵が『毒』を付帯している場合、ダメージを75%遮断する。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName71003]",
     "PassiveSkillInfos": [
       {
@@ -17572,7 +18264,7 @@
   {
     "Id": 550471004,
     "IsIgnore": null,
-    "Memo": "敵用水着モーザSR:Lv1 「ライラは私が危なくなると、いつも助けに来てくれるね」毎ターン開始時、自身の攻撃力が3%増加する（最大60%まで）（解除不可）。『毒』を付帯している敵1体につき増加量が3%大きくなる。/ Lv2 \\n攻撃力の増加量が4%になり、増加量最大値が80%になる。『毒』を付帯している敵1体につき増加量が4%大きくなる。/ Lv3 \\n攻撃力の増加量が5%になり、増加量最大値が100%になる。『毒』を付帯している敵1体につき増加量が5%大きくなる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName71004]",
     "PassiveSkillInfos": [
       {
@@ -17628,7 +18320,7 @@
   {
     "Id": 550472003,
     "IsIgnore": null,
-    "Memo": "敵用浴衣コルディSR:Lv1 「折角のお祭りなんだから、もっともーっとアゲてこ♪」ターン開始時1ターンの間攻撃力が最も高い味方の攻撃力を自身の攻撃力×20%増加させる。このスキルは4ターンに1回発動する。/ Lv2 『攻撃力増加』のターン数が2ターンになる。/ Lv3 攻撃力の増加量が自身の攻撃力×60%になる。/ Ex2 お祭り騒ぎを強化する。お祭り騒ぎの対象が攻撃力が高い味方2体になる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName72003]",
     "PassiveSkillInfos": [
       {
@@ -17700,7 +18392,7 @@
   {
     "Id": 550472004,
     "IsIgnore": null,
-    "Memo": "敵用浴衣コルディSR:Lv1 百発百中のガンマンの腕の見せ所――自身が攻撃するたび、1ターンの間自身の防御力と魔法防御力がそれぞれ3%増加する（最大30%まで）（解除不可）。攻撃した回数1回につき増加量が3%大きくなる。/ Lv2 このスキルが自身が攻撃を受けるたびにも発動するようになる。自身が攻撃を受けた回数1回につき増加量が3％大きくなる。/ Lv3 防御力と魔法防御力の増加量が10%になり、増加量最大値が100%になる。攻撃した回数1回につき、もしくは自身が攻撃を受けた回数1回につき増加量が10%大きくなる。",
+    "Memo": null,
     "NameKey": "[PassiveSkillName72004]",
     "PassiveSkillInfos": [
       {
