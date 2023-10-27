@@ -10,6 +10,7 @@ public static class Helpers
 {
     private static readonly HttpClient UnityHttpClient;
     private static readonly HttpClient OrtegaHttpClient;
+    private static string MasterUriFormat;
 
     static Helpers()
     {
@@ -21,7 +22,7 @@ public static class Helpers
         OrtegaHttpClient = new HttpClient();
         OrtegaHttpClient.Timeout = TimeSpan.FromSeconds(10);
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaaccesstoken", "");
-        OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaappversion", "1.4.0"); // this must be set manually, maybe get from google play store?
+        OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaappversion", "2.0.0"); // this must be set manually, maybe get from google play store?
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegadevicetype", "2");
         OrtegaHttpClient.DefaultRequestHeaders.Add("accept-encoding", "gzip");
         OrtegaHttpClient.DefaultRequestHeaders.Add("ortegauuid", "f6b22199a6964bd3813ef4032969e0c2"); // random guid
@@ -41,7 +42,7 @@ public static class Helpers
         {
             // ignored
         }
-            
+
         var masterVersion = await GetMasterVersion();
         Log($"Got master version: {masterVersion}.");
         if (string.IsNullOrEmpty(masterVersion))
@@ -56,7 +57,7 @@ public static class Helpers
             return;
         }
 
-        var url = $"https://cdn-mememori.akamaized.net/master/prd1/version/{masterVersion}/master-catalog";
+        var url = string.Format(MasterUriFormat, masterVersion, "master-catalog");
         Log($"Downloading master catalog from {url}...");
         var bytes = await UnityHttpClient.GetByteArrayAsync(url);
         Log($"Download master catalog success.");
@@ -70,15 +71,15 @@ public static class Helpers
         sb.AppendLine($"Master Version {masterVersion}({DateTimeOffset.FromUnixTimeMilliseconds(long.Parse(masterVersion))})\n");
         sb.AppendLine("|Name|Size|Hash|Parsed Json|");
         sb.AppendLine("|-|-|-|-|");
-        
+
         foreach (var (name, info) in masterBookCatalog.MasterBookInfoMap)
         {
             var localPath = $"./Master/{name}.json";
             var localMd5 = $"./Master/{name}.md5";
-            var mbUrl = $"https://cdn-mememori.akamaized.net/master/prd1/version/{masterVersion}/{name}";
+            var mbUrl = string.Format(MasterUriFormat, masterVersion, name);
 
             sb.AppendLine($"|[{name}]({mbUrl}) | {info.Size} | {info.Hash} | [{name}.json]({name}.json)|");
-            
+
             Log($"Verifying master book {name}...");
             if (File.Exists(localMd5) && await File.ReadAllTextAsync(localMd5) == info.Hash)
             {
@@ -114,44 +115,39 @@ public static class Helpers
 
     private static async Task<string> GetMasterVersion()
     {
+        var authUri = Environment.GetEnvironmentVariable("AUTH_URI");
+        if (string.IsNullOrEmpty(authUri))
+        {
+            throw new Exception("AUTH_URI is not set.");
+        }
+
         var request = new HttpRequestMessage
         {
             Method = HttpMethod.Post,
             Content = new ByteArrayContent(MessagePackSerializer.Serialize(new GetDataUriRequest())),
-            RequestUri = new Uri("https://prd1-auth.mememori-boi.com/api/auth/getDataUri")
+            RequestUri = new Uri($"{authUri}/api/auth/getDataUri")
         };
 
         var response = await OrtegaHttpClient.SendAsync(request);
         response.EnsureSuccessStatusCode();
+        var dict = MessagePackSerializer.Deserialize<Dictionary<string, Object>>(await response.Content.ReadAsStreamAsync());
+        MasterUriFormat = dict["MasterUriFormat"].ToString();
         return response.Headers.TryGetValues("ortegamasterversion", out var values) ? values.FirstOrDefault() ?? "" : "";
     }
 
     private static async Task SendNotification(string message)
     {
-        TelegramBotClient botClient = new(Environment.GetEnvironmentVariable("TELEGRAM_BOT_TOKEN"));
-        await botClient.SendTextMessageAsync(Environment.GetEnvironmentVariable("TELEGRAM_CHAT_ID"), message);
+        return;
+        var token = Environment.GetEnvironmentVariable("TELEGRAM_BOT_TOKEN");
+        var chatId = Environment.GetEnvironmentVariable("TELEGRAM_CHAT_ID");
 
-        // // 声明鉴权信息
-        // OpenApiAccessInfo openApiAccessInfo;
-        // openApiAccessInfo.BotAppId = Environment.GetEnvironmentVariable("QQCHANNEL_BOT_APPID");
-        // openApiAccessInfo.BotToken = Environment.GetEnvironmentVariable("QQCHANNEL_BOT_TOKEN");
-        // openApiAccessInfo.BotSecret = Environment.GetEnvironmentVariable("QQCHANNEL_BOT_SECRET");
-        //
-        // // 使用QQChannelApi获取相应的Api接口
-        // // 鉴权信息在实例化时传入
-        // QQChannelApi qChannelApi = new(openApiAccessInfo);
-        // var allJoinedChannels = await qChannelApi.GetUserApi().GetAllJoinedChannelsAsync();
-        // qChannelApi.UseBotIdentity();
-        // qChannelApi.UseSandBoxMode();
-        // foreach (var guild in allJoinedChannels)
-        // {
-        //     var channels = await qChannelApi.GetChannelApi().GetChannelsAsync(guild.Id);
-        //     foreach (var channel in channels)
-        //     {
-        //         await qChannelApi.GetMessageApi().SendMessageAsync(channel.Id, message);
-        //     }
-        //
-        // }
+        if (string.IsNullOrEmpty(token) || string.IsNullOrEmpty(chatId))
+        {
+            return;
+        }
+
+        TelegramBotClient botClient = new(token);
+        await botClient.SendTextMessageAsync(chatId, message);
     }
 
     [MessagePackObject(true)]
@@ -169,7 +165,7 @@ public static class Helpers
     }
 
     [MessagePackObject(true)]
-     public class MasterBookInfo
+    public class MasterBookInfo
     {
         public string Hash { get; set; }
 
