@@ -137,7 +137,6 @@ public static class Helpers
 
     private static async Task SendNotification(string message)
     {
-        return;
         var token = Environment.GetEnvironmentVariable("TELEGRAM_BOT_TOKEN");
         var chatId = Environment.GetEnvironmentVariable("TELEGRAM_CHAT_ID");
 
