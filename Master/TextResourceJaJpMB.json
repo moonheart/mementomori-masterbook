@@ -64148,6 +64148,48 @@
     "Text": "使用すると【聖槍の魔女】エルフリンデのピックアップガチャを1回引くことができます。<br><color=#248CA7>主な入手方法：プレミアギフト（期間限定）</color><br><color=#BE5742>※期間を過ぎると売却してプラチナガチャチケット1枚と交換することができます</color>"
   },
   {
+    "Id": 11231,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName106]",
+    "Text": "イリアガチャチケット"
+  },
+  {
+    "Id": 11232,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName106]",
+    "Text": "イリアガチャチケット"
+  },
+  {
+    "Id": 11233,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription106]",
+    "Text": "使用すると［神呪の魔女］イリアのピックアップガチャを1回引くことができます。<br><color=#248CA7>主な入手方法：プレミアギフト（期間限定）</color><br><color=#BE5742>※期間を過ぎると売却してプラチナガチャチケット1枚と交換することができます</color>"
+  },
+  {
+    "Id": 11234,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName107]",
+    "Text": "禁断の果実"
+  },
+  {
+    "Id": 11235,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName107]",
+    "Text": "禁断の果実"
+  },
+  {
+    "Id": 11236,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription107]",
+    "Text": "知恵の実を食べた人間は楽園を去った。それは蜜よりも甘いものを知ったから──<br>ショップで他アイテムと交換することができます。<br><color=#248CA7>主な入手方法：幻影の神殿（期間限定）、デイリーミッション（期間限定）、プレミアギフト（期間限定）</color>"
+  },
+  {
     "Id": 11366,
     "IsIgnore": false,
     "Memo": "",
@@ -104459,6 +104501,13 @@
     "Memo": "",
     "StringKey": "[TutorialDescriptionMainText40]",
     "Text": "ミッションをクリアすると対応するパネルのマスを開放することができます。<br>縦横いずれかのラインが全て解放したマスで揃うと対応する宝箱から報酬を獲得できます。<br>全てのマスを解放すると<color=#BE5742>限定イベントパネル</color>を獲得できます。"
+  },
+  {
+    "Id": 17230,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialDescriptionMainText41]",
+    "Text": "イベント開催中は24時間クエストが解放され、勝利することで「<color=#BE5742>イベント専用アイテム</color>」が獲得できます。<br>「<color=#BE5742>イベント専用アイテム</color>」は<color=#BE5742>ショップ</color>で貴重なアイテムやキャラと交換可能です。<br>また12:30~13:30、19:30~20:30の期間に挑戦することで、通常より多く報酬を獲得できます。"
   },
   {
     "Id": 17231,

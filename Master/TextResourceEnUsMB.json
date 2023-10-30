@@ -64148,6 +64148,48 @@
     "Text": "Use to Invoke 1 time in 【The Witch of Longinus】Elfriede’s Prayer of The Fleeting.<br><color=#248CA7>Main way to obtain: Premier Gifts (limited)</color><br><color=#BE5742>*When the Prayer of The Fleeting expires, this item can be sold in exchange for 1 Ticket of The Cursed.</color>"
   },
   {
+    "Id": 11231,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName106]",
+    "Text": "Illya Prayer Ticket"
+  },
+  {
+    "Id": 11232,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName106]",
+    "Text": "Illya Prayer Ticket"
+  },
+  {
+    "Id": 11233,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription106]",
+    "Text": "Use to Invoke 1 time in [The Witch of God’s Curse] Illya’s Prayer of The Fleeting.<br><color=#248CA7>Main way to obtain: Premier Gifts (limited)</color><br><color=#BE5742>*When the Prayer of The Fleeting expires, this item can be sold in exchange for 1 Ticket of The Cursed.</color>"
+  },
+  {
+    "Id": 11234,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName107]",
+    "Text": "Forbidden Fruit"
+  },
+  {
+    "Id": 11235,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName107]",
+    "Text": "Forbidden Fruit"
+  },
+  {
+    "Id": 11236,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription107]",
+    "Text": "Those who ate the fruit of knowledge have left paradise. For they have learned that which is sweeter than honey. Use to exchange for other items at the Shop.<br><color=#248CA7>Main ways to obtain: Temple of Illusions (limited), Daily Missions (limited), Premier Gifts (limited)</color>"
+  },
+  {
     "Id": 11366,
     "IsIgnore": false,
     "Memo": "",
@@ -104459,6 +104501,13 @@
     "Memo": "",
     "StringKey": "[TutorialDescriptionMainText40]",
     "Text": "Clearing a mission will allow you to unlock its corresponding panel square.<br>When you complete unlocking all squares in a horizontal or vertical line,<br>you can obtain rewards from that line’s corresponding chest.<br>Unlocking every square will allow you to obtain a <color=#BE5742>limited event panel.</color>"
+  },
+  {
+    "Id": 17230,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialDescriptionMainText41]",
+    "Text": "While the event is underway, the Temple of Illusions will be open for 24 hours every day.<br>By beating the limited quests, you will obtain the <color=#BE5742>limited event item</color>, which can be exchanged at the <color=#BE5742>Shop</color> for amazing items and characters. Additionally, you will earn boosted rewards by challenging the Temple between <color=#BE5742>12:30~13:30</color> and <color=#BE5742>19:30~20:30 (Server Time).</color>"
   },
   {
     "Id": 17231,

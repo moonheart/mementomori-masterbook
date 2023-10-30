@@ -64148,6 +64148,48 @@
     "Text": ""
   },
   {
+    "Id": 11231,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName106]",
+    "Text": ""
+  },
+  {
+    "Id": 11232,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName106]",
+    "Text": ""
+  },
+  {
+    "Id": 11233,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription106]",
+    "Text": ""
+  },
+  {
+    "Id": 11234,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName107]",
+    "Text": ""
+  },
+  {
+    "Id": 11235,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName107]",
+    "Text": ""
+  },
+  {
+    "Id": 11236,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription107]",
+    "Text": ""
+  },
+  {
     "Id": 11366,
     "IsIgnore": false,
     "Memo": "",
@@ -104458,6 +104500,13 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[TutorialDescriptionMainText40]",
+    "Text": ""
+  },
+  {
+    "Id": 17230,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialDescriptionMainText41]",
     "Text": ""
   },
   {

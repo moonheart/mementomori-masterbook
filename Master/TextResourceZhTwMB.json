@@ -64148,6 +64148,48 @@
     "Text": "使用後可進行1次【聖槍魔女】埃爾芙琳黛的PICK UP召喚。<br><color=#248CA7>主要獲取途徑：精選組合(限時)</color><br><color=#BE5742>※PICK UP召喚開放期間結束後，可透過販售兌換1張白金召喚券。</color>"
   },
   {
+    "Id": 11231,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName106]",
+    "Text": "伊利亞召喚券"
+  },
+  {
+    "Id": 11232,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName106]",
+    "Text": "伊利亞召喚券"
+  },
+  {
+    "Id": 11233,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription106]",
+    "Text": "使用後可進行1次［神咒魔女］伊利亞的PICK UP召喚。<br><color=#248CA7>主要獲取途徑：精選組合(限時)</color><br><color=#BE5742>※PICK UP召喚開放期間結束後，可透過販售兌換1張白金召喚券。</color>"
+  },
+  {
+    "Id": 11234,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName107]",
+    "Text": "禁忌的果實"
+  },
+  {
+    "Id": 11235,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName107]",
+    "Text": "禁忌的果實"
+  },
+  {
+    "Id": 11236,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription107]",
+    "Text": "吃下智慧果實的人類離開了樂園。嚐過的人知道，那是比蜜糖更甜美的滋味……可在商城兌換其他道具。<br><color=#248CA7>主要獲取途徑：幻影神殿(限時)、每日任務(限時)、精選組合(限時)</color>"
+  },
+  {
     "Id": 11366,
     "IsIgnore": false,
     "Memo": "",
@@ -104459,6 +104501,13 @@
     "Memo": "",
     "StringKey": "[TutorialDescriptionMainText40]",
     "Text": "完成任務後可解鎖對應的拼圖。<br>解鎖後的拼圖如果成功連成一條縱向或橫向的直線，即可從對應的寶箱中獲得獎勵。<br>解鎖全部的拼圖後，可獲得<color=#BE5742>活動版畫</color>。"
+  },
+  {
+    "Id": 17230,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialDescriptionMainText41]",
+    "Text": "活動期間內，探索任務24小時全天候開放，挑戰並獲勝即可獲得「<color=#BE5742>活動專用道具</color>」。<br>「<color=#BE5742>活動專用道具</color>」可在<color=#BE5742>商城</color>中兌換各種珍貴的道具或角色。<br>於特定時段進行挑戰可獲得更多的報酬：<color=#BE5742>12:30~13:30</color>、<color=#BE5742>19:30~20:30（伺服器時間）</color>"
   },
   {
     "Id": 17231,
