@@ -105189,11 +105189,67 @@
     "Text": "Các loại thiết bị được cập nhật hằng ngày,<br>vì vậy bạn nên kiểm tra thường xuyên."
   },
   {
+    "Id": 17336,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2100]",
+    "Text": "Có vẻ như bạn có thể nâng cấp thiết bị tại đây.<br>Hãy thử xem!"
+  },
+  {
+    "Id": 17337,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2200]",
+    "Text": "Có vẻ như bạn sở hữu một số loại đá Rune<br>có thể gắn vào thiết bị của mình.<br>Hãy thử gắn vào nhé."
+  },
+  {
+    "Id": 17338,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2201]",
+    "Text": "Đá Rune là những khối sức mạnh ma thuật kết tinh,<br>giúp tăng cường các năng lực khác nhau<br>dựa trên sức mạnh ban đầu."
+  },
+  {
+    "Id": 17339,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2202]",
+    "Text": "Để gắn một viên đá rune,<br>bạn cần tạo một ô trống trên thiết bị.<br>Hãy chọn vị trí bạn muốn đặt đá."
+  },
+  {
     "Id": 17340,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[TutorialTextBox2203]",
     "Text": "Giờ hãy lấy đá rune bạn cần và gắn vào.<br>Sau khi tạo ô, bạn có thể tự do gắn hoặc xóa<br>bất kỳ rune nào nếu muốn."
+  },
+  {
+    "Id": 17341,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2400]",
+    "Text": "Có vẻ như bạn có thể thức tỉnh các nhân vật ở đây.<br>Nếu độ hiếm tăng, các nhân vật của bạn sẽ mạnh hơn."
+  },
+  {
+    "Id": 17342,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2401]",
+    "Text": "Hãy chọn nhân vật bạn muốn thức tỉnh."
+  },
+  {
+    "Id": 17343,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2402]",
+    "Text": "Sự thức tỉnh cần có sức mạnh của các đồng minh.<br>Hãy chọn nhân vật đáp ứng điều kiện."
+  },
+  {
+    "Id": 17344,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2403]",
+    "Text": "Giờ bạn đã có thể thức tỉnh nhân vật.<br>Hãy thử ngay nhé!"
   },
   {
     "Id": 17345,
@@ -105231,6 +105287,34 @@
     "Text": "Chỉ những bang hội giỏi nhất mới đến được đây,<br>bởi vậy tất cả họ đều trông rất mạnh mẽ,<br>nhưng điều đó không có nghĩa là chúng ta bị áp đảo.<br>Đã đến lúc để cho họ thấy sức mạnh của chúng ta!"
   },
   {
+    "Id": 17350,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2603]",
+    "Text": "Hãy phát động tấn công vào các căn cứ và chiếm lấy chúng.<br>Chúng ta có thể kiếm được phần thưởng cho những nơi chiếm được."
+  },
+  {
+    "Id": 17351,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2604]",
+    "Text": "Các căn cứ bao gồm nhà thờ, lâu đài và đền thờ,<br>ngôi đền ở trung tâm bản đồ sẽ mang lại<br>phần thưởng tốt nhất."
+  },
+  {
+    "Id": 17352,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2605]",
+    "Text": "Xem ra đó là ngôi đền chúng ta cần hướng tới."
+  },
+  {
+    "Id": 17353,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2606]",
+    "Text": "Hãy tiếp tục và nhấn vào một Căn Cứ để xem bên trong."
+  },
+  {
     "Id": 17354,
     "IsIgnore": false,
     "Memo": "",
@@ -105250,6 +105334,55 @@
     "Memo": "",
     "StringKey": "[TutorialTextBox2702]",
     "Text": "Nhưng, không cần phải lo lắng.<br>Chúng ta đã tiến xa được thế này nhờ đoàn kết sức mạnh của mọi người.<br>Đã đến lúc cho những người ngoài kia thấy chúng ta mạnh thế nào!"
+  },
+  {
+    "Id": 17357,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3300]",
+    "Text": "Có vẻ như bạn có thể cường hóa thiết bị ở đây.<br>Bạn có thể lấy sức mạnh thần thánh và hắc ám <br>để ban cho thiết bị của mình."
+  },
+  {
+    "Id": 17358,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3301]",
+    "Text": "Hãy chọn các nguyên liệu cần thiết để cường hóa."
+  },
+  {
+    "Id": 17359,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3302]",
+    "Text": "Nguyên liệu có thể là những thiết bị có hiệu ứng thần thánh hoặc hắc ám, hay là Nước Hoa Hắc Ám."
+  },
+  {
+    "Id": 17360,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3303]",
+    "Text": "Thiết bị của bạn sẽ được cường hóa.<br>Hiệu ứng thần thánh và hắc ám của một thiết bị phụ thuộc vào<br>phần cơ thể được trang bị thiết bị đó, vì vậy hãy thử cường hóa cả các thiết bị khác."
+  },
+  {
+    "Id": 17361,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3400]",
+    "Text": "Có vẻ như bạn có thể rèn lại thiết bị ở đây.<br>Hãy thử ngay nhé!"
+  },
+  {
+    "Id": 17362,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3401]",
+    "Text": "Quá trình rèn có thể giúp cân bằng lại chỉ số của một thiết bị.<br>Hãy thử rèn thiết bị nhé!"
+  },
+  {
+    "Id": 17363,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3402]",
+    "Text": "Bây giờ, giá trị của mỗi chỉ số đã thay đổi.<br>Hãy thử rèn lại nhiều lần<br>để chỉ số tốt nhất của nhân vật tăng hơn nữa."
   },
   {
     "Id": 17364,

@@ -105189,11 +105189,67 @@
     "Text": "武具目錄每天都會更新，<br>不時過來看看，或許會有新的收穫。"
   },
   {
+    "Id": 17336,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2100]",
+    "Text": "我們似乎可以從這裡進行武具的強化，快試試看吧！"
+  },
+  {
+    "Id": 17337,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2200]",
+    "Text": "好像得到可以鑲嵌在武具上的符石了。趕快裝上去看看吧。"
+  },
+  {
+    "Id": 17338,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2201]",
+    "Text": "符石是魔力的結晶，精純的力量能提升各種能力。"
+  },
+  {
+    "Id": 17339,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2202]",
+    "Text": "鑲嵌符石之前，需要先在裝備上加工製作鑲嵌孔。可以幫我點選要加工的地方嗎？"
+  },
+  {
     "Id": 17340,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[TutorialTextBox2203]",
     "Text": "把你選擇的符石鑲嵌上去吧。<br>打好鑲嵌孔之後，<br>就能隨時將符石裝上或取下。"
+  },
+  {
+    "Id": 17341,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2400]",
+    "Text": "這裡似乎可以讓角色進化，提升稀有度能讓角色變得更加強大。"
+  },
+  {
+    "Id": 17342,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2401]",
+    "Text": "選擇你想進化的角色吧！"
+  },
+  {
+    "Id": 17343,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2402]",
+    "Text": "進化時需要夥伴的力量，選擇符合條件的角色吧。"
+  },
+  {
+    "Id": 17344,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2403]",
+    "Text": "這樣就可以進化了，快試試看吧！"
   },
   {
     "Id": 17345,
@@ -105231,6 +105287,34 @@
     "Text": "能到這裡來的都是百裡挑一的公會，個個都不好惹，<br>不過我們也不遜色。<br>必須讓其他人見識我們的厲害！"
   },
   {
+    "Id": 17350,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2603]",
+    "Text": "讓我們發動攻擊並佔領據點吧！我們可以從每座佔領的據點得到獎勵。"
+  },
+  {
+    "Id": 17351,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2604]",
+    "Text": "據點分成教會、城堡與神殿，位於地圖中央的神殿擁有最豐厚的獎勵。"
+  },
+  {
+    "Id": 17352,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2605]",
+    "Text": "這裡就是我們的目標——神殿。"
+  },
+  {
+    "Id": 17353,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox2606]",
+    "Text": "點擊據點，仔細查看內部的資訊吧！"
+  },
+  {
     "Id": 17354,
     "IsIgnore": false,
     "Memo": "",
@@ -105250,6 +105334,55 @@
     "Memo": "",
     "StringKey": "[TutorialTextBox2702]",
     "Text": "可是，我們一定能做到。<br>畢竟我們是齊心協力才走到這裡的。<br>就讓所有人見識我們的厲害吧！"
+  },
+  {
+    "Id": 17357,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3300]",
+    "Text": "我們似乎可以從這裡進行神裝強化，賦與武具聖裝與魔裝的力量。"
+  },
+  {
+    "Id": 17358,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3301]",
+    "Text": "選擇神裝強化所需要的材料吧！"
+  },
+  {
+    "Id": 17359,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3302]",
+    "Text": "魔裝香油、擁有聖裝或魔裝效果的武具，都能作為神裝強化的材料。"
+  },
+  {
+    "Id": 17360,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3303]",
+    "Text": "這樣就能提升魔裝等級了！每個部位的聖裝和魔裝效果都不一樣，不妨也試試其他的武具吧！"
+  },
+  {
+    "Id": 17361,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3400]",
+    "Text": "這裡似乎可以進行武具的打磨，快試試看吧！"
+  },
+  {
+    "Id": 17362,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3401]",
+    "Text": "打磨能改變武具的附加屬性數值分配，先嘗試一次看看效果吧。"
+  },
+  {
+    "Id": 17363,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[TutorialTextBox3402]",
+    "Text": "各項數值都出現變化了。多試幾次，努力提高裝備對象著重的屬性數值吧！"
   },
   {
     "Id": 17364,
