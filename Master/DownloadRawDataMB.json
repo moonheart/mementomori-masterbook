@@ -5623,14 +5623,5 @@
     "FileSize": 4396848,
     "RawDataDownloadType": 1,
     "Etag": "4b8d156a1e83507ff06bb4c28595c335"
-  },
-  {
-    "Id": 626,
-    "IsIgnore": false,
-    "Memo": "",
-    "FilePath": "PanelPictureBook/TITLE_020011.mp4",
-    "FileSize": 3668222,
-    "RawDataDownloadType": 1,
-    "Etag": "2fb371b2dfb9ba5986c17f59f1ed7d7c"
   }
 ]
