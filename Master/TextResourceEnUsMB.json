@@ -75030,7 +75030,7 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[HelpMainText3810]",
-    "Text": "■Special Icons<br>By collecting a set number of Icon Stamps, you can obtain a Special Icon.<br>Once you obtain a Special Icon, you will be able to set it as your Player Icon.<br>The Special Icons that can be obtained will change after a certain period of time.<br><br>A Special Icon will become unavailable if the period to obtain it expires,<br>but it may appear again in the future.<br>Each Special Icon needs a different number of Icon Stamps to be obtained."
+    "Text": "■Special Icons<br>By collecting a set number of Icon Stamps, you can obtain a Special Icon.<br>Once you obtain a Special Icon, you will be able to set it as your Player Icon.<br><br>The Special Icons that can be obtained are separated into two groups:<br>Limited and Regular.<br>The Limited Special Icons have limited availability periods,<br>and will be replaced by other Limited Special Icons after set periods of time.<br>Regular Special Icons do not have limited availability periods.<br>If a Special Icon's availability period expires, it may appear again in the future.<br><br>■Types of Special Icons and the Number of Icon Stamps Needed<br>・Limited<br>Souls of Radiance and Chaos: 1500 Icon Stamps<br>Souls of Azure, Crimson, Emerald, and Amber: 1200 Icon Stamps<br><br>・Regular<br>Souls of Azure, Crimson, Emerald, and Amber: 1000 Icon Stamps<br><br>*Regular Special Icons are planned to be added on 12/19 21:00 (Server Time).<br>*Please see the following notice for more details.<br>→\"About the Legend League Special Icons\""
   },
   {
     "Id": 13374,
