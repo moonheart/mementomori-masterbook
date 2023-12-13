@@ -2151,6 +2151,13 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 25003000
+          },
+          {
             "PassiveTrigger": 7,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
@@ -2167,6 +2174,13 @@
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
           {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 25003200
+          },
+          {
             "PassiveTrigger": 7,
             "SkillCoolTime": 0,
             "SkillMaxCoolTime": 0,
@@ -2182,6 +2196,13 @@
         "EquipmentRarityFlags": 0,
         "BlessingItemId": 0,
         "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 25003300
+          },
           {
             "PassiveTrigger": 7,
             "SkillCoolTime": 0,
@@ -10700,6 +10721,30 @@
     ]
   },
   {
+    "Id": 550200005,
+    "IsIgnore": null,
+    "Memo": "ギルドレイドイベント　狂暴",
+    "NameKey": null,
+    "PassiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": null,
+        "CharacterLevel": 1,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 550200005001
+          }
+        ]
+      }
+    ]
+  },
+  {
     "Id": 550230001,
     "IsIgnore": null,
     "Memo": "ギルドレイド解放ルーク:毎ターン、累計被ダメージに応じて与ダメージ基準値が増加する。このバフは解除できない。",
@@ -10964,6 +11009,30 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550262005001
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 550274003,
+    "IsIgnore": null,
+    "Memo": "ギルドレイド聖夜トロポン1",
+    "NameKey": "[PassiveSkillName74003]",
+    "PassiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": "[PassiveSkillDescription740033]",
+        "CharacterLevel": 201,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 9,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 74003301
           }
         ]
       }

@@ -9447,6 +9447,51 @@
     "RootActiveSkillId": 70002
   },
   {
+    "Id": 550274001,
+    "IsIgnore": null,
+    "Memo": "ギルドレイド聖夜トロポン1",
+    "ActiveSkillConditions": "True",
+    "ActiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": "[ActiveSkillDescription740013]",
+        "CharacterLevel": 161,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          550274001201
+        ]
+      }
+    ],
+    "NameKey": "[ActiveSkillName74001]",
+    "SkillInitCoolTime": 0,
+    "SkillMaxCoolTime": 4,
+    "RootActiveSkillId": 74001
+  },
+  {
+    "Id": 550274002,
+    "IsIgnore": null,
+    "Memo": "ギルドレイド聖夜トロポン2",
+    "ActiveSkillConditions": "True",
+    "ActiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": "[ActiveSkillDescription740022]",
+        "CharacterLevel": 21,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          74002001,
+          74002202
+        ]
+      }
+    ],
+    "NameKey": "[ActiveSkillName74002]",
+    "SkillInitCoolTime": 0,
+    "SkillMaxCoolTime": 4,
+    "RootActiveSkillId": 74002
+  },
+  {
     "Id": 550344001,
     "IsIgnore": null,
     "Memo": "ルサールカ別スキル1",
