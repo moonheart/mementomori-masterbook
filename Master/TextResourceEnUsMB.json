@@ -74225,7 +74225,7 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[TreasureChestDescription91]",
-    "Text": "A box filled with blessings of joy and prosperity for the New Year. Use to select 1 type of item to obtain.<br><color=#248CA7>Main way to obtain: Premier Gifts (New Year’s Pack)</color>"
+    "Text": "A box filled with blessings of joy and prosperity for the New Year. Use to select 1 type of item to obtain.<br><color=#248CA7>Main way to obtain: Premier Gifts (limited)</color>"
   },
   {
     "Id": 12698,
@@ -74246,7 +74246,7 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[TreasureChestDescription92]",
-    "Text": "A ticket case filled with prayers and gratitude for the New Year. Use to select 1 type of ticket to obtain.<br><color=#248CA7>Main way to obtain: Premier Gifts (New Year’s Pack)</color>"
+    "Text": "A ticket case filled with prayers and gratitude for the New Year. Use to select 1 type of ticket to obtain.<br><color=#248CA7>Main way to obtain: Premier Gifts (limited)</color>"
   },
   {
     "Id": 12701,

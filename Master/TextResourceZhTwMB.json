@@ -74225,7 +74225,7 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[TreasureChestDescription91]",
-    "Text": "施予新年祝福，帶來幸福喜樂的寶盒。使用後可任選1種道具。<br><color=#248CA7>主要獲取途徑：精選組合(新年組合包)</color>"
+    "Text": "施予新年祝福，帶來幸福喜樂的寶盒。使用後可任選1種道具。<br><color=#248CA7>主要獲取途徑：精選組合(限時)</color>"
   },
   {
     "Id": 12698,
@@ -74246,7 +74246,7 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[TreasureChestDescription92]",
-    "Text": "裝滿新年希望與感謝的禮券袋。使用後可任選1種票券。<br><color=#248CA7>主要獲取途徑：精選組合(新年組合包)</color>"
+    "Text": "裝滿新年希望與感謝的禮券袋。使用後可任選1種票券。<br><color=#248CA7>主要獲取途徑：精選組合(限時)</color>"
   },
   {
     "Id": 12701,
