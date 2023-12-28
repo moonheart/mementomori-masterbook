@@ -9,8 +9,9 @@ namespace MementoMoriData;
 public static class Helpers
 {
     private static readonly HttpClient UnityHttpClient;
-    private static readonly HttpClient OrtegaHttpClient;
     private static string MasterUriFormat;
+    private static readonly string? AuthUri = Environment.GetEnvironmentVariable("AUTH_URI");
+    static HttpClient httpClient = new();
 
     static Helpers()
     {
@@ -19,14 +20,12 @@ public static class Helpers
         UnityHttpClient.DefaultRequestHeaders.Add("User-Agent", "UnityPlayer/2021.3.10f1 (UnityWebRequest/1.0, libcurl/7.80.0-DEV)");
         UnityHttpClient.DefaultRequestHeaders.Add("X-Unity-Version", "2021.3.10f1");
 
-        OrtegaHttpClient = new HttpClient();
-        OrtegaHttpClient.Timeout = TimeSpan.FromSeconds(10);
-        OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaaccesstoken", "");
-        OrtegaHttpClient.DefaultRequestHeaders.Add("ortegaappversion", "2.5.1"); // this must be set manually, maybe get from google play store?
-        OrtegaHttpClient.DefaultRequestHeaders.Add("ortegadevicetype", "2");
-        OrtegaHttpClient.DefaultRequestHeaders.Add("accept-encoding", "gzip");
-        OrtegaHttpClient.DefaultRequestHeaders.Add("ortegauuid", "f6b22199a6964bd3813ef4032969e0c2"); // random guid
-        OrtegaHttpClient.DefaultRequestHeaders.Add("user-agent", "BestHTTP/2 v2.3.0");
+        httpClient.Timeout = TimeSpan.FromSeconds(10);
+        httpClient.DefaultRequestHeaders.Add("ortegaaccesstoken", "");
+        httpClient.DefaultRequestHeaders.Add("ortegadevicetype", "2");
+        httpClient.DefaultRequestHeaders.Add("accept-encoding", "gzip");
+        httpClient.DefaultRequestHeaders.Add("ortegauuid", "f6b22199a6964bd3813ef4032969e0c2"); // random guid
+        httpClient.DefaultRequestHeaders.Add("user-agent", "BestHTTP/2 v2.3.0");
     }
 
     public static async Task DownloadMasterCatalog()
@@ -115,25 +114,105 @@ public static class Helpers
 
     private static async Task<string> GetMasterVersion()
     {
-        var authUri = Environment.GetEnvironmentVariable("AUTH_URI");
-        if (string.IsNullOrEmpty(authUri))
+        if (string.IsNullOrEmpty(AuthUri))
         {
             throw new Exception("AUTH_URI is not set.");
         }
 
-        var request = new HttpRequestMessage
-        {
-            Method = HttpMethod.Post,
-            Content = new ByteArrayContent(MessagePackSerializer.Serialize(new GetDataUriRequest())),
-            RequestUri = new Uri($"{authUri}/api/auth/getDataUri")
-        };
+        var appVersion = "2.5.1";
+        if (File.Exists("./appversion")) appVersion = File.ReadAllText("./appversion");
+        appVersion = await GetLatestAvailableVersion(appVersion);
 
-        var response = await OrtegaHttpClient.SendAsync(request);
+        using var response = await GetDataUriReq(appVersion);
         response.EnsureSuccessStatusCode();
         var dict = MessagePackSerializer.Deserialize<Dictionary<string, Object>>(await response.Content.ReadAsStreamAsync());
         MasterUriFormat = dict["MasterUriFormat"].ToString();
         return response.Headers.TryGetValues("ortegamasterversion", out var values) ? values.FirstOrDefault() ?? "" : "";
     }
+
+    private static async Task<HttpResponseMessage> GetDataUriReq(string appVersion)
+    {
+        var request = new HttpRequestMessage
+        {
+            Method = HttpMethod.Post,
+            Content = new ByteArrayContent(MessagePackSerializer.Serialize(new GetDataUriRequest())),
+            RequestUri = new Uri($"{AuthUri}/api/auth/getDataUri"),
+            Headers = {{"ortegaappversion", appVersion}}
+        };
+
+        return await httpClient.SendAsync(request);
+    }
+
+    private async static Task<string> GetLatestAvailableVersion(string currentVersion)
+    {
+        Log("auto get latest version...");
+        var buildAddCount = 5;
+        var minorAddCount = 5;
+        var majorAddCount = 5;
+
+
+        while (true)
+        {
+            using var respMsg = await GetDataUriReq(currentVersion);
+            if (!respMsg.IsSuccessStatusCode) throw new InvalidOperationException(respMsg.ToString());
+
+            await using var stream = await respMsg.Content.ReadAsStreamAsync();
+            if (respMsg.Headers.TryGetValues("ortegastatuscode", out var headers2))
+            {
+                var ortegastatuscode = headers2.FirstOrDefault() ?? "";
+                if (ortegastatuscode != "0")
+                {
+                    var apiErrResponse = MessagePackSerializer.Deserialize<ApiErrorResponse>(stream);
+
+                    // CommonRequireClientUpdate = 103,
+                    if (apiErrResponse.ErrorCode != 103)
+                    {
+                        throw new InvalidOperationException($"ortegastatuscode: {ortegastatuscode}, {apiErrResponse.Message}");
+                    }
+
+                    var version = new Version(currentVersion);
+                    if (buildAddCount > 0)
+                    {
+                        var newVersion = new Version(version.Major, version.Minor, version.Build + 1);
+                        currentVersion = newVersion.ToString(3);
+                        Log($"trying {currentVersion}");
+                        buildAddCount--;
+                        continue;
+                    }
+
+                    if (minorAddCount > 0)
+                    {
+                        var newVersion = new Version(version.Major, version.Minor + 1, 0);
+                        currentVersion = newVersion.ToString(3);
+                        Log($"trying {currentVersion}");
+                        minorAddCount--;
+                        buildAddCount = 5;
+                        continue;
+                    }
+
+                    if (majorAddCount > 0)
+                    {
+                        var newVersion = new Version(version.Major + 1, 0, 0);
+                        currentVersion = newVersion.ToString(3);
+                        Log($"trying {currentVersion}");
+                        majorAddCount--;
+                        buildAddCount = 5;
+                        minorAddCount = 5;
+                        continue;
+                    }
+
+                    throw new InvalidOperationException("reached max try out");
+                }
+
+                Log($"found latest version {currentVersion}");
+                File.WriteAllText("./appversion", currentVersion);
+                return currentVersion;
+            }
+
+            throw new InvalidOperationException("no ortegastatuscode");
+        }
+    }
+
 
     private static async Task SendNotification(string message)
     {
@@ -171,5 +250,22 @@ public static class Helpers
         public string Name { get; set; }
 
         public int Size { get; set; }
+    }
+
+    [MessagePackObject(true)]
+    public class ApiErrorResponse
+    {
+        public int ErrorCode { get; set; }
+
+        public string Message { get; set; }
+
+        [Obsolete("ErrorCodeに移行します")]
+        public int ErrorHandlingType { get; set; }
+
+        [Obsolete("ErrorCodeに移行します")]
+        public long ErrorMessageId { get; set; }
+
+        [Obsolete("ErrorCodeに移行します")]
+        public string[] MessageParams { get; set; }
     }
 }
