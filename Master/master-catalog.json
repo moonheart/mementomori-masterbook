@@ -11,7 +11,7 @@
       "Size": 355488
     },
     "AppVersionMB": {
-      "Hash": "07660a9315aec8a53975d2304e005c99",
+      "Hash": "5a80926e4a8190d2e6d75eb62534afc3",
       "Name": "AppVersionMB",
       "Size": 201
     },
@@ -146,9 +146,9 @@
       "Size": 3195
     },
     "DownloadRawDataMB": {
-      "Hash": "f094013aa3118dd12375ee5d1203390f",
+      "Hash": "bb7f0b9a1880f220590e73b37333b8ea",
       "Name": "DownloadRawDataMB",
-      "Size": 72652
+      "Size": 75494
     },
     "DungeonBattleGridMB": {
       "Hash": "d1d0bb870c358c7985224e134155c50d",
@@ -256,7 +256,7 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "87ada61bd5e1819461b66791b1160943",
+      "Hash": "5d174f321f94ed463bec55e1f271b137",
       "Name": "GachaCaseMB",
       "Size": 27413
     },
@@ -356,14 +356,14 @@
       "Size": 4744
     },
     "LocalPushNotificationMB": {
-      "Hash": "ae2c18a8d20cf0cc3e2c4988e99d8d1e",
+      "Hash": "4303d2b4b39e99b96a89ea5ba1b3cfae",
       "Name": "LocalPushNotificationMB",
       "Size": 1529
     },
     "LocalRaidBannerMB": {
-      "Hash": "dfd595d3b8f6f225be0349bf4d24a8a4",
+      "Hash": "839f7fdc8e3ebba56dc97776a6e464e4",
       "Name": "LocalRaidBannerMB",
-      "Size": 2281
+      "Size": 2809
     },
     "LocalRaidBonusScheduleMB": {
       "Hash": "036fbfe7f56c7f8d1818e2cc25ee9cad",
@@ -371,19 +371,19 @@
       "Size": 181
     },
     "LocalRaidEnemyMB": {
-      "Hash": "248ef1cf383c559b36765d6d34d40a45",
+      "Hash": "bf4c46a6624148aa87bdcffd9d6c1030",
       "Name": "LocalRaidEnemyMB",
-      "Size": 33983506
+      "Size": 40844552
     },
     "LocalRaidEventQuestGroupMB": {
-      "Hash": "2db778ca0e3f7f1fdb3c529901dc6374",
+      "Hash": "6718cd1abf15fbfe769301254919783f",
       "Name": "LocalRaidEventQuestGroupMB",
-      "Size": 591239
+      "Size": 864976
     },
     "LocalRaidEventScheduleMB": {
-      "Hash": "d46a6df6efa8f480d30f7a108d1b07f9",
+      "Hash": "5b80b1e68f35e912482dda9d023b08e8",
       "Name": "LocalRaidEventScheduleMB",
-      "Size": 9105
+      "Size": 13195
     },
     "LocalRaidQuestGroupMB": {
       "Hash": "4b37171cdea82d0d7661ba4d6fef95b0",
@@ -391,9 +391,9 @@
       "Size": 240470
     },
     "LocalRaidQuestMB": {
-      "Hash": "1252381302daf144298eeb34edc65d6c",
+      "Hash": "662d01f3e1824144aa09d627b684c911",
       "Name": "LocalRaidQuestMB",
-      "Size": 3238713
+      "Size": 3989841
     },
     "MissionClearCountRewardMB": {
       "Hash": "c261960bcbb3023dcb6bd5c1cc560dec",
@@ -526,69 +526,69 @@
       "Size": 1416
     },
     "TextResourceDeDeMB": {
-      "Hash": "a42b9d737ebefe279854418c88a0925c",
+      "Hash": "288a543a3426d17475f93c1c6cc67b1a",
       "Name": "TextResourceDeDeMB",
-      "Size": 2707124
+      "Size": 2714674
     },
     "TextResourceEnUsMB": {
-      "Hash": "fa02b0b9cdfae2555b8859466fb66338",
+      "Hash": "94bb5e6e8d6254852632556d56cd2312",
       "Name": "TextResourceEnUsMB",
-      "Size": 2990435
+      "Size": 3019698
     },
     "TextResourceEsMxMB": {
-      "Hash": "5991c4cf3216291ddd8c17222fc986b2",
+      "Hash": "b34b9c290c8be86e1e7e528b9ba400a5",
       "Name": "TextResourceEsMxMB",
-      "Size": 2637918
+      "Size": 2645468
     },
     "TextResourceFrFrMB": {
-      "Hash": "5a1196704f51b87bd628362848cf8f24",
+      "Hash": "cb9816cd7c940d382898a597271961aa",
       "Name": "TextResourceFrFrMB",
-      "Size": 2634864
+      "Size": 2642414
     },
     "TextResourceIdIdMB": {
-      "Hash": "6d9316aa079a1eb7809af3632cb916cb",
+      "Hash": "f1910a893da782ee036c49dc758fc0cb",
       "Name": "TextResourceIdIdMB",
-      "Size": 2637651
+      "Size": 2645201
     },
     "TextResourceJaJpMB": {
-      "Hash": "025b2bc5644c806b29984612a7fb4d50",
+      "Hash": "a55293f14068dc34b03a09f0e8a0a03f",
       "Name": "TextResourceJaJpMB",
-      "Size": 3137636
+      "Size": 3167004
     },
     "TextResourceKoKrMB": {
-      "Hash": "63a850ab05131a78cacb29b4bf5829ce",
+      "Hash": "96502d63386339fa1670732eb0b76ab3",
       "Name": "TextResourceKoKrMB",
-      "Size": 3051325
+      "Size": 3080157
     },
     "TextResourcePtBrMB": {
-      "Hash": "3867759ac1185e21f06adef7fb97add5",
+      "Hash": "4471e956af810bb0d1b1d3e24fe58ebd",
       "Name": "TextResourcePtBrMB",
-      "Size": 2610374
+      "Size": 2617924
     },
     "TextResourceRuRuMB": {
-      "Hash": "6e69402cf6f5be55f10761b912467f84",
+      "Hash": "d2d2255739e4ffe7ce977dce24119ed2",
       "Name": "TextResourceRuRuMB",
-      "Size": 3374426
+      "Size": 3381976
     },
     "TextResourceThThMB": {
-      "Hash": "6221a517aedd37f64de579618a31a81f",
+      "Hash": "1874c5c17bfcc2188c8ef21de531eb40",
       "Name": "TextResourceThThMB",
-      "Size": 4187163
+      "Size": 4194713
     },
     "TextResourceViVnMB": {
-      "Hash": "288162cff3cb345d259a4669d83b1479",
+      "Hash": "f7baa643d8a06c7cd4a7090e2ecf501f",
       "Name": "TextResourceViVnMB",
-      "Size": 3003297
+      "Size": 3010847
     },
     "TextResourceZhCnMB": {
-      "Hash": "ae6057028d64420d48f1c49370d00836",
+      "Hash": "d7b3a751a0936aec8fab3c37bec7d51e",
       "Name": "TextResourceZhCnMB",
-      "Size": 2376244
+      "Size": 2383794
     },
     "TextResourceZhTwMB": {
-      "Hash": "f7dbe69cb2aaf898ed9ea62e2ea7a1ff",
+      "Hash": "cb738227fcfc7631f9293bafe7628160",
       "Name": "TextResourceZhTwMB",
-      "Size": 2736613
+      "Size": 2761504
     },
     "TimeServerMB": {
       "Hash": "b89f011a66251615978289ef3efb9d4a",
@@ -641,9 +641,9 @@
       "Size": 34678
     },
     "TutorialDescriptionMB": {
-      "Hash": "f20b0ab2928e68f23e29e9b6597ace0d",
+      "Hash": "2a820586418e33b27427dbfeec44f097",
       "Name": "TutorialDescriptionMB",
-      "Size": 8177
+      "Size": 8438
     },
     "TutorialTextBoxMB": {
       "Hash": "ec217438b4d0fe2e52e17c1d17ebb358",
