@@ -2304,6 +2304,22 @@
     "UnlockQuestId": 0
   },
   {
+    "Id": 622,
+    "IsIgnore": null,
+    "Memo": "アムレート朗読",
+    "CharacterId": 6,
+    "CharacterVoiceCategory": 10,
+    "Path": {
+      "TimelineId": 1,
+      "TimelineType": 6
+    },
+    "SortOrder": 0,
+    "SubtitleKey": null,
+    "UnlockCondition": 0,
+    "UnlockedVoiceButtonTextKey": null,
+    "UnlockQuestId": 0
+  },
+  {
     "Id": 690,
     "IsIgnore": null,
     "Memo": "アムレート",
@@ -21101,6 +21117,22 @@
     "SubtitleKey": "[CharacterDetailVoiceSubtitle4921]",
     "UnlockCondition": 6,
     "UnlockedVoiceButtonTextKey": "[CharacterDetailVoiceUnLockedText20]",
+    "UnlockQuestId": 0
+  },
+  {
+    "Id": 4922,
+    "IsIgnore": null,
+    "Memo": "オフィーリア朗読",
+    "CharacterId": 49,
+    "CharacterVoiceCategory": 10,
+    "Path": {
+      "TimelineId": 1,
+      "TimelineType": 6
+    },
+    "SortOrder": 0,
+    "SubtitleKey": null,
+    "UnlockCondition": 0,
+    "UnlockedVoiceButtonTextKey": null,
     "UnlockQuestId": 0
   },
   {

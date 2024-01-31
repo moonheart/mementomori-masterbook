@@ -3081,9 +3081,9 @@
       "Hit": 0,
       "HP": 0,
       "HpDrain": 0,
-      "MagicCriticalDamageRelax": -2,
+      "MagicCriticalDamageRelax": 0,
       "MagicDamageRelax": 0,
-      "PhysicalCriticalDamageRelax": -2,
+      "PhysicalCriticalDamageRelax": 0,
       "PhysicalDamageRelax": 0,
       "Speed": 2703
     },
