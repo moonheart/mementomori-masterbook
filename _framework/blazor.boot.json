@@ -1,17 +1,17 @@
 {
   "entryAssembly": "MementoMoriData.UI",
   "resources": {
-    "hash": "sha256-h7fvDk0tRpszY0IPP2RnFSYzQZakwNlXYVjHRDAGyBs=",
+    "hash": "sha256-8DqFVXnTcNv8ixaB11WQtDuMgcwt0JDyNjKIEz1qMe8=",
     "runtime": {
       "dotnet.7.0.15.cmhcvu07jr.js": "sha256-PbJHVdqzRsxmPrkBAPWUZ0iY2E2xZW/7KSed1KgFg+s=",
       "dotnet.timezones.blat": "sha256-aHk3Pm2JXopn6UPLJtovAqIdIk8GyIMzGm450cli9UE=",
-      "dotnet.wasm": "sha256-buUnNdP0URxWwVn/Nh2b8NvgdZ3Ok4QXY2j4PF+fMdg=",
+      "dotnet.wasm": "sha256-7E3zayV2PNDbfj23eEo5G++PRb9zniT3DRMTAwImy7M=",
       "icudt_CJK.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
       "icudt_EFIGS.dat": "sha256-8fItetYY8kQ0ww6oxwTLiT3oXlBwHKumbeP2pRF4yTc=",
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "MementoMoriData.UI.dll": "sha256-ZkGdSvxAnE3FFPlVbxK3j+nGBbp5R29v77Y07yUNQ9E=",
+      "MementoMoriData.UI.dll": "sha256-p7EQIZmpAHSyMz3HE0MK6/WmS21QV4P9Bz2USddcB3o=",
       "Microsoft.AspNetCore.Components.dll": "sha256-txSN89w16AQN5dJyAgJpi/tqkDbFk9SgmegHEXTJuDU=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-+q29HxcldacPYTtTySBlIfRuwLav0mQ4Gd35dQjkhxk=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-zISEWyOlKZxY70xNM2P4KqHpvip0AJuvkc0QX53lX/4=",
@@ -75,7 +75,7 @@
     },
     "runtimeAssets": {
       "dotnet.wasm": {
-        "hash": "sha256-buUnNdP0URxWwVn/Nh2b8NvgdZ3Ok4QXY2j4PF+fMdg=",
+        "hash": "sha256-7E3zayV2PNDbfj23eEo5G++PRb9zniT3DRMTAwImy7M=",
         "behavior": "dotnetwasm"
       }
     }
