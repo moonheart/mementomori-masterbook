@@ -120,9 +120,9 @@ public static class Helpers
         }
 
         var appVersion = "2.6.0";
-        if (File.Exists("./appversion")) appVersion = File.ReadAllText("./appversion");
+        if (File.Exists("./Master/appversion")) appVersion = File.ReadAllText("./Master/appversion");
         appVersion = await GetLatestAvailableVersion(appVersion);
-        File.WriteAllText("./appversion", appVersion);
+        File.WriteAllText("./Master/appversion", appVersion);
 
         using var response = await GetDataUriReq(appVersion);
         response.EnsureSuccessStatusCode();
