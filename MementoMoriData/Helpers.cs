@@ -119,9 +119,10 @@ public static class Helpers
             throw new Exception("AUTH_URI is not set.");
         }
 
-        var appVersion = "2.5.1";
+        var appVersion = "2.6.0";
         if (File.Exists("./appversion")) appVersion = File.ReadAllText("./appversion");
         appVersion = await GetLatestAvailableVersion(appVersion);
+        File.WriteAllText("./appversion", appVersion);
 
         using var response = await GetDataUriReq(appVersion);
         response.EnsureSuccessStatusCode();
