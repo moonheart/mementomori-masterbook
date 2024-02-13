@@ -124775,6 +124775,13 @@
     "Text": "Sólo los personajes del Alma elegida pueden estar en el grupo."
   },
   {
+    "Id": 20254,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ClientErrorMessage1500003]",
+    "Text": ""
+  },
+  {
     "Id": 20255,
     "IsIgnore": false,
     "Memo": "",
