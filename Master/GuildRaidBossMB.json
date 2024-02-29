@@ -316,8 +316,8 @@
     "StartTime": "2020-01-01 00:00:00",
     "EndTime": "2100-12-31 23:59:59",
     "BannerText": "0",
-    "GuildRaidButtonU": 0.34,
-    "GuildRaidButtonV": 0.51,
+    "GuildRaidButtonU": 0.35,
+    "GuildRaidButtonV": 0.49,
     "WorldDamageBarRewardCharacterImageX": 0.0,
     "WorldDamageBarRewardCharacterImageY": 0.0,
     "WorldDamageBarRewardCharacterImageSize": 0.0
