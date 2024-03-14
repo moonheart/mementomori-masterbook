@@ -168,6 +168,20 @@
     "Text": ""
   },
   {
+    "Id": 26,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterYouTubeURL63]",
+    "Text": ""
+  },
+  {
+    "Id": 27,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterTwitterURL63]",
+    "Text": ""
+  },
+  {
     "Id": 28,
     "IsIgnore": false,
     "Memo": "",
@@ -55230,6 +55244,188 @@
     "Text": "我一定会保护大家……！"
   },
   {
+    "Id": 8397,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6302]",
+    "Text": ""
+  },
+  {
+    "Id": 8398,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6303]",
+    "Text": ""
+  },
+  {
+    "Id": 8399,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6304]",
+    "Text": ""
+  },
+  {
+    "Id": 8400,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6305]",
+    "Text": ""
+  },
+  {
+    "Id": 8401,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6306]",
+    "Text": ""
+  },
+  {
+    "Id": 8402,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6307]",
+    "Text": ""
+  },
+  {
+    "Id": 8403,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6308]",
+    "Text": ""
+  },
+  {
+    "Id": 8404,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6309]",
+    "Text": ""
+  },
+  {
+    "Id": 8405,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6310]",
+    "Text": ""
+  },
+  {
+    "Id": 8406,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6311]",
+    "Text": ""
+  },
+  {
+    "Id": 8407,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6312]",
+    "Text": ""
+  },
+  {
+    "Id": 8408,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6313]",
+    "Text": ""
+  },
+  {
+    "Id": 8409,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6314]",
+    "Text": ""
+  },
+  {
+    "Id": 8410,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6315]",
+    "Text": ""
+  },
+  {
+    "Id": 8411,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6316]",
+    "Text": ""
+  },
+  {
+    "Id": 8412,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6317]",
+    "Text": ""
+  },
+  {
+    "Id": 8413,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6318]",
+    "Text": ""
+  },
+  {
+    "Id": 8414,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6319]",
+    "Text": ""
+  },
+  {
+    "Id": 8415,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6320]",
+    "Text": ""
+  },
+  {
+    "Id": 8416,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6321]",
+    "Text": ""
+  },
+  {
+    "Id": 8417,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6390]",
+    "Text": ""
+  },
+  {
+    "Id": 8418,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6391]",
+    "Text": ""
+  },
+  {
+    "Id": 8419,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6392]",
+    "Text": ""
+  },
+  {
+    "Id": 8420,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6393]",
+    "Text": ""
+  },
+  {
+    "Id": 8421,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6394]",
+    "Text": ""
+  },
+  {
+    "Id": 8422,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6395]",
+    "Text": ""
+  },
+  {
     "Id": 8423,
     "IsIgnore": false,
     "Memo": "",
@@ -63182,6 +63378,76 @@
     "Text": "我一直、一直盼望着这一刻……"
   },
   {
+    "Id": 10307,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLyricsJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10308,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLyricsUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10309,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileDescription63]",
+    "Text": ""
+  },
+  {
+    "Id": 10310,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVoiceJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10311,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVoiceUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10312,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLamentJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10313,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLamentUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10314,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVocalJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10315,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVocalUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10316,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileGachaResultSubMessage63]",
+    "Text": ""
+  },
+  {
     "Id": 10317,
     "IsIgnore": false,
     "Memo": "",
@@ -66948,6 +67214,55 @@
     "Text": "——普莉希拉，我会……<br><br>这句话在脑海里反复地回响，但我就是想不起来。<br>你到底是谁呢？<br><br>为什么我明明怕得不得了，<br>却还是不肯放开这顶王冠呢……<br><br>就在那个时候，我好像听见了有人在呼唤我。<br>可是，那个人是谁？<br><br>啊……这个声音……我认得……<br><br>像太阳一样明朗，总是为我带来勇气……<br><br>我想起来了，原来我一直在等，<br>等着你来救我出去的这一刻……<br><br>“我来实现我们的约定了！<br>普莉希拉，跟我一起回家吧！”<br><br>…………！……琳恩！<br><br>咦？好奇怪……我说不出话来。<br>可是我明明有好多的话想要说。<br><br>那我只好先说这句最想告诉你的话了——<br>谢谢你，琳恩！"
   },
   {
+    "Id": 11103,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6301]",
+    "Text": ""
+  },
+  {
+    "Id": 11104,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6302]",
+    "Text": ""
+  },
+  {
+    "Id": 11105,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6303]",
+    "Text": ""
+  },
+  {
+    "Id": 11106,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6304]",
+    "Text": ""
+  },
+  {
+    "Id": 11107,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6305]",
+    "Text": ""
+  },
+  {
+    "Id": 11108,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6306]",
+    "Text": ""
+  },
+  {
+    "Id": 11109,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6307]",
+    "Text": ""
+  },
+  {
     "Id": 11110,
     "IsIgnore": false,
     "Memo": "",
@@ -69277,6 +69592,13 @@
     "Memo": "",
     "StringKey": "[EquipmentName471]",
     "Text": "长发姑娘"
+  },
+  {
+    "Id": 11613,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[EquipmentName477]",
+    "Text": ""
   },
   {
     "Id": 11614,
@@ -77217,6 +77539,27 @@
     "Text": ""
   },
   {
+    "Id": 12938,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName152]",
+    "Text": ""
+  },
+  {
+    "Id": 12939,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName152]",
+    "Text": ""
+  },
+  {
+    "Id": 12940,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription152]",
+    "Text": ""
+  },
+  {
     "Id": 13235,
     "IsIgnore": false,
     "Memo": "",
@@ -82761,6 +83104,34 @@
     "Text": ""
   },
   {
+    "Id": 14052,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName217]",
+    "Text": ""
+  },
+  {
+    "Id": 14053,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName218]",
+    "Text": ""
+  },
+  {
+    "Id": 14054,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName219]",
+    "Text": ""
+  },
+  {
+    "Id": 14055,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName220]",
+    "Text": ""
+  },
+  {
     "Id": 14137,
     "IsIgnore": false,
     "Memo": "",
@@ -82870,6 +83241,13 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[ShopTabName24]",
+    "Text": ""
+  },
+  {
+    "Id": 14153,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopTabName25]",
     "Text": ""
   },
   {
@@ -85622,6 +86000,20 @@
     "Memo": "",
     "StringKey": "[HelpMainText2216]",
     "Text": "■恢复<br>恢复一定的生命值。<br><br>■失去战斗能力<br>当生命值归零时，角色随即失去战斗能力。失去战斗能力的角色无法行动。<br>失去战斗能力时，该角色身上附带的增益／弱化效果将全部解除，<br>技能冷却时间的数值则会维持在失去战斗能力当下的状态。<br><br>■增加／减少技能冷却时间<br>增加或减少目标的技能冷却回合数。<br><br>■复活<br>受到致命伤害且失去战斗能力时，恢复生命值并重新返回战斗中。<br>攻击伤害、共鸣伤害、献身伤害、反弹伤害、中毒等持续伤害皆为有效对象。<br><br>​■必定命中​<br>攻击必定命中。​<br>不会受到命中率与闪避率的影响。​<br><br>■必定暴击​<br>攻击命中时必定暴击。​<br>不会受到暴击率与抗暴率的影响。<br><br>■阻绝<br>依照特定比例减轻攻击伤害、共鸣伤害、献身伤害与反弹伤害。<br>无法减轻中毒等持续伤害。<br>“阻绝”减轻的伤害量，以“承受伤害上升／下降”与“输出伤害上升／下降”生效之后、<br>“护盾”与“共鸣”生效之前的伤害量为基准进行计算。<br><br>■保留１点生命值不死<br>受到致命伤害时，保留１点生命值不死。<br>攻击伤害、共鸣伤害、献身伤害、反弹伤害、中毒等持续伤害皆为有效对象。<br>此效果无法解除、复制或转移。<br><br>■吸收<br>对敌人附加弱化效果，降低对方的特定能力数值，并以增益效果的形式获得对方下降的数值。<br>弱化效果附加失败时，无法获得增益效果。<br><br>■普攻强化<br>强化普通攻击，效果因技能而异。<br><br>■消耗生命值<br>使用技能时使自己受到一定的伤害。<br>不会受到“承受伤害上升／下降”、“伤害免疫”、“护盾”、“多重屏障”、“阻绝”、“不死之身”的影响。<br><br>■伤害反弹<br>受到敌人攻击时，根据自己承受的伤害量对敌人造成伤害。<br>反弹伤害为“护盾”、“多重屏障”、“伤害免疫”、“阻绝”与“不死之身”的有效对象。<br>反弹伤害无法闪避，也不计入攻击次数中。<br>中毒等持续伤害、共鸣伤害与被动技能造成的伤害不会触发伤害反弹效果，<br>未命中的攻击同样无法触发伤害反弹效果。<br><br>■吸血<br>发动攻击时，根据自己对敌人造成的伤害量恢复生命值。<br>“吸血”恢复的生命值，以“护盾”、“多重屏障”、“伤害免疫”、“阻绝”、“不死之身”生效之后的伤害量为基准进行计算。<br>中毒等持续伤害、共鸣伤害、献身伤害与被动技能造成的伤害不会触发吸血效果，<br>未命中的攻击同样无法触发吸血效果。"
+  },
+  {
+    "Id": 14581,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[HelpHeadLine2217]",
+    "Text": ""
+  },
+  {
+    "Id": 14582,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[HelpMainText2217]",
+    "Text": ""
   },
   {
     "Id": 14583,
@@ -130004,6 +130396,13 @@
     "Text": ""
   },
   {
+    "Id": 21082,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterMissionName10]",
+    "Text": ""
+  },
+  {
     "Id": 21121,
     "IsIgnore": false,
     "Memo": "",
@@ -133389,6 +133788,34 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaExplanation87]",
+    "Text": ""
+  },
+  {
+    "Id": 21618,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail88]",
+    "Text": ""
+  },
+  {
+    "Id": 21619,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading88]",
+    "Text": ""
+  },
+  {
+    "Id": 21620,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes88]",
+    "Text": ""
+  },
+  {
+    "Id": 21621,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation88]",
     "Text": ""
   },
   {

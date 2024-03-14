@@ -168,6 +168,20 @@
     "Text": ""
   },
   {
+    "Id": 26,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterYouTubeURL63]",
+    "Text": ""
+  },
+  {
+    "Id": 27,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterTwitterURL63]",
+    "Text": ""
+  },
+  {
     "Id": 28,
     "IsIgnore": false,
     "Memo": "",
@@ -55230,6 +55244,188 @@
     "Text": "Ich werde alle beschützen ...!"
   },
   {
+    "Id": 8397,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6302]",
+    "Text": ""
+  },
+  {
+    "Id": 8398,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6303]",
+    "Text": ""
+  },
+  {
+    "Id": 8399,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6304]",
+    "Text": ""
+  },
+  {
+    "Id": 8400,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6305]",
+    "Text": ""
+  },
+  {
+    "Id": 8401,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6306]",
+    "Text": ""
+  },
+  {
+    "Id": 8402,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6307]",
+    "Text": ""
+  },
+  {
+    "Id": 8403,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6308]",
+    "Text": ""
+  },
+  {
+    "Id": 8404,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6309]",
+    "Text": ""
+  },
+  {
+    "Id": 8405,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6310]",
+    "Text": ""
+  },
+  {
+    "Id": 8406,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6311]",
+    "Text": ""
+  },
+  {
+    "Id": 8407,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6312]",
+    "Text": ""
+  },
+  {
+    "Id": 8408,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6313]",
+    "Text": ""
+  },
+  {
+    "Id": 8409,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6314]",
+    "Text": ""
+  },
+  {
+    "Id": 8410,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6315]",
+    "Text": ""
+  },
+  {
+    "Id": 8411,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6316]",
+    "Text": ""
+  },
+  {
+    "Id": 8412,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6317]",
+    "Text": ""
+  },
+  {
+    "Id": 8413,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6318]",
+    "Text": ""
+  },
+  {
+    "Id": 8414,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6319]",
+    "Text": ""
+  },
+  {
+    "Id": 8415,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6320]",
+    "Text": ""
+  },
+  {
+    "Id": 8416,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6321]",
+    "Text": ""
+  },
+  {
+    "Id": 8417,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6390]",
+    "Text": ""
+  },
+  {
+    "Id": 8418,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6391]",
+    "Text": ""
+  },
+  {
+    "Id": 8419,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6392]",
+    "Text": ""
+  },
+  {
+    "Id": 8420,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6393]",
+    "Text": ""
+  },
+  {
+    "Id": 8421,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6394]",
+    "Text": ""
+  },
+  {
+    "Id": 8422,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6395]",
+    "Text": ""
+  },
+  {
     "Id": 8423,
     "IsIgnore": false,
     "Memo": "",
@@ -63182,6 +63378,76 @@
     "Text": "Ach, wie lange habe ich auf diesen Augenblick gewartet ..."
   },
   {
+    "Id": 10307,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLyricsJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10308,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLyricsUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10309,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileDescription63]",
+    "Text": ""
+  },
+  {
+    "Id": 10310,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVoiceJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10311,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVoiceUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10312,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLamentJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10313,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLamentUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10314,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVocalJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10315,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVocalUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10316,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileGachaResultSubMessage63]",
+    "Text": ""
+  },
+  {
     "Id": 10317,
     "IsIgnore": false,
     "Memo": "",
@@ -66948,6 +67214,55 @@
     "Text": "„... Priscilla, ich werde dich beschützen ...“<br><br>Diese Worte hallen in meinem Kopf<br>wieder und wieder.<br>Aber ich kann mich schlicht an nichts erinnern ...<br>Wer bist du nur ...?<br><br>Ich sollte mich vor dieser Krone eigentlich<br>zu Tode ängstigen, warum kann ich sie also<br>nicht einfach loslassen ...?<br><br>Plötzlich hatte ich das Gefühl, als ob jemand<br>meinen Namen rief. Nur wer ...?<br>Ich kenne diese Stimme ...<br>Ich ... erinnere mich ...!<br><br>Es ist jemand, der so hell ist, wie die Sonne.<br>Jemand, der mich stets mit Mut erfüllt ...<br><br>Genau. Ich habe auf diesen Augenblick gewartet.<br>Auf den Augenblick, in dem du kommst und mich rettest ...<br><br>„Ich bin gekommen, um mein Versprechen zu halten.<br>Gehen wir nach Hause, Priscilla. Gemeinsam.“<br><br>Ah? Wie seltsam.<br>Ich bekomme kein Wort heraus,<br>obwohl es so vieles gibt, was ich sagen wollte.<br><br>Aber zumindest das Allerwichtigste<br>sage ich dir jetzt.<br>Danke, Rean!"
   },
   {
+    "Id": 11103,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6301]",
+    "Text": ""
+  },
+  {
+    "Id": 11104,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6302]",
+    "Text": ""
+  },
+  {
+    "Id": 11105,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6303]",
+    "Text": ""
+  },
+  {
+    "Id": 11106,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6304]",
+    "Text": ""
+  },
+  {
+    "Id": 11107,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6305]",
+    "Text": ""
+  },
+  {
+    "Id": 11108,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6306]",
+    "Text": ""
+  },
+  {
+    "Id": 11109,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6307]",
+    "Text": ""
+  },
+  {
     "Id": 11110,
     "IsIgnore": false,
     "Memo": "",
@@ -69277,6 +69592,13 @@
     "Memo": "",
     "StringKey": "[EquipmentName471]",
     "Text": "Rapunzel"
+  },
+  {
+    "Id": 11613,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[EquipmentName477]",
+    "Text": ""
   },
   {
     "Id": 11614,
@@ -77217,6 +77539,27 @@
     "Text": ""
   },
   {
+    "Id": 12938,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName152]",
+    "Text": ""
+  },
+  {
+    "Id": 12939,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName152]",
+    "Text": ""
+  },
+  {
+    "Id": 12940,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription152]",
+    "Text": ""
+  },
+  {
     "Id": 13235,
     "IsIgnore": false,
     "Memo": "",
@@ -82761,6 +83104,34 @@
     "Text": ""
   },
   {
+    "Id": 14052,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName217]",
+    "Text": ""
+  },
+  {
+    "Id": 14053,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName218]",
+    "Text": ""
+  },
+  {
+    "Id": 14054,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName219]",
+    "Text": ""
+  },
+  {
+    "Id": 14055,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName220]",
+    "Text": ""
+  },
+  {
     "Id": 14137,
     "IsIgnore": false,
     "Memo": "",
@@ -82870,6 +83241,13 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[ShopTabName24]",
+    "Text": ""
+  },
+  {
+    "Id": 14153,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopTabName25]",
     "Text": ""
   },
   {
@@ -85622,6 +86000,20 @@
     "Memo": "",
     "StringKey": "[HelpMainText2216]",
     "Text": "■Falls/Wenn eine Figur angegriffen wird<br>Diese Bedingung bewirkt, dass bestimmte Fertigkeiten aktiviert werden, wenn sie erfüllt ist.<br>Sie wird nur erfüllt, wenn die Figur erfolgreich von einem Angriff getroffen wird.<br>Sie wird nicht erfüllt, wenn dem Angriff ausgewichen wird oder wenn die Figur durch einen Konter Schaden nimmt.<br>Wenn die Figur von einem Angriff getroffen wird, aber Buffs wie [Schild] oder [Multi-Barriere]<br>den Schaden auf 0 senken, gilt diese Bedingung trotzdem als erfüllt.<br><br>■LP-Wiederherstellung<br>Dieser Effekt stellt die LP einer Figur um einen bestimmten Betrag wieder her.<br><br>■Besiegt<br>Wenn die LP einer Figur auf 0 fallen, ist sie besiegt.<br>Besiegte Figuren können keine Aktionen ausführen.<br>Wenn eine Figur besiegt wird, werden alle ihre Buffs/Debuffs aufgelöst.<br>Außerdem bleibt der Wert der Fertigkeitsabklingzeit<br>einer Figur zum Zeitpunkt ihrer Niederlage unverändert.<br><br>■Erhöhte/verringerte Fertigkeitsabklingzeit<br>Dieser Effekt erhöht oder senkt die Rundenzahl der Fertigkeitsabklingzeiten eines Ziels.<br><br>■Wiederbelebung<br>Wenn eine Figur Schaden nimmt, durch den sie besiegt wird,<br>stellt dieser Effekt die LP der Figur wieder her und macht sie wieder kampffähig.<br>Figuren, die Schaden durch Angriffe, Gift und andere Debuffs, die kontinuierlichen Schaden verursachen,<br>Resonanz, Hingabe und Konter genommen haben, können wiederbelebt werden.<br><br>■Garantierter Treffer<br>Diese Angriffe treffen garantiert ihr Ziel.<br>Dieser Effekt wird nicht von der Trefferrate oder der Ausweichrate einer Figur beeinflusst.<br><br>■Garantierter kritischer Treffer<br>Wenn diese Angriffe ihr Ziel treffen,<br>erzielen sie garantiert einen kritischen Treffer.<br>Dieser Effekt wird nicht von der kritischen Trefferrate oder<br>der kritische Trefferresistenzrate einer Figur beeinflusst.<br><br>■Minderung<br>Dieser Effekt mindert einen bestimmten Prozentsatz des durch Angriffe, Resonanz, Hingabe und Konter genommenen Schadens.<br>Schaden durch Gift und andere Debuffs, die fortlaufenden Schaden verursachen, kann nicht gemindert werden.<br>Die Effekte von Erhöhter/Gesenkter genommener Schaden und Erhöhter/Gesenkter verursachter Schaden<br>werden berechnet, bevor der Schaden durch Minderung gemindert wird.<br>Die Effekte von Schild, Resonanz und Hingabe werden berechnet,<br>nachdem der Schaden durch Minderung gemindert wurde.<br><br>■Überleben mit 1 LP<br>Dieser Effekt garantiert, dass eine Figur mit 1 verbleibenden LP überlebt,<br>wenn sie Schaden nimmt, der ihre LP auf 0 senken würde.<br>Dies schließt Schaden durch Angriffe, Gift und andere Debuffs,<br>die fortlaufenden Schaden verursachen, Resonanz, Hingabe und Konter ein.<br>Dieser Effekt kann nicht aufgelöst oder kopiert werden.<br><br>■Absorption<br>Dieser Effekt ermöglicht es einer Figur, einem Gegner einen Debuff aufzuerlegen, der einen bestimmten Wert senkt,<br>und sich selbst einen Buff zu verleihen, der ihren entsprechenden Wert um den gesenkten Betrag erhöht.<br>Wenn es der Figur nicht gelingt, den Debuff aufzuerlegen, wird ihr auch der Buff nicht verliehen.<br><br>■Verstärkter Basisangriff<br>Dieser Effekt stärkt den Basisangriff einer Figur.<br>Die Art und Weise, wie der Basisangriff einer Figur gestärkt wird, hängt von der Fertigkeit ab.<br><br>■Sich selbst Schaden zufügen<br>Dieser Effekt senkt die LP einer Figur, wenn sie bestimmte Fertigkeiten einsetzt.<br>Dies wird nicht von Erhöhter/Gesenkter genommener Schaden<br>Minderung, Unverwundbar, Schild, Multi-Barriere oder Unsterblichkeit beeinflusst.<br><br>■Konter<br>Wenn eine Figur von einem Gegner angegriffen wird, ermöglicht es dieser Effekt ihr, diesem Gegner Schaden zuzufügen.<br>Der durch Konter verursachte Schaden wird von<br>Minderung, Schild, Multi-Barriere, Unverwundbar und Unsterblichkeit beeinflusst.<br>Der Schaden, der dem Gegner zugefügt wird, hängt von dem durch diesen Gegner genommenen Schaden ab.<br>Einem Konter kann nicht ausgewichen werden.<br>Einige Fertigkeiten führen eine bestimmte Anzahl von Angriffen aus, jedoch wird dieser Betrag nicht in den Schaden von Konter einberechnet.<br>Konter aktiviert sich nicht, wenn eine Figur Schaden durch Gift und andere Debuffs,<br>die fortlaufenden Schaden verursachen, Resonanz, Hingabe oder passive Fertigkeiten nimmt.<br>Konter aktiviert sich nur, wenn ein Angriff trifft. Er aktiviert sich nicht, wenn einem Angriff ausgewichen wird.<br><br>■LP-Entzug<br>Beim Angriff auf einen Gegner stellt dieser Effekt dem Angreifer LP wieder her.<br>Der wiederhergestellte Betrag wird dabei anhand des zugefügten Schadens berechnet,<br>nachdem die folgenden Effekte berücksichtigt wurden:<br>Minderung, Schild, Multi-Barriere, Unverwundbar, Unsterblichkeit.<br>LP-Entzug aktiviert sich nicht, wenn eine Figur Schaden durch Gift<br>und andere Debuffs, die fortlaufenden Schaden verursachen, Resonanz, Hingabe oder passive Fertigkeiten nimmt.<br>LP-Entzug aktiviert sich nur, wenn ein Angriff trifft. Er aktiviert sich nicht, wenn einem Angriff ausgewichen wird."
+  },
+  {
+    "Id": 14581,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[HelpHeadLine2217]",
+    "Text": ""
+  },
+  {
+    "Id": 14582,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[HelpMainText2217]",
+    "Text": ""
   },
   {
     "Id": 14583,
@@ -130004,6 +130396,13 @@
     "Text": ""
   },
   {
+    "Id": 21082,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterMissionName10]",
+    "Text": ""
+  },
+  {
     "Id": 21121,
     "IsIgnore": false,
     "Memo": "",
@@ -133389,6 +133788,34 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaExplanation87]",
+    "Text": ""
+  },
+  {
+    "Id": 21618,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail88]",
+    "Text": ""
+  },
+  {
+    "Id": 21619,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading88]",
+    "Text": ""
+  },
+  {
+    "Id": 21620,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes88]",
+    "Text": ""
+  },
+  {
+    "Id": 21621,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation88]",
     "Text": ""
   },
   {

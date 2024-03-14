@@ -168,6 +168,20 @@
     "Text": ""
   },
   {
+    "Id": 26,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterYouTubeURL63]",
+    "Text": ""
+  },
+  {
+    "Id": 27,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterTwitterURL63]",
+    "Text": ""
+  },
+  {
     "Id": 28,
     "IsIgnore": false,
     "Memo": "",
@@ -55230,6 +55244,188 @@
     "Text": "Eu vou proteger vocês!"
   },
   {
+    "Id": 8397,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6302]",
+    "Text": ""
+  },
+  {
+    "Id": 8398,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6303]",
+    "Text": ""
+  },
+  {
+    "Id": 8399,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6304]",
+    "Text": ""
+  },
+  {
+    "Id": 8400,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6305]",
+    "Text": ""
+  },
+  {
+    "Id": 8401,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6306]",
+    "Text": ""
+  },
+  {
+    "Id": 8402,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6307]",
+    "Text": ""
+  },
+  {
+    "Id": 8403,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6308]",
+    "Text": ""
+  },
+  {
+    "Id": 8404,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6309]",
+    "Text": ""
+  },
+  {
+    "Id": 8405,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6310]",
+    "Text": ""
+  },
+  {
+    "Id": 8406,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6311]",
+    "Text": ""
+  },
+  {
+    "Id": 8407,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6312]",
+    "Text": ""
+  },
+  {
+    "Id": 8408,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6313]",
+    "Text": ""
+  },
+  {
+    "Id": 8409,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6314]",
+    "Text": ""
+  },
+  {
+    "Id": 8410,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6315]",
+    "Text": ""
+  },
+  {
+    "Id": 8411,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6316]",
+    "Text": ""
+  },
+  {
+    "Id": 8412,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6317]",
+    "Text": ""
+  },
+  {
+    "Id": 8413,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6318]",
+    "Text": ""
+  },
+  {
+    "Id": 8414,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6319]",
+    "Text": ""
+  },
+  {
+    "Id": 8415,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6320]",
+    "Text": ""
+  },
+  {
+    "Id": 8416,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6321]",
+    "Text": ""
+  },
+  {
+    "Id": 8417,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6390]",
+    "Text": ""
+  },
+  {
+    "Id": 8418,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6391]",
+    "Text": ""
+  },
+  {
+    "Id": 8419,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6392]",
+    "Text": ""
+  },
+  {
+    "Id": 8420,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6393]",
+    "Text": ""
+  },
+  {
+    "Id": 8421,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6394]",
+    "Text": ""
+  },
+  {
+    "Id": 8422,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterDetailVoiceSubtitle6395]",
+    "Text": ""
+  },
+  {
     "Id": 8423,
     "IsIgnore": false,
     "Memo": "",
@@ -63182,6 +63378,76 @@
     "Text": "Ah, como eu esperei por este momento…"
   },
   {
+    "Id": 10307,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLyricsJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10308,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLyricsUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10309,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileDescription63]",
+    "Text": ""
+  },
+  {
+    "Id": 10310,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVoiceJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10311,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVoiceUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10312,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLamentJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10313,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileLamentUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10314,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVocalJP63]",
+    "Text": ""
+  },
+  {
+    "Id": 10315,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileVocalUS63]",
+    "Text": ""
+  },
+  {
+    "Id": 10316,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterProfileGachaResultSubMessage63]",
+    "Text": ""
+  },
+  {
     "Id": 10317,
     "IsIgnore": false,
     "Memo": "",
@@ -66948,6 +67214,55 @@
     "Text": "\"Priscilla, eu protejo…\"<br><br>Essas palavras ecoaram incessantes na minha mente. Ainda assim eu não conseguia lembrar. Quem era ela…?!<br><br>Eu deveria ter tanto medo daquela coroa, então por que não conseguia soltá-la…?<br><br>Foi nesse momento que tive a impressão de ouvir alguém me chamar.<br>Mas quem?<br><br>(Eu conheço… Eu conheço essa voz…)<br><br>(Uma voz brilhante como o sol, que sempre me enche de coragem.)<br><br>(É mesmo, eu estava esperando. Esperando por este momento em que você viria me socorrer.)<br><br>\"Eu vim cumprir minha promessa, viu? Vamos voltar juntas, Priscilla.\"<br><br>(Ah…! Rean!)<br><br>(Que estranho. Não consigo dizer nada.<br>Mesmo tendo tanto para dizer.)<br><br>(Mas vou dizer ao menos aquilo que mais desejo: Rean, obrigada!)"
   },
   {
+    "Id": 11103,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6301]",
+    "Text": ""
+  },
+  {
+    "Id": 11104,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6302]",
+    "Text": ""
+  },
+  {
+    "Id": 11105,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6303]",
+    "Text": ""
+  },
+  {
+    "Id": 11106,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6304]",
+    "Text": ""
+  },
+  {
+    "Id": 11107,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6305]",
+    "Text": ""
+  },
+  {
+    "Id": 11108,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6306]",
+    "Text": ""
+  },
+  {
+    "Id": 11109,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[CharacterStoryText6307]",
+    "Text": ""
+  },
+  {
     "Id": 11110,
     "IsIgnore": false,
     "Memo": "",
@@ -69277,6 +69592,13 @@
     "Memo": "",
     "StringKey": "[EquipmentName471]",
     "Text": "Rapunzel"
+  },
+  {
+    "Id": 11613,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[EquipmentName477]",
+    "Text": ""
   },
   {
     "Id": 11614,
@@ -77217,6 +77539,27 @@
     "Text": ""
   },
   {
+    "Id": 12938,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemName152]",
+    "Text": ""
+  },
+  {
+    "Id": 12939,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDisplayName152]",
+    "Text": ""
+  },
+  {
+    "Id": 12940,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ItemDescription152]",
+    "Text": ""
+  },
+  {
     "Id": 13235,
     "IsIgnore": false,
     "Memo": "",
@@ -82761,6 +83104,34 @@
     "Text": ""
   },
   {
+    "Id": 14052,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName217]",
+    "Text": ""
+  },
+  {
+    "Id": 14053,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName218]",
+    "Text": ""
+  },
+  {
+    "Id": 14054,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName219]",
+    "Text": ""
+  },
+  {
+    "Id": 14055,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopCommonProductName220]",
+    "Text": ""
+  },
+  {
     "Id": 14137,
     "IsIgnore": false,
     "Memo": "",
@@ -82870,6 +83241,13 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[ShopTabName24]",
+    "Text": ""
+  },
+  {
+    "Id": 14153,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[ShopTabName25]",
     "Text": ""
   },
   {
@@ -85622,6 +86000,20 @@
     "Memo": "",
     "StringKey": "[HelpMainText2216]",
     "Text": "■ Cura<br>Recupera determinada quantidade de PV.<br><br>■ Derrotado<br>Quando o PV de um personagem chega a zero, ele é derrotado e não pode mais agir.<br>Ao ser derrotado, são removidas também todas as graças e efeitos negativos que ele possuía.<br>O tempo de recarga de habilidades mantém o mesmo valor de antes da derrota.<br><br>■ Aumento ou redução do tempo de recarga de habilidades<br>Aumenta ou reduz o número de turnos do tempo de recarga de habilidades do alvo.<br><br>■ Ressuscitação<br>Restaura o PV de um personagem que sofreu dano e foi derrotado em combate, permitindo que ele volte a lutar.<br>Dano contínuo causado por ataques ou Veneno, por exemplo, bem como dano de Ressonância, Devoção ou Retaliação também são considerados.<br><br>■ Acerto garantido<br>Garante que o ataque atingirá o alvo.<br>Este efeito não sofre influência da chance de acerto ou da chance de esquiva.<br><br>■ Acerto crítico garantido<br>Caso o ataque acerte o alvo, garante que será um acerto crítico.<br>Este efeito não sofre influência da chance de crítico ou da chance de resistência a crítico.<br><br>■ Bloqueio<br>Atenua determinada quantidade de dano causado por ataque, Ressonância, Devoção ou Retaliação.<br>Dano contínuo, como aquele causado por Veneno, não é atenuado.<br>Efeitos de aumento ou redução de dano sofrido e de aumento ou redução de dano causado são calculados antes da atenuação de dano pelo bloqueio. <br>Efeitos de Escudo, Ressonância e Devoção são calculados após a atenuação de dano pelo bloqueio.<br><br>■ Resistir com 1 de PV<br>Caso o dano sofrido seja superior ao PV restante, resiste com 1 de PV.<br>Dano contínuo causado por ataques ou Veneno, por exemplo, bem como dano de Ressonância, Devoção ou Retaliação também são considerados.<br>Este efeito não pode ser removido ou copiado.<br><br>■ Drenagem<br>Aplica no inimigo um efeito negativo para redução de atributo específico e aplica em si mesmo uma graça com valor correspondente ao da redução.<br>Caso a aplicação do efeito negativo fracasse, tampouco aplica a graça em si mesmo.<br><br>■ Maior ataque normal<br>Fortifica os ataques normais. O tipo de fortificação varia de acordo com a habilidade.<br><br>■ Dano próprio<br>Efeito que reduz o PV do próprio personagem a cada vez que a habilidade é usada.<br>Não sofre influência de aumento de dano sofrido, Invencibilidade, Escudo, Barreira Multíplice, Bloqueio ou Imortalidade.<br><br>■ Retaliação<br>Ao receber um ataque do inimigo, causa dano nele de acordo com a quantidade de dano sofrida.<br>O dano da Retaliação pode sofrer o efeito de Escudo, Barreira Multíplice, Invencibilidade, Bloqueio e Imortalidade.<br>Além disso, o dano da Retaliação não pode ser esquivado, e tampouco é considerado para a contagem de número de ataques.<br>Ela não é ativada por dano contínuo, como aquele causado por Veneno, ou dano por Ressonância, Devoção ou habilidades passivas.<br>Ainda, ela só é ativada quando o ataque atinge o alvo, não em caso de esquiva.<br><br>■ Drenagem de PV<br>Ao atacar o inimigo, cura o próprio PV com valor que depende do dano causado.<br>A quantidade de cura é calculada com base no dano após efeitos de Escudo, Barreira Multíplice, Invencibilidade, Bloqueio e Imortalidade.<br>Ela não é ativada por dano contínuo, como aquele causado por Veneno, ou dano por Ressonância, Devoção ou habilidades passivas.<br>Ainda, ela só é ativada quando o ataque atinge o alvo, não em caso de esquiva."
+  },
+  {
+    "Id": 14581,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[HelpHeadLine2217]",
+    "Text": ""
+  },
+  {
+    "Id": 14582,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[HelpMainText2217]",
+    "Text": ""
   },
   {
     "Id": 14583,
@@ -130004,6 +130396,13 @@
     "Text": ""
   },
   {
+    "Id": 21082,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[NewCharacterMissionName10]",
+    "Text": ""
+  },
+  {
     "Id": 21121,
     "IsIgnore": false,
     "Memo": "",
@@ -133389,6 +133788,34 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaExplanation87]",
+    "Text": ""
+  },
+  {
+    "Id": 21618,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail88]",
+    "Text": ""
+  },
+  {
+    "Id": 21619,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading88]",
+    "Text": ""
+  },
+  {
+    "Id": 21620,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes88]",
+    "Text": ""
+  },
+  {
+    "Id": 21621,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation88]",
     "Text": ""
   },
   {
