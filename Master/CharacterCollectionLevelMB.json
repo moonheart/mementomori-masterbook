@@ -6226,5 +6226,160 @@
     "CharacterRarityFlags": 131072,
     "CollectionId": 42,
     "CollectionLevel": 7
+  },
+  {
+    "Id": 4401,
+    "IsIgnore": null,
+    "Memo": "ムスカの解放(パラデア,ルナリンド)",
+    "BaseParameterChangeInfos": [
+      {
+        "BaseParameterType": 2,
+        "ChangeParameterType": 3,
+        "Value": 20.0
+      }
+    ],
+    "BattleParameterChangeInfos": null,
+    "CharacterRarityBonus": 0,
+    "CharacterRarityFlags": 8,
+    "CollectionId": 44,
+    "CollectionLevel": 1
+  },
+  {
+    "Id": 4402,
+    "IsIgnore": null,
+    "Memo": "ムスカの解放(パラデア,ルナリンド)",
+    "BaseParameterChangeInfos": [
+      {
+        "BaseParameterType": 2,
+        "ChangeParameterType": 3,
+        "Value": 40.0
+      }
+    ],
+    "BattleParameterChangeInfos": [
+      {
+        "BattleParameterType": 15,
+        "ChangeParameterType": 2,
+        "Value": 150.0
+      }
+    ],
+    "CharacterRarityBonus": 0,
+    "CharacterRarityFlags": 128,
+    "CollectionId": 44,
+    "CollectionLevel": 2
+  },
+  {
+    "Id": 4403,
+    "IsIgnore": null,
+    "Memo": "ムスカの解放(パラデア,ルナリンド)",
+    "BaseParameterChangeInfos": [
+      {
+        "BaseParameterType": 2,
+        "ChangeParameterType": 3,
+        "Value": 40.0
+      }
+    ],
+    "BattleParameterChangeInfos": [
+      {
+        "BattleParameterType": 15,
+        "ChangeParameterType": 2,
+        "Value": 150.0
+      }
+    ],
+    "CharacterRarityBonus": 0,
+    "CharacterRarityFlags": 512,
+    "CollectionId": 44,
+    "CollectionLevel": 3
+  },
+  {
+    "Id": 4404,
+    "IsIgnore": null,
+    "Memo": "ムスカの解放(パラデア,ルナリンド)",
+    "BaseParameterChangeInfos": [
+      {
+        "BaseParameterType": 2,
+        "ChangeParameterType": 3,
+        "Value": 40.0
+      }
+    ],
+    "BattleParameterChangeInfos": [
+      {
+        "BattleParameterType": 15,
+        "ChangeParameterType": 2,
+        "Value": 150.0
+      }
+    ],
+    "CharacterRarityBonus": 1,
+    "CharacterRarityFlags": 16384,
+    "CollectionId": 44,
+    "CollectionLevel": 4
+  },
+  {
+    "Id": 4405,
+    "IsIgnore": null,
+    "Memo": "ムスカの解放(パラデア,ルナリンド)",
+    "BaseParameterChangeInfos": [
+      {
+        "BaseParameterType": 2,
+        "ChangeParameterType": 3,
+        "Value": 41.0
+      }
+    ],
+    "BattleParameterChangeInfos": [
+      {
+        "BattleParameterType": 15,
+        "ChangeParameterType": 2,
+        "Value": 160.0
+      }
+    ],
+    "CharacterRarityBonus": 1,
+    "CharacterRarityFlags": 32768,
+    "CollectionId": 44,
+    "CollectionLevel": 5
+  },
+  {
+    "Id": 4406,
+    "IsIgnore": null,
+    "Memo": "ムスカの解放(パラデア,ルナリンド)",
+    "BaseParameterChangeInfos": [
+      {
+        "BaseParameterType": 2,
+        "ChangeParameterType": 3,
+        "Value": 42.0
+      }
+    ],
+    "BattleParameterChangeInfos": [
+      {
+        "BattleParameterType": 15,
+        "ChangeParameterType": 2,
+        "Value": 170.0
+      }
+    ],
+    "CharacterRarityBonus": 1,
+    "CharacterRarityFlags": 65536,
+    "CollectionId": 44,
+    "CollectionLevel": 6
+  },
+  {
+    "Id": 4407,
+    "IsIgnore": null,
+    "Memo": "ムスカの解放(パラデア,ルナリンド)",
+    "BaseParameterChangeInfos": [
+      {
+        "BaseParameterType": 2,
+        "ChangeParameterType": 3,
+        "Value": 43.0
+      }
+    ],
+    "BattleParameterChangeInfos": [
+      {
+        "BattleParameterType": 15,
+        "ChangeParameterType": 2,
+        "Value": 180.0
+      }
+    ],
+    "CharacterRarityBonus": 1,
+    "CharacterRarityFlags": 131072,
+    "CollectionId": 44,
+    "CollectionLevel": 7
   }
 ]
