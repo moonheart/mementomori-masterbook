@@ -16510,7 +16510,7 @@
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[AchieveRankingBulkReceiveDescriptionMessage]",
-    "Text": "找不到2023/11/30以前的資料，<br>無法顯示過去的玩家成就資訊。<br><br>您可一次領取下列已達成的成就獎勵。"
+    "Text": "無法顯示過去的玩家成就資訊。<br><br>您可領取下列已達成的成就獎勵。"
   },
   {
     "Id": 2596,
