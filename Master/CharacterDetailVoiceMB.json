@@ -7408,6 +7408,22 @@
     "UnlockQuestId": 0
   },
   {
+    "Id": 1822,
+    "IsIgnore": null,
+    "Memo": "リーン朗読",
+    "CharacterId": 18,
+    "CharacterVoiceCategory": 10,
+    "Path": {
+      "TimelineId": 1,
+      "TimelineType": 6
+    },
+    "SortOrder": 0,
+    "SubtitleKey": null,
+    "UnlockCondition": 0,
+    "UnlockedVoiceButtonTextKey": null,
+    "UnlockQuestId": 0
+  },
+  {
     "Id": 1890,
     "IsIgnore": null,
     "Memo": "リーン",
@@ -27053,6 +27069,22 @@
     "SubtitleKey": "[CharacterDetailVoiceSubtitle6221]",
     "UnlockCondition": 6,
     "UnlockedVoiceButtonTextKey": "[CharacterDetailVoiceUnLockedText20]",
+    "UnlockQuestId": 0
+  },
+  {
+    "Id": 6222,
+    "IsIgnore": null,
+    "Memo": "プリシラ朗読",
+    "CharacterId": 62,
+    "CharacterVoiceCategory": 10,
+    "Path": {
+      "TimelineId": 1,
+      "TimelineType": 6
+    },
+    "SortOrder": 0,
+    "SubtitleKey": null,
+    "UnlockCondition": 0,
+    "UnlockedVoiceButtonTextKey": null,
     "UnlockQuestId": 0
   },
   {
