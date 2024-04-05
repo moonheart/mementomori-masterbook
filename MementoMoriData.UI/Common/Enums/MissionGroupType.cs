@@ -21,6 +21,10 @@ namespace Ortega.Share.Enums
 		[Description("イベント")]
 		Limited,
 		[Description("パネル")]
-		Panel = 9
+		Panel = 9,
+		[Description("ギルドミッション")]
+		Guild,
+		[Description("ギルドツリー")]
+		GuildTower
 	}
 }

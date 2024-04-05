@@ -2,14 +2,14 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net7.0</TargetFramework>
+        <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
-      <PackageReference Include="MessagePack" Version="2.5.124" />
-      <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+      <PackageReference Include="MessagePack" Version="2.5.140" />
+      <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
       <!-- <PackageReference Include="MyBot" Version="1.5.0.4" /> -->
       <PackageReference Include="Telegram.Bot" Version="19.0.0" />
     </ItemGroup>

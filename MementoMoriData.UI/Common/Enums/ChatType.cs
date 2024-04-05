@@ -8,6 +8,7 @@ namespace Ortega.Share.Enums
 		World,
 		Guild,
 		Private,
-		Friend
+		Friend,
+		Block
 	}
 }

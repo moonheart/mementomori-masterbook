@@ -11,6 +11,8 @@ namespace Ortega.Share.Enums
 		[Description("レジェンドリーグデイリーランキング報酬")]
 		LegendLeagueDailyRankingReward,
 		[Description("レジェンドリーグシーズンランキング報酬")]
-		LegendLeagueSeasonRankingReward
+		LegendLeagueSeasonRankingReward,
+		[Description("レジェンドリーグアイコンランキング報酬")]
+		LegendLeagueIconRankingReward
 	}
 }

@@ -64,6 +64,12 @@ namespace Ortega.Share.Enums
 		GuildRaid,
 		[Description("ギルドレイドワールドダメージ報酬ダイアログ")]
 		GuildRaidWorldReward,
+		[Description("アイテム自動回収ダイアログ")]
+		RetrieveItem = 190,
+		[Description("ギルド勧誘")]
+		GuildMemberRecruit = 200,
+		[Description("個別通知ダイアログ")]
+		IndividualNotification = 210,
 		[Description("フレンド")]
 		Friend = 4
 	}

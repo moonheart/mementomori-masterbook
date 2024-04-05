@@ -27,6 +27,8 @@ namespace Ortega.Share.Enums
 		[Description("時空の洞窟")]
 		DungeonBattle,
 		[Description("ギルドレイド")]
-		GuildRaid = 11
+		GuildRaid = 11,
+		[Description("ギルドツリー")]
+		GuildTower
 	}
 }

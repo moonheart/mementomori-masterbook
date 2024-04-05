@@ -12,11 +12,7 @@ namespace Ortega.Share.Enums
 		ElementTowerAllRelease,
 		[Description("シリアルコード入力")]
 		SerialCode,
-		[Description("古い課金システムの使用")]
-		ApplyOldPurchaseSystem = 100,
-		[Description("ギルドレイドoffset設定")]
-		GuildRaidCharacterPositionByMB,
-		[Description("GvGでキャラクターのキャッシュが存在しない場合に例外を投げる")]
-		ThrowExceptionInGvgWhenCharacterCacheNotExists
+		[Description("課金で古いシステムを使用する")]
+		InAppPurchaseOldSystem = 9999
 	}
 }

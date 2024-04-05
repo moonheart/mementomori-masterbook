@@ -24,6 +24,14 @@ namespace Ortega.Share.Enums
 		[Description("Local GVG 受け取り可能なギルドバトル報酬がある場合")]
 		LocalGvgReward,
 		[Description("Global GVG 受け取り可能なギルドバトル報酬がある場合")]
-		GlobalGvgReward
+		GlobalGvgReward,
+		[Description("新しく登録された回収アイテムがある場合")]
+		NewRetrieveItem,
+		[Description("ギルドミッションの受け取り可能な報酬がある場合")]
+		ReceivableGuildMission,
+		[Description("新しいギルドメンバー勧誘がある場合")]
+		NewRecruitGuildMember,
+		[Description("ギルドツリーミッションの受取可能な報酬がある場合")]
+		ReceivableGuildTowerMission
 	}
 }

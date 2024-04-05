@@ -11,6 +11,8 @@ namespace Ortega.Share.Enums
 		[Description("選択した")]
 		Selected,
 		[Description("報酬が未受け取り")]
-		Reward
+		Reward,
+		[Description("スキップ時のミステリーショップ")]
+		SkipShop
 	}
 }

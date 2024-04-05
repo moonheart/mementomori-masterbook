@@ -17,6 +17,6 @@ namespace Ortega.Share.Enums
 		Skill = 10000,
 		Memory_Out_End = 11000,
 		Idle_Action = 12000,
-		Recitation_Loop = 13000
+		Monologue_Loop = 13000
 	}
 }

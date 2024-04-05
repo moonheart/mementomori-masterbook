@@ -7,73 +7,79 @@ namespace Ortega.Share.Enums
 	public enum ItemType
 	{
 		[Description("なし")]
-		None = 0,
+		None,
 		[Description("無償仮想通貨")]
-		CurrencyFree = 1,
+		CurrencyFree,
 		[Description("有償仮想通貨")]
-		CurrencyPaid = 2,
+		CurrencyPaid,
 		[Description("ゲーム内通貨")]
-		Gold = 3,
+		Gold,
 		[Description("武具")]
-		Equipment = 4,
+		Equipment,
 		[Description("武具の欠片")]
-		EquipmentFragment = 5,
+		EquipmentFragment,
 		[Description("キャラクター")]
-		Character = 6,
+		Character,
 		[Description("キャラクターの絆")]
-		CharacterFragment = 7,
+		CharacterFragment,
 		[Description("洞窟の加護")]
-		DungeonBattleRelic = 8,
+		DungeonBattleRelic,
 		[Description("アダマンタイト")]
-		EquipmentSetMaterial = 9,
+		EquipmentSetMaterial,
 		[Description("n時間分アイテム")]
-		QuestQuickTicket = 10,
+		QuestQuickTicket,
 		[Description("キャラ育成素材")]
-		CharacterTrainingMaterial = 11,
+		CharacterTrainingMaterial,
 		[Description("武具強化アイテム")]
-		EquipmentReinforcementItem = 12,
+		EquipmentReinforcementItem,
 		[Description("交換所アイテム")]
-		ExchangePlaceItem = 13,
+		ExchangePlaceItem,
 		[Description("スフィア")]
-		Sphere = 14,
+		Sphere,
 		[Description("魔装強化アイテム")]
-		MatchlessSacredTreasureExpItem = 15,
+		MatchlessSacredTreasureExpItem,
 		[Description("ガチャチケット")]
-		GachaTicket = 16,
+		GachaTicket,
 		[Description("宝箱、未鑑定スフィアなど")]
-		TreasureChest = 17,
+		TreasureChest,
 		[Description("宝箱の鍵")]
-		TreasureChestKey = 18,
+		TreasureChestKey,
 		[Description("ボスチケット")]
-		BossChallengeTicket = 19,
+		BossChallengeTicket,
 		[Description("無窮の塔チケット")]
-		TowerBattleTicket = 20,
+		TowerBattleTicket,
 		[Description("回復の果実")]
-		DungeonRecoveryItem = 21,
+		DungeonRecoveryItem,
 		[Description("プレイヤー経験値")]
-		PlayerExp = 22,
+		PlayerExp,
 		[Description("フレンドポイント")]
-		FriendPoint = 23,
+		FriendPoint,
 		[Description("生命樹の雫")]
-		EquipmentRarityCrystal = 24,
+		EquipmentRarityCrystal,
 		[Description("レベルリンク経験値")]
-		LevelLinkExp = 25,
+		LevelLinkExp,
 		[Description("ギルドストック")]
-		GuildFame = 26,
+		GuildFame,
 		[Description("ギルド経験値")]
-		GuildExp = 27,
+		GuildExp,
 		[Description("貢献メダル")]
-		ActivityMedal = 28,
+		ActivityMedal,
 		[Description("VIP経験値")]
-		VipExp = 29,
+		VipExp,
 		[Description("パネル図鑑解放判定アイテム")]
-		PanelGetJudgmentItem = 30,
+		PanelGetJudgmentItem,
 		[Description("パネルミッション マス解放アイテム")]
-		UnlockPanelGridItem = 31,
+		UnlockPanelGridItem,
 		[Description("パネル図鑑解放アイテム")]
-		PanelUnlockItem = 32,
+		PanelUnlockItem,
 		[Description("楽曲チケット")]
-		MusicTicket = 33,
+		MusicTicket,
+		[Description("特別プレイヤーアイコン")]
+		SpecialIcon,
+		[Description("アイコンの断片")]
+		IconFragment,
+		[Description("タイプ強化アイテム")]
+		GuildTowerJobReinforcementMaterial,
 		[Description("イベント交換所アイテム")]
 		EventExchangePlaceItem = 50
 	}

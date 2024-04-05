@@ -18,7 +18,7 @@ namespace Ortega.Share.Enums
 		DmmGames,
 		[Description("Steam")]
 		Steam,
-		[Description("BlueStacks")]
-		BlueStacks
+		[Description("Apk")]
+		Apk
 	}
 }

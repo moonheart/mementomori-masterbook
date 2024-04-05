@@ -55,6 +55,22 @@ namespace Ortega.Share.Enums.Battle.Skill
 		[Description("命中回数が指定値以上")]
 		OverSelfHitCount,
 		[Description("クリティカル回数が指定値以上")]
-		OverSelfCriticalCount
+		OverSelfCriticalCount,
+		[Description("自分の指定EffectType所持数が1以上")]
+		AnyCountSelfEffectType,
+		[Description("自分の指定EffectType所持数が0 ")]
+		ZeroCountSelfEffectType,
+		[Description("自分の指定EffectGroupId所持数が1以上")]
+		AnyCountSelfEffectGroupId,
+		[Description("自分の指定EffectGroupId所持数が0")]
+		ZeroCountSelfEffectGroupId,
+		[Description("自分のバフ所有数が指定値以上")]
+		OverSelfBuffCount,
+		[Description("自分のバフ所有数が指定値未満")]
+		UnderSelfBuffCount,
+		[Description("自分のデバフ所有数が指定値以上")]
+		OverSelfDeBuffCount,
+		[Description("自分のデバフ所有数が指定値未満")]
+		UnderSelfDeBuffCount
 	}
 }

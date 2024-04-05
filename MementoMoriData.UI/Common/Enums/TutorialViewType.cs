@@ -1,0 +1,50 @@
+﻿using System;
+
+namespace Ortega.Common.Enums
+{
+	public enum TutorialViewType
+	{
+		None = -1,
+		AutoBattleMainView,
+		QuestInfoView,
+		FormationView,
+		BattleResult,
+		CharacterMenu,
+		CharacterTraining,
+		AutoBattleMapBuildingChangeView,
+		AutoBattleMapView,
+		GachaMainView,
+		GachaCharacterResultView,
+		MyPage,
+		MissionView,
+		ItemAcquisitionView,
+		GvgMainView,
+		GuildRaidView,
+		ItemBox,
+		ExchangeMainView,
+		PictureBook,
+		CharacterDetail,
+		StoryView,
+		CompetitionView,
+		DungeonBattleMainView,
+		TowerBattleStageSelectionView,
+		GuildSubscriberView,
+		BountyQuestMainView,
+		LocalPvpMainView,
+		GlobalPvpMainView,
+		LocalRaidMainView,
+		GuildJoinView,
+		BountyQuestFormationView,
+		BountyQuestRankUpView,
+		SelectCharacterView,
+		CharacterLevelLinkSetResultView,
+		AutoBattleRewardInfoView,
+		CharacterEquipmentDetailView,
+		SphereEquipmentView,
+		CharacterRankUpSingleView,
+		CharacterEvolutionResultView,
+		EquipmentAscendMaterialSelectView,
+		SacredTreasureFusionResultView,
+		UseItemView
+	}
+}

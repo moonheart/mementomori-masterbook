@@ -43,6 +43,12 @@ namespace Ortega.Share.Enums
 		[Description("ギルドレイド イベント")]
 		GuildRaidEvent,
 		[Description("シリアルコード付与アイテム")]
-		SerialCode
+		SerialCode,
+		[Description("毎日ダイヤ購入特典(ギルド) ギルドメンバーへの配布")]
+		DailyDiamondPurchaseBonusForGuildMember,
+		[Description("毎日ダイヤ購入特典(ギルド) 未受け取り報酬")]
+		DailyDiamondPurchaseBonusGuildNotReceived,
+		[Description("アンケート報酬")]
+		SurveyReward
 	}
 }

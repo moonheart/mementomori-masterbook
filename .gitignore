@@ -7,3 +7,4 @@ riderModule.iml
 MementoMoriData.UI/wwwroot/masterbook/
 .vs/
 *.csproj.user
+publish/

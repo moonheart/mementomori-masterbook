@@ -27,6 +27,6 @@ namespace Ortega.Share.Enums
 		[Description("バトル敗北")]
 		BattleLose,
 		[Description("朗読")]
-		Recitation
+		Monologue
 	}
 }

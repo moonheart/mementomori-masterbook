@@ -18,6 +18,8 @@ namespace Ortega.Share.Enums
 		[Description("無窮の塔の敵")]
 		TowerBattleEnemy,
 		[Description("幻影の神殿の敵")]
-		LocalRaidEnemy
+		LocalRaidEnemy,
+		[Description("ギルドツリーの敵")]
+		GuildTowerEnemy
 	}
 }

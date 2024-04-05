@@ -102,6 +102,10 @@ namespace Ortega.Share.Enums.Battle.Skill
 		Immortal,
 		[Description("印")]
 		SkillMark,
+		[Description("攻撃ダメージ遮断")]
+		DamageBlock,
+		[Description("持続ダメージ遮断")]
+		TransientDamageBlock,
 		[Description("スキル1強化")]
 		ActiveSkill1Enhance = 2100,
 		[Description("スキル2強化")]
@@ -302,6 +306,12 @@ namespace Ortega.Share.Enums.Battle.Skill
 		Combustion,
 		[Description("火傷")]
 		Burn,
+		[Description("毒（特殊）")]
+		SpecialPoison = 8101,
+		[Description("出血（特殊）")]
+		SpecialBleeding,
+		[Description("浸食（特殊）")]
+		SpecialCombustion,
 		[Description("ダメージ連携11")]
 		DamageResonanceFromSelfAndDamageReduction = 8111,
 		[Description("ダメージ連携21")]

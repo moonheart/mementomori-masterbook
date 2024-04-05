@@ -33,8 +33,6 @@ namespace Ortega.Share.Enums
 		[Description("ロシア語")]
 		ruRU,
 		[Description("ドイツ語")]
-		deDE,
-		[Description("アラビア語")]
-		arEG
+		deDE
 	}
 }
