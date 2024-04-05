@@ -259,7 +259,7 @@ public static class Util
         AddEnumCache<ShopProductType>();
         AddEnumCache<ShopProductUiType>();
         AddEnumCache<SimpleDescriptionButtonType>();
-        AddEnumCache<SkillCategory>();
+        // AddEnumCache<SkillCategory>();
         AddEnumCache<SkillEnhancementItemFlag>();
         AddEnumCache<SkillType>();
         AddEnumCache<SnsType>();
