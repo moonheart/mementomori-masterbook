@@ -159,9 +159,11 @@ window.Radzen = {
             if (header) {
                 if (i == index) {
                     header.classList.add('rz-tabview-selected');
+                    header.classList.add('rz-state-focused');
                 }
                 else {
                     header.classList.remove('rz-tabview-selected');
+                    header.classList.remove('rz-state-focused');
                 }
             }
         }
@@ -199,7 +201,7 @@ window.Radzen = {
 
     document.body.appendChild(script);
   },
-  createMap: function (wrapper, ref, id, apiKey, zoom, center, markers, options) {
+  createMap: function (wrapper, ref, id, apiKey, zoom, center, markers, options, fitBoundsToMarkersOnUpdate) {
     var api = function () {
       var defaultView = document.defaultView;
 
@@ -227,58 +229,172 @@ window.Radzen = {
         });
       });
 
-      Radzen.updateMap(id, zoom, center, markers, options);
+      Radzen.updateMap(id, zoom, center, markers, options, fitBoundsToMarkersOnUpdate);
     });
   },
-  updateMap: function (id, zoom, center, markers, options) {
-    if (Radzen[id] && Radzen[id].instance) {
-        if (Radzen[id].instance.markers && Radzen[id].instance.markers.length) {
-            for (var i = 0; i < Radzen[id].instance.markers.length; i++) {
-                Radzen[id].instance.markers[i].setMap(null);
+  updateMap: function (id, zoom, center, markers, options, fitBoundsToMarkersOnUpdate) {
+    var api = function () {
+        var defaultView = document.defaultView;
+
+        return new Promise(function (resolve, reject) {
+            if (defaultView.google && defaultView.google.maps) {
+                return resolve(defaultView.google);
             }
-        }
 
-        if (markers) {
-            Radzen[id].instance.markers = [];
+            Radzen.loadGoogleMaps(defaultView, apiKey, resolve, reject);
+        });
+    };
+    api().then(function (google) {
+        let markerBounds = new google.maps.LatLngBounds();
 
-            markers.forEach(function (m) {
-                var marker = new this.google.maps.Marker({
-                    position: m.position,
-                    title: m.title,
-                    label: m.label
-                });
+        if (Radzen[id] && Radzen[id].instance) {
+            if (Radzen[id].instance.markers && Radzen[id].instance.markers.length) {
+                for (var i = 0; i < Radzen[id].instance.markers.length; i++) {
+                    Radzen[id].instance.markers[i].setMap(null);
+                }
+            }
 
-                marker.addListener('click', function (e) {
-                    Radzen[id].invokeMethodAsync('RadzenGoogleMap.OnMarkerClick', {
-                        Title: marker.title,
-                        Label: marker.label,
-                        Position: marker.position
+            if (markers) {
+                Radzen[id].instance.markers = [];
+
+                markers.forEach(function (m) {
+                    var marker = new this.google.maps.Marker({
+                        position: m.position,
+                        title: m.title,
+                        label: m.label
                     });
+
+                    marker.addListener('click', function (e) {
+                        Radzen[id].invokeMethodAsync('RadzenGoogleMap.OnMarkerClick', {
+                            Title: marker.title,
+                            Label: marker.label,
+                            Position: marker.position
+                        });
+                    });
+
+                    marker.setMap(Radzen[id].instance);
+
+                    Radzen[id].instance.markers.push(marker);
+
+                        markerBounds.extend(marker.position);
                 });
-
-                marker.setMap(Radzen[id].instance);
-
-                Radzen[id].instance.markers.push(marker);
-            });
-        }
-
-        if (zoom) {
-            Radzen[id].instance.setZoom(zoom);
             }
 
-        if (center) {
-            Radzen[id].instance.setCenter(center);
-        }
+            if (zoom) {
+                Radzen[id].instance.setZoom(zoom);
+                }
 
-        if (options) {
-            Radzen[id].instance.setOptions(options);
+            if (center) {
+                Radzen[id].instance.setCenter(center);
+            }
+
+            if (options) {
+                Radzen[id].instance.setOptions(options);
+            }
+
+            if (markers && fitBoundsToMarkersOnUpdate) {
+                Radzen[id].instance.fitBounds(markerBounds);
+            }
         }
-    }
+    });
   },
   destroyMap: function (id) {
     if (Radzen[id].instance) {
       delete Radzen[id].instance;
     }
+  },
+ focusSecurityCode: function (el) {
+    if (!el) return;
+    var firstInput = el.querySelector('.rz-security-code-input');
+    if (firstInput) {
+        setTimeout(function () { firstInput.focus() }, 500);
+    }
+ },
+  destroySecurityCode: function (id, el) {
+    if (!Radzen[id]) return;
+
+    var inputs = el.getElementsByTagName('input');
+
+    if (Radzen[id].keyPress && Radzen[id].paste) {
+        for (var i = 0; i < inputs.length; i++) {
+            inputs[i].removeEventListener('keypress', Radzen[id].keyPress);
+            inputs[i].removeEventListener('paste', Radzen[id].paste);
+        }
+        delete Radzen[id].keyPress;
+        delete Radzen[id].paste;
+    }
+
+    Radzen[id] = null;
+  },
+  createSecurityCode: function (id, ref, el, isNumber) {
+      if (!el || !ref) return;
+
+      var hidden = el.querySelector('input[type="hidden"]');
+      var inputs = [...el.querySelectorAll('.rz-security-code-input')];
+
+      Radzen[id] = {};
+
+      Radzen[id].paste = function (e) {
+          if (e.clipboardData) {
+              var value = e.clipboardData.getData('text');
+
+              if (value) {
+                  for (var i = 0; i < value.length; i++) {
+                      if (isNumber && isNaN(+value[i])) {
+                          continue;
+                      }
+                      inputs[i].value = value[i];
+                  }
+
+                  var code = inputs.map(i => i.value).join('').trim();
+                  hidden.value = code;
+
+                  ref.invokeMethodAsync('RadzenSecurityCode.OnValueChange', code);
+
+                  inputs[inputs.length - 1].focus();
+              }
+
+              e.preventDefault();
+          }
+      }
+      Radzen[id].keyPress = function (e) {
+          var ch = String.fromCharCode(e.charCode);
+
+          if (e.metaKey ||
+              e.ctrlKey ||
+              e.keyCode == 9 ||
+              e.keyCode == 8 ||
+              e.keyCode == 13
+          ) {
+              return;
+          }
+
+          if (isNumber && (e.which < 48 || e.which > 57)) {
+              e.preventDefault();
+              return;
+          }
+
+          if (e.currentTarget.value == ch) {
+              return;
+          }
+
+          e.currentTarget.value = ch;
+
+          var value = inputs.map(i => i.value).join('').trim();
+          hidden.value = value;
+
+          ref.invokeMethodAsync('RadzenSecurityCode.OnValueChange', value);
+
+          var index = inputs.indexOf(e.currentTarget);
+          if (index < inputs.length - 1) {
+              inputs[index + 1].focus();
+          }
+      }
+
+      for (var i = 0; i < inputs.length; i++) {
+          inputs[i].addEventListener('keypress', Radzen[id].keyPress);
+          inputs[i].addEventListener('paste', Radzen[id].paste);
+      }
   },
   createSlider: function (
     id,
@@ -310,13 +426,11 @@ window.Radzen = {
       }
 
       var newValue = percent * (max - min) + min;
-      var oldValue = range ? value[slider.isMin ? 0 : 1] : value;
 
       if (
         slider.canChange &&
         newValue >= min &&
-        newValue <= max &&
-        newValue != oldValue
+        newValue <= max
       ) {
         slider.invokeMethodAsync(
           'RadzenSlider.OnValueChange',
@@ -395,6 +509,14 @@ window.Radzen = {
       el.focus();
     }
   },
+  scrollIntoViewIfNeeded: function (ref, selector) {
+    var el = selector ? ref.getElementsByClassName(selector)[0] : ref;
+    if (el && el.scrollIntoViewIfNeeded) {
+        el.scrollIntoViewIfNeeded();
+    } else if (el && el.scrollIntoView) {
+        el.scrollIntoView();
+    }
+  },
   selectListItem: function (input, ul, index) {
     if (!input || !ul) return;
 
@@ -454,15 +576,130 @@ window.Radzen = {
       ul.nextSelectedIndex <= childNodes.length - 1
     ) {
       childNodes[ul.nextSelectedIndex].classList.add('rz-state-highlight');
-      if (ul.parentNode.classList.contains('rz-autocomplete-panel')) {
-        ul.parentNode.scrollTop = childNodes[ul.nextSelectedIndex].offsetTop;
-      } else {
-        ul.parentNode.scrollTop =
-          childNodes[ul.nextSelectedIndex].offsetTop - ul.parentNode.offsetTop;
-      }
+      Radzen.scrollIntoViewIfNeeded(childNodes[ul.nextSelectedIndex]);
     }
 
     return ul.nextSelectedIndex;
+  },
+  clearFocusedHeaderCell: function (gridId) {
+    var grid = document.getElementById(gridId);
+    if (!grid) return;
+
+    var table = grid.querySelector('.rz-grid-table');
+    var thead = table.getElementsByTagName("thead")[0];
+    var highlightedCells = thead.querySelectorAll('.rz-state-focused');
+    if (highlightedCells.length) {
+        for (var i = 0; i < highlightedCells.length; i++) {
+            highlightedCells[i].classList.remove('rz-state-focused');
+        }
+    }
+  },
+  focusTableRow: function (gridId, key, rowIndex, cellIndex, isVirtual) {
+    var grid = document.getElementById(gridId);
+    if (!grid) return;
+
+    var table = grid.querySelector('.rz-grid-table');
+    var tbody = table.tBodies[0];
+    var thead = table.tHead;
+
+    var rows = (cellIndex != null && thead && thead.rows && thead.rows.length ? [...thead.rows] : []).concat(tbody && tbody.rows && tbody.rows.length ? [...tbody.rows] : []);
+
+    if (isVirtual && (key == 'ArrowUp' || key == 'ArrowDown' || key == 'PageUp' || key == 'PageDown' || key == 'Home' || key == 'End')) {
+        if (rowIndex == 0 && (key == 'End' || key == 'PageDown')) {
+            var highlightedCells = thead.querySelectorAll('.rz-state-focused');
+            if (highlightedCells.length) {
+                for (var i = 0; i < highlightedCells.length; i++) {
+                    highlightedCells[i].classList.remove('rz-state-focused');
+                }
+            }
+        }
+        if (key == 'ArrowUp' || key == 'ArrowDown' || key == 'PageUp' || key == 'PageDown') {
+            var rowHeight = rows[rows.length - 1] ? rows[rows.length - 1].offsetHeight : 40;
+            var factor = key == 'PageUp' || key == 'PageDown' ? 10 : 1;
+            table.parentNode.scrollTop = table.parentNode.scrollTop + (factor * (key == 'ArrowDown' || key == 'PageDown' ? rowHeight : -rowHeight));
+        }
+        else {
+            table.parentNode.scrollTop = key == 'Home' ? 0 : table.parentNode.scrollHeight;
+        }
+    }
+
+    table.nextSelectedIndex = rowIndex || 0;
+    table.nextSelectedCellIndex = cellIndex || 0;
+
+    if (key == 'ArrowDown') {
+        while (table.nextSelectedIndex < rows.length - 1) {
+            table.nextSelectedIndex++;
+            if (!rows[table.nextSelectedIndex].classList.contains('rz-state-disabled'))
+                break;
+        }
+    } else if (key == 'ArrowUp') {
+        while (table.nextSelectedIndex > 0) {
+            table.nextSelectedIndex--;
+            if (!rows[table.nextSelectedIndex].classList.contains('rz-state-disabled'))
+                break;
+        }
+    } else if (key == 'ArrowRight') {
+        while (table.nextSelectedCellIndex < rows[table.nextSelectedIndex].cells.length - 1) {
+            table.nextSelectedCellIndex++;
+            if (!rows[table.nextSelectedIndex].cells[table.nextSelectedCellIndex].classList.contains('rz-state-disabled'))
+                break;
+        }
+    } else if (key == 'ArrowLeft') {
+        while (table.nextSelectedCellIndex > 0) {
+            table.nextSelectedCellIndex--;
+            if (!rows[table.nextSelectedIndex].cells[table.nextSelectedCellIndex].classList.contains('rz-state-disabled'))
+                break;
+        }
+    } else if (isVirtual && (key == 'PageDown' || key == 'End')) {
+        table.nextSelectedIndex = rows.length - 1;
+    } else if (isVirtual && (key == 'PageUp' || key == 'Home')) {
+        table.nextSelectedIndex = 1;
+    } 
+
+    if (key == 'ArrowLeft' || key == 'ArrowRight' || (key == 'ArrowUp' && table.nextSelectedIndex == 0 && table.parentNode.scrollTop == 0)) {
+        var highlightedCells = rows[table.nextSelectedIndex].querySelectorAll('.rz-state-focused');
+        if (highlightedCells.length) {
+            for (var i = 0; i < highlightedCells.length; i++) {
+                highlightedCells[i].classList.remove('rz-state-focused');
+            }
+        }
+
+        if (
+            table.nextSelectedCellIndex >= 0 &&
+            table.nextSelectedCellIndex <= rows[table.nextSelectedIndex].cells.length - 1
+        ) {
+            var cell = rows[table.nextSelectedIndex].cells[table.nextSelectedCellIndex];
+
+            if (!cell.classList.contains('rz-state-focused')) {
+                cell.classList.add('rz-state-focused');
+                if (!isVirtual && table.parentElement.scrollWidth > table.parentElement.clientWidth) {
+                    Radzen.scrollIntoViewIfNeeded(cell);
+                }
+            }
+        }
+    } else if (key == 'ArrowDown' || key == 'ArrowUp') {
+        var highlighted = table.querySelectorAll('.rz-state-focused');
+        if (highlighted.length) {
+            for (var i = 0; i < highlighted.length; i++) {
+                highlighted[i].classList.remove('rz-state-focused');
+            }
+        }
+
+        if (table.nextSelectedIndex >= 0 &&
+            table.nextSelectedIndex <= rows.length - 1
+        ) {
+            var row = rows[table.nextSelectedIndex];
+
+            if (!row.classList.contains('rz-state-focused')) {
+                row.classList.add('rz-state-focused');
+                if (!isVirtual && table.parentElement.scrollHeight > table.parentElement.clientHeight) {
+                    Radzen.scrollIntoViewIfNeeded(row);
+                }
+            }
+        }
+    } 
+
+    return [table.nextSelectedIndex, table.nextSelectedCellIndex];
   },
   uploadInputChange: function (e, url, auto, multiple, clear, parameterName) {
       if (auto) {
@@ -547,6 +784,7 @@ window.Radzen = {
       files.push({Name: file.name, Size: file.size});
     }
     var xhr = new XMLHttpRequest();
+    xhr.withCredentials = true;
     xhr.upload.onprogress = function (e) {
       if (e.lengthComputable) {
         var uploadComponent =
@@ -627,10 +865,10 @@ window.Radzen = {
       e.preventDefault();
     }
   },
-  numericOnInput: function (e, min, max) {
+  numericOnInput: function (e, min, max, isNullable) {
       var value = e.target.value;
 
-      if (value == '' && min != null) {
+      if (!isNullable && value == '' && min != null) {
           e.target.value = min;
       }
 
@@ -644,7 +882,7 @@ window.Radzen = {
         }
       }
   },
-  numericKeyPress: function (e, isInteger) {
+  numericKeyPress: function (e, isInteger, decimalSeparator) {
     if (
       e.metaKey ||
       e.ctrlKey ||
@@ -652,6 +890,12 @@ window.Radzen = {
       e.keyCode == 8 ||
       e.keyCode == 13
     ) {
+      return;
+      }
+
+    if (e.code === 'NumpadDecimal') {
+      e.target.value += decimalSeparator;
+      e.preventDefault();
       return;
     }
 
@@ -667,16 +911,22 @@ window.Radzen = {
     Radzen.closePopup(id);
 
     Radzen.openPopup(null, id, false, null, x, y, instance, callback);
+
+    setTimeout(function () {
+        var popup = document.getElementById(id);
+        if (popup) {
+            var menu = popup.querySelector('.rz-menu');
+            if (menu) {
+                menu.focus();
+            }
+        }
+    }, 500);
   },
   openTooltip: function (target, id, delay, duration, position, closeTooltipOnDocumentClick, instance, callback) {
-    Radzen.closePopup(id);
-
-    if (Radzen[id + 'duration']) {
-      clearTimeout(Radzen[id + 'duration']);
-    }
+    Radzen.closeTooltip(id);
 
     if (delay) {
-        setTimeout(Radzen.openPopup, delay, target, id, false, position, null, null, instance, callback, closeTooltipOnDocumentClick);
+        Radzen[id + 'delay'] = setTimeout(Radzen.openPopup, delay, target, id, false, position, null, null, instance, callback, closeTooltipOnDocumentClick);
     } else {
         Radzen.openPopup(target, id, false, position, null, null, instance, callback, closeTooltipOnDocumentClick);
     }
@@ -684,6 +934,50 @@ window.Radzen = {
     if (duration) {
       Radzen[id + 'duration'] = setTimeout(Radzen.closePopup, duration, id, instance, callback);
     }
+  },
+  closeTooltip(id) {
+    Radzen.closePopup(id);
+
+    if (Radzen[id + 'delay']) {
+        clearTimeout(Radzen[id + 'delay']);
+    }
+
+    if (Radzen[id + 'duration']) {
+        clearTimeout(Radzen[id + 'duration']);
+    }
+  },
+  destroyDatePicker(id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+
+      var button = el.querySelector('.rz-datepicker-trigger');
+      if (button) {
+          button.onclick = null;
+      }
+      var input = el.querySelector('.rz-inputtext');
+      if (input) {
+          input.onclick = null;
+      }
+  },
+  createDatePicker(el, popupId) {
+      var handler = function (e, condition) {
+          if (condition) {
+              Radzen.togglePopup(e.currentTarget.parentNode, popupId, false, null, null, true, false);
+          }
+      };
+
+      var button = el.querySelector('.rz-datepicker-trigger');
+      if (button) {
+          button.onclick = function (e) {
+              handler(e, !e.currentTarget.classList.contains('rz-state-disabled'));
+          };
+      }
+      var input = el.querySelector('.rz-inputtext');
+      if (input) {
+          input.onclick = function (e) {
+              handler(e, e.currentTarget.classList.contains('rz-readonly'));
+          };
+      }
   },
   findPopup: function (id) {
     var popups = [];
@@ -715,7 +1009,7 @@ window.Radzen = {
 
       popup.style.top = top + 'px';
   },
-  openPopup: function (parent, id, syncWidth, position, x, y, instance, callback, closeOnDocumentClick = true) {
+  openPopup: function (parent, id, syncWidth, position, x, y, instance, callback, closeOnDocumentClick = true, autoFocusFirstElement = false) {
     var popup = document.getElementById(id);
     if (!popup) return;
 
@@ -815,16 +1109,21 @@ window.Radzen = {
     }
 
     Radzen[id] = function (e) {
+        var lastPopup = Radzen.popups && Radzen.popups[Radzen.popups.length - 1];
+        var currentPopup = lastPopup != null && document.getElementById(lastPopup.id) || popup;
+
+        if (lastPopup) {
+            currentPopup.instance = lastPopup.instance;
+            currentPopup.callback = lastPopup.callback;
+        }
+
         if(e.type == 'contextmenu' || !e.target || !closeOnDocumentClick) return;
         if (!/Android/i.test(navigator.userAgent) &&
             !['input', 'textarea'].includes(document.activeElement ? document.activeElement.tagName.toLowerCase() : '') && e.type == 'resize') {
-            Radzen.closePopup(id, instance, callback, e);
+            Radzen.closePopup(currentPopup.id, currentPopup.instance, currentPopup.callback, e);
             return;
         }
-        var closestPopup = e.target.closest && (e.target.closest('.rz-popup') || e.target.closest('.rz-overlaypanel'));
-        if (closestPopup && closestPopup != popup) {
-          return;
-        }
+
         var closestLink = e.target.closest && (e.target.closest('.rz-link') || e.target.closest('.rz-navigation-item-link'));
         if (closestLink && closestLink.closest && closestLink.closest('a')) {
             if (Radzen.closeAllPopups) {
@@ -832,34 +1131,21 @@ window.Radzen = {
             }
         }
         if (parent) {
-          if (e.type == 'mousedown' && !parent.contains(e.target) && !popup.contains(e.target)) {
-            Radzen.closePopup(id, instance, callback, e);
+          if (e.type == 'mousedown' && !parent.contains(e.target) && !currentPopup.contains(e.target)) {
+              Radzen.closePopup(currentPopup.id, currentPopup.instance, currentPopup.callback, e);
           }
         } else {
-          if (!popup.contains(e.target)) {
-            Radzen.closePopup(id, instance, callback, e);
+          if (!currentPopup.contains(e.target)) {
+              Radzen.closePopup(currentPopup.id, currentPopup.instance, currentPopup.callback, e);
           }
         }
     };
 
-    if (!Radzen.closeAllPopups) {
-        Radzen.closeAllPopups = function (e) {
-            for (var i = 0; i < Radzen.popups.length; i++) {
-                var p = Radzen.popups[i];
-
-                var closestPopup = e && e.target && e.target.closest && (e.target.closest('.rz-popup') || e.target.closest('.rz-overlaypanel'));
-                if (closestPopup && closestPopup != p) {
-                    return;
-                }
-
-                Radzen.closePopup(p.id, p.instance, p.callback, e);
-            }
-            Radzen.popups = [];
-        };
+    if (!Radzen.popups) {
         Radzen.popups = [];
     }
 
-    Radzen.popups.push({id, instance, callback});
+    Radzen.popups.push({ id, instance, callback });
 
     document.body.appendChild(popup);
     document.removeEventListener('mousedown', Radzen[id]);
@@ -880,6 +1166,35 @@ window.Radzen = {
         document.removeEventListener('contextmenu', Radzen[id]);
         document.addEventListener('contextmenu', Radzen[id]);
     }
+
+    if (autoFocusFirstElement) {
+        setTimeout(function () {
+            popup.removeEventListener('keydown', Radzen.focusTrap);
+            popup.addEventListener('keydown', Radzen.focusTrap);
+
+            var focusable = Radzen.getFocusableElements(popup);
+            var firstFocusable = focusable[0];
+            if (firstFocusable) {
+                firstFocusable.focus();
+            }
+        }, 500);
+    }
+  },
+  closeAllPopups: function (e, id) {
+    if (!Radzen.popups) return;
+    var el = e && e.target || id && documentElement.getElementById(id);
+    var popups = Radzen.popups;
+      for (var i = 0; i < popups.length; i++) {
+        var p = popups[i];
+
+        var closestPopup = el && el.closest && (el.closest('.rz-popup') || el.closest('.rz-overlaypanel'));
+        if (closestPopup && closestPopup != p) {
+            return;
+        }
+
+        Radzen.closePopup(p.id, p.instance, p.callback, e);
+    }
+    Radzen.popups = [];
   },
   closePopup: function (id, instance, callback, e) {
     var popup = document.getElementById(id);
@@ -918,6 +1233,9 @@ window.Radzen = {
     if (instance) {
       instance.invokeMethodAsync(callback);
     }
+    Radzen.popups = (Radzen.popups || []).filter(function (obj) {
+        return obj.id !== id;
+    });
 
     if (Radzen.activeElement && Radzen.activeElement == document.activeElement ||
         Radzen.activeElement && document.activeElement == document.body ||
@@ -934,13 +1252,20 @@ window.Radzen = {
         }, 100);
     }
   },
-  togglePopup: function (parent, id, syncWidth, instance, callback) {
+  popupOpened: function (id) { 
+    var popup = document.getElementById(id);
+    if (popup) {
+        return popup.style.display != 'none';
+    }
+    return false;
+  },
+  togglePopup: function (parent, id, syncWidth, instance, callback, closeOnDocumentClick = true, autoFocusFirstElement = false) {
     var popup = document.getElementById(id);
     if (!popup) return;
     if (popup.style.display == 'block') {
       Radzen.closePopup(id, instance, callback);
     } else {
-      Radzen.openPopup(parent, id, syncWidth, null, null, null, instance, callback);
+      Radzen.openPopup(parent, id, syncWidth, null, null, null, instance, callback, closeOnDocumentClick, autoFocusFirstElement);
     }
   },
   destroyPopup: function (id) {
@@ -988,26 +1313,28 @@ window.Radzen = {
         var lastDialog = dialogs[dialogs.length - 1];
 
         if (lastDialog) {
-            lastDialog.removeEventListener('keydown', Radzen.focusTrapDialog);
-            lastDialog.addEventListener('keydown', Radzen.focusTrapDialog);
+            lastDialog.removeEventListener('keydown', Radzen.focusTrap);
+            lastDialog.addEventListener('keydown', Radzen.focusTrap);
 
-            dialog.offsetWidth = lastDialog.parentElement.offsetWidth;
-            dialog.offsetHeight = lastDialog.parentElement.offsetHeight;
-            var dialogResize = function (e) {
-                if(!dialog) return;
-                if (dialog.offsetWidth != e[0].target.offsetWidth || dialog.offsetHeight != e[0].target.offsetHeight) {
+            if (options.resizable) {
+                dialog.offsetWidth = lastDialog.parentElement.offsetWidth;
+                dialog.offsetHeight = lastDialog.parentElement.offsetHeight;
+                var dialogResize = function (e) {
+                    if (!dialog) return;
+                    if (dialog.offsetWidth != e[0].target.offsetWidth || dialog.offsetHeight != e[0].target.offsetHeight) {
 
-                    dialog.offsetWidth = e[0].target.offsetWidth;
-                    dialog.offsetHeight = e[0].target.offsetHeight;
+                        dialog.offsetWidth = e[0].target.offsetWidth;
+                        dialog.offsetHeight = e[0].target.offsetHeight;
 
-                    dialog.invokeMethodAsync(
-                        'RadzenDialog.OnResize',
-                        e[0].target.offsetWidth,
-                        e[0].target.offsetHeight
-                    );
-                }
-            };
-            Radzen.dialogResizer = new ResizeObserver(dialogResize).observe(lastDialog.parentElement);
+                        dialog.invokeMethodAsync(
+                            'RadzenDialog.OnResize',
+                            e[0].target.offsetWidth,
+                            e[0].target.offsetHeight
+                        );
+                    }
+                };
+                Radzen.dialogResizer = new ResizeObserver(dialogResize).observe(lastDialog.parentElement);
+            }
 
             if (options.autoFocusFirstElement) {
                 if (lastDialog.querySelectorAll('.rz-html-editor-content').length) {
@@ -1021,7 +1348,7 @@ window.Radzen = {
                         selection.addRange(range);
                     }
                 } else {
-                    var focusable = Radzen.getFocusableDialogElements();
+                    var focusable = Radzen.getFocusableElements(lastDialog);
                     var firstFocusable = focusable[0];
                     if (firstFocusable) {
                         firstFocusable.focus();
@@ -1031,8 +1358,8 @@ window.Radzen = {
         }
     }, 500);
 
+    document.removeEventListener('keydown', Radzen.closePopupOrDialog);
     if (options.closeDialogOnEsc) {
-        document.removeEventListener('keydown', Radzen.closePopupOrDialog);
         document.addEventListener('keydown', Radzen.closePopupOrDialog);
     }
   },
@@ -1040,18 +1367,20 @@ window.Radzen = {
     Radzen.dialogResizer = null;
     document.body.classList.remove('no-scroll');
     var dialogs = document.querySelectorAll('.rz-dialog-content');
-    if (dialogs.length == 0) {
+    if (dialogs.length <= 1) {
         document.removeEventListener('keydown', Radzen.closePopupOrDialog);
+        delete Radzen.dialogService;
     }
   },
-  getFocusableDialogElements: function () {
-    var dialogs = document.querySelectorAll('.rz-dialog-content');
-    if (dialogs.length == 0) return [];
-    var lastDialog = dialogs[dialogs.length - 1];
-    return [...lastDialog.querySelectorAll('a, button, input, textarea, select, details, iframe, embed, object, summary dialog, audio[controls], video[controls], [contenteditable], [tabindex]')]
+  disableKeydown: function (e) {
+      e = e || window.event;
+      e.preventDefault();
+  },
+  getFocusableElements: function (element) {
+    return [...element.querySelectorAll('a, button, input, textarea, select, details, iframe, embed, object, summary dialog, audio[controls], video[controls], [contenteditable], [tabindex]')]
         .filter(el => el && el.tabIndex > -1 && !el.hasAttribute('disabled') && el.offsetParent !== null);
   },
-  focusTrapDialog: function (e) {
+  focusTrap: function (e) {
     e = e || window.event;
     var isTab = false;
     if ("key" in e) {
@@ -1060,7 +1389,7 @@ window.Radzen = {
         isTab = (e.keyCode === 9);
     }
     if (isTab) {
-        var focusable = Radzen.getFocusableDialogElements();
+        var focusable = Radzen.getFocusableElements(e.currentTarget);
         var firstFocusable = focusable[0];
         var lastFocusable = focusable[focusable.length - 1];
 
@@ -1088,11 +1417,18 @@ window.Radzen = {
                   return;
               }
           }
-          var dialogs = document.querySelectorAll('.rz-dialog-content');
-          if (dialogs.length == 0) {
-              document.removeEventListener('keydown', Radzen.closePopupOrDialog);
-          }
+
           Radzen.dialogService.invokeMethodAsync('DialogService.Close', null);
+
+          var dialogs = document.querySelectorAll('.rz-dialog-content');
+          if (dialogs.length <= 1) {
+              document.removeEventListener('keydown', Radzen.closePopupOrDialog);
+              delete Radzen.dialogService;
+              var layout = document.querySelector('.rz-layout');
+              if (layout) {
+                  layout.removeEventListener('keydown', Radzen.disableKeydown);
+              }
+          }
       }
   },
   getInputValue: function (arg) {
@@ -1100,7 +1436,7 @@ window.Radzen = {
       arg instanceof Element || arg instanceof HTMLDocument
         ? arg
         : document.getElementById(arg);
-    return input ? input.value : '';
+    return input && input.value != '' ? input.value : null;
   },
   setInputValue: function (arg, value) {
     var input =
@@ -1327,7 +1663,7 @@ window.Radzen = {
   },
   queryCommands: function (ref) {
     return {
-      html: ref.innerHTML,
+      html: ref != null ? ref.innerHTML : null,
       fontName: document.queryCommandValue('fontName'),
       fontSize: document.queryCommandValue('fontSize'),
       formatBlock: document.queryCommandValue('formatBlock'),
@@ -1366,10 +1702,29 @@ window.Radzen = {
         }
     }
   },
-  createEditor: function (ref, uploadUrl, paste, instance) {
+  createEditor: function (ref, uploadUrl, paste, instance, shortcuts) {
     ref.inputListener = function () {
       instance.invokeMethodAsync('OnChange', ref.innerHTML);
     };
+    ref.keydownListener = function (e) {
+      var key = '';
+      if (e.ctrlKey || e.metaKey) {
+        key += 'Ctrl+';
+      }
+      if (e.altKey) {
+        key += 'Alt+';
+      }
+      if (e.shiftKey) {
+        key += 'Shift+';
+      }
+      key += e.code.replace('Key', '').replace('Digit', '').replace('Numpad', '');
+
+      if (shortcuts.includes(key)) {
+        e.preventDefault();
+        instance.invokeMethodAsync('ExecuteShortcutAsync', key);
+      }
+    };
+
     ref.selectionChangeListener = function () {
       if (document.activeElement == ref) {
         instance.invokeMethodAsync('OnSelectionChange');
@@ -1423,6 +1778,7 @@ window.Radzen = {
     };
     ref.addEventListener('input', ref.inputListener);
     ref.addEventListener('paste', ref.pasteListener);
+    ref.addEventListener('keydown', ref.keydownListener);
     document.addEventListener('selectionchange', ref.selectionChangeListener);
     document.execCommand('styleWithCSS', false, true);
   },
@@ -1446,8 +1802,21 @@ window.Radzen = {
       selection.addRange(range);
     }
   },
-  selectionAttributes: function (selector, attributes) {
+  selectionAttributes: function (selector, attributes, container) {
     var selection = getSelection();
+    var range = selection.rangeCount > 0 && selection.getRangeAt(0);
+    var parent = range && range.commonAncestorContainer;
+    var inside = false;
+    while (parent) {
+      if (parent == container) {
+        inside = true;
+        break;
+      }
+      parent = parent.parentNode;
+    }
+    if (!inside) {
+      return {};
+    }
     var target = selection.focusNode;
     var innerHTML;
     if (target) {
@@ -1459,7 +1828,7 @@ window.Radzen = {
           innerHTML = target.outerHTML;
         }
       }
-      if (target && !target.matches(selector)) {
+      if (target && target.matches && !target.matches(selector)) {
         target = target.closest(selector);
       }
     }
@@ -1474,10 +1843,14 @@ window.Radzen = {
     if (ref) {
       ref.removeEventListener('input', ref.inputListener);
       ref.removeEventListener('paste', ref.pasteListener);
+      ref.removeEventListener('keydown', ref.keydownListener);
       document.removeEventListener('selectionchange', ref.selectionChangeListener);
     }
   },
   startDrag: function (ref, instance, handler) {
+    if (!ref) {
+        return { left: 0, top: 0, width: 0, height: 0 };
+    }
     ref.mouseMoveHandler = function (e) {
       instance.invokeMethodAsync(handler, { clientX: e.clientX, clientY: e.clientY });
     };
@@ -1512,7 +1885,7 @@ window.Radzen = {
     document.removeEventListener('touchend', ref.mouseUpHandler);
   },
   startColumnReorder: function(id) {
-      var el = document.getElementById(id);
+      var el = document.getElementById(id + '-drag');
       var cell = el.parentNode.parentNode;
       var visual = document.createElement("th");
       visual.className = cell.className + ' rz-column-draggable';
@@ -1526,12 +1899,21 @@ window.Radzen = {
       visual.id = id + 'visual';
       document.body.appendChild(visual);
 
+      var resizers = cell.parentNode.querySelectorAll('.rz-column-resizer');
+      for (let i = 0; i < resizers.length; i++) {
+          resizers[i].style.display = 'none';
+      }
+
       Radzen[id + 'end'] = function (e) {
           var el = document.getElementById(id + 'visual');
           if (el) {
               document.body.removeChild(el);
               Radzen[id + 'end'] = null;
               Radzen[id + 'move'] = null;
+              var resizers = cell.parentNode.querySelectorAll('.rz-column-resizer');
+              for (let i = 0; i < resizers.length; i++) {
+                  resizers[i].style.display = 'block';
+              }
           }
       }
       document.removeEventListener('click', Radzen[id + 'end']);
@@ -1557,8 +1939,27 @@ window.Radzen = {
       document.removeEventListener('mousemove', Radzen[id + 'move']);
       document.addEventListener('mousemove', Radzen[id + 'move']);
   },
+  stopColumnResize: function (id, grid, columnIndex) {
+    var el = document.getElementById(id + '-resizer');
+    if(!el) return;
+    var cell = el.parentNode.parentNode;
+    if (!cell) return;
+    if (Radzen[el]) {
+        grid.invokeMethodAsync(
+            'RadzenGrid.OnColumnResized',
+            columnIndex,
+            cell.getBoundingClientRect().width
+        );
+        el.style.width = null;
+        document.removeEventListener('mousemove', Radzen[el].mouseMoveHandler);
+        document.removeEventListener('mouseup', Radzen[el].mouseUpHandler);
+        document.removeEventListener('touchmove', Radzen[el].touchMoveHandler)
+        document.removeEventListener('touchend', Radzen[el].mouseUpHandler);
+        Radzen[el] = null;
+    }
+  },
   startColumnResize: function(id, grid, columnIndex, clientX) {
-      var el = document.getElementById(id);
+      var el = document.getElementById(id + '-resizer');
       var cell = el.parentNode.parentNode;
       var col = document.getElementById(id + '-col');
       var dataCol = document.getElementById(id + '-data-col');
@@ -1573,6 +1974,7 @@ window.Radzen = {
                       columnIndex,
                       cell.getBoundingClientRect().width
                   );
+                  el.style.width = null;
                   document.removeEventListener('mousemove', Radzen[el].mouseMoveHandler);
                   document.removeEventListener('mouseup', Radzen[el].mouseUpHandler);
                   document.removeEventListener('touchmove', Radzen[el].touchMoveHandler)
@@ -1582,7 +1984,15 @@ window.Radzen = {
           },
           mouseMoveHandler: function (e) {
               if (Radzen[el]) {
-                  var width = (Radzen[el].width - (Radzen[el].clientX - e.clientX)) + 'px';
+                  var widthFloat = (Radzen[el].width - (Radzen[el].clientX - e.clientX));
+                  var minWidth = parseFloat(cell.style.minWidth || 0)
+
+                  if (widthFloat < minWidth) {
+                      widthFloat = minWidth;
+                  }
+
+                  var width = widthFloat + 'px';
+
                   if (cell) {
                       cell.style.width = width;
                   }
@@ -1603,6 +2013,7 @@ window.Radzen = {
               }
           }
       };
+      el.style.width = "100%";
       document.addEventListener('mousemove', Radzen[el].mouseMoveHandler);
       document.addEventListener('mouseup', Radzen[el].mouseUpHandler);
       document.addEventListener('touchmove', Radzen[el].touchMoveHandler, { passive: true })
@@ -1696,6 +2107,10 @@ window.Radzen = {
             mouseMoveHandler: function(e) {
                 if (Radzen[el]) {
 
+                    splitter.invokeMethodAsync(
+                        'RadzenSplitter.OnPaneResizing'
+                    );
+
                     var spacePerc = Radzen[el].panePerc + Radzen[el].paneNextPerc;
                     var spaceLength = Radzen[el].paneLength + Radzen[el].paneNextLength;
 
@@ -1742,6 +2157,13 @@ window.Radzen = {
         document.addEventListener('mouseup', Radzen[el].mouseUpHandler);
         document.addEventListener('touchmove', Radzen[el].touchMoveHandler, { passive: true });
         document.addEventListener('touchend', Radzen[el].mouseUpHandler, { passive: true });
+    },
+    resizeSplitter(id, e) {
+        var el = document.getElementById(id);
+        if (el && Radzen[el]) {
+            Radzen[el].mouseMoveHandler(e);
+            Radzen[el].mouseUpHandler(e);
+        }
     },
     openWaiting: function() {
         if (document.documentElement.scrollHeight > document.documentElement.clientHeight) {
