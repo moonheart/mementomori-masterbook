@@ -18447,7 +18447,7 @@
   {
     "Id": 2911,
     "IsIgnore": false,
-    "Memo": "期限切れが近いアイテムがあります。",
+    "Memo": "",
     "StringKey": "[RemindExpirationItemMessage]",
     "Text": ""
   },
