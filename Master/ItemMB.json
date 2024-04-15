@@ -370,7 +370,7 @@
     "ItemId": 4,
     "ItemRarityFlags": 64,
     "ItemType": 10,
-    "MaxItemCount": 299,
+    "MaxItemCount": 2999,
     "NameKey": "[ItemName20]",
     "IconId": 23,
     "SecondaryFrameNum": 8,
