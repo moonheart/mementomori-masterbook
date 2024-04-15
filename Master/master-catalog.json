@@ -6,9 +6,9 @@
       "Size": 48412
     },
     "ActiveSkillMB": {
-      "Hash": "868eea78dd016160c1615bdaaac51be2",
+      "Hash": "40391dd88361f2cfc4788275cf787a90",
       "Name": "ActiveSkillMB",
-      "Size": 384963
+      "Size": 389681
     },
     "AppVersionMB": {
       "Hash": "92a610cc25965b0c624cef07b2254fb8",
@@ -26,14 +26,14 @@
       "Size": 2895
     },
     "BattleSkillCharacterSettingMB": {
-      "Hash": "eaa906d6a1af6057798bfe323ca924e0",
+      "Hash": "c691cf6b90684f3b504fae3aa2ce31e2",
       "Name": "BattleSkillCharacterSettingMB",
-      "Size": 4053
+      "Size": 4107
     },
     "BattleSkillNameSettingMB": {
-      "Hash": "738a69cbc982cd14a0fd54b6c2cb284e",
+      "Hash": "17769888d19dba92d205b470a63bb969",
       "Name": "BattleSkillNameSettingMB",
-      "Size": 40569
+      "Size": 41109
     },
     "BoardRankMB": {
       "Hash": "50acb30f646173fd80ee832a82ce8acd",
@@ -66,14 +66,14 @@
       "Size": 2809
     },
     "CharacterCollectionLevelMB": {
-      "Hash": "a29084fe513da3ccf9ac3d482721b1b9",
+      "Hash": "5a1f9266c9f8a3970032d6a9a6b61f0f",
       "Name": "CharacterCollectionLevelMB",
-      "Size": 112019
+      "Size": 114540
     },
     "CharacterCollectionMB": {
-      "Hash": "60080071599b4a44f7494e00ee0c1d4c",
+      "Hash": "be1fac0229616161ce54950f7891fd27",
       "Name": "CharacterCollectionMB",
-      "Size": 9320
+      "Size": 9523
     },
     "CharacterCollectionRewardMB": {
       "Hash": "4104323fd531ed01201e9eadcae7719f",
@@ -81,9 +81,9 @@
       "Size": 4090
     },
     "CharacterDetailVoiceMB": {
-      "Hash": "1275ecfea4bb9414d410bc294799d2e6",
+      "Hash": "c52563db673e1486d0fc0bb4f38c711f",
       "Name": "CharacterDetailVoiceMB",
-      "Size": 527405
+      "Size": 534536
     },
     "CharacterLevelMB": {
       "Hash": "3afbab3ee63653e2b37187d446c937c5",
@@ -96,9 +96,9 @@
       "Size": 2503
     },
     "CharacterMB": {
-      "Hash": "2083b43a62abf7874f390788649fc1cd",
+      "Hash": "175ab2f07fcc2def12e3efb25fa95f2b",
       "Name": "CharacterMB",
-      "Size": 52613
+      "Size": 53313
     },
     "CharacterPotentialCoefficientMB": {
       "Hash": "6c0194d0d9bad3e5ec52bfb40e35b33c",
@@ -111,9 +111,9 @@
       "Size": 350851
     },
     "CharacterProfileMB": {
-      "Hash": "6e9465c6d4e1f0f5754472e8e487e7c5",
+      "Hash": "dac10d274be851ae53eaffff4c507180",
       "Name": "CharacterProfileMB",
-      "Size": 76558
+      "Size": 77960
     },
     "CharacterRankUpMaterialMB": {
       "Hash": "0e3e19425207bede4a87ba8eaae88b47",
@@ -126,9 +126,9 @@
       "Size": 3602
     },
     "CharacterStoryMB": {
-      "Hash": "565a5d99cb1177754dfb4ba9258d7795",
+      "Hash": "503764e965c6f9bb5383b9b87b98b359",
       "Name": "CharacterStoryMB",
-      "Size": 97479
+      "Size": 98821
     },
     "ChatEffectKeywordMB": {
       "Hash": "eee892ff0f3fa4bda49c8f17da3503f1",
@@ -141,9 +141,9 @@
       "Size": 4663
     },
     "DeepLinkMB": {
-      "Hash": "b2759d1050f05355d21bc9d830996ebd",
+      "Hash": "62714d4186fcd3a08bd3da9bb28bfa00",
       "Name": "DeepLinkMB",
-      "Size": 3915
+      "Size": 4038
     },
     "DownloadRawDataMB": {
       "Hash": "8d092dcae333dc56338591ea76555df2",
@@ -156,9 +156,9 @@
       "Size": 1508
     },
     "DungeonBattleGuestMB": {
-      "Hash": "7b4af70907cd4ddeee79d45c898c33e6",
+      "Hash": "642bd3c3dbed08acedd52bc668f2e27b",
       "Name": "DungeonBattleGuestMB",
-      "Size": 9066
+      "Size": 9192
     },
     "DungeonBattleRelicMB": {
       "Hash": "9197d3d5205bcf4f157636b68e5924e2",
@@ -166,9 +166,9 @@
       "Size": 36595
     },
     "EffectGroupMB": {
-      "Hash": "190a8bfb57398a1cf58a1d6bc8b256ea",
+      "Hash": "e39e67972c55158dd63564909072e02a",
       "Name": "EffectGroupMB",
-      "Size": 610033
+      "Size": 616581
     },
     "ElementBonusMB": {
       "Hash": "e9bf6e553b877c54fcaf45f6909340e5",
@@ -176,24 +176,24 @@
       "Size": 1480
     },
     "EquipmentCompositeMB": {
-      "Hash": "2f126c7aa1c994c51fd62be4f155bc4b",
+      "Hash": "a81f4ea3dddb0e50730cc54efe852058",
       "Name": "EquipmentCompositeMB",
-      "Size": 13190
+      "Size": 13342
     },
     "EquipmentEvolutionMB": {
-      "Hash": "294527dc7b77e363af91df17fd2ea10c",
+      "Hash": "c521d4a33110cb89a4640af30aa537cb",
       "Name": "EquipmentEvolutionMB",
-      "Size": 647051
+      "Size": 653662
     },
     "EquipmentExclusiveEffectMB": {
-      "Hash": "64db92a553af1191211261539f1cf99b",
+      "Hash": "8abde3d3c671f719da6199bfb7f6cc12",
       "Name": "EquipmentExclusiveEffectMB",
-      "Size": 91009
+      "Size": 92545
     },
     "EquipmentExclusiveSkillDescriptionMB": {
-      "Hash": "6f424e253998cb42ed1389922874e9b7",
+      "Hash": "e4c355d7b39d1c79cd9f84e6268bc892",
       "Name": "EquipmentExclusiveSkillDescriptionMB",
-      "Size": 12416
+      "Size": 12629
     },
     "EquipmentForgeMB": {
       "Hash": "f63cb4e20c64145b75678f2c3970f73b",
@@ -211,9 +211,9 @@
       "Size": 7233
     },
     "EquipmentMB": {
-      "Hash": "fccca47f16ed54f864566dd88eaaaf69",
+      "Hash": "e30f1d6e13458224541a062147f392f9",
       "Name": "EquipmentMB",
-      "Size": 3974979
+      "Size": 4022017
     },
     "EquipmentReinforcementMaterialMB": {
       "Hash": "81bba9b94a71d6a21a37382128c27fa1",
@@ -236,9 +236,9 @@
       "Size": 6554
     },
     "ErrorCodeMB": {
-      "Hash": "bc4e92bb838473607aff02b2acf4a973",
+      "Hash": "9ff63b7d607f765149593de508f10bdf",
       "Name": "ErrorCodeMB",
-      "Size": 40666
+      "Size": 41519
     },
     "FaqListMB": {
       "Hash": "861f4140d9eb219767e9c255f34d0475",
@@ -256,24 +256,24 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "583643b89edef324a99a8a3fdab1adb6",
+      "Hash": "4b92734594e1f9438b5779888c5040de",
       "Name": "GachaCaseMB",
-      "Size": 32323
+      "Size": 32669
     },
     "GachaCaseUiMB": {
-      "Hash": "d31d20f5c627222408c3a0deb66ee142",
+      "Hash": "e5609432721efb5746813559532bf773",
       "Name": "GachaCaseUiMB",
-      "Size": 267968
+      "Size": 270845
     },
     "GachaDestinyAddCharacterMB": {
-      "Hash": "334728e60d38c00a638553d56050af28",
+      "Hash": "c23ef5fa42d8316ec5109a62a909eecf",
       "Name": "GachaDestinyAddCharacterMB",
-      "Size": 6645
+      "Size": 6766
     },
     "GachaSelectListMB": {
-      "Hash": "3dcc4d32311228ebb4c35a2d01de349e",
+      "Hash": "f877c1a3464c291cf3fa59fee66361fe",
       "Name": "GachaSelectListMB",
-      "Size": 15730
+      "Size": 16485
     },
     "GlobalGvgCastleMB": {
       "Hash": "f3658568a1d613e3c56998853a67930d",
@@ -336,9 +336,9 @@
       "Size": 1697
     },
     "ItemMB": {
-      "Hash": "ac12bcd47c2cb09bd6f3de7137541774",
+      "Hash": "848f93b85362e0f364f6560445269cda",
       "Name": "ItemMB",
-      "Size": 44501
+      "Size": 45071
     },
     "LeadReviewMB": {
       "Hash": "83e028f348df8347e115f132b3e4d34f",
@@ -431,9 +431,9 @@
       "Size": 36747
     },
     "MissionMB": {
-      "Hash": "28a0f79518032dab98c6f3efc1169735",
+      "Hash": "d840050a7e085f75c5cfd1eb6098cc27",
       "Name": "MissionMB",
-      "Size": 511729
+      "Size": 513806
     },
     "MissionOpenContentMB": {
       "Hash": "92d29661208485672151da05bc75aabf",
@@ -476,19 +476,19 @@
       "Size": 17076
     },
     "PanelMB": {
-      "Hash": "b6b90e25e6576ac23326662620af22a4",
+      "Hash": "3111f1763820cbace4ad4044128b1954",
       "Name": "PanelMB",
-      "Size": 5645
+      "Size": 6315
     },
     "PanelMissionMB": {
-      "Hash": "0d53035d2e968edb792985113304c379",
+      "Hash": "09a7ad2c3678f86582e58fdb37096c07",
       "Name": "PanelMissionMB",
-      "Size": 4040
+      "Size": 5390
     },
     "PassiveSkillMB": {
-      "Hash": "ead4adc1db56ca813bca8dd7c0b1856a",
+      "Hash": "e8d6058a47110c5aab6325c107d4cd0d",
       "Name": "PassiveSkillMB",
-      "Size": 370361
+      "Size": 376019
     },
     "PlayerRankMB": {
       "Hash": "f9a87d95aaa03c5e80d1fc543bab087a",
@@ -646,9 +646,9 @@
       "Size": 1083
     },
     "TradeShopTabMB": {
-      "Hash": "6fc8eaae421e7587fbffc290884205a9",
+      "Hash": "98c7de59c004a5c868b3abbc578699ce",
       "Name": "TradeShopTabMB",
-      "Size": 77942
+      "Size": 77958
     },
     "TreasureChestCeilingMB": {
       "Hash": "9261f7876b178ce3055e3e0672156e64",
