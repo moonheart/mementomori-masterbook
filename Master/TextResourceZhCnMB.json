@@ -136391,46 +136391,74 @@
     "Id": 19791,
     "IsIgnore": false,
     "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail94]",
+    "Text": ""
+  },
+  {
+    "Id": 19792,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading94]",
+    "Text": ""
+  },
+  {
+    "Id": 19793,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes94]",
+    "Text": ""
+  },
+  {
+    "Id": 19794,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation94]",
+    "Text": ""
+  },
+  {
+    "Id": 19795,
+    "IsIgnore": false,
+    "Memo": "",
     "StringKey": "[GachaBanner10000]",
     "Text": "星辰指引<br>召唤"
   },
   {
-    "Id": 19792,
+    "Id": 19796,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaName10000]",
     "Text": "星辰指引召唤"
   },
   {
-    "Id": 19793,
+    "Id": 19797,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaExplanation10000]",
     "Text": "可召唤道具或指定的角色"
   },
   {
-    "Id": 19794,
+    "Id": 19798,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDailogHeading10000]",
     "Text": "可召唤道具或指定的SR角色。<br>每进行1次召唤，即可获得命运盒作为追加奖励。<br>■开放期间<br>{0}"
   },
   {
-    "Id": 19795,
+    "Id": 19799,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogDetail10000]",
     "Text": "·可使用钻石或专用票券进行召唤。<br>·召唤对象：角色、道具<br>·在星辰指引召唤中，可召唤的角色仅限指定角色。<br>·如果连续56次没有召唤出指定的角色，第57次的角色出现机率将向上提升；第57次仍然没有召唤出角色时，第58次的角色出现机率将继续提升。每召唤1次，机率就会往上提升，直到角色被成功召唤为止。第70次召唤时，出现机率将提升到100%。<br>·保底进度：【{0}/70】<br>·在星辰指引召唤中，未能成功召唤角色的累计次数依照属性分为两组，隶属相同分组的累计次数可在变更指定角色后互相继承，也可保留至下次召唤开放时继续累加。<br>·属性分为“忧蓝、业红、苍翠、流金”组与“天光、幽冥”组。<br>※变更指定角色后，累计次数将依照分组各自保留，不会进行重置。<br>·每进行1次星辰指引召唤，即可获得1个命运盒作为追加奖励。<br>※获得的道具将自动加入持有数量中。<br>※超过持有数量上限的道具将寄送到礼物箱。"
   },
   {
-    "Id": 19796,
+    "Id": 19800,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogNotes10000]",
     "Text": "·召唤内容可能不经预告进行调整。<br>·角色与道具的出现机率因角色与道具而异。<br>·出现机率标示至小数点后四位（四舍五入），故合计可能不等于100%。<br>·每一次都将按照以上所示的出现机率逐次进行抽选，故不代表在100次抽选中保证可获得出现机率为1%的项目。<br>·召唤时的动画演出可能因为服务器联机状况等原因无法完整播放或直接跳过。角色及道具的发送将正常执行不受影响，请前往“持有角色”或“储物箱”进行确认。"
   },
   {
-    "Id": 19797,
+    "Id": 19801,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaTimeFormat10000]",
