@@ -138043,46 +138043,74 @@
     "Id": 20026,
     "IsIgnore": false,
     "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail96]",
+    "Text": ""
+  },
+  {
+    "Id": 20027,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading96]",
+    "Text": ""
+  },
+  {
+    "Id": 20028,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes96]",
+    "Text": ""
+  },
+  {
+    "Id": 20029,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation96]",
+    "Text": ""
+  },
+  {
+    "Id": 20030,
+    "IsIgnore": false,
+    "Memo": "",
     "StringKey": "[GachaBanner10000]",
     "Text": "Prece de Guia<br>das Estrelas"
   },
   {
-    "Id": 20027,
+    "Id": 20031,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaName10000]",
     "Text": "Prece de Guia das Estrelas"
   },
   {
-    "Id": 20028,
+    "Id": 20032,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaExplanation10000]",
     "Text": "Aparecem personagens designadas"
   },
   {
-    "Id": 20029,
+    "Id": 20033,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDailogHeading10000]",
     "Text": "Prece com a qual aparecem itens ou personagens SR designadas.<br>A cada prece você também pode obter uma Caixa do Destino como bônus.<br>■ Período de realização<br>{0}"
   },
   {
-    "Id": 20030,
+    "Id": 20034,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogDetail10000]",
     "Text": "- Prece que pode ser feita usando diamantes ou um rosário exclusivo.<br>- Com ela podem aparecer personagens ou itens.<br>- As personagens que aparecem com a Prece de Guia das Estrelas são apenas as designadas.<br>- Caso não apareça nenhuma personagem após 56 vezes consecutivas, a chance de aparecer uma personagem na 57ª vez aumenta. Caso não apareça uma personagem sequer na 57ª vez, a chance sobe novamente na 58ª vez. Se mesmo assim não aparecer uma personagem, a chance continuará subindo a cada tentativa até chegar a 100% na 70ª vez.<br>- Você já realizou [{0}/70] tentativas até a aparição garantida.<br>- Mesmo que você altere a personagem definida, será mantida a mesma contagem de não aparições na Prece de Guia das Estrelas, contanto que o grupo de afinidade seja o mesmo. Ainda, mesmo que termine o período de realização, a contagem será mantida para a próxima Prece de Guia das Estrelas.<br>- Existem dois grupos de afinidades: [Anil, Carmim, Jade e Âmbar] e [Celeste e Breu].<br>*A contagem não é reiniciada quando você altera a personagem definida, sendo registrada separadamente para cada grupo de afinidades.<br>- A cada Prece de Guia das Estrelas, você poderá obter uma Caixa do Destino adicional como bônus.<br>* Os itens obtidos são adicionados diretamente ao seu inventário.<br>* Caso tenha atingido o limite máximo de algum item, ele será enviado para a caixa de presentes."
   },
   {
-    "Id": 20031,
+    "Id": 20035,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogNotes10000]",
     "Text": "- O conteúdo das preces está sujeito a alterações sem aviso prévio.<br>- O índice de aparição varia de acordo com cada item ou personagem disponível.<br>- Como os índices de aparição são exibidos com o valor arredondado até a quarta casa decimal, sua soma pode não chegar a 100%.<br>- A aparição é sorteada a cada vez de acordo com os índices descritos. Em vista disso, personagens ou itens com índice de aparição de 1% não aparecerão necessariamente uma vez a cada 100 tentativas.<br>- Devido às condições de comunicação do servidor, é possível que a animação da prece seja pulada ou exibida incorretamente em parte ou no todo, mas isso não afetará a adição da personagem ou item ao seu jogo. Confira o recebimento na sua lista de personagens ou caixa de itens."
   },
   {
-    "Id": 20032,
+    "Id": 20036,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaTimeFormat10000]",

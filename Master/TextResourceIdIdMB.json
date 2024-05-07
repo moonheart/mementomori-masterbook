@@ -138043,46 +138043,74 @@
     "Id": 20026,
     "IsIgnore": false,
     "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail96]",
+    "Text": ""
+  },
+  {
+    "Id": 20027,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading96]",
+    "Text": ""
+  },
+  {
+    "Id": 20028,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes96]",
+    "Text": ""
+  },
+  {
+    "Id": 20029,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation96]",
+    "Text": ""
+  },
+  {
+    "Id": 20030,
+    "IsIgnore": false,
+    "Memo": "",
     "StringKey": "[GachaBanner10000]",
     "Text": "Pemanggilan<br><size=25>Panduan<br>Bintang</size>"
   },
   {
-    "Id": 20027,
+    "Id": 20031,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaName10000]",
     "Text": "Pemanggilan Panduan Bintang"
   },
   {
-    "Id": 20028,
+    "Id": 20032,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaExplanation10000]",
     "Text": "Item atau karakter yang telah kamu atur akan muncul!"
   },
   {
-    "Id": 20029,
+    "Id": 20033,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDailogHeading10000]",
     "Text": "Karakter SR maupun item yang diatur akan muncul di Pemanggilan ini.<br>Kamu juga bisa mendapatkan Peti Kesempatan sebagai hadiah bonus di setiap pull.<br>■Durasi<br>{0}"
   },
   {
-    "Id": 20030,
+    "Id": 20034,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogDetail10000]",
     "Text": "・Kamu bisa menggunakan Diamond atau Tiket Panduan untuk melakukan Panggilan.<br>・Karakter dan item akan muncul.<br>・・Hanya Karakter yang sudah kamu atur yang akan muncul.<br>・・Jika karakter yang diatur tidak muncul setelah 56 pull berturut-turut, pull rate karakter yang diatur akan meningkat pada pull yang ke-57. Jika karakter yang diatur tidak muncul pada pull ke-57, pull rate karakter yang diatur akan meningkat lagi pada pull yang ke-58, dan seterusnya untuk setiap kali pull berturut-turut hingga karakter yang diatur muncul, dengan pull rate pull yang ke-70 menjadi 100%.<br>・Pull count milikmu untuk kemunculan yang terjamin saat ini【{0}/70】.<br>・Jika karakter yang diatur diubah, pull rate yang meningkat akan dibawa selama karakter baru yang diatur adalah bagian dari grup Jiwa yang sama. Selain itu, meskipun durasi karakter yang diatur telah berakhir, peningkatan pull rate akan dibawa ke Pemanggilan Panduan Bintang berikutnya.<br>・Terdapat 2 grup Jiwa: [Azure, Crimson, Emerald, Amber] dan [Radiance, Chaos].<br>*Mengubah karakter yang diatur dengan grup Jiwa yang sama tidak akan mereset pull count, dan pull count setiap grup Jiwa akan terpisah satu sama lain.<br>・Kamu bisa mendapatkan 1 Peti Kesempatan sebagai hadiah bonus di setiap pull.<br>*Hadiah bonus akan dikirim langsung ke Kotak Item milikmu.<br>*Jika Kotak Item milikmu penuh, hadiah bonus akan dikirim ke Kotak Hadiah. "
   },
   {
-    "Id": 20031,
+    "Id": 20035,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogNotes10000]",
     "Text": "・Konten di Pemanggilan ini bisa berubah tanpa pemberitahuan sebelumnya.<br>・Pull rate bervariasi tergantung pada karakter atau item.<br>・Setiap pull rate yang ditampilkan akan dibulatkan ke angka desimal ke-4, jadi nilai gabungannya kemungkinan tidak sama dengan 100%.<br>・Akan ada undian berdasarkan pull rate dari setiap pull berturut-turut, jadi karakter atau item dengan pull rate 1% tidak dijamin akan muncul 1 kali dari 100 pull.<br>・Rangkaian Pemanggilan mungkin bisa terlewat, atau tidak ditampilkan secara normal, sebagian atau seluruhnya, dikarenakan masalah komunikasi dengan server, dll., tapi karakter dan item akan tetap didapatkan secara normal. Silakan periksa roster dan Kotak Item milikmu."
   },
   {
-    "Id": 20032,
+    "Id": 20036,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaTimeFormat10000]",

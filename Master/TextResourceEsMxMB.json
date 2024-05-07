@@ -138043,46 +138043,74 @@
     "Id": 20026,
     "IsIgnore": false,
     "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail96]",
+    "Text": ""
+  },
+  {
+    "Id": 20027,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading96]",
+    "Text": ""
+  },
+  {
+    "Id": 20028,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes96]",
+    "Text": ""
+  },
+  {
+    "Id": 20029,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation96]",
+    "Text": ""
+  },
+  {
+    "Id": 20030,
+    "IsIgnore": false,
+    "Memo": "",
     "StringKey": "[GachaBanner10000]",
     "Text": "Invocación de<br><size=25>La<br>Guía</size>> de las Estrellas"
   },
   {
-    "Id": 20027,
+    "Id": 20031,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaName10000]",
     "Text": "Invocación de La Guía de las Estrellas"
   },
   {
-    "Id": 20028,
+    "Id": 20032,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaExplanation10000]",
     "Text": "Aparecerán los artículos o el personaje que hayas elegido."
   },
   {
-    "Id": 20029,
+    "Id": 20033,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDailogHeading10000]",
     "Text": "En esta Invocación aparecerán el carácter o los artículos del conjunto SR..<br> También puedes obtener un Cofre de Oportunidad como bono de recompensa adicional con cada extracción.<br>■Duración<br>{0}"
   },
   {
-    "Id": 20030,
+    "Id": 20034,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogDetail10000]",
     "Text": "・Puedes usar Diamantes o Boletos de la Guía para Invocar.<br>・Aparecerán personajes y artículos.<br>・Solo el personaje que elijas será el que aparezca.<br>・Si el personaje elegido no aparece después de 56 extracciones consecutivas, su tasa de aparición en la extracción número 57 aumentará. Si no aparece en la extracción número 57, su tasas de extracción en la extracción número 58 aumentarán nuevamente, y así sucesivamente en cada extracción consecutiva hasta que aparezca, siendo la tasa de la extracción número 70 del 100%.<br>・Tu conteo de extracciones para la aparición garantizada actualmente es【{0}/70】.<br>・Si se cambia el personaje elegido, la tasa de aparición aumentada se mantendrá siempre y cuando el nuevo personaje elegido sea parte del mismo grupo de Almas. Además, incluso si la duración del personaje elegido ha expirado, la tasa de aparición aumentada se mantendrá en la próxima Invocación de la Guía de las Estrellas.<br>・Hay 2 grupos de Almas: [Azur, Carmesí, Esmeralda, Ámbar] y [Resplandor, Caos].<br>*Cambiar el personaje elegido dentro del mismo grupo de Almas no reiniciará el conteo de extracciones, y el conteo de extracciones de cada grupo de Almas existirá por separado uno del otro.<br>・Puedes obtener 1 Cofre de Oportunidad como bono con cada extracción.<br>*El Bono de recompensa adicional se enviará directamente a tu Caja de Artículos.<br>*Si tu Caja de Artículos está llena, la recompensa adicional se enviará a tu Caja de Regalos. "
   },
   {
-    "Id": 20031,
+    "Id": 20035,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogNotes10000]",
     "Text": "・El contenido de esta Invocación puede cambiar sin previo aviso.<br>・Las tasas de extracción varían según el personaje o artículo.<br>・Cada tasa de extracción mostrada se redondea a la cuarta decimal, por lo que el valor combinado puede no igualar 100%.<br>・Habrá una lotería basada en las tasas de extracción de cada extracción consecutiva, por lo que no se garantiza que un personaje o artículo con una tasa de extracción del 1% aparezca 1 vez de cada 100 extracciones.<br>・La secuencia de la Invocación puede omitirse o no mostrarse normalmente, en parte o en su totalidad, debido a problemas de comunicación con el servidor, etc., pero los personajes e ítems se obtendrán normalmente. Por favor, verifica tu alineación y Caja de Artículos."
   },
   {
-    "Id": 20032,
+    "Id": 20036,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaTimeFormat10000]",

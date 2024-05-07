@@ -138043,46 +138043,74 @@
     "Id": 20026,
     "IsIgnore": false,
     "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail96]",
+    "Text": ""
+  },
+  {
+    "Id": 20027,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading96]",
+    "Text": ""
+  },
+  {
+    "Id": 20028,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes96]",
+    "Text": ""
+  },
+  {
+    "Id": 20029,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation96]",
+    "Text": ""
+  },
+  {
+    "Id": 20030,
+    "IsIgnore": false,
+    "Memo": "",
     "StringKey": "[GachaBanner10000]",
     "Text": "Prière du<br>Berger des étoiles"
   },
   {
-    "Id": 20027,
+    "Id": 20031,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaName10000]",
     "Text": "Prière du Berger des étoiles"
   },
   {
-    "Id": 20028,
+    "Id": 20032,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaExplanation10000]",
     "Text": "Apparition de personnages et d'objets spécifiques"
   },
   {
-    "Id": 20029,
+    "Id": 20033,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDailogHeading10000]",
     "Text": "Cette prière permet d'obtenir des objets ou des personnages SR spécifiques.<br>Vous pouvez aussi obtenir un coffre du destin en bonus à chaque prière.<br>■ Période de disponibilité<br>{0}"
   },
   {
-    "Id": 20030,
+    "Id": 20034,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogDetail10000]",
     "Text": "・Cette prière peut être réalisée en échange de diamants ou de tickets spéciaux.<br>・Permet d'obtenir des personnages et des objets.<br>・Seuls des personnages précis peuvent être obtenus grâce à la Prière du Berger des étoiles.<br>・Si vous n'obtenez aucun personnage après 56 Prières du destin consécutives, le taux d'obtention augmente pour la 57e. Si vous n'en avez toujours pas obtenu après cela, le taux augmente encore pour la 58e, puis augmente de nouveau pour chaque tentative suivante jusqu'à atteindre les 100 % pour la 70e prière.<br>・Le nombre de prières actuelles jusqu'à l'apparition garantie est de 【{0}/70】.<br>・Le compteur de prières lorsque vous n'obtenez aucun personnage de la Prière du Berger des étoiles sera conservé pour un groupe identique de types, même si vous modifiez les personnages configurés. Il sera aussi conservé au-delà de la période de disponibilité pour la prochaine Prière du Berger des étoiles.<br>・Il existe deux groupes de types : le groupe « azur, écarlate, émeraude et ambre » et le groupe « éther et ténèbres ».<br>・* Même si vous modifiez les personnages configurés, le compteur de prières ne sera pas réinitialisé et sera conservé pour chaque groupe de types.<br>・Vous pouvez obtenir un coffre du destin en bonus pour chaque Prière du Berger des étoiles réalisée.<br>* Les objets obtenus sont directement ajoutés à votre stock.<br>* Lorsque vous avez atteint la limite d'objets en votre possession, les objets à obtenir sont envoyés dans votre boîte à cadeaux."
   },
   {
-    "Id": 20031,
+    "Id": 20035,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaDetailDialogNotes10000]",
     "Text": "・Le contenu des prières peut être modifié sans préavis.<br>・Les taux d'obtention varient selon les personnages et les objets.<br>・Comme les taux d'obtention affichent une valeur arrondie à la quatrième décimale, il arrive que le taux total ne soit pas de 100 %.<br>・Le résultat de chaque prière ne dépend que du taux d'obtention. Effectuer 100 prières ne garantit donc pas l'apparition d'un personnage ou d'un objet avec un taux d'obtention de 1 %.<br>・Il arrive que des problèmes d'affichage ou l'absence complète d'animation pour une prière surviennent en fonction, entre autres, de l'état du serveur, mais l'ajout du personnage ou de l'objet en lui-même n'est pas impacté. Si cela vous arrive, pensez à consulter votre liste de personnages ou votre boîte à objets."
   },
   {
-    "Id": 20032,
+    "Id": 20036,
     "IsIgnore": false,
     "Memo": "",
     "StringKey": "[GachaTimeFormat10000]",
