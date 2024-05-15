@@ -122,6 +122,7 @@ public static class Helpers
 
         var appVersion = "2.6.0";
         if (File.Exists("./Master/appversion")) appVersion = File.ReadAllText("./Master/appversion");
+        appVersion = appVersion.Trim();
         appVersion = await GetLatestAvailableVersion(appVersion);
         File.WriteAllText("./Master/appversion", appVersion);
 
