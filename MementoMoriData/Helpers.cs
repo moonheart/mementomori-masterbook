@@ -36,6 +36,7 @@ public static class Helpers
         try
         {
             lastVersion = await File.ReadAllTextAsync("./Master/version");
+            lastVersion = lastVersion.Trim();
         }
         catch
         {
