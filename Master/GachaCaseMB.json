@@ -1742,7 +1742,7 @@
     "GachaSelectListType": 1,
     "GachaCaseFlags": 1,
     "GachaLimitDayFromCreatePlayer": 0,
-    "StartTimeFixJST": "2024-05-15 15:00:00",
+    "StartTimeFixJST": "2024-05-15 17:30:00",
     "EndTimeFixJST": "2024-05-31 14:29:59"
   },
   {
@@ -1760,7 +1760,7 @@
     "GachaSelectListType": 1,
     "GachaCaseFlags": 1,
     "GachaLimitDayFromCreatePlayer": 0,
-    "StartTimeFixJST": "2024-05-15 15:00:00",
+    "StartTimeFixJST": "2024-05-15 17:30:00",
     "EndTimeFixJST": "2024-05-31 14:29:59"
   },
   {
@@ -1778,7 +1778,7 @@
     "GachaSelectListType": 3,
     "GachaCaseFlags": 1,
     "GachaLimitDayFromCreatePlayer": 0,
-    "StartTimeFixJST": "2024-05-15 15:00:00",
+    "StartTimeFixJST": "2024-05-15 17:30:00",
     "EndTimeFixJST": "2024-06-07 14:29:59"
   },
   {
