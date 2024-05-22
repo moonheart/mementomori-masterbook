@@ -146,9 +146,9 @@
       "Size": 4287
     },
     "DownloadRawDataMB": {
-      "Hash": "cd929c0f5e000163a02a418b46e15c11",
+      "Hash": "4bf91a3dca49597389592aadbbfa17a7",
       "Name": "DownloadRawDataMB",
-      "Size": 68904
+      "Size": 69494
     },
     "DungeonBattleGridMB": {
       "Hash": "d1d0bb870c358c7985224e134155c50d",
@@ -156,7 +156,7 @@
       "Size": 1508
     },
     "DungeonBattleGuestMB": {
-      "Hash": "8087faf706af9ecd2ad29755ffe7375d",
+      "Hash": "46d7f74736c97d7c076a46b1e851bbb9",
       "Name": "DungeonBattleGuestMB",
       "Size": 9447
     },
@@ -256,24 +256,24 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "1e1748f473d9ed7c0addeb41f9d15db8",
+      "Hash": "244614ee60ed073470ea453aba840cf7",
       "Name": "GachaCaseMB",
-      "Size": 34426
+      "Size": 34783
     },
     "GachaCaseUiMB": {
-      "Hash": "96f9e2392cad6554e6656cd48dc9acc6",
+      "Hash": "c5df038db022826093e048fee9f37c3d",
       "Name": "GachaCaseUiMB",
-      "Size": 285285
+      "Size": 288171
     },
     "GachaDestinyAddCharacterMB": {
-      "Hash": "5cc89b18be81f5083f1d99bf133c3dfa",
+      "Hash": "7e3da42b9eea1aabfbf50a1971d26236",
       "Name": "GachaDestinyAddCharacterMB",
-      "Size": 7395
+      "Size": 7525
     },
     "GachaSelectListMB": {
-      "Hash": "46bd4eb4794e6ab3bac26e3b6047521d",
+      "Hash": "907c5b29fe3e89433913db3f45f51abf",
       "Name": "GachaSelectListMB",
-      "Size": 18114
+      "Size": 18375
     },
     "GlobalGvgCastleMB": {
       "Hash": "f3658568a1d613e3c56998853a67930d",
