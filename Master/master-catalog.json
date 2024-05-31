@@ -1,9 +1,9 @@
 {
   "MasterBookInfoMap": {
     "AchieveRankingRewardMB": {
-      "Hash": "28daebe3e4e09f3db05913211ff70b94",
+      "Hash": "01523ef15dbfe3abf7dc2c585faff683",
       "Name": "AchieveRankingRewardMB",
-      "Size": 48824
+      "Size": 49952
     },
     "ActiveSkillMB": {
       "Hash": "58ad5ebd40a1a083467804f9f17bb25a",
@@ -11,7 +11,7 @@
       "Size": 406189
     },
     "AppVersionMB": {
-      "Hash": "69e7026ddbd54d5a5f680f094fb104b6",
+      "Hash": "5ca1a8a4c9bd256db03019b7ce42efbf",
       "Name": "AppVersionMB",
       "Size": 256
     },
@@ -21,9 +21,9 @@
       "Size": 8429324
     },
     "BattleScheduleMB": {
-      "Hash": "035110206d738fffcdcacb0c70bcd3fd",
+      "Hash": "8322a4c8c9bf2d27f4d7a12088820f46",
       "Name": "BattleScheduleMB",
-      "Size": 3035
+      "Size": 3172
     },
     "BattleSkillCharacterSettingMB": {
       "Hash": "5ec0923ec46dfb4fe89a726e94de2f57",
@@ -241,9 +241,9 @@
       "Size": 42400
     },
     "FaqListMB": {
-      "Hash": "0d4fa80439389b91a85d93db6befe025",
+      "Hash": "24a6d4c90e139d0e98bce12600bb8710",
       "Name": "FaqListMB",
-      "Size": 5777
+      "Size": 5518
     },
     "FriendCampaignMB": {
       "Hash": "5c7fef7b091bc50324417abdcee37925",
@@ -271,9 +271,9 @@
       "Size": 7655
     },
     "GachaSelectListMB": {
-      "Hash": "3e08d1915e011797b9e5bc3c3da64150",
+      "Hash": "5c67dbd6d3228199029cb0829bd6c051",
       "Name": "GachaSelectListMB",
-      "Size": 18636
+      "Size": 20612
     },
     "GlobalGvgCastleMB": {
       "Hash": "f3658568a1d613e3c56998853a67930d",
@@ -326,9 +326,9 @@
       "Size": 57789
     },
     "HelpMB": {
-      "Hash": "3351a2e94b742df695e58241cc7d9721",
+      "Hash": "92503f62e26159934eccb6186fecf51c",
       "Name": "HelpMB",
-      "Size": 23170
+      "Size": 24871
     },
     "InquiryButtonMB": {
       "Hash": "64d2fa4011342931712e8917e14b6857",
@@ -405,15 +405,10 @@
       "Name": "LocalRaidEnemyMB",
       "Size": 47713509
     },
-    "LocalRaidEventQuestGroupMB": {
-      "Hash": "e2824aee524534d938edde50be969cee",
-      "Name": "LocalRaidEventQuestGroupMB",
-      "Size": 1138713
-    },
     "LocalRaidEventScheduleMB": {
-      "Hash": "2c37f75dfeb02c0c7db7d2199c2a08fc",
+      "Hash": "eadbe69091cf02cfee0bd5ab008c14f9",
       "Name": "LocalRaidEventScheduleMB",
-      "Size": 17285
+      "Size": 1512
     },
     "LocalRaidQuestGroupMB": {
       "Hash": "4b37171cdea82d0d7661ba4d6fef95b0",
@@ -421,9 +416,9 @@
       "Size": 240470
     },
     "LocalRaidQuestMB": {
-      "Hash": "8ba838cdfa53e8fe42d9b885ab584475",
+      "Hash": "6581ac83f566feed0e00e70888bed8a6",
       "Name": "LocalRaidQuestMB",
-      "Size": 4744132
+      "Size": 5617741
     },
     "MissionClearCountRewardMB": {
       "Hash": "c261960bcbb3023dcb6bd5c1cc560dec",
@@ -436,9 +431,9 @@
       "Size": 36747
     },
     "MissionMB": {
-      "Hash": "8c50742b37788d732365d6eab2ef39ba",
+      "Hash": "400fdd36148d7308b32d96557fe3ac4a",
       "Name": "MissionMB",
-      "Size": 521588
+      "Size": 532988
     },
     "MissionOpenContentMB": {
       "Hash": "92d29661208485672151da05bc75aabf",
@@ -550,11 +545,6 @@
       "Name": "StripePointMB",
       "Size": 110
     },
-    "StripePriceCurrencyCodeMB": {
-      "Hash": "36da1829e518d548e688631fb5696901",
-      "Name": "StripePriceCurrencyCodeMB",
-      "Size": 73
-    },
     "TermsMB": {
       "Hash": "f8484875bb083bdc5ad586e2b890b9f3",
       "Name": "TermsMB",
@@ -646,14 +636,14 @@
       "Size": 4759
     },
     "TowerBattleEnemyMB": {
-      "Hash": "cb045a139ef7da9fa79305febc6f0556",
+      "Hash": "71edf124d78b5a085a7dcd120b3917af",
       "Name": "TowerBattleEnemyMB",
-      "Size": 17780027
+      "Size": 18897900
     },
     "TowerBattleQuestMB": {
-      "Hash": "05aeee952406d42b9990bb46f2bcba3e",
+      "Hash": "f21eb8325cb0729be8b4cb7a96297313",
       "Name": "TowerBattleQuestMB",
-      "Size": 1170328
+      "Size": 1272912
     },
     "TradeShopSphereMB": {
       "Hash": "5afc70d62906311a1cf81940d2a62fb3",
@@ -661,9 +651,9 @@
       "Size": 1083
     },
     "TradeShopTabMB": {
-      "Hash": "4cd0dfa462cdeeee0b63b44e957f6bef",
+      "Hash": "85953edcf25c2deb44aa66dc0199be8d",
       "Name": "TradeShopTabMB",
-      "Size": 80669
+      "Size": 83383
     },
     "TreasureChestCeilingMB": {
       "Hash": "9261f7876b178ce3055e3e0672156e64",
@@ -681,9 +671,9 @@
       "Size": 38562
     },
     "TutorialDescriptionMB": {
-      "Hash": "9b8fc8c9075a9a8a9eda20609e71d3f9",
+      "Hash": "aad94aca328e1d49e370f44d7623c056",
       "Name": "TutorialDescriptionMB",
-      "Size": 9547
+      "Size": 9820
     },
     "TutorialTextBoxMB": {
       "Hash": "ec217438b4d0fe2e52e17c1d17ebb358",
