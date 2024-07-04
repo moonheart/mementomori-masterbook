@@ -143295,5 +143295,61 @@
     "Memo": "",
     "StringKey": "[GachaExplanation105]",
     "Text": ""
+  },
+  {
+    "Id": 20777,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail106]",
+    "Text": ""
+  },
+  {
+    "Id": 20778,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading106]",
+    "Text": ""
+  },
+  {
+    "Id": 20779,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes106]",
+    "Text": ""
+  },
+  {
+    "Id": 20780,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation106]",
+    "Text": ""
+  },
+  {
+    "Id": 20781,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail107]",
+    "Text": ""
+  },
+  {
+    "Id": 20782,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading107]",
+    "Text": ""
+  },
+  {
+    "Id": 20783,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes107]",
+    "Text": ""
+  },
+  {
+    "Id": 20784,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation107]",
+    "Text": ""
   }
 ]
