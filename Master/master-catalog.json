@@ -11,9 +11,9 @@
       "Size": 419386
     },
     "AppVersionMB": {
-      "Hash": "985aa2ac33874a53794ec29c480f041e",
+      "Hash": "aaa27d99b0e2525dc0940b5cbf3964d8",
       "Name": "AppVersionMB",
-      "Size": 307
+      "Size": 358
     },
     "AutoBattleEnemyMB": {
       "Hash": "4fc800819cf338491f2c70a7971225fb",
@@ -256,7 +256,7 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "581f5075d93529b1deb707b451a5f95f",
+      "Hash": "d1b46174a094bfd94ce3fa060cf04891",
       "Name": "GachaCaseMB",
       "Size": 37956
     },
@@ -271,7 +271,7 @@
       "Size": 8671
     },
     "GachaSelectListMB": {
-      "Hash": "bc88316909194347d406f467c689e0ab",
+      "Hash": "7bc4e308a08af3e885fe2aa2f280d41f",
       "Name": "GachaSelectListMB",
       "Size": 23476
     },
