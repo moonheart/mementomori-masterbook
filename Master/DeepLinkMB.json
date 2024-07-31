@@ -466,8 +466,8 @@
     "IsIgnore": null,
     "Memo": null,
     "TransferDetailInfo": {
-      "NumberInfo1": 1001,
-      "NumberInfo2": 1005,
+      "NumberInfo1": 1027,
+      "NumberInfo2": 0,
       "StringInfo": null,
       "TransferSpotType": 230
     }
