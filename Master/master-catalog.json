@@ -490,6 +490,11 @@
       "Name": "PassiveSkillMB",
       "Size": 423684
     },
+    "PatternSettingMB": {
+      "Hash": "56c2b571b9194bb141e12c80e909910c",
+      "Name": "PatternSettingMB",
+      "Size": 248
+    },
     "PlayerRankMB": {
       "Hash": "f9a87d95aaa03c5e80d1fc543bab087a",
       "Name": "PlayerRankMB",
