@@ -147873,5 +147873,33 @@
     "Memo": "",
     "StringKey": "[GachaExplanation114]",
     "Text": ""
+  },
+  {
+    "Id": 21430,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail115]",
+    "Text": ""
+  },
+  {
+    "Id": 21431,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading115]",
+    "Text": ""
+  },
+  {
+    "Id": 21432,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes115]",
+    "Text": ""
+  },
+  {
+    "Id": 21433,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation115]",
+    "Text": ""
   }
 ]
