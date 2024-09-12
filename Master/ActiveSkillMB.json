@@ -10683,6 +10683,146 @@
     "RootActiveSkillId": 78002
   },
   {
+    "Id": 79001,
+    "IsIgnore": null,
+    "Memo": "セルリアSR:Lv1 古代の遺物から引き出した力で、ランダムな敵に3回攻撃力×240%の物理攻撃を行う。/ Lv2 さらに戦闘不能になっている味方の数1体につき物理攻撃の回数が1回多くなる（合計で最大7回まで）。/ Lv3 物理攻撃の前に自身が『制限解除』を付帯している場合、戦闘不能になっている味方の数に関わらず物理攻撃の回数が7回になる。/ Ex1 エンシェントスペルを強化する。物理攻撃のダメージが攻撃力×440%になる。/ Ex3 エンシェントスペルを強化する。物理攻撃のダメージが攻撃力×480%になる。",
+    "ActiveSkillConditions": "True",
+    "ActiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": "[ActiveSkillDescription790011]",
+        "CharacterLevel": 1,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79001001,
+          79001002,
+          79001002
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": "[ActiveSkillDescription790012]",
+        "CharacterLevel": 81,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79001201,
+          79001202,
+          79001202,
+          79001203,
+          79001204,
+          79001205,
+          79001206
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": "[ActiveSkillDescription790013]",
+        "CharacterLevel": 161,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79001201,
+          79001202,
+          79001202,
+          79001303,
+          79001304,
+          79001305,
+          79001306
+        ]
+      },
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": "[ActiveSkillDescription790014]",
+        "CharacterLevel": 161,
+        "EquipmentRarityFlags": 128,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79001401,
+          79001402,
+          79001402,
+          79001403,
+          79001404,
+          79001405,
+          79001406
+        ]
+      },
+      {
+        "OrderNumber": 5,
+        "DescriptionKey": "[ActiveSkillDescription790015]",
+        "CharacterLevel": 240,
+        "EquipmentRarityFlags": 512,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79001501,
+          79001502,
+          79001502,
+          79001503,
+          79001504,
+          79001505,
+          79001506
+        ]
+      }
+    ],
+    "NameKey": "[ActiveSkillName79001]",
+    "SkillInitCoolTime": 0,
+    "SkillMaxCoolTime": 4,
+    "RootActiveSkillId": 79001
+  },
+  {
+    "Id": 79002,
+    "IsIgnore": null,
+    "Memo": "セルリアSR:Lv1 古代の文字列によって秘められた力を解放し、ランダムな敵2体に攻撃力×480%の物理攻撃を行う。/ Lv2 さらに戦闘不能になっている味方の数1体につき物理攻撃のダメージが攻撃力×200%大きくなる（最大攻撃力×1280%まで）。/ Lv3 このスキルの対象がランダムな敵3体になる。/ Lv4 物理攻撃の前に自身が『制限解除』を付帯している場合、戦闘不能になっている味方の数に関わらず物理攻撃のダメージが攻撃力×1280%になる。",
+    "ActiveSkillConditions": "True",
+    "ActiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": "[ActiveSkillDescription790021]",
+        "CharacterLevel": 11,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79002001
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": "[ActiveSkillDescription790022]",
+        "CharacterLevel": 21,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79002201
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": "[ActiveSkillDescription790023]",
+        "CharacterLevel": 101,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79002301
+        ]
+      },
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": "[ActiveSkillDescription790024]",
+        "CharacterLevel": 181,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          79002401
+        ]
+      }
+    ],
+    "NameKey": "[ActiveSkillName79002]",
+    "SkillInitCoolTime": 0,
+    "SkillMaxCoolTime": 4,
+    "RootActiveSkillId": 79002
+  },
+  {
     "Id": 80001,
     "IsIgnore": null,
     "Memo": "ミラSR:Lv1 弦を爪弾き歌うは、決して諦めないという誓いとそれに込められた願い。ランダムな敵2体に攻撃力×180%の魔法攻撃を行い、40%の確率で1ターンの間対象に『遅延』を付与する。毎ターン行動終了時にスキルクールタイムの減少を1遅らせ、次回のスキル発動が遅くなる。『遅延』付与の判定の後、自身のHPを自身の最大HP×5%回復する。/ Lv2 『遅延』を付与する確率が70%になる。/ Lv3 HPの回復量が自身の最大HP×10%になる。/ Ex1 決意のロンドを強化する。魔法攻撃の対象がランダムな敵3体になる。",
@@ -25450,5 +25590,145 @@
     "SkillInitCoolTime": 0,
     "SkillMaxCoolTime": 4,
     "RootActiveSkillId": 0
+  },
+  {
+    "Id": 5504079001,
+    "IsIgnore": null,
+    "Memo": null,
+    "ActiveSkillConditions": "True",
+    "ActiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": null,
+        "CharacterLevel": 1,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079001001,
+          5504079001002,
+          5504079001002
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": null,
+        "CharacterLevel": 81,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079001201,
+          5504079001202,
+          5504079001202,
+          5504079001203,
+          5504079001204,
+          5504079001205,
+          5504079001206
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": null,
+        "CharacterLevel": 161,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079001201,
+          5504079001202,
+          5504079001202,
+          5504079001303,
+          5504079001304,
+          5504079001305,
+          5504079001306
+        ]
+      },
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": null,
+        "CharacterLevel": 161,
+        "EquipmentRarityFlags": 128,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079001401,
+          5504079001402,
+          5504079001402,
+          5504079001403,
+          5504079001404,
+          5504079001405,
+          5504079001406
+        ]
+      },
+      {
+        "OrderNumber": 5,
+        "DescriptionKey": null,
+        "CharacterLevel": 240,
+        "EquipmentRarityFlags": 512,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079001501,
+          5504079001502,
+          5504079001502,
+          5504079001503,
+          5504079001504,
+          5504079001505,
+          5504079001506
+        ]
+      }
+    ],
+    "NameKey": "[ActiveSkillName79001]",
+    "SkillInitCoolTime": 0,
+    "SkillMaxCoolTime": 4,
+    "RootActiveSkillId": 79001
+  },
+  {
+    "Id": 5504079002,
+    "IsIgnore": null,
+    "Memo": null,
+    "ActiveSkillConditions": "True",
+    "ActiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": null,
+        "CharacterLevel": 11,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079002001
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": null,
+        "CharacterLevel": 21,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079002201
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": null,
+        "CharacterLevel": 101,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079002301
+        ]
+      },
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": null,
+        "CharacterLevel": 181,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          5504079002401
+        ]
+      }
+    ],
+    "NameKey": "[ActiveSkillName79002]",
+    "SkillInitCoolTime": 0,
+    "SkillMaxCoolTime": 4,
+    "RootActiveSkillId": 79002
   }
 ]

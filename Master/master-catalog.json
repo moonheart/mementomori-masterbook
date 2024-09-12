@@ -6,9 +6,9 @@
       "Size": 55322
     },
     "ActiveSkillMB": {
-      "Hash": "80d6880bc26791b2ab80e37cd04f6d63",
+      "Hash": "640449443e023496beabcf08eac5acd8",
       "Name": "ActiveSkillMB",
-      "Size": 433880
+      "Size": 438364
     },
     "AppVersionMB": {
       "Hash": "c9e69cdf0fc620b86926e9f03c189d6d",
@@ -96,9 +96,9 @@
       "Size": 2847
     },
     "CharacterMB": {
-      "Hash": "6fcfc8ff45f46d4c9290e2a1dd94960b",
+      "Hash": "c4f7cf783e6118edcd6d754af0ea6ab1",
       "Name": "CharacterMB",
-      "Size": 59715
+      "Size": 60415
     },
     "CharacterPotentialCoefficientMB": {
       "Hash": "6c0194d0d9bad3e5ec52bfb40e35b33c",
@@ -166,9 +166,9 @@
       "Size": 36595
     },
     "EffectGroupMB": {
-      "Hash": "0a18b160a474a260863075f8ff6e8f3e",
+      "Hash": "887e03a971c7828a3a2d1756a709b324",
       "Name": "EffectGroupMB",
-      "Size": 733365
+      "Size": 737991
     },
     "ElementBonusMB": {
       "Hash": "e9bf6e553b877c54fcaf45f6909340e5",
@@ -236,9 +236,9 @@
       "Size": 6554
     },
     "ErrorCodeMB": {
-      "Hash": "9710d2a55948e7ea13b439913d3f4183",
+      "Hash": "7c1fc2ccc995dc25c694b48ca3a90e07",
       "Name": "ErrorCodeMB",
-      "Size": 43614
+      "Size": 44472
     },
     "FaqListMB": {
       "Hash": "24a6d4c90e139d0e98bce12600bb8710",
@@ -466,9 +466,9 @@
       "Size": 3725
     },
     "NewCharacterMissionMB": {
-      "Hash": "49f0d11a8a3a174bee0bd4cdde88836f",
+      "Hash": "d6f21f5a70f31e61e1066ffa8b575fda",
       "Name": "NewCharacterMissionMB",
-      "Size": 5614
+      "Size": 6133
     },
     "OpenContentMB": {
       "Hash": "15516670f480ce9076521392c0867962",
@@ -486,9 +486,9 @@
       "Size": 7053
     },
     "PassiveSkillMB": {
-      "Hash": "44f0c9e35e4b94778e1d1a644aaf84ad",
+      "Hash": "6dd860a6e0bd8d2d2b440e154f208825",
       "Name": "PassiveSkillMB",
-      "Size": 437033
+      "Size": 443096
     },
     "PatternSettingMB": {
       "Hash": "56c2b571b9194bb141e12c80e909910c",
@@ -636,9 +636,9 @@
       "Size": 1485
     },
     "TotalActivityMedalRewardMB": {
-      "Hash": "09d43e132645e86d143f4696786e91d4",
+      "Hash": "3af1362deed714d3e4a82c0e3e7ab4da",
       "Name": "TotalActivityMedalRewardMB",
-      "Size": 4759
+      "Size": 5255
     },
     "TowerBattleEnemyMB": {
       "Hash": "3d06c66a510fc73162da59dbbd99b1f0",

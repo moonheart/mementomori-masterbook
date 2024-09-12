@@ -10136,6 +10136,197 @@
     ]
   },
   {
+    "Id": 79003,
+    "IsIgnore": null,
+    "Memo": "セルリアSR:Lv1 それはかつて滅びた文明の遺産。未だ解明できない力が、所有者の危機に反応して真価を発揮する。自身が敵からバフを解除されたとき、6ターンの間味方全体の命中率を30%増加させる。その後自身に『制限解除』を付与する（解除不可）。このバフは自身の攻撃力を15%増加させる。/ Lv2 さらにバトル開始時6ターンの間自身の命中率が10%増加する。/ Lv3 『制限解除』の攻撃力の増加量が30%になる。/ Ex2 ロストテクノロジーを強化する。味方全体の命中率の増加量が50%になる。",
+    "NameKey": "[PassiveSkillName79003]",
+    "PassiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": "[PassiveSkillDescription790031]",
+        "CharacterLevel": 41,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003002
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003003
+          }
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": "[PassiveSkillDescription790032]",
+        "CharacterLevel": 121,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 39,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003201
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003002
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003003
+          }
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": "[PassiveSkillDescription790033]",
+        "CharacterLevel": 201,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 39,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003201
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003002
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003303
+          }
+        ]
+      },
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": "[PassiveSkillDescription790034]",
+        "CharacterLevel": 240,
+        "EquipmentRarityFlags": 256,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 39,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003201
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003402
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79003303
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 79004,
+    "IsIgnore": null,
+    "Memo": "セルリアSR:Lv1 １人でも研究を続けた努力が実を結び、遺物の力を引き出すことに成功した。1ターン目のターン開始時自身に6ターンの間自身の攻撃力×400%の『シールド』を付与する（解除不可）。/ Lv2 さらにこのバトル中に自身が攻撃を受けた回数が5回、10回、15回、20回になった場合、このシールドを再付与する。再付与は3ターン目以降は発動しない。/ Lv3 『シールド』の大きさが自身の攻撃力×800%になる。",
+    "NameKey": "[PassiveSkillName79004]",
+    "PassiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": "[PassiveSkillDescription790041]",
+        "CharacterLevel": 61,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79004001
+          }
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": "[PassiveSkillDescription790042]",
+        "CharacterLevel": 141,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79004001
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79004202
+          }
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": "[PassiveSkillDescription790043]",
+        "CharacterLevel": 221,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79004301
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 79004302
+          }
+        ]
+      }
+    ]
+  },
+  {
     "Id": 80003,
     "IsIgnore": null,
     "Memo": "ミラSR:Lv1 空腹は本当に恐ろしい。だから常に腹八分目以上にしておこう！　そうしないと、またあの囁きが聞こえてくるかも知れないから──バトル開始時自身以外の味方全体の最大HPを10%増加させる（解除不可）。対象が翠属性の場合、最大HPの増加量がさらにステータス増減前の付与者自身の攻撃力×100%分大きくなる。その後自身の最大HPがステータス増減前の付与者自身の攻撃力×200%分増加する（解除不可）。/ Lv2 自身の最大HPの増加量がステータス増減前の付与者自身の攻撃力×500%分になる。/ Lv3 自身以外の味方全体の最大HPの増加量が15%になる。/ Ex2 空腹ダメぜったい！を強化する。自身以外の味方全体の最大HPの増加量が25%になる。対象が翠属性の場合、最大HPの増加量がステータス増減前の付与者自身の攻撃力×200%分大きくなる。",
@@ -26741,6 +26932,197 @@
             "SkillMaxCoolTime": 0,
             "PassiveGroupId": 0,
             "SubSetSkillId": 550496004003
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 5504079003,
+    "IsIgnore": null,
+    "Memo": null,
+    "NameKey": "[PassiveSkillName79003]",
+    "PassiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": null,
+        "CharacterLevel": 41,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003002
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003003
+          }
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": null,
+        "CharacterLevel": 121,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 39,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003201
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003002
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003003
+          }
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": null,
+        "CharacterLevel": 201,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 39,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003201
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003002
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003303
+          }
+        ]
+      },
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": null,
+        "CharacterLevel": 240,
+        "EquipmentRarityFlags": 256,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 39,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003201
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003402
+          },
+          {
+            "PassiveTrigger": 40,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079003303
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "Id": 5504079004,
+    "IsIgnore": null,
+    "Memo": null,
+    "NameKey": "[PassiveSkillName79004]",
+    "PassiveSkillInfos": [
+      {
+        "OrderNumber": 1,
+        "DescriptionKey": null,
+        "CharacterLevel": 61,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079004001
+          }
+        ]
+      },
+      {
+        "OrderNumber": 2,
+        "DescriptionKey": null,
+        "CharacterLevel": 141,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079004001
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079004202
+          }
+        ]
+      },
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": null,
+        "CharacterLevel": 221,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "PassiveSubSetSkillInfos": [
+          {
+            "PassiveTrigger": 1,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 10,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079004301
+          },
+          {
+            "PassiveTrigger": 8,
+            "SkillCoolTime": 0,
+            "SkillMaxCoolTime": 0,
+            "PassiveGroupId": 0,
+            "SubSetSkillId": 5504079004302
           }
         ]
       }
