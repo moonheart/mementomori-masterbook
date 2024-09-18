@@ -151044,5 +151044,33 @@
     "Memo": "",
     "StringKey": "[GachaExplanation119]",
     "Text": ""
+  },
+  {
+    "Id": 21884,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogDetail120]",
+    "Text": ""
+  },
+  {
+    "Id": 21885,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDailogHeading120]",
+    "Text": ""
+  },
+  {
+    "Id": 21886,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaDetailDialogNotes120]",
+    "Text": ""
+  },
+  {
+    "Id": 21887,
+    "IsIgnore": false,
+    "Memo": "",
+    "StringKey": "[GachaExplanation120]",
+    "Text": ""
   }
 ]
