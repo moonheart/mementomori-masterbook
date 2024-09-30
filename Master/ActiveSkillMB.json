@@ -26241,6 +26241,54 @@
     "RootActiveSkillId": 74002
   },
   {
+    "Id": 5502081001,
+    "IsIgnore": null,
+    "Memo": "ギルドレイドタマ1",
+    "ActiveSkillConditions": "True",
+    "ActiveSkillInfos": [
+      {
+        "OrderNumber": 3,
+        "DescriptionKey": "[ActiveSkillDescription810013]",
+        "CharacterLevel": 161,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          81001301,
+          81001002
+        ]
+      }
+    ],
+    "NameKey": "[ActiveSkillName81001]",
+    "SkillInitCoolTime": 0,
+    "SkillMaxCoolTime": 4,
+    "RootActiveSkillId": 81001
+  },
+  {
+    "Id": 5502081002,
+    "IsIgnore": null,
+    "Memo": "ギルドレイドタマ2",
+    "ActiveSkillConditions": "True",
+    "ActiveSkillInfos": [
+      {
+        "OrderNumber": 4,
+        "DescriptionKey": "[ActiveSkillDescription810024]",
+        "CharacterLevel": 181,
+        "EquipmentRarityFlags": 0,
+        "BlessingItemId": 0,
+        "SubSetSkillIds": [
+          81002401,
+          81002402,
+          81002402,
+          81002402
+        ]
+      }
+    ],
+    "NameKey": "[ActiveSkillName81002]",
+    "SkillInitCoolTime": 0,
+    "SkillMaxCoolTime": 4,
+    "RootActiveSkillId": 81002
+  },
+  {
     "Id": 5503044001,
     "IsIgnore": null,
     "Memo": "ルサールカ別スキル1",
