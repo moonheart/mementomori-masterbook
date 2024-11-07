@@ -46,9 +46,9 @@
       "Size": 5024921
     },
     "BountyQuestEventMB": {
-      "Hash": "7f1e26f59be126dad559accfa5a1e1c9",
+      "Hash": "589fd35b41d916e43d66eaf0e85e19a3",
       "Name": "BountyQuestEventMB",
-      "Size": 11487
+      "Size": 11930
     },
     "ChangeItemMB": {
       "Hash": "b8d25832372fd02255515854eebf5d75",
@@ -81,9 +81,9 @@
       "Size": 4090
     },
     "CharacterDetailVoiceMB": {
-      "Hash": "a2cad7f227ac0db6e32c4c6cfbd0874b",
+      "Hash": "eccb44f3e8b688473e6d4061b9027b06",
       "Name": "CharacterDetailVoiceMB",
-      "Size": 654953
+      "Size": 655450
     },
     "CharacterLevelMB": {
       "Hash": "3afbab3ee63653e2b37187d446c937c5",
@@ -161,7 +161,7 @@
       "Size": 1508
     },
     "DungeonBattleGuestMB": {
-      "Hash": "43df66c858ef263deb3a71b39ef489d6",
+      "Hash": "e4af9c518be8b5721f9f7afb1ae294f6",
       "Name": "DungeonBattleGuestMB",
       "Size": 10842
     },
@@ -261,24 +261,24 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "fe7c19619b6c35f67f1f665677c05270",
+      "Hash": "1812e45f89efe209587cc8610f170c9b",
       "Name": "GachaCaseMB",
-      "Size": 44636
+      "Size": 44988
     },
     "GachaCaseUiMB": {
-      "Hash": "296b58f18cacea272832908b5b277737",
+      "Hash": "623f10a1931288f662988917c5800a78",
       "Name": "GachaCaseUiMB",
-      "Size": 369119
+      "Size": 371994
     },
     "GachaDestinyAddCharacterMB": {
-      "Hash": "db41bb919ccae663f552773fd5a72fd6",
+      "Hash": "daa148fd5111a21b8fb77b04fc9888a9",
       "Name": "GachaDestinyAddCharacterMB",
-      "Size": 11071
+      "Size": 11195
     },
     "GachaSelectListMB": {
-      "Hash": "db239e5e0f5d71717ffea6a16f265e30",
+      "Hash": "1904219e58c696d06a39e8d055c3645a",
       "Name": "GachaSelectListMB",
-      "Size": 29903
+      "Size": 30196
     },
     "GlobalGvgCastleMB": {
       "Hash": "f3658568a1d613e3c56998853a67930d",
@@ -456,9 +456,9 @@
       "Size": 6254
     },
     "MonologueMB": {
-      "Hash": "c7bf675c79d9b479c95efd50639380dc",
+      "Hash": "d5202ed0d0c85cca0fe5fd9b366fcf1c",
       "Name": "MonologueMB",
-      "Size": 62970
+      "Size": 71427
     },
     "MonthlyLoginBonusMB": {
       "Hash": "f127927f872116afeb603d16328c987c",
@@ -481,9 +481,9 @@
       "Size": 6505
     },
     "OpenContentMB": {
-      "Hash": "65aa8a813192191483f1110dd73a7981",
+      "Hash": "bfde4561e5ae4d29f436ba2d0306f4b5",
       "Name": "OpenContentMB",
-      "Size": 19493
+      "Size": 19643
     },
     "PanelMB": {
       "Hash": "8bdbd649e9f4b196dd0b510440f307e4",
