@@ -11,7 +11,7 @@
       "Size": 631556
     },
     "AppVersionMB": {
-      "Hash": "e7830d52cdf796fff2a75b6fe23aebb1",
+      "Hash": "1e284e5f8d8f6dfd6f2f2c15d7b9586e",
       "Name": "AppVersionMB",
       "Size": 301
     },
@@ -366,9 +366,9 @@
       "Size": 1108
     },
     "LimitedLoginBonusMB": {
-      "Hash": "1996be8c1835e01f40d018ef4e910ae4",
+      "Hash": "220b3a617b952e417d948e729ae4e0ba",
       "Name": "LimitedLoginBonusMB",
-      "Size": 4183
+      "Size": 4711
     },
     "LimitedLoginBonusRewardListMB": {
       "Hash": "5f360dc690a54a9e9414584ce56aab53",
@@ -391,9 +391,9 @@
       "Size": 4744
     },
     "LocalPushNotificationMB": {
-      "Hash": "8299e722d30def8091362926f0d4a090",
+      "Hash": "f32406e1f60cdfc0339f15dcac43a8d5",
       "Name": "LocalPushNotificationMB",
-      "Size": 1529
+      "Size": 1777
     },
     "LocalRaidBannerMB": {
       "Hash": "7b0046c625ebec80746c67063c8a1f12",
@@ -501,9 +501,9 @@
       "Size": 681835
     },
     "PatternSettingMB": {
-      "Hash": "56c2b571b9194bb141e12c80e909910c",
+      "Hash": "5941febc7e435d3ad567cf19efdfdd16",
       "Name": "PatternSettingMB",
-      "Size": 248
+      "Size": 539
     },
     "PlayerRankMB": {
       "Hash": "9d09f1f36971c284602f18f051a5279a",
