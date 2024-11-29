@@ -3920,7 +3920,7 @@
       73
     ],
     "OrderNumber": 112,
-    "StartTimeFixJST": "2024-11-29 15:00:00",
+    "StartTimeFixJST": "2024-11-29 16:30:00",
     "EndTimeFixJST": "2024-12-06 14:29:59"
   },
   {
@@ -4352,7 +4352,7 @@
       53
     ],
     "OrderNumber": 10150,
-    "StartTimeFixJST": "2024-11-29 15:00:00",
+    "StartTimeFixJST": "2024-11-29 16:30:00",
     "EndTimeFixJST": "2024-12-20 14:29:59"
   }
 ]

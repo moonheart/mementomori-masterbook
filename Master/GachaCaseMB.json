@@ -2372,7 +2372,7 @@
     "GachaSelectListType": 1,
     "GachaCaseFlags": 1,
     "GachaLimitDayFromCreatePlayer": 0,
-    "StartTimeFixJST": "2024-11-29 15:00:00",
+    "StartTimeFixJST": "2024-11-29 16:30:00",
     "EndTimeFixJST": "2024-12-29 14:29:59"
   },
   {
@@ -2390,7 +2390,7 @@
     "GachaSelectListType": 1,
     "GachaCaseFlags": 1,
     "GachaLimitDayFromCreatePlayer": 0,
-    "StartTimeFixJST": "2024-11-29 15:00:00",
+    "StartTimeFixJST": "2024-11-29 16:30:00",
     "EndTimeFixJST": "2024-12-13 14:29:59"
   },
   {
