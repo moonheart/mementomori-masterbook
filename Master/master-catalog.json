@@ -1,9 +1,9 @@
 {
   "MasterBookInfoMap": {
     "AchieveRankingRewardMB": {
-      "Hash": "41a83c36fad7184df2de381f73c364e3",
+      "Hash": "ffad43a4f83eda10e05d788fd6a6b586",
       "Name": "AchieveRankingRewardMB",
-      "Size": 58040
+      "Size": 63980
     },
     "ActiveSkillMB": {
       "Hash": "c0d2e3120ae38988dbfe72b94da12664",
@@ -11,7 +11,7 @@
       "Size": 653975
     },
     "AppVersionMB": {
-      "Hash": "33145eb963a94088b0348871bfcbce8f",
+      "Hash": "efa1759b71365f5d6273909725f5e34e",
       "Name": "AppVersionMB",
       "Size": 301
     },
@@ -261,7 +261,7 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "98a08061f93ea1bf160f9d2873831838",
+      "Hash": "24c708f256692385b6d10f64fd0fd5b8",
       "Name": "GachaCaseMB",
       "Size": 49971
     },
@@ -276,7 +276,7 @@
       "Size": 12997
     },
     "GachaSelectListMB": {
-      "Hash": "76be3fd58bb0e7f51f477a911d75c9a5",
+      "Hash": "24ff3fa4da3b5979f56d61d7818fe551",
       "Name": "GachaSelectListMB",
       "Size": 34293
     },
@@ -331,9 +331,9 @@
       "Size": 116625
     },
     "HelpMB": {
-      "Hash": "ee2a3bfbab4130fe8b6a453cf461a262",
+      "Hash": "8c430a36ffc75b8859f905398293aa82",
       "Name": "HelpMB",
-      "Size": 24494
+      "Size": 24707
     },
     "InquiryButtonMB": {
       "Hash": "95c04f3e30c618ea9b5aea13162801a0",
@@ -396,39 +396,29 @@
       "Size": 4744
     },
     "LocalPushNotificationMB": {
-      "Hash": "f32406e1f60cdfc0339f15dcac43a8d5",
+      "Hash": "bbc4658d394be56d733c47e3eada1c54",
       "Name": "LocalPushNotificationMB",
       "Size": 1777
     },
     "LocalRaidBannerMB": {
-      "Hash": "7b0046c625ebec80746c67063c8a1f12",
+      "Hash": "be6a38925cd12fbea18ac1260496653a",
       "Name": "LocalRaidBannerMB",
-      "Size": 4429
+      "Size": 4969
     },
     "LocalRaidBonusScheduleMB": {
       "Hash": "036fbfe7f56c7f8d1818e2cc25ee9cad",
       "Name": "LocalRaidBonusScheduleMB",
       "Size": 181
     },
-    "LocalRaidEnemyMB": {
-      "Hash": "359e230a1758b74d889f716c4dd525a1",
-      "Name": "LocalRaidEnemyMB",
-      "Size": 43235940
-    },
     "LocalRaidEventScheduleMB": {
-      "Hash": "8816f437b4b613f0b53ea50c7f079d97",
+      "Hash": "94cc56501bffe511ad64d8b3f651fe8d",
       "Name": "LocalRaidEventScheduleMB",
-      "Size": 2045
+      "Size": 2307
     },
     "LocalRaidQuestGroupMB": {
       "Hash": "ba03de84de33cd463a2efa0a6bbaa661",
       "Name": "LocalRaidQuestGroupMB",
       "Size": 341031
-    },
-    "LocalRaidQuestMB": {
-      "Hash": "16177edd2d7b2b011bc375491880475b",
-      "Name": "LocalRaidQuestMB",
-      "Size": 10414425
     },
     "LuckyChanceMB": {
       "Hash": "2ff75f8428c7be44b46f0b7ae14cf3ce",
@@ -696,9 +686,9 @@
       "Size": 45541
     },
     "TutorialDescriptionMB": {
-      "Hash": "9556e5b5d05c619851c1c4d4297ddf8b",
+      "Hash": "1d12aa7df89fe7dbfbf07827bd0674e1",
       "Name": "TutorialDescriptionMB",
-      "Size": 11616
+      "Size": 11874
     },
     "TutorialTextBoxMB": {
       "Hash": "4b7eb8eb290ab7e84fb12238288f0e8a",
