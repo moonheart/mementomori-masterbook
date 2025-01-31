@@ -11,7 +11,7 @@
       "Size": 658463
     },
     "AppVersionMB": {
-      "Hash": "efa1759b71365f5d6273909725f5e34e",
+      "Hash": "61c771fb83683a7ba692ac88648d4092",
       "Name": "AppVersionMB",
       "Size": 301
     },
@@ -151,9 +151,9 @@
       "Size": 6899
     },
     "DownloadRawDataMB": {
-      "Hash": "334e38a83bf95d8b8ff3a96cffd1b319",
+      "Hash": "156610b1921986fb3cacbaf0b941ef53",
       "Name": "DownloadRawDataMB",
-      "Size": 101961
+      "Size": 103605
     },
     "DungeonBattleGridMB": {
       "Hash": "d1d0bb870c358c7985224e134155c50d",
@@ -230,10 +230,15 @@
       "Name": "EquipmentReinforcementParameterMB",
       "Size": 47113
     },
+    "EquipmentSetMaterialBoxMB": {
+      "Hash": "1fea8cf5bcaab123ff26cae84c9371e1",
+      "Name": "EquipmentSetMaterialBoxMB",
+      "Size": 11952
+    },
     "EquipmentSetMaterialMB": {
-      "Hash": "d25041a977a65af6bdb63cd308307db7",
+      "Hash": "99870dd5346ddd87a109c3f65c6e612e",
       "Name": "EquipmentSetMaterialMB",
-      "Size": 158482
+      "Size": 175496
     },
     "EquipmentSetMB": {
       "Hash": "c6ea5f7754dc9d4c3441d2f13274eaaa",
@@ -331,9 +336,9 @@
       "Size": 146358
     },
     "HelpMB": {
-      "Hash": "8c430a36ffc75b8859f905398293aa82",
+      "Hash": "517567d1bda0d68c5687b770897566ad",
       "Name": "HelpMB",
-      "Size": 24707
+      "Size": 25218
     },
     "InquiryButtonMB": {
       "Hash": "95c04f3e30c618ea9b5aea13162801a0",
@@ -476,9 +481,9 @@
       "Size": 6505
     },
     "OpenContentMB": {
-      "Hash": "95b8aa2654fe3559a0c58754ea637158",
+      "Hash": "e81272bda111e6af16423f1d47baa092",
       "Name": "OpenContentMB",
-      "Size": 21148
+      "Size": 21615
     },
     "PanelMB": {
       "Hash": "d45312af662c3be61df56505f1776e09",
@@ -666,9 +671,9 @@
       "Size": 1083
     },
     "TradeShopTabMB": {
-      "Hash": "c726add52b08c8ac9eea29484c9db09f",
+      "Hash": "09f104f7082d95463799cada126f368f",
       "Name": "TradeShopTabMB",
-      "Size": 105749
+      "Size": 105768
     },
     "TreasureChestCeilingMB": {
       "Hash": "9261f7876b178ce3055e3e0672156e64",
@@ -686,9 +691,9 @@
       "Size": 45541
     },
     "TutorialDescriptionMB": {
-      "Hash": "1d12aa7df89fe7dbfbf07827bd0674e1",
+      "Hash": "a43d3990d9e968464572df76b8880915",
       "Name": "TutorialDescriptionMB",
-      "Size": 11874
+      "Size": 12279
     },
     "TutorialTextBoxMB": {
       "Hash": "4b7eb8eb290ab7e84fb12238288f0e8a",
@@ -696,9 +701,9 @@
       "Size": 39894
     },
     "VipMB": {
-      "Hash": "09b22a7cd4fc7c6e8b8a432b9812b23f",
+      "Hash": "82c2a5895090f779e250746db0bdfb43",
       "Name": "VipMB",
-      "Size": 16869
+      "Size": 17311
     },
     "WorldGroupMB": {
       "Hash": "4d044de67fbc8f4b93a84580e3044c2c",
