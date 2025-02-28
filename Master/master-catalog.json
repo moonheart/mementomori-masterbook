@@ -11,7 +11,7 @@
       "Size": 668570
     },
     "AppVersionMB": {
-      "Hash": "46525303ef204a594fd9fc9542e037a8",
+      "Hash": "92d91c367244be0aeaa51f51e01a3886",
       "Name": "AppVersionMB",
       "Size": 351
     },
@@ -151,9 +151,9 @@
       "Size": 7145
     },
     "DownloadRawDataMB": {
-      "Hash": "28ac81c2d3803104dcd4309d88d9e54f",
+      "Hash": "07913c2dd1b988e9fbe0a6808b32153a",
       "Name": "DownloadRawDataMB",
-      "Size": 105231
+      "Size": 107614
     },
     "DungeonBattleGridMB": {
       "Hash": "d1d0bb870c358c7985224e134155c50d",
@@ -161,9 +161,9 @@
       "Size": 1508
     },
     "DungeonBattleGuestMB": {
-      "Hash": "a70cac41eee87d124f851bf93b2e4175",
+      "Hash": "a80eac0e2be103e8452c4941cfd64644",
       "Name": "DungeonBattleGuestMB",
-      "Size": 11742
+      "Size": 11871
     },
     "DungeonBattleRelicMB": {
       "Hash": "415677cdc984e60a34f318985ebcbd75",
@@ -266,24 +266,24 @@
       "Size": 6085
     },
     "GachaCaseMB": {
-      "Hash": "41652c6fa66c9a6de13046ba37c03f9b",
+      "Hash": "e0895341eb68cde9b5eb1eca79505d1c",
       "Name": "GachaCaseMB",
-      "Size": 52435
+      "Size": 53148
     },
     "GachaCaseUiMB": {
-      "Hash": "035889741a612f4eb807608ad36309b4",
+      "Hash": "143257fb9f520638b15ab22b8418a4d2",
       "Name": "GachaCaseUiMB",
-      "Size": 432604
+      "Size": 438385
     },
     "GachaDestinyAddCharacterMB": {
-      "Hash": "3cb772eadfb908172695abb4125ea13d",
+      "Hash": "77512d8ebe2c8b85fd191f0ba162bc1f",
       "Name": "GachaDestinyAddCharacterMB",
-      "Size": 13881
+      "Size": 14140
     },
     "GachaSelectListMB": {
-      "Hash": "497524592d6399c1d8a2e807b56e7883",
+      "Hash": "c3a382e68ab9baed13b76c599daa6686",
       "Name": "GachaSelectListMB",
-      "Size": 36049
+      "Size": 36642
     },
     "GlobalGvgCastleMB": {
       "Hash": "f3658568a1d613e3c56998853a67930d",
@@ -336,9 +336,9 @@
       "Size": 146358
     },
     "HelpMB": {
-      "Hash": "517567d1bda0d68c5687b770897566ad",
+      "Hash": "2369134b4e3d83436a14b353894b0ea5",
       "Name": "HelpMB",
-      "Size": 25218
+      "Size": 25470
     },
     "InquiryButtonMB": {
       "Hash": "95c04f3e30c618ea9b5aea13162801a0",
@@ -601,9 +601,9 @@
       "Size": 3205296
     },
     "TextResourceJaJpMB": {
-      "Hash": "7cde75a0e6bdd660b5de1c12f01793be",
+      "Hash": "2c0a4df1dc3f53dd49c04436fce13408",
       "Name": "TextResourceJaJpMB",
-      "Size": 4368424
+      "Size": 4368430
     },
     "TextResourceKoKrMB": {
       "Hash": "956bdcc6d20a03bdf46a1f8d769858e0",
@@ -671,9 +671,9 @@
       "Size": 1083
     },
     "TradeShopTabMB": {
-      "Hash": "7c1dfa30e141e29899a2f696b51716ed",
+      "Hash": "a9c572308fbd8cc4a100f85a41b1b885",
       "Name": "TradeShopTabMB",
-      "Size": 105768
+      "Size": 108476
     },
     "TreasureChestCeilingMB": {
       "Hash": "9261f7876b178ce3055e3e0672156e64",
@@ -691,9 +691,9 @@
       "Size": 46992
     },
     "TutorialDescriptionMB": {
-      "Hash": "a43d3990d9e968464572df76b8880915",
+      "Hash": "c2b9126d79ff54637127788975c8386b",
       "Name": "TutorialDescriptionMB",
-      "Size": 12279
+      "Size": 12546
     },
     "TutorialTextBoxMB": {
       "Hash": "4b7eb8eb290ab7e84fb12238288f0e8a",
