@@ -8,23 +8,34 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+      - uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v2
         with:
-          dotnet-version: 8.0.x
-      - name: Restore dependencies
-        run: dotnet workload install wasm-tools && dotnet restore ./MementoMoriData.UI/MementoMoriData.UI.csproj
+          version: 10
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'pnpm'
+          cache-dependency-path: viewer/pnpm-lock.yaml
+
+      - name: Install dependencies
+        run: pnpm install
+        working-directory: viewer
+
       - name: Build
-        run: dotnet build ./MementoMoriData.UI/MementoMoriData.UI.csproj --no-restore
-      - name: Publish
-        run: dotnet publish ./MementoMoriData.UI/MementoMoriData.UI.csproj -c Release -r browser-wasm -p:RunAOTCompilation=true -o ./publish/
+        run: pnpm build
+        working-directory: viewer
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: ./publish/wwwroot/
+          publish_dir: ./viewer/dist
