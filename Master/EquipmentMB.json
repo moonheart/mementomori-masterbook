@@ -638644,7 +638644,7 @@
     "IsIgnore": null,
     "Memo": "エレインUR900_銃",
     "AdditionalParameterTotal": 1266377,
-    "AfterLevelEvolutionEquipmentId": 0,
+    "AfterLevelEvolutionEquipmentId": 1401020910,
     "AfterRarityEvolutionEquipmentId": 1401120900,
     "BattleParameterChangeInfo": {
       "BattleParameterType": 2,
@@ -640954,7 +640954,7 @@
     "IsIgnore": null,
     "Memo": "エレインLR900_銃",
     "AdditionalParameterTotal": 1519652,
-    "AfterLevelEvolutionEquipmentId": 0,
+    "AfterLevelEvolutionEquipmentId": 1401120910,
     "AfterRarityEvolutionEquipmentId": 0,
     "BattleParameterChangeInfo": {
       "BattleParameterType": 2,
