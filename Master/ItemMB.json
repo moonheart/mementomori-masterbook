@@ -6365,6 +6365,25 @@
     "TransferSpotId": 0
   },
   {
+    "Id": 344,
+    "IsIgnore": null,
+    "Memo": "冬ティリーのアイテム",
+    "DescriptionKey": "[ItemDescription344]",
+    "DisplayName": "[ItemDisplayName344]",
+    "EndTime": "2026-12-14 03:59:59",
+    "ItemId": 48,
+    "ItemRarityFlags": 64,
+    "ItemType": 50,
+    "MaxItemCount": 0,
+    "NameKey": "[ItemName344]",
+    "IconId": 269,
+    "SecondaryFrameNum": 0,
+    "SecondaryFrameType": 0,
+    "SortOrder": 0,
+    "StartTime": "2026-11-30 00:00:00",
+    "TransferSpotId": 68
+  },
+  {
     "Id": 9999,
     "IsIgnore": null,
     "Memo": "イリアの特別アイコン",

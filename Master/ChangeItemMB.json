@@ -12333,5 +12333,21 @@
     "ItemId": 47,
     "ItemType": 37,
     "NeedCount": 1
+  },
+  {
+    "Id": 787,
+    "IsIgnore": null,
+    "Memo": "冬ティリーのアイテム",
+    "ChangeItems": [
+      {
+        "ItemCount": 10000,
+        "ItemId": 1,
+        "ItemType": 3
+      }
+    ],
+    "ChangeItemType": 0,
+    "ItemId": 48,
+    "ItemType": 50,
+    "NeedCount": 1
   }
 ]
